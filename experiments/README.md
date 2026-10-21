@@ -33,4 +33,16 @@ python -m experiments.summarize_pilot experiments/results/qwen3-06b-20261021
 
 Analysis verifies hashes and recomputes scores. Fence-only and language-attribution diagnostics were added after initial output inspection. Archived bytes are preserved across platforms. An earlier loader download stalled before inference; it is excluded from completed results.
 
-The v0.2 service sandbox has synthetic controls only. New model/dialogue collection, independent reviews, held-out families, and repeated runs are next.
+## Controlled attribution probe
+
+[Protocol](attribution/PROTOCOL.md) · [Results](results/attribution-20261021/INSIGHTS.md) · [Plain-language findings](../docs/FINDINGS.md)
+
+30 tasks, six balanced answer orders, three seeded draws per order. Closed-choice probabilities remove JSON formatting but revealed strong label-position sensitivity. Repeated draws reuse probabilities; they are not independent tasks or free-form generations.
+
+```sh
+python -m experiments.summarize_attribution experiments/results/attribution-20261021
+```
+
+Collection can resume with `--resume` using the original arguments. Completed forward groups are validated and preserved; changed settings, duplicates, and partial groups are rejected. The archived run resumed after 128/180 forwards. No earlier choice was discarded or retried.
+
+The interactive v0.2 workflow still has synthetic controls only. New dialogue collection, independent reviews, held-out families, and cross-model/method replication are next.

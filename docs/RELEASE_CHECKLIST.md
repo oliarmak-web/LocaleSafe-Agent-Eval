@@ -2,7 +2,7 @@
 
 **Implemented:** offline scorer; local model collector; stage/paired diagnostics; service simulator; consent/duplicate guards; language/context/phrasing controls; tests and CI.
 
-**Evidence:** one real-model single-turn pilot; synthetic service traces. No real-model service-workflow study yet.
+**Evidence:** real-model single-turn pilot; controlled closed-choice attribution probe; synthetic service traces. No interactive agent workflow study yet. [Findings](FINDINGS.md).
 
 **Next:** independent reviews, live dialogue adapter, richer held-out families, repeated multi-model runs, uncertainty analysis, external reproduction.
 

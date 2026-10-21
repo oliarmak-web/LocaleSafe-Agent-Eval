@@ -1,7 +1,8 @@
+import random
 import unittest
 from pathlib import Path
 
-from localesafe.attribution_probe import assess, paired_seed, prompt_for, validate_tasks
+from localesafe.attribution_probe import assess, completed_jobs, paired_seed, prompt_for, validate_tasks
 from localesafe.evaluate import read_jsonl
 from localesafe.service_eval import date_context
 
@@ -38,3 +39,21 @@ class AttributionTests(unittest.TestCase):
         self.assertFalse(score["context"])
         self.assertTrue(score["tools"])
         self.assertFalse(score["completion"])
+
+    def test_resume_preserves_complete_groups_and_rejects_tampering(self):
+        task, order = self.tasks[0], (0, 1, 2)
+        rows = []
+        for draw in range(3):
+            seed = paired_seed(task, order, draw, 42)
+            label = random.Random(seed).choices(range(3), weights=[1/3]*3, k=1)[0]
+            rows.append({"id": task["case"]["id"], "order": list(order), "draw": draw,
+                         "seed": seed, "probabilities_ABC": [1/3]*3, "chosen_label": "ABC"[label],
+                         "selected_option": order[label], "messages": prompt_for(task, order),
+                         "score": assess(task, order[label])})
+        self.assertEqual(completed_jobs(rows, self.tasks, 3, 42), {(task["case"]["id"], order)})
+        for invalid in (rows[:-1], rows + [rows[0]]):
+            with self.assertRaises(ValueError):
+                completed_jobs(invalid, self.tasks, 3, 42)
+        rows[0]["score"] = {}
+        with self.assertRaisesRegex(ValueError, "validation"):
+            completed_jobs(rows, self.tasks, 3, 42)

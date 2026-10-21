@@ -1,4 +1,5 @@
 import itertools
+import hashlib
 import json
 import random
 import tempfile
@@ -38,6 +39,15 @@ class AttributionSummaryTests(unittest.TestCase):
             report = summarize(directory)
             self.assertEqual(report["oracle_controls"]["passed"], 30)
             self.assertAlmostEqual(report["workflow"]["mean_probability_correct"], 1/3)
+            prefix = b"".join(log.read_bytes().splitlines(keepends=True)[:6])
+            manifest["resumes"] = [{"preserved_choices": 6, "prior_log_sha256": hashlib.sha256(prefix).hexdigest()}]
+            (directory / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+            audit(directory)
+            manifest["resumes"][0]["prior_log_sha256"] = "0" * 64
+            (directory / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "pre-resume"):
+                audit(directory)
+            manifest.pop("resumes")
             rows[0]["score"]["passed"] = not rows[0]["score"]["passed"]
             log.write_text("".join(json.dumps(r) + "\n" for r in rows), encoding="utf-8")
             manifest["attempts_sha256"] = sha256(log)

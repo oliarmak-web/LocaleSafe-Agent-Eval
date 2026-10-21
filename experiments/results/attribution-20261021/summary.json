@@ -1,0 +1,160 @@
+{
+  "interpretation_by_language": {
+    "en": {
+      "sampled_correct": 69,
+      "choices": 216,
+      "mean_probability_correct": 0.3565294099522968,
+      "distinct_items": 12
+    },
+    "es": {
+      "sampled_correct": 70,
+      "choices": 216,
+      "mean_probability_correct": 0.3444381022713464,
+      "distinct_items": 12
+    }
+  },
+  "interpretation_by_locale": {
+    "US": {
+      "sampled_correct": 69,
+      "choices": 144,
+      "mean_probability_correct": 0.4603654270867992,
+      "distinct_items": 8
+    },
+    "GB": {
+      "sampled_correct": 40,
+      "choices": 144,
+      "mean_probability_correct": 0.3104469516935448,
+      "distinct_items": 8
+    },
+    "unspecified": {
+      "sampled_correct": 30,
+      "choices": 144,
+      "mean_probability_correct": 0.28063888955512084,
+      "distinct_items": 8
+    }
+  },
+  "workflow": {
+    "sampled_correct": 44,
+    "choices": 108,
+    "mean_probability_correct": 0.42237675880985787,
+    "distinct_items": 6
+  },
+  "workflow_by_task": {
+    "workflow-confirmation": {
+      "sampled_correct": 6,
+      "choices": 18,
+      "mean_probability_correct": 0.3336814426753942,
+      "distinct_items": 1
+    },
+    "workflow-denial": {
+      "sampled_correct": 5,
+      "choices": 18,
+      "mean_probability_correct": 0.3343684157977502,
+      "distinct_items": 1
+    },
+    "workflow-edit": {
+      "sampled_correct": 6,
+      "choices": 18,
+      "mean_probability_correct": 0.33335067903044546,
+      "distinct_items": 1
+    },
+    "workflow-duplicate": {
+      "sampled_correct": 6,
+      "choices": 18,
+      "mean_probability_correct": 0.33336952579702483,
+      "distinct_items": 1
+    },
+    "workflow-handoff": {
+      "sampled_correct": 15,
+      "choices": 18,
+      "mean_probability_correct": 0.8649264698227247,
+      "distinct_items": 1
+    },
+    "workflow-clarification": {
+      "sampled_correct": 6,
+      "choices": 18,
+      "mean_probability_correct": 0.33456401973580796,
+      "distinct_items": 1
+    }
+  },
+  "language_pairs_en_vs_es": {
+    "pairs": 216,
+    "both_correct": 55,
+    "both_wrong": 132,
+    "left_correct_right_wrong": 14,
+    "left_wrong_right_correct": 15,
+    "mean_probability_left_minus_right": 0.012091307680950396
+  },
+  "phrasing_pairs_p0_vs_p1": {
+    "en": {
+      "pairs": 108,
+      "both_correct": 32,
+      "both_wrong": 71,
+      "left_correct_right_wrong": 2,
+      "left_wrong_right_correct": 3,
+      "mean_probability_left_minus_right": 0.006038873057857725
+    },
+    "es": {
+      "pairs": 108,
+      "both_correct": 23,
+      "both_wrong": 61,
+      "left_correct_right_wrong": 17,
+      "left_wrong_right_correct": 7,
+      "mean_probability_left_minus_right": 0.060406063677671935
+    }
+  },
+  "correct_option_position": {
+    "interpretation-A": {
+      "sampled_correct": 28,
+      "choices": 48,
+      "mean_probability_correct": 0.7475963681936264,
+      "distinct_items": 24
+    },
+    "interpretation-B": {
+      "sampled_correct": 15,
+      "choices": 48,
+      "mean_probability_correct": 0.24075600885771564,
+      "distinct_items": 24
+    },
+    "interpretation-C": {
+      "sampled_correct": 0,
+      "choices": 48,
+      "mean_probability_correct": 0.06309889128412276,
+      "distinct_items": 24
+    },
+    "workflow-A": {
+      "sampled_correct": 12,
+      "choices": 12,
+      "mean_probability_correct": 0.995556096235911,
+      "distinct_items": 6
+    },
+    "workflow-B": {
+      "sampled_correct": 1,
+      "choices": 12,
+      "mean_probability_correct": 0.10526448744834245,
+      "distinct_items": 6
+    },
+    "workflow-C": {
+      "sampled_correct": 2,
+      "choices": 12,
+      "mean_probability_correct": 0.16630969274532012,
+      "distinct_items": 6
+    }
+  },
+  "oracle_controls": {
+    "passed": 30,
+    "tasks": 30
+  },
+  "chosen_label_counts": {
+    "interpretation": {
+      "A": 289,
+      "B": 116,
+      "C": 27
+    },
+    "workflow": {
+      "A": 98,
+      "C": 6,
+      "B": 4
+    }
+  }
+}

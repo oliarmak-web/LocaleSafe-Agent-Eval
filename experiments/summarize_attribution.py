@@ -1,10 +1,11 @@
 """Audit and summarize the controlled, closed-choice attribution probe."""
 
 import argparse
+import hashlib
 import itertools
 import json
 import random
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 from localesafe.attribution_probe import assess, paired_seed, prompt_for, validate_tasks
@@ -25,6 +26,11 @@ def audit(directory):
     for name in ("tasks", "attempts"):
         if sha256(directory / f"{name}.jsonl") != manifest[name + "_sha256"]:
             raise ValueError("artifact hash mismatch")
+    raw_lines = (directory / "attempts.jsonl").read_bytes().splitlines(keepends=True)
+    for resume in manifest.get("resumes", []):
+        prefix = b"".join(raw_lines[:resume["preserved_choices"]])
+        if hashlib.sha256(prefix).hexdigest() != resume["prior_log_sha256"]:
+            raise ValueError("preserved pre-resume records changed")
     tasks = read_jsonl(directory / "tasks.jsonl")
     validate_tasks(tasks)
     indexed = {t["case"]["id"]: t for t in tasks}
@@ -37,6 +43,10 @@ def audit(directory):
             raise ValueError("unknown/duplicate attempt")
         seen.add(key)
         task = indexed[row["id"]]
+        metadata = {"kind": task["kind"], "family": task["case"]["family"], "language": task["case"]["language"],
+                    "locale": task["case"]["locale"], "phrase": task["phrase"]}
+        if any(row[key] != value for key, value in metadata.items()):
+            raise ValueError("attempt metadata mismatch")
         if row["messages"] != prompt_for(task, tuple(row["order"])):
             raise ValueError("prompt mismatch")
         seed = paired_seed(task, tuple(row["order"]), row["draw"], manifest["seed"])
@@ -111,14 +121,17 @@ def summarize(directory):
         position[(row["kind"], letter)].append(row)
     summary["correct_option_position"] = {f"{kind}-{label}": metrics(rows) for (kind, label), rows in sorted(position.items())}
     summary["oracle_controls"] = {"passed": sum(assess(t, correct_index(t))["passed"] for t in tasks), "tasks": len(tasks)}
+    summary["chosen_label_counts"] = {kind: dict(Counter(r["chosen_label"] for r in attempts if r["kind"] == kind))
+                                      for kind in ("interpretation", "workflow")}
     (directory / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     lines = ["# Language or workflow? Controlled results", "",
              f"Model: `{manifest['model']}`. {len(tasks)} tasks; {len(forwards)} forward passes; {len(attempts)} sampled choices. No paid API.", "",
              "**Scope:** closed-choice recognition, not a live agent. Formatting is fixed by design. Translations are draft. Repeated choices are not independent tasks.", "",
+             f"**Lead finding:** strong answer-position sensitivity limits attribution. The workflow probe chose A in {summary['chosen_label_counts']['workflow'].get('A', 0)}/{len(workflow)} draws despite balanced correct-answer positions. Check the response method before attributing failures to language or workflow comprehension.", "",
              "## Interpretation", "", "| Language | Items | Correct / sampled choices | Mean probability on correct option |", "|---|---:|---:|---:|"]
     for lang, m in summary["interpretation_by_language"].items():
         lines.append(f"| {lang} | {m['distinct_items']} | {m['sampled_correct']}/{m['choices']} | {m['mean_probability_correct']:.1%} |")
-    lines += ["", "Probabilities are conditional on the three offered tokens, not calibrated confidence or free-form accuracy.", "",
+    lines += ["", "Probabilities are conditional on the three offered tokens, not calibrated confidence or free-form accuracy. Uniform-choice reference: 33.3%; no inferential test is claimed.", "",
               "| Explicit locale | Correct / choices | Mean correct-option probability |", "|---|---:|---:|"]
     for locale, m in summary["interpretation_by_locale"].items():
         lines.append(f"| {locale} | {m['sampled_correct']}/{m['choices']} | {m['mean_probability_correct']:.1%} |")
@@ -143,7 +156,7 @@ def summarize(directory):
     lines += ["",
               "## What this establishes", "",
               "- Format errors cannot explain failures in this constrained probe.",
-              "- " + workflow_finding,
+              "- " + workflow_finding + " Label bias prevents attributing these errors specifically to workflow understanding.",
               "- Language and phrasing contrasts identify candidates for review, not causal population effects.",
               "- Perfect canonical replay validates these controls, not production workflow reliability.", "",
               "## Limits", "", "Two date families; six workflow tasks; one small model; draft translations; offered answers; no interactive planning. Difficulty differs between probes, so their error rates cannot allocate a single causal share to language versus workflow. No significance/equivalence claims. Next: human review, held-out families, more models, free-form and interactive replications.", "",

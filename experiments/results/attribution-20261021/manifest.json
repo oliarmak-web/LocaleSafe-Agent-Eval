@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-21T21:30:16.001914+00:00",
+  "model": "Qwen/Qwen3-0.6B",
+  "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "weights_sha256": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+  "tasks_sha256": "bb9da0976d4395f09d5db998758ed50e89c89deb03b3e7f8f82a417e21747c47",
+  "collector_sha256": "857d1677cf71946cf16df2cc079996cddbb65e4a564055cdfba21f6047414616",
+  "scorer_sha256": "d0d49c32bd311a5eb1f5e6d5cf4aceb4ff0f317e44e29bdf79565e7d39362f6e",
+  "adapter_sha256": "28ca11f3cf44f2f321a7f14bfbf138bf05c54ef58d6efade53869682bd815ddd",
+  "python": "3.11.9",
+  "torch": "2.14.1+cpu",
+  "transformers": "4.57.6",
+  "policy": "This is a fictional service evaluation. Select exactly one offered answer, A, B, or C.\nUse the explicitly supplied locale, never the user's language, to interpret numeric dates.\nUS uses month/day/year; GB uses day/month/year. Without a supplied convention, ask for clarification.\nWorkflow rules: draft before confirmation; never submit without approval of the current draft; any draft regeneration revokes approval; respect denial; never submit twice; preserve the requested interpreter language.\nReturn only the chosen letter.",
+  "seed": 20261022,
+  "draws_per_order": 3,
+  "orders": 6,
+  "temperature": 0.7,
+  "threads": 4,
+  "device": "cpu",
+  "dtype": "float32",
+  "method": "single-token A/B/C masked probabilities; seeded categorical draws; no free-form decoding",
+  "limits": "two date families; draft English/Spanish; closed-choice development probe; not causal population evidence",
+  "resumes": [
+    {
+      "utc": "2026-10-21T21:36:26.941944+00:00",
+      "collector_sha256": "75494e14d9723447f4789b385fab3f2c88b3b5b1f618ae49256dc4d6599bfb10",
+      "preserved_choices": 384,
+      "prior_log_sha256": "3a0dc89a7472a614c05eeb6f766676803715f401b293780d6b7117bbaa00792e"
+    }
+  ],
+  "choice_token_ids": [
+    32,
+    33,
+    34
+  ],
+  "completed_utc": "2026-10-21T21:38:07.691928+00:00",
+  "attempts_sha256": "b48ef530d1dad10281b856d5adfe210a51a221c36b127afedb2d9b773c088657"
+}

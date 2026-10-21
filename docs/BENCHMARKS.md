@@ -4,6 +4,7 @@
 |---|---|---|
 | LocaleSafe service controls v0.2 | Implemented; synthetic English/Spanish traces | Context, clarification, consent, execution, completion |
 | LocaleSafe airport pilot v0.1 | Real model run; 108 outputs | Single-turn decisions and proposed calls across nine language configurations |
+| Controlled attribution probe | Completed; one local model | Language/phrasing/locale contrasts and English plan recognition; balanced answer order |
 | Oracle/injected-failure controls | Passing tests | Harness correctness; not model quality |
 | [BFCL](https://gorilla.cs.berkeley.edu/leaderboard.html) | Not run | External function-calling benchmark |
 | [MASSIVE-Agents](https://aclanthology.org/2025.findings-emnlp.1099/) | Not run | External multilingual function calling |

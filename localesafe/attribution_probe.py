@@ -61,6 +61,30 @@ def validate_tasks(tasks):
                 raise ValueError("workflow task requires exactly one valid plan")
 
 
+def completed_jobs(rows, tasks, draws, base_seed):
+    indexed = {t["case"]["id"]: t for t in tasks}
+    groups = {}
+    for row in rows:
+        task = indexed[row["id"]]
+        order = tuple(row["order"])
+        if sorted(order) != [0, 1, 2] or row["draw"] not in range(draws):
+            raise ValueError("invalid saved order/draw")
+        seed = paired_seed(task, order, row["draw"], base_seed)
+        label = random.Random(seed).choices(range(3), weights=row["probabilities_ABC"], k=1)[0]
+        if (row["seed"] != seed or row["chosen_label"] != "ABC"[label]
+                or row["selected_option"] != order[label]
+                or row["messages"] != prompt_for(task, order)
+                or row["score"] != assess(task, order[label])):
+            raise ValueError("saved attempt failed validation")
+        group = groups.setdefault((row["id"], order), set())
+        if row["draw"] in group:
+            raise ValueError("duplicate saved draw")
+        group.add(row["draw"])
+    if any(group != set(range(draws)) for group in groups.values()):
+        raise ValueError("partial forward group; inspect log before resuming")
+    return set(groups)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tasks", required=True)
@@ -68,14 +92,16 @@ def main():
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--draws", type=int, default=3)
     parser.add_argument("--seed", type=int, default=20261022)
+    parser.add_argument("--resume", action="store_true")
     args = parser.parse_args()
     if args.draws < 1:
         parser.error("draws must be positive")
     tasks = read_jsonl(args.tasks)
     validate_tasks(tasks)
     output = Path(args.output_dir)
-    output.mkdir(parents=True, exist_ok=False)
-    (output / "tasks.jsonl").write_bytes(Path(args.tasks).read_bytes())
+    if not args.resume:
+        output.mkdir(parents=True, exist_ok=False)
+        (output / "tasks.jsonl").write_bytes(Path(args.tasks).read_bytes())
     import torch
     import transformers
     from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -96,6 +122,26 @@ def main():
     if manifest["weights_sha256"] != expected_hash:
         raise ValueError("wrong model weights")
     path = output / "manifest.json"
+    completed = set()
+    if args.resume:
+        previous = json.loads(path.read_text(encoding="utf-8"))
+        if previous["status"] != "started":
+            raise ValueError("only interrupted runs can resume")
+        for key in ("weights_sha256", "tasks_sha256", "scorer_sha256", "adapter_sha256", "policy", "seed",
+                    "draws_per_order", "temperature", "torch", "transformers", "python", "threads", "dtype"):
+            if previous[key] != manifest[key]:
+                raise ValueError(f"resume configuration changed: {key}")
+        if sha256(output / "tasks.jsonl") != previous["tasks_sha256"]:
+            raise ValueError("saved task hash mismatch")
+        log_path = output / "attempts.jsonl"
+        rows = read_jsonl(log_path) if log_path.exists() and log_path.stat().st_size else []
+        completed = completed_jobs(rows, tasks, args.draws, args.seed)
+        previous.setdefault("resumes", []).append({"utc": datetime.now(timezone.utc).isoformat(),
+                                                   "collector_sha256": sha256(__file__),
+                                                   "preserved_choices": len(rows),
+                                                   "prior_log_sha256": sha256(log_path) if rows else None})
+        manifest = previous
+        print(f"Resuming: preserving {len(completed)} completed forwards", flush=True)
     path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     tokenizer = AutoTokenizer.from_pretrained(args.model_dir, trust_remote_code=False, local_files_only=True)
     model = AutoModelForCausalLM.from_pretrained(args.model_dir, trust_remote_code=False, use_safetensors=True,
@@ -107,8 +153,10 @@ def main():
     manifest["choice_token_ids"] = [x[0] for x in ids]
     jobs = [(task, p) for task in tasks for p in itertools.permutations(range(3))]
     random.Random(args.seed).shuffle(jobs)
-    with (output / "attempts.jsonl").open("x", encoding="utf-8") as log:
+    with (output / "attempts.jsonl").open("a" if args.resume else "x", encoding="utf-8") as log:
         for number, (task, permutation) in enumerate(jobs, 1):
+            if (task["case"]["id"], permutation) in completed:
+                continue
             messages = prompt_for(task, permutation)
             rendered = tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True, enable_thinking=False)
             inputs = tokenizer(rendered, return_tensors="pt")
