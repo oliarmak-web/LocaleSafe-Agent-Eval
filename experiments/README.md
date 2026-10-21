@@ -2,6 +2,8 @@
 
 This pilot compares two prompts on one real, small, open-weight model. No paid inference, provider API keys, or public UI is involved. Local hardware, electricity, storage, and model/runtime downloads are still required. Dependency downloads and the first model download require internet; inference occurs on the local CPU. No user scenarios are sent to a hosted model API.
 
+The October 21, 2026 run completed all 108 generations. Read [results](results/qwen3-06b-20261021/RESULTS.md), [stage/paired diagnostics](results/qwen3-06b-20261021/LANGUAGE_DIAGNOSTICS.md), and the [benchmark registry](../docs/BENCHMARKS.md). No established external benchmark was run.
+
 ## Scope
 
 54 draft cases = six scenario families × nine language configurations: English, Spanish, Simplified Chinese text, Vietnamese, Tagalog, Arabic, Korean, Ukrainian, Haitian Creole. These are deliberately a mixture of U.S. service-relevance and author/project relevance, not a ranking of languages or a representative sample of U.S. residents. Written Chinese does not represent all Chinese language varieties; standard written Arabic does not evaluate spoken dialects. Text does not measure accents, speech, ASR, or accessibility generally.
@@ -42,3 +44,11 @@ For the fixed Qwen3-0.6B pilot, `python experiments/download_pilot_model.py` pro
 ## Next steps
 
 Broaden scenario families and add challenge cases (negation, indirect distress, code-switching, distractors, incorrect tool locations), independent review, more capable comparison models, repeated generations, uncertainty analysis, and native tool-calling/multiturn controlled tool simulators. A v2 claim requires new frozen evaluation cases, not optimizing and re-testing these pilot cases.
+
+## Regenerate descriptive analysis
+
+```sh
+python -m experiments.summarize_pilot experiments/results/qwen3-06b-20261021
+```
+
+This verifies case/attempt hashes, recomputes primary scores from raw attempts, and writes results plus strict and post-hoc language/workflow diagnostics. Raw archived bytes are preserved by `.gitattributes` so hashes remain valid across operating systems. Analysis is not preregistered; the fence-only diagnostic and language-attribution tables were added after initial output inspection. The first normal-loader download stalled before inference; its incomplete local directory was excluded from completed artifacts. The successful run used the checksum-verified direct download. No predictions were retried or removed from that successful run.

@@ -2,7 +2,7 @@
 
 **A research scaffold for evaluating multilingual agent escalation, clarification, and tool-call behavior.**
 
-Originated in Olivia Iarmak's December 2025 hackathon simulation. This October 2026 implementation evolves that concept into a deterministic offline evaluator. It is an early research tool, not a validated safety benchmark. No real-model experiment has been conducted in this release.
+Originated in Olivia Iarmak's December 2025 hackathon simulation. This October 2026 implementation evolves that concept into a deterministic offline evaluator. It is an early research tool, not a validated safety benchmark. A genuine local-model pilot has now been completed: 108 generations from Qwen3-0.6B across two prompts and nine language configurations. See the [results](experiments/results/qwen3-06b-20261021/RESULTS.md) and [language-versus-workflow diagnostics](experiments/results/qwen3-06b-20261021/LANGUAGE_DIAGNOSTICS.md).
 
 ## Run locally
 
@@ -38,12 +38,16 @@ Keep cases fixed, run your agent separately, and save one response for every cas
 
 ## Scope and limits
 
-This version scores **recorded, single-turn text behavior**, not audio, reasoning quality, hallucination, or clinical correctness. The mock assistance tool is only a label in JSON; it cannot dispatch anything. Scenario expectations are illustrative research policies, not operational emergency guidance. Current public test cases are examples, not a contamination-resistant held-out benchmark. No confidence intervals or significance claims are supported by the tiny fixtures.
+This version collects and scores **single-turn text decisions from a real local model**, or scores your recorded responses. It does not evaluate audio, reasoning quality, hallucination, or clinical correctness. The proposed assistance tool is only a label in JSON; it cannot dispatch anything. Scenario expectations are illustrative research policies, not operational emergency guidance. Current public test cases are examples, not a contamination-resistant held-out benchmark. The pilot is descriptive and does not support statistical significance or causal language-effect claims.
 
 See [history](docs/HISTORY.md), [research protocol and v2](docs/RESEARCH_PROTOCOL.md), [dataset notes](examples/README.md), [security](SECURITY.md), and [contributing](CONTRIBUTING.md).
+
+**What benchmarks do we run?** Currently, our own draft scenario suite and engineering controls. BFCL, MASSIVE-Agents, and Ticket-Bench are references/candidates, **not completed benchmark runs**. The [benchmark registry and attribution design](docs/BENCHMARKS.md) distinguishes datasets, metrics, formatting failures, and language-associated disagreements.
 
 ## Local model experiments
 
 An optional [local collector and exploratory pilot protocol](experiments/README.md) extends the offline scorer to genuine model-generated decisions. The draft pilot includes 54 cases in nine language configurations. Inference runs on your CPU, with no paid model API or key; installing the separate PyTorch/Transformers runtime and downloading model weights requires internet and disk space. Nothing is hosted publicly. The dependency-free scoring commands above still work without that runtime.
 
 The collector pins a model revision, excludes gold labels from prompts, records exact prompts and raw outputs, interleaves conditions, and keeps malformed outputs in the primary pass-rate denominator. This is JSON decision generation, not native tool execution or a validated emergency service. See the pilot documentation for reproduction and limitations.
+
+**First finding:** 92/108 outputs violated strict JSON formatting because they were wrapped in Markdown fences. Strict task passes were 8/54 for baseline and 1/54 for the check prompt. A separately labeled post-hoc fence-only parser yields 34/54 and 31/54. English and most languages passed 4/6 baseline cases after fence removal; Haitian Creole and Tagalog passed 3/6. This small draft pilot identifies integration weaknesses and candidate disagreements; it does not establish general language bias. The extra-check prompt did not improve this run.

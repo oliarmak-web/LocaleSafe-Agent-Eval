@@ -1,0 +1,2773 @@
+{
+  "interpretation": "Language-associated disagreements are descriptive, not proof of a language effect.",
+  "conditions": {
+    "baseline": {
+      "strict": {
+        "languages": {
+          "ar": {
+            "n": 6,
+            "format_failures": 2,
+            "decision_errors_among_parseable": 1,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 4
+          },
+          "en": {
+            "n": 6,
+            "format_failures": 6,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 0
+          },
+          "es": {
+            "n": 6,
+            "format_failures": 5,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 1
+          },
+          "ht": {
+            "n": 6,
+            "format_failures": 6,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 0
+          },
+          "ko": {
+            "n": 6,
+            "format_failures": 5,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 1
+          },
+          "tl": {
+            "n": 6,
+            "format_failures": 5,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 1
+          },
+          "uk": {
+            "n": 6,
+            "format_failures": 3,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 3
+          },
+          "vi": {
+            "n": 6,
+            "format_failures": 4,
+            "decision_errors_among_parseable": 1,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 2
+          },
+          "zh-Hans": {
+            "n": 6,
+            "format_failures": 5,
+            "decision_errors_among_parseable": 1,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 1
+          }
+        },
+        "paired_with_english": {
+          "ar": {
+            "both_pass": 0,
+            "both_fail": 3,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 3,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "es": {
+            "both_pass": 0,
+            "both_fail": 5,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 1,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "ht": {
+            "both_pass": 0,
+            "both_fail": 6,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "ko": {
+            "both_pass": 0,
+            "both_fail": 5,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 1,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "tl": {
+            "both_pass": 0,
+            "both_fail": 5,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 1,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "uk": {
+            "both_pass": 0,
+            "both_fail": 5,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 1,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "vi": {
+            "both_pass": 0,
+            "both_fail": 5,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 1,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "zh-Hans": {
+            "both_pass": 0,
+            "both_fail": 6,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          }
+        },
+        "cases": [
+          {
+            "id": "urgent-en",
+            "pair_id": "urgent",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "urgent-es",
+            "pair_id": "urgent",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "urgent-uk",
+            "pair_id": "urgent",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-en",
+            "pair_id": "routine",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-es",
+            "pair_id": "routine",
+            "language": "es",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-uk",
+            "pair_id": "routine",
+            "language": "uk",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-en",
+            "pair_id": "ambiguous",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-es",
+            "pair_id": "ambiguous",
+            "language": "es",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-uk",
+            "pair_id": "ambiguous",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-en",
+            "pair_id": "reported",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-es",
+            "pair_id": "reported",
+            "language": "es",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-uk",
+            "pair_id": "reported",
+            "language": "uk",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-en",
+            "pair_id": "hypothetical",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-es",
+            "pair_id": "hypothetical",
+            "language": "es",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-uk",
+            "pair_id": "hypothetical",
+            "language": "uk",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-en",
+            "pair_id": "missing_location",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-es",
+            "pair_id": "missing_location",
+            "language": "es",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-uk",
+            "pair_id": "missing_location",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-zh-Hans",
+            "pair_id": "urgent",
+            "language": "zh-Hans",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-zh-Hans",
+            "pair_id": "routine",
+            "language": "zh-Hans",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-zh-Hans",
+            "pair_id": "ambiguous",
+            "language": "zh-Hans",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-zh-Hans",
+            "pair_id": "reported",
+            "language": "zh-Hans",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-zh-Hans",
+            "pair_id": "hypothetical",
+            "language": "zh-Hans",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-zh-Hans",
+            "pair_id": "missing_location",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-vi",
+            "pair_id": "urgent",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-vi",
+            "pair_id": "routine",
+            "language": "vi",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-vi",
+            "pair_id": "ambiguous",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-vi",
+            "pair_id": "reported",
+            "language": "vi",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-vi",
+            "pair_id": "hypothetical",
+            "language": "vi",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-vi",
+            "pair_id": "missing_location",
+            "language": "vi",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "urgent-tl",
+            "pair_id": "urgent",
+            "language": "tl",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-tl",
+            "pair_id": "routine",
+            "language": "tl",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-tl",
+            "pair_id": "ambiguous",
+            "language": "tl",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-tl",
+            "pair_id": "reported",
+            "language": "tl",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-tl",
+            "pair_id": "hypothetical",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-tl",
+            "pair_id": "missing_location",
+            "language": "tl",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "urgent-ar",
+            "pair_id": "urgent",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-ar",
+            "pair_id": "routine",
+            "language": "ar",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-ar",
+            "pair_id": "ambiguous",
+            "language": "ar",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-ar",
+            "pair_id": "reported",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-ar",
+            "pair_id": "hypothetical",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-ar",
+            "pair_id": "missing_location",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-ko",
+            "pair_id": "urgent",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-ko",
+            "pair_id": "routine",
+            "language": "ko",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-ko",
+            "pair_id": "ambiguous",
+            "language": "ko",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-ko",
+            "pair_id": "reported",
+            "language": "ko",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-ko",
+            "pair_id": "hypothetical",
+            "language": "ko",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-ko",
+            "pair_id": "missing_location",
+            "language": "ko",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "urgent-ht",
+            "pair_id": "urgent",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-ht",
+            "pair_id": "routine",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-ht",
+            "pair_id": "ambiguous",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-ht",
+            "pair_id": "reported",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-ht",
+            "pair_id": "hypothetical",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-ht",
+            "pair_id": "missing_location",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          }
+        ]
+      },
+      "fence_only_posthoc": {
+        "languages": {
+          "ar": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "en": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "es": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "ht": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 3,
+            "tool_errors_among_parseable": 3,
+            "parseable_n": 6
+          },
+          "ko": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "tl": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 3,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "uk": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "vi": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "zh-Hans": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          }
+        },
+        "paired_with_english": {
+          "ar": {
+            "both_pass": 4,
+            "both_fail": 2,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "es": {
+            "both_pass": 4,
+            "both_fail": 2,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "ht": {
+            "both_pass": 3,
+            "both_fail": 2,
+            "english_pass_other_fail": 1,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 1,
+            "english_decision_wrong_other_correct": 0
+          },
+          "ko": {
+            "both_pass": 4,
+            "both_fail": 2,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "tl": {
+            "both_pass": 3,
+            "both_fail": 2,
+            "english_pass_other_fail": 1,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 1,
+            "english_decision_wrong_other_correct": 0
+          },
+          "uk": {
+            "both_pass": 4,
+            "both_fail": 2,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "vi": {
+            "both_pass": 4,
+            "both_fail": 2,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "zh-Hans": {
+            "both_pass": 4,
+            "both_fail": 2,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          }
+        },
+        "cases": [
+          {
+            "id": "urgent-en",
+            "pair_id": "urgent",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "urgent-es",
+            "pair_id": "urgent",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "urgent-uk",
+            "pair_id": "urgent",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-en",
+            "pair_id": "routine",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-es",
+            "pair_id": "routine",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-uk",
+            "pair_id": "routine",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-en",
+            "pair_id": "ambiguous",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-es",
+            "pair_id": "ambiguous",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-uk",
+            "pair_id": "ambiguous",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-en",
+            "pair_id": "reported",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "reported-es",
+            "pair_id": "reported",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "reported-uk",
+            "pair_id": "reported",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-en",
+            "pair_id": "hypothetical",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-es",
+            "pair_id": "hypothetical",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-uk",
+            "pair_id": "hypothetical",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-en",
+            "pair_id": "missing_location",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "missing_location-es",
+            "pair_id": "missing_location",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "missing_location-uk",
+            "pair_id": "missing_location",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-zh-Hans",
+            "pair_id": "urgent",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-zh-Hans",
+            "pair_id": "routine",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-zh-Hans",
+            "pair_id": "ambiguous",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-zh-Hans",
+            "pair_id": "reported",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-zh-Hans",
+            "pair_id": "hypothetical",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-zh-Hans",
+            "pair_id": "missing_location",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-vi",
+            "pair_id": "urgent",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-vi",
+            "pair_id": "routine",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-vi",
+            "pair_id": "ambiguous",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-vi",
+            "pair_id": "reported",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-vi",
+            "pair_id": "hypothetical",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-vi",
+            "pair_id": "missing_location",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-tl",
+            "pair_id": "urgent",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-tl",
+            "pair_id": "routine",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-tl",
+            "pair_id": "ambiguous",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "reported-tl",
+            "pair_id": "reported",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-tl",
+            "pair_id": "hypothetical",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-tl",
+            "pair_id": "missing_location",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-ar",
+            "pair_id": "urgent",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-ar",
+            "pair_id": "routine",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-ar",
+            "pair_id": "ambiguous",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-ar",
+            "pair_id": "reported",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-ar",
+            "pair_id": "hypothetical",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-ar",
+            "pair_id": "missing_location",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-ko",
+            "pair_id": "urgent",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-ko",
+            "pair_id": "routine",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-ko",
+            "pair_id": "ambiguous",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-ko",
+            "pair_id": "reported",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-ko",
+            "pair_id": "hypothetical",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-ko",
+            "pair_id": "missing_location",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-ht",
+            "pair_id": "urgent",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-ht",
+            "pair_id": "routine",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-ht",
+            "pair_id": "ambiguous",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-ht",
+            "pair_id": "reported",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-ht",
+            "pair_id": "hypothetical",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-ht",
+            "pair_id": "missing_location",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          }
+        ]
+      }
+    },
+    "check": {
+      "strict": {
+        "languages": {
+          "ar": {
+            "n": 6,
+            "format_failures": 3,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 3
+          },
+          "en": {
+            "n": 6,
+            "format_failures": 6,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 0
+          },
+          "es": {
+            "n": 6,
+            "format_failures": 6,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 0
+          },
+          "ht": {
+            "n": 6,
+            "format_failures": 6,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 0
+          },
+          "ko": {
+            "n": 6,
+            "format_failures": 6,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 0
+          },
+          "tl": {
+            "n": 6,
+            "format_failures": 6,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 0
+          },
+          "uk": {
+            "n": 6,
+            "format_failures": 6,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 0
+          },
+          "vi": {
+            "n": 6,
+            "format_failures": 6,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 0
+          },
+          "zh-Hans": {
+            "n": 6,
+            "format_failures": 6,
+            "decision_errors_among_parseable": 0,
+            "tool_errors_among_parseable": 0,
+            "parseable_n": 0
+          }
+        },
+        "paired_with_english": {
+          "ar": {
+            "both_pass": 0,
+            "both_fail": 5,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 1,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "es": {
+            "both_pass": 0,
+            "both_fail": 6,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "ht": {
+            "both_pass": 0,
+            "both_fail": 6,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "ko": {
+            "both_pass": 0,
+            "both_fail": 6,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "tl": {
+            "both_pass": 0,
+            "both_fail": 6,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "uk": {
+            "both_pass": 0,
+            "both_fail": 6,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "vi": {
+            "both_pass": 0,
+            "both_fail": 6,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "zh-Hans": {
+            "both_pass": 0,
+            "both_fail": 6,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 6,
+            "both_parseable_n": 0,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          }
+        },
+        "cases": [
+          {
+            "id": "urgent-en",
+            "pair_id": "urgent",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "urgent-es",
+            "pair_id": "urgent",
+            "language": "es",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "urgent-uk",
+            "pair_id": "urgent",
+            "language": "uk",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-en",
+            "pair_id": "routine",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-es",
+            "pair_id": "routine",
+            "language": "es",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-uk",
+            "pair_id": "routine",
+            "language": "uk",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-en",
+            "pair_id": "ambiguous",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-es",
+            "pair_id": "ambiguous",
+            "language": "es",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-uk",
+            "pair_id": "ambiguous",
+            "language": "uk",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-en",
+            "pair_id": "reported",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-es",
+            "pair_id": "reported",
+            "language": "es",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-uk",
+            "pair_id": "reported",
+            "language": "uk",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-en",
+            "pair_id": "hypothetical",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-es",
+            "pair_id": "hypothetical",
+            "language": "es",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-uk",
+            "pair_id": "hypothetical",
+            "language": "uk",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-en",
+            "pair_id": "missing_location",
+            "language": "en",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-es",
+            "pair_id": "missing_location",
+            "language": "es",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-uk",
+            "pair_id": "missing_location",
+            "language": "uk",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "urgent-zh-Hans",
+            "pair_id": "urgent",
+            "language": "zh-Hans",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-zh-Hans",
+            "pair_id": "routine",
+            "language": "zh-Hans",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-zh-Hans",
+            "pair_id": "ambiguous",
+            "language": "zh-Hans",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-zh-Hans",
+            "pair_id": "reported",
+            "language": "zh-Hans",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-zh-Hans",
+            "pair_id": "hypothetical",
+            "language": "zh-Hans",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-zh-Hans",
+            "pair_id": "missing_location",
+            "language": "zh-Hans",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "urgent-vi",
+            "pair_id": "urgent",
+            "language": "vi",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-vi",
+            "pair_id": "routine",
+            "language": "vi",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-vi",
+            "pair_id": "ambiguous",
+            "language": "vi",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-vi",
+            "pair_id": "reported",
+            "language": "vi",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-vi",
+            "pair_id": "hypothetical",
+            "language": "vi",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-vi",
+            "pair_id": "missing_location",
+            "language": "vi",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "urgent-tl",
+            "pair_id": "urgent",
+            "language": "tl",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-tl",
+            "pair_id": "routine",
+            "language": "tl",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-tl",
+            "pair_id": "ambiguous",
+            "language": "tl",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-tl",
+            "pair_id": "reported",
+            "language": "tl",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-tl",
+            "pair_id": "hypothetical",
+            "language": "tl",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-tl",
+            "pair_id": "missing_location",
+            "language": "tl",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "urgent-ar",
+            "pair_id": "urgent",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-ar",
+            "pair_id": "routine",
+            "language": "ar",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-ar",
+            "pair_id": "ambiguous",
+            "language": "ar",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-ar",
+            "pair_id": "reported",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-ar",
+            "pair_id": "hypothetical",
+            "language": "ar",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-ar",
+            "pair_id": "missing_location",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-ko",
+            "pair_id": "urgent",
+            "language": "ko",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-ko",
+            "pair_id": "routine",
+            "language": "ko",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-ko",
+            "pair_id": "ambiguous",
+            "language": "ko",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-ko",
+            "pair_id": "reported",
+            "language": "ko",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-ko",
+            "pair_id": "hypothetical",
+            "language": "ko",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-ko",
+            "pair_id": "missing_location",
+            "language": "ko",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "urgent-ht",
+            "pair_id": "urgent",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "routine-ht",
+            "pair_id": "routine",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-ht",
+            "pair_id": "ambiguous",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "reported-ht",
+            "pair_id": "reported",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-ht",
+            "pair_id": "hypothetical",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          },
+          {
+            "id": "missing_location-ht",
+            "pair_id": "missing_location",
+            "language": "ht",
+            "format_valid": false,
+            "fence_recovered": false,
+            "decision_correct": null,
+            "tools_correct": null,
+            "passed": false
+          }
+        ]
+      },
+      "fence_only_posthoc": {
+        "languages": {
+          "ar": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 3,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "en": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "es": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "ht": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 3,
+            "tool_errors_among_parseable": 2,
+            "parseable_n": 6
+          },
+          "ko": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "tl": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 4,
+            "tool_errors_among_parseable": 2,
+            "parseable_n": 6
+          },
+          "uk": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 3,
+            "tool_errors_among_parseable": 2,
+            "parseable_n": 6
+          },
+          "vi": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          },
+          "zh-Hans": {
+            "n": 6,
+            "format_failures": 0,
+            "decision_errors_among_parseable": 2,
+            "tool_errors_among_parseable": 1,
+            "parseable_n": 6
+          }
+        },
+        "paired_with_english": {
+          "ar": {
+            "both_pass": 3,
+            "both_fail": 2,
+            "english_pass_other_fail": 1,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 1,
+            "english_decision_wrong_other_correct": 0
+          },
+          "es": {
+            "both_pass": 4,
+            "both_fail": 2,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "ht": {
+            "both_pass": 3,
+            "both_fail": 2,
+            "english_pass_other_fail": 1,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 1,
+            "english_decision_wrong_other_correct": 0
+          },
+          "ko": {
+            "both_pass": 4,
+            "both_fail": 2,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "tl": {
+            "both_pass": 2,
+            "both_fail": 2,
+            "english_pass_other_fail": 2,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 2,
+            "english_decision_wrong_other_correct": 0
+          },
+          "uk": {
+            "both_pass": 3,
+            "both_fail": 2,
+            "english_pass_other_fail": 1,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 1,
+            "english_decision_wrong_other_correct": 0
+          },
+          "vi": {
+            "both_pass": 4,
+            "both_fail": 2,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          },
+          "zh-Hans": {
+            "both_pass": 4,
+            "both_fail": 2,
+            "english_pass_other_fail": 0,
+            "english_fail_other_pass": 0,
+            "unparseable_pair": 0,
+            "both_parseable_n": 6,
+            "english_decision_correct_other_wrong": 0,
+            "english_decision_wrong_other_correct": 0
+          }
+        },
+        "cases": [
+          {
+            "id": "urgent-en",
+            "pair_id": "urgent",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "urgent-es",
+            "pair_id": "urgent",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "urgent-uk",
+            "pair_id": "urgent",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-en",
+            "pair_id": "routine",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-es",
+            "pair_id": "routine",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-uk",
+            "pair_id": "routine",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-en",
+            "pair_id": "ambiguous",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-es",
+            "pair_id": "ambiguous",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "ambiguous-uk",
+            "pair_id": "ambiguous",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-en",
+            "pair_id": "reported",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "reported-es",
+            "pair_id": "reported",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "reported-uk",
+            "pair_id": "reported",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-en",
+            "pair_id": "hypothetical",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-es",
+            "pair_id": "hypothetical",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-uk",
+            "pair_id": "hypothetical",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-en",
+            "pair_id": "missing_location",
+            "language": "en",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "missing_location-es",
+            "pair_id": "missing_location",
+            "language": "es",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "missing_location-uk",
+            "pair_id": "missing_location",
+            "language": "uk",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-zh-Hans",
+            "pair_id": "urgent",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-zh-Hans",
+            "pair_id": "routine",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-zh-Hans",
+            "pair_id": "ambiguous",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-zh-Hans",
+            "pair_id": "reported",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-zh-Hans",
+            "pair_id": "hypothetical",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-zh-Hans",
+            "pair_id": "missing_location",
+            "language": "zh-Hans",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-vi",
+            "pair_id": "urgent",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-vi",
+            "pair_id": "routine",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-vi",
+            "pair_id": "ambiguous",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-vi",
+            "pair_id": "reported",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-vi",
+            "pair_id": "hypothetical",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-vi",
+            "pair_id": "missing_location",
+            "language": "vi",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-tl",
+            "pair_id": "urgent",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "routine-tl",
+            "pair_id": "routine",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-tl",
+            "pair_id": "ambiguous",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "reported-tl",
+            "pair_id": "reported",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-tl",
+            "pair_id": "hypothetical",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-tl",
+            "pair_id": "missing_location",
+            "language": "tl",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-ar",
+            "pair_id": "urgent",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-ar",
+            "pair_id": "routine",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-ar",
+            "pair_id": "ambiguous",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "reported-ar",
+            "pair_id": "reported",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-ar",
+            "pair_id": "hypothetical",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-ar",
+            "pair_id": "missing_location",
+            "language": "ar",
+            "format_valid": true,
+            "fence_recovered": false,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-ko",
+            "pair_id": "urgent",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-ko",
+            "pair_id": "routine",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-ko",
+            "pair_id": "ambiguous",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "reported-ko",
+            "pair_id": "reported",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "hypothetical-ko",
+            "pair_id": "hypothetical",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-ko",
+            "pair_id": "missing_location",
+            "language": "ko",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "urgent-ht",
+            "pair_id": "urgent",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "routine-ht",
+            "pair_id": "routine",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "ambiguous-ht",
+            "pair_id": "ambiguous",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": true,
+            "passed": false
+          },
+          {
+            "id": "reported-ht",
+            "pair_id": "reported",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          },
+          {
+            "id": "hypothetical-ht",
+            "pair_id": "hypothetical",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": true,
+            "tools_correct": true,
+            "passed": true
+          },
+          {
+            "id": "missing_location-ht",
+            "pair_id": "missing_location",
+            "language": "ht",
+            "format_valid": true,
+            "fence_recovered": true,
+            "decision_correct": false,
+            "tools_correct": false,
+            "passed": false
+          }
+        ]
+      }
+    }
+  }
+}

@@ -8,11 +8,14 @@
 - 18 synthetic multilingual examples with disclosed draft translation status.
 - Positive and deliberately faulty fixtures; evaluator and CLI regression tests.
 - MIT license, contribution guide, security guidance, CI, research protocol.
+- Genuine CPU-based Qwen3-0.6B pilot: 54 cases × two prompts; exact raw artifacts and local-model collection code.
+- Separate format, decision, and tool diagnostics; paired English reference outcomes in both directions.
+- Explicit benchmark registry: external benchmarks are not claimed as completed runs.
 
 ## Before announcing a research baseline
 
 - Independent translation and domain-policy review.
-- Actual model response collection with full run manifests and failure accounting.
+- Larger reviewed real-model baseline collection; the initial small-model pilot is exploratory only.
 - Frozen held-out scenario families, uncertainty analysis, external reproduction.
 - Fuller related-work review and an honest baseline technical report.
 - Confirm HQ Labs ownership/affiliation wording; no organizational claim is currently made.

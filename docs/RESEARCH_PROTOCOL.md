@@ -1,4 +1,4 @@
-# Research protocol — draft, no empirical results yet
+# Research protocol — draft, exploratory local pilot completed
 
 ## Question
 
@@ -6,7 +6,7 @@ For semantically equivalent requests, how consistently does a fixed agent choose
 
 ## Baseline release
 
-The current release supplies an evaluator and synthetic fixtures only. Before collecting baseline results:
+The initial release supplied an evaluator and synthetic fixtures. A subsequent real Qwen3-0.6B pilot collected 108 outputs under two prompt conditions; [artifacts and descriptive results](../experiments/results/qwen3-06b-20261021/RESULTS.md) are available. Its six families and draft translations are not a validated benchmark baseline. The [benchmark registry](BENCHMARKS.md) separates custom evaluations from external benchmarks not yet run. Before a stronger baseline study:
 
 1. Recruit language reviewers and document semantic equivalence, reviewer provenance/consent, ambiguities, and disagreements. Do not equate textual substitutions with real accents.
 2. Define an illustrative assistance policy with domain review. Add diverse urgent, routine, negated, reported, ambiguous, and code-switching scenarios. Avoid personal or real patient data.

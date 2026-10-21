@@ -1,0 +1,13 @@
+{"id": "hypothetical-tl", "decision": "respond", "tool_calls": []}
+{"id": "missing_location-zh-Hans", "decision": "respond", "tool_calls": []}
+{"id": "ambiguous-vi", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "B14", "priority": "urgent"}}]}
+{"id": "ambiguous-uk", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "B14", "priority": "urgent"}}]}
+{"id": "missing_location-uk", "decision": "respond", "tool_calls": []}
+{"id": "urgent-ko", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "B14", "priority": "urgent"}}]}
+{"id": "urgent-vi", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "B14", "priority": "urgent"}}]}
+{"id": "missing_location-ar", "decision": "respond", "tool_calls": []}
+{"id": "urgent-ar", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "B14", "priority": "urgent"}}]}
+{"id": "reported-ar", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "C2", "priority": "urgent"}}]}
+{"id": "urgent-uk", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "B14", "priority": "urgent"}}]}
+{"id": "hypothetical-ar", "decision": "respond", "tool_calls": []}
+{"id": "urgent-es", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "B14", "priority": "urgent"}}]}

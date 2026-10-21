@@ -7,6 +7,7 @@ from pathlib import Path
 
 from localesafe.evaluate import read_jsonl, sha256
 from localesafe.collect_local import parse_prediction, summarize_attempts
+from localesafe.diagnose import write_diagnosis
 
 
 def summarize(directory):
@@ -31,6 +32,7 @@ def summarize(directory):
              f"Model: `{manifest['model']}`; revision `{manifest['revision']}`.", "",
              f"Completed: {manifest['completed_utc']}. CPU float32; one sampled generation per case/condition.", "",
              "These are genuine local model outputs on public draft scenarios. This is an exploratory comparison of two prompts on one model, not two independent studies. No API inference fee was incurred. No tools were executed.", "",
+             "Read the [language-versus-workflow diagnostics](LANGUAGE_DIAGNOSTICS.md) before interpreting language scores: strict formatting failures are confounded with end-to-end task failures. This pilot cannot establish a causal language problem. Only the custom LocaleSafe suite was run; no external benchmark score is claimed.", "",
              "## Results", "", "| Language | Cases per condition | Baseline pass | Check pass |",
              "|---|---:|---:|---:|"]
     for language in reports["baseline"]["languages"]:
@@ -94,6 +96,7 @@ def summarize(directory):
               "- `baseline-report.json` / `check-report.json`: per-case scoring including invalid attempts.", "",
               f"Attempt log SHA-256: `{manifest['attempts_sha256']}`.", ""]
     (directory / "RESULTS.md").write_text("\n".join(lines), encoding="utf-8")
+    write_diagnosis(cases, attempts, directory)
 
 
 if __name__ == "__main__":

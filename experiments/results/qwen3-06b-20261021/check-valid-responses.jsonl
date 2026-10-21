@@ -1,0 +1,3 @@
+{"id": "reported-ar", "decision": "respond", "tool_calls": []}
+{"id": "urgent-ar", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "B14", "priority": "urgent"}}]}
+{"id": "missing_location-ar", "decision": "respond", "tool_calls": []}
