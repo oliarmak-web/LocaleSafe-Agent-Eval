@@ -4,7 +4,7 @@
 
 LocaleSafe pairs equivalent requests, varies locale explicitly, and replays actions in a consent-aware sandbox. Its contribution is a runnable diagnostic harness for service workflows—not a claim to be the first multilingual benchmark.
 
-**Latest finding:** the controlled English/Spanish probe exposed strong answer-position bias, not a clear language disadvantage. [Research insights](docs/FINDINGS.md).
+**Latest finding:** 80 new outputs across five languages expose excessive clarification and a sandbox-script defect. Correcting the script reduces wrong sandbox commits from 13 to 1 without changing model answers. Language bias remains unproven. [Research insights](docs/FINDINGS.md).
 
 ## What works
 
@@ -16,6 +16,7 @@ LocaleSafe pairs equivalent requests, varies locale explicitly, and replays acti
 | Sandbox controls | 11 draft English/Spanish episodes; synthetic traces |
 | Real-model pilot | 108 Qwen3-0.6B outputs; nine language configurations; single-turn |
 | Controlled attribution probe | 30 tasks; 180 model forwards; 540 sampled choices; closed-choice |
+| Direct-answer cross-check | 80 generations; English, Spanish, Chinese, Ukrainian, Haitian Creole; numeric and explicit dates |
 | Reviewed cultural-context benchmark | Not yet validated |
 
 ## Run

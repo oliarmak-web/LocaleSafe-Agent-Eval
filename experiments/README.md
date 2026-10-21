@@ -1,5 +1,20 @@
 # Real-model pilot
 
+## Latest: direct answers in five languages
+
+[Results](results/direct-five-language-20261021/INSIGHTS.md) · [Protocol](direct/PROTOCOL.md)
+
+80 local generations across English, Spanish, Simplified Chinese, Ukrainian, and Haitian Creole. No answer options. Numeric dates vary explicit locale; ISO and localized dates are controls.
+
+24/80 interpretations were correct. There were 36 unnecessary clarification requests and 19 invalid scalar outputs. A scripted-reply defect caused 12 of 13 original wrong sandbox commits. Post-hoc replay with corrected replies yields 1 wrong commit and 60/80 completions; model answers remain unchanged. This is a workflow-fixture repair, not improved model understanding.
+
+```sh
+python -m experiments.summarize_direct experiments/results/direct-five-language-20261021
+python -m localesafe.direct_probe --cases experiments/direct/cases.jsonl --model-dir private/qwen3-06b --output-dir reports/direct-new
+```
+
+Current development fixtures correct the scripted reply. Archived fixtures preserve the original defect; use archived cases and source snapshots to reproduce the original run. The repair analysis was added after collection. All translations remain draft; one small model cannot establish a language effect.
+
 **Completed:** Qwen3-0.6B, 108 local CPU generations, two prompts, nine language configurations. No paid inference or tool execution.
 
 [Results](results/qwen3-06b-20261021/RESULTS.md) · [Diagnostics](results/qwen3-06b-20261021/LANGUAGE_DIAGNOSTICS.md) · [Benchmark registry](../docs/BENCHMARKS.md)

@@ -1,0 +1,692 @@
+{
+  "strict": {
+    "overall": {
+      "attempts": 80,
+      "parsed": 61,
+      "correct": 24,
+      "completed": 48,
+      "wrong_commit": 13,
+      "unnecessary_clarification": 36,
+      "missed_clarification": 0
+    },
+    "language": {
+      "en": {
+        "attempts": 16,
+        "parsed": 13,
+        "correct": 6,
+        "completed": 10,
+        "wrong_commit": 3,
+        "unnecessary_clarification": 6,
+        "missed_clarification": 0
+      },
+      "es": {
+        "attempts": 16,
+        "parsed": 14,
+        "correct": 4,
+        "completed": 11,
+        "wrong_commit": 3,
+        "unnecessary_clarification": 10,
+        "missed_clarification": 0
+      },
+      "ht": {
+        "attempts": 16,
+        "parsed": 13,
+        "correct": 4,
+        "completed": 9,
+        "wrong_commit": 4,
+        "unnecessary_clarification": 9,
+        "missed_clarification": 0
+      },
+      "uk": {
+        "attempts": 16,
+        "parsed": 7,
+        "correct": 5,
+        "completed": 7,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 2,
+        "missed_clarification": 0
+      },
+      "zh-Hans": {
+        "attempts": 16,
+        "parsed": 14,
+        "correct": 5,
+        "completed": 11,
+        "wrong_commit": 3,
+        "unnecessary_clarification": 9,
+        "missed_clarification": 0
+      }
+    },
+    "date_kind": {
+      "iso": {
+        "attempts": 10,
+        "parsed": 10,
+        "correct": 2,
+        "completed": 10,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 8,
+        "missed_clarification": 0
+      },
+      "month_name": {
+        "attempts": 10,
+        "parsed": 10,
+        "correct": 0,
+        "completed": 10,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 10,
+        "missed_clarification": 0
+      },
+      "numeric": {
+        "attempts": 60,
+        "parsed": 41,
+        "correct": 22,
+        "completed": 28,
+        "wrong_commit": 13,
+        "unnecessary_clarification": 18,
+        "missed_clarification": 0
+      }
+    },
+    "numeric_locale": {
+      "US": {
+        "attempts": 20,
+        "parsed": 10,
+        "correct": 3,
+        "completed": 9,
+        "wrong_commit": 1,
+        "unnecessary_clarification": 6,
+        "missed_clarification": 0
+      },
+      "GB": {
+        "attempts": 20,
+        "parsed": 12,
+        "correct": 0,
+        "completed": 0,
+        "wrong_commit": 12,
+        "unnecessary_clarification": 12,
+        "missed_clarification": 0
+      },
+      "None": {
+        "attempts": 20,
+        "parsed": 19,
+        "correct": 19,
+        "completed": 19,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 0,
+        "missed_clarification": 0
+      }
+    },
+    "language_date_kind": {
+      "en": {
+        "numeric": {
+          "attempts": 12,
+          "parsed": 9,
+          "correct": 6,
+          "completed": 6,
+          "wrong_commit": 3,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        },
+        "iso": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        },
+        "month_name": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        }
+      },
+      "es": {
+        "numeric": {
+          "attempts": 12,
+          "parsed": 10,
+          "correct": 4,
+          "completed": 7,
+          "wrong_commit": 3,
+          "unnecessary_clarification": 6,
+          "missed_clarification": 0
+        },
+        "iso": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        },
+        "month_name": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        }
+      },
+      "ht": {
+        "numeric": {
+          "attempts": 12,
+          "parsed": 9,
+          "correct": 4,
+          "completed": 5,
+          "wrong_commit": 4,
+          "unnecessary_clarification": 5,
+          "missed_clarification": 0
+        },
+        "iso": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        },
+        "month_name": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        }
+      },
+      "uk": {
+        "numeric": {
+          "attempts": 12,
+          "parsed": 3,
+          "correct": 3,
+          "completed": 3,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 0,
+          "missed_clarification": 0
+        },
+        "iso": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 2,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 0,
+          "missed_clarification": 0
+        },
+        "month_name": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        }
+      },
+      "zh-Hans": {
+        "numeric": {
+          "attempts": 12,
+          "parsed": 10,
+          "correct": 5,
+          "completed": 7,
+          "wrong_commit": 3,
+          "unnecessary_clarification": 5,
+          "missed_clarification": 0
+        },
+        "iso": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        },
+        "month_name": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        }
+      }
+    },
+    "paired_with_english": {
+      "es": {
+        "both_correct": 4,
+        "both_wrong": 10,
+        "english_only": 2,
+        "other_only": 0
+      },
+      "ht": {
+        "both_correct": 4,
+        "both_wrong": 10,
+        "english_only": 2,
+        "other_only": 0
+      },
+      "uk": {
+        "both_correct": 3,
+        "both_wrong": 8,
+        "english_only": 3,
+        "other_only": 2
+      },
+      "zh-Hans": {
+        "both_correct": 5,
+        "both_wrong": 10,
+        "english_only": 1,
+        "other_only": 0
+      }
+    },
+    "posthoc_corrected_script": {
+      "attempts": 80,
+      "parsed": 61,
+      "correct": 24,
+      "completed": 60,
+      "wrong_commit": 1,
+      "unnecessary_clarification": 36,
+      "missed_clarification": 0
+    },
+    "posthoc_corrected_script_language": {
+      "en": {
+        "attempts": 16,
+        "parsed": 13,
+        "correct": 6,
+        "completed": 12,
+        "wrong_commit": 1,
+        "unnecessary_clarification": 6,
+        "missed_clarification": 0
+      },
+      "es": {
+        "attempts": 16,
+        "parsed": 14,
+        "correct": 4,
+        "completed": 14,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 10,
+        "missed_clarification": 0
+      },
+      "ht": {
+        "attempts": 16,
+        "parsed": 13,
+        "correct": 4,
+        "completed": 13,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 9,
+        "missed_clarification": 0
+      },
+      "uk": {
+        "attempts": 16,
+        "parsed": 7,
+        "correct": 5,
+        "completed": 7,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 2,
+        "missed_clarification": 0
+      },
+      "zh-Hans": {
+        "attempts": 16,
+        "parsed": 14,
+        "correct": 5,
+        "completed": 14,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 9,
+        "missed_clarification": 0
+      }
+    }
+  },
+  "fence_only": {
+    "overall": {
+      "attempts": 80,
+      "parsed": 61,
+      "correct": 24,
+      "completed": 48,
+      "wrong_commit": 13,
+      "unnecessary_clarification": 36,
+      "missed_clarification": 0
+    },
+    "language": {
+      "en": {
+        "attempts": 16,
+        "parsed": 13,
+        "correct": 6,
+        "completed": 10,
+        "wrong_commit": 3,
+        "unnecessary_clarification": 6,
+        "missed_clarification": 0
+      },
+      "es": {
+        "attempts": 16,
+        "parsed": 14,
+        "correct": 4,
+        "completed": 11,
+        "wrong_commit": 3,
+        "unnecessary_clarification": 10,
+        "missed_clarification": 0
+      },
+      "ht": {
+        "attempts": 16,
+        "parsed": 13,
+        "correct": 4,
+        "completed": 9,
+        "wrong_commit": 4,
+        "unnecessary_clarification": 9,
+        "missed_clarification": 0
+      },
+      "uk": {
+        "attempts": 16,
+        "parsed": 7,
+        "correct": 5,
+        "completed": 7,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 2,
+        "missed_clarification": 0
+      },
+      "zh-Hans": {
+        "attempts": 16,
+        "parsed": 14,
+        "correct": 5,
+        "completed": 11,
+        "wrong_commit": 3,
+        "unnecessary_clarification": 9,
+        "missed_clarification": 0
+      }
+    },
+    "date_kind": {
+      "iso": {
+        "attempts": 10,
+        "parsed": 10,
+        "correct": 2,
+        "completed": 10,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 8,
+        "missed_clarification": 0
+      },
+      "month_name": {
+        "attempts": 10,
+        "parsed": 10,
+        "correct": 0,
+        "completed": 10,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 10,
+        "missed_clarification": 0
+      },
+      "numeric": {
+        "attempts": 60,
+        "parsed": 41,
+        "correct": 22,
+        "completed": 28,
+        "wrong_commit": 13,
+        "unnecessary_clarification": 18,
+        "missed_clarification": 0
+      }
+    },
+    "numeric_locale": {
+      "US": {
+        "attempts": 20,
+        "parsed": 10,
+        "correct": 3,
+        "completed": 9,
+        "wrong_commit": 1,
+        "unnecessary_clarification": 6,
+        "missed_clarification": 0
+      },
+      "GB": {
+        "attempts": 20,
+        "parsed": 12,
+        "correct": 0,
+        "completed": 0,
+        "wrong_commit": 12,
+        "unnecessary_clarification": 12,
+        "missed_clarification": 0
+      },
+      "None": {
+        "attempts": 20,
+        "parsed": 19,
+        "correct": 19,
+        "completed": 19,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 0,
+        "missed_clarification": 0
+      }
+    },
+    "language_date_kind": {
+      "en": {
+        "numeric": {
+          "attempts": 12,
+          "parsed": 9,
+          "correct": 6,
+          "completed": 6,
+          "wrong_commit": 3,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        },
+        "iso": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        },
+        "month_name": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        }
+      },
+      "es": {
+        "numeric": {
+          "attempts": 12,
+          "parsed": 10,
+          "correct": 4,
+          "completed": 7,
+          "wrong_commit": 3,
+          "unnecessary_clarification": 6,
+          "missed_clarification": 0
+        },
+        "iso": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        },
+        "month_name": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        }
+      },
+      "ht": {
+        "numeric": {
+          "attempts": 12,
+          "parsed": 9,
+          "correct": 4,
+          "completed": 5,
+          "wrong_commit": 4,
+          "unnecessary_clarification": 5,
+          "missed_clarification": 0
+        },
+        "iso": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        },
+        "month_name": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        }
+      },
+      "uk": {
+        "numeric": {
+          "attempts": 12,
+          "parsed": 3,
+          "correct": 3,
+          "completed": 3,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 0,
+          "missed_clarification": 0
+        },
+        "iso": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 2,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 0,
+          "missed_clarification": 0
+        },
+        "month_name": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        }
+      },
+      "zh-Hans": {
+        "numeric": {
+          "attempts": 12,
+          "parsed": 10,
+          "correct": 5,
+          "completed": 7,
+          "wrong_commit": 3,
+          "unnecessary_clarification": 5,
+          "missed_clarification": 0
+        },
+        "iso": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        },
+        "month_name": {
+          "attempts": 2,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 2,
+          "wrong_commit": 0,
+          "unnecessary_clarification": 2,
+          "missed_clarification": 0
+        }
+      }
+    },
+    "paired_with_english": {
+      "es": {
+        "both_correct": 4,
+        "both_wrong": 10,
+        "english_only": 2,
+        "other_only": 0
+      },
+      "ht": {
+        "both_correct": 4,
+        "both_wrong": 10,
+        "english_only": 2,
+        "other_only": 0
+      },
+      "uk": {
+        "both_correct": 3,
+        "both_wrong": 8,
+        "english_only": 3,
+        "other_only": 2
+      },
+      "zh-Hans": {
+        "both_correct": 5,
+        "both_wrong": 10,
+        "english_only": 1,
+        "other_only": 0
+      }
+    },
+    "posthoc_corrected_script": {
+      "attempts": 80,
+      "parsed": 61,
+      "correct": 24,
+      "completed": 60,
+      "wrong_commit": 1,
+      "unnecessary_clarification": 36,
+      "missed_clarification": 0
+    },
+    "posthoc_corrected_script_language": {
+      "en": {
+        "attempts": 16,
+        "parsed": 13,
+        "correct": 6,
+        "completed": 12,
+        "wrong_commit": 1,
+        "unnecessary_clarification": 6,
+        "missed_clarification": 0
+      },
+      "es": {
+        "attempts": 16,
+        "parsed": 14,
+        "correct": 4,
+        "completed": 14,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 10,
+        "missed_clarification": 0
+      },
+      "ht": {
+        "attempts": 16,
+        "parsed": 13,
+        "correct": 4,
+        "completed": 13,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 9,
+        "missed_clarification": 0
+      },
+      "uk": {
+        "attempts": 16,
+        "parsed": 7,
+        "correct": 5,
+        "completed": 7,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 2,
+        "missed_clarification": 0
+      },
+      "zh-Hans": {
+        "attempts": 16,
+        "parsed": 14,
+        "correct": 5,
+        "completed": 14,
+        "wrong_commit": 0,
+        "unnecessary_clarification": 9,
+        "missed_clarification": 0
+      }
+    }
+  }
+}

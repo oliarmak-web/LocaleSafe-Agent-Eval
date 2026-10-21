@@ -1,0 +1,14 @@
+{
+  "attempts.jsonl": "20fd6050e49ac407e30ff5b59d7dc8203cbb6411bfd08feaa5671cb3735e2b4c",
+  "cases.jsonl": "43d55d4e98c9daf45ec9a229c38875fc02e6a558cf2d60c48aa428b8b7cf5c9d",
+  "INSIGHTS.md": "8ab561b72c2ac20fda21bcc77aeb3fcf76b6a018f197a90bb7f8c7dd6632c43a",
+  "manifest.json": "1ada76eb7043d9b8cefb1316015adb43a5e1f6e3952fe09eb87a8d888f17374a",
+  "PROTOCOL.md": "92b53cecce6969e0d93eefdb0f7202c4c90d4dadd1e90f630e4f65bd563a3cb6",
+  "runtime-versions.txt": "1807f195b3f8311d493d45e07f872d8a1d5cc72b69d45460458a4695db6b285e",
+  "summary.json": "a379fb91f6f29719888c22520210c4890939851eb7761c54ed3651236b6472c7",
+  "source/adapter.py": "28ca11f3cf44f2f321a7f14bfbf138bf05c54ef58d6efade53869682bd815ddd",
+  "source/build_cases.py": "b61b69594539bac61a6c855787c46772864c730666685825a3e3a857840aca2f",
+  "source/collector.py": "5c3e5e1dc5ba51dd862287761df340802847eff798403fc7a594458ce0694d9a",
+  "source/service_eval.py": "97c5cdba49ed7de9ae593a271307d96b43747a26ea414fe80eebe0773f1c8b19",
+  "source/summarize.py": "4ea87e8b5a3d37b4ffabe44874df62287d506193c03b7ae263c4f65989e4fa29"
+}

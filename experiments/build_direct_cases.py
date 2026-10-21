@@ -3,6 +3,8 @@
 import json
 from pathlib import Path
 
+from localesafe.service_eval import date_context
+
 TEMPLATES = {
     "en": "Move appointment A1 to {date}. Ask me before submitting.",
     "es": "Cambia la cita A1 al {date}. Pregúntame antes de enviar el cambio.",
@@ -29,6 +31,9 @@ def build(directory):
                     "locale": locale, "text": template.format(date=visible), "date_text": canonical,
                     "clarified_date": clarified, "appointment_id": "A1", "interpreter_language": None,
                     "goal": "reschedule", "user_approves": True, "review_status": "draft"}
+            # A clarification reply must preserve the intended date even if
+            # the model unnecessarily asks despite a supplied locale.
+            case["clarified_date"] = date_context(case)[1]
             rows.append({"case": case, "date_kind": kind})
     directory.mkdir(parents=True, exist_ok=True)
     (directory / "cases.jsonl").write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows), encoding="utf-8")
