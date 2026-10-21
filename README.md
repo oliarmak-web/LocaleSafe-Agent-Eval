@@ -44,6 +44,8 @@ See [history](docs/HISTORY.md), [research protocol and v2](docs/RESEARCH_PROTOCO
 
 **What benchmarks do we run?** Currently, our own draft scenario suite and engineering controls. BFCL, MASSIVE-Agents, and Ticket-Bench are references/candidates, **not completed benchmark runs**. The [benchmark registry and attribution design](docs/BENCHMARKS.md) distinguishes datasets, metrics, formatting failures, and language-associated disagreements.
 
+The [authored research agenda](docs/AUTHORED_RESEARCH_AGENDA.md) proposes a detailed v2 benchmark for U.S. service workflows: municipal request completion, airport assistance, clarification, consent, and human handoff. It includes U.S. motivation, twelve challenge families, experimental controls, metrics, related-work overlap (including MLCL), and a transparent authorship path. It is a design draft, not a completed benchmark or manuscript submission.
+
 ## Local model experiments
 
 An optional [local collector and exploratory pilot protocol](experiments/README.md) extends the offline scorer to genuine model-generated decisions. The draft pilot includes 54 cases in nine language configurations. Inference runs on your CPU, with no paid model API or key; installing the separate PyTorch/Transformers runtime and downloading model weights requires internet and disk space. Nothing is hosted publicly. The dependency-free scoring commands above still work without that runtime.

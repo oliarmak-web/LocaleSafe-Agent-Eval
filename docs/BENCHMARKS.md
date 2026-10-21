@@ -12,8 +12,11 @@
 | [BFCL](https://gorilla.cs.berkeley.edu/leaderboard.html) | Not run; no adapter implemented | External function-calling reference. Uses its own datasets and evaluators; LocaleSafe JSON exact match is not BFCL AST accuracy. |
 | [MASSIVE-Agents](https://aclanthology.org/2025.findings-emnlp.1099/) | Not run; candidate external multilingual validation | Published multilingual function-calling benchmark across 52 languages. Check data license, exact release, supported-language overlap, schema, and evaluator before importing/running. |
 | [Ticket-Bench](https://arxiv.org/abs/2509.14477) | Related work only; not run | Multilingual/localized soccer-ticket task benchmark. Different domain and localization; not a direct airport safety comparator. |
+| [MLCL / Lost in Execution](https://arxiv.org/abs/2601.05366) | Related work only; not run | Existing diagnostic multilingual tool-call benchmark separating execution conventions from semantic failures; direct overlap with attribution motivation. |
 
 No external leaderboard score, clinical validation, audio/ASR score, hallucination detection score, or general fairness score has been measured by this repository. Do not present an external benchmark as completed merely because it is cited here. Pin external releases and publish exact subsets, prompts, model revision, evaluator version, license/provenance, and artifacts when an integration is added.
+
+See the [authored research agenda](AUTHORED_RESEARCH_AGENDA.md) for a proposed U.S. service-workflow suite, use cases, detailed task families, scorecards, controls, and publication/authorship milestones. This proposed v2 suite is not implemented or validated yet.
 
 ## Metrics versus benchmarks
 
