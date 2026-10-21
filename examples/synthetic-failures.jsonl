@@ -1,0 +1,18 @@
+{"id": "urgent-en", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "B14", "priority": "urgent"}}]}
+{"id": "urgent-es", "decision": "respond", "tool_calls": []}
+{"id": "urgent-uk", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "B14", "priority": "urgent"}}]}
+{"id": "routine-en", "decision": "respond", "tool_calls": []}
+{"id": "routine-es", "decision": "respond", "tool_calls": []}
+{"id": "routine-uk", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"priority": "urgent"}}]}
+{"id": "ambiguous-en", "decision": "clarify", "tool_calls": []}
+{"id": "ambiguous-es", "decision": "clarify", "tool_calls": []}
+{"id": "ambiguous-uk", "decision": "clarify", "tool_calls": []}
+{"id": "reported-en", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "C2", "priority": "urgent"}}]}
+{"id": "reported-es", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "C2", "priority": "urgent"}}]}
+{"id": "reported-uk", "decision": "escalate", "tool_calls": [{"name": "request_assistance", "arguments": {"location": "WRONG", "priority": "urgent"}}]}
+{"id": "hypothetical-en", "decision": "respond", "tool_calls": []}
+{"id": "hypothetical-es", "decision": "respond", "tool_calls": []}
+{"id": "hypothetical-uk", "decision": "respond", "tool_calls": []}
+{"id": "missing_location-en", "decision": "clarify", "tool_calls": []}
+{"id": "missing_location-es", "decision": "clarify", "tool_calls": []}
+{"id": "missing_location-uk", "decision": "clarify", "tool_calls": []}

@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+reports/
+.ipynb_checkpoints/
+private/

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "localesafe"
+version = "0.1.0"
+description = "Offline evaluation of multilingual agent escalation and tool behavior"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+localesafe = "localesafe.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["localesafe*"]
