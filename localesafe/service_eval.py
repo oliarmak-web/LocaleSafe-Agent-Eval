@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import re
 from datetime import datetime
 from pathlib import Path
 
@@ -10,6 +11,9 @@ from .evaluate import read_jsonl, sha256
 
 def date_context(case):
     """Locale is explicit task metadata, never inferred from language."""
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", case["date_text"]):
+        date = datetime.strptime(case["date_text"], "%Y-%m-%d").date().isoformat()
+        return date, date
     if case["locale"] is None:
         return "ambiguous", case["clarified_date"]
     pattern = {"US": "%m/%d/%Y", "GB": "%d/%m/%Y"}[case["locale"]]
