@@ -75,6 +75,7 @@ def main():
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--model", default="Qwen/Qwen3-0.6B")
     parser.add_argument("--revision", required=True, help="Immutable Hugging Face commit SHA")
+    parser.add_argument("--local-model-dir", help="Optional predownloaded, verified model directory")
     parser.add_argument("--conditions", nargs="+", choices=["baseline", "check"], default=["baseline", "check"])
     parser.add_argument("--seed", type=int, default=20261021)
     parser.add_argument("--threads", type=int, default=4)
@@ -105,8 +106,12 @@ def main():
     manifest_path = output / "manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     print("Loading pinned model on CPU (no paid API calls)", flush=True)
-    tokenizer = AutoTokenizer.from_pretrained(args.model, revision=args.revision, trust_remote_code=False)
-    model = AutoModelForCausalLM.from_pretrained(args.model, revision=args.revision, trust_remote_code=False,
+    source = args.local_model_dir or args.model
+    if args.local_model_dir:
+        manifest["weights_sha256"] = sha256(Path(source) / "model.safetensors")
+        manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    tokenizer = AutoTokenizer.from_pretrained(source, revision=args.revision, trust_remote_code=False)
+    model = AutoModelForCausalLM.from_pretrained(source, revision=args.revision, trust_remote_code=False,
                                                use_safetensors=True, torch_dtype=torch.float32)
     model.eval()
     jobs = [(condition, c) for condition in args.conditions for c in cases]

@@ -41,3 +41,9 @@ Keep cases fixed, run your agent separately, and save one response for every cas
 This version scores **recorded, single-turn text behavior**, not audio, reasoning quality, hallucination, or clinical correctness. The mock assistance tool is only a label in JSON; it cannot dispatch anything. Scenario expectations are illustrative research policies, not operational emergency guidance. Current public test cases are examples, not a contamination-resistant held-out benchmark. No confidence intervals or significance claims are supported by the tiny fixtures.
 
 See [history](docs/HISTORY.md), [research protocol and v2](docs/RESEARCH_PROTOCOL.md), [dataset notes](examples/README.md), [security](SECURITY.md), and [contributing](CONTRIBUTING.md).
+
+## Local model experiments
+
+An optional [local collector and exploratory pilot protocol](experiments/README.md) extends the offline scorer to genuine model-generated decisions. The draft pilot includes 54 cases in nine language configurations. Inference runs on your CPU, with no paid model API or key; installing the separate PyTorch/Transformers runtime and downloading model weights requires internet and disk space. Nothing is hosted publicly. The dependency-free scoring commands above still work without that runtime.
+
+The collector pins a model revision, excludes gold labels from prompts, records exact prompts and raw outputs, interleaves conditions, and keeps malformed outputs in the primary pass-rate denominator. This is JSON decision generation, not native tool execution or a validated emergency service. See the pilot documentation for reproduction and limitations.

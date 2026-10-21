@@ -4,6 +4,8 @@ The evaluator runs offline and does not execute supplied tool calls, import plug
 
 No credentials are needed. Never commit `.env` files, provider keys, personal data, raw sensitive conversations, notebook secrets, or credential-bearing outputs. Future integrations must load secrets only in server-side processes and keep credentials out of responses, error messages, browser bundles, and version control. Ignoring a file does not remove an already committed secret: revoke exposed credentials and inspect history.
 
+The optional local collector downloads pinned model weights and tokenizers from Hugging Face and runs them locally. It disables remote model code (`trust_remote_code=False`) and requires safetensors weights. Install dependencies from official package registries in a virtual environment; model/runtime supply-chain and resource risks still apply. It does not run proposed tool calls or expose a listening server. Inspect raw artifacts before sharing them. No hosted inference adapter or paid API path is included.
+
 The original Colab demo's Gradio launch automatically enabled public sharing. This release does not launch a web service. Any future UI should default to local access; public sharing must be an explicit deployment choice with authentication, rate limits, dependency review, and data handling documented.
 
 Report suspected security issues privately using GitHub private vulnerability reporting if enabled; otherwise request a private contact channel without posting exploit details or credentials. Private vulnerability reporting still needs to be enabled by the repository owner before public release.

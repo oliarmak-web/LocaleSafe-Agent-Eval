@@ -22,11 +22,20 @@ The policy instructs clarification for underspecified requests; emergency scenar
 Use a separate virtual environment. Install CPU PyTorch from its official index and Transformers from PyPI; see the exact package versions retained with a completed run. Model weights have their own [Apache-2.0 model license](https://huggingface.co/Qwen/Qwen3-0.6B), not the repository code license.
 
 ```sh
+python -m venv .venv
+# Activate the environment using your operating system's normal command first.
+python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+python -m pip install "transformers>=4.51,<5"
+```
+
+```sh
 python experiments/build_pilot_cases.py
 python -m localesafe.collect_local --cases experiments/pilot-cases.jsonl --output-dir reports/local-pilot --model Qwen/Qwen3-0.6B --revision MODEL_COMMIT_SHA
 ```
 
 Use an immutable model SHA recorded in the run manifest. New output directories are mandatory, avoiding accidental overwrite. No hidden retries or JSON repair are performed; malformed outputs are retained as failures. A failed process leaves a started manifest and partial attempt log for inspection; do not call it a completed run. Results must be reviewed before being committed; do not commit model weights, environments, or caches.
+
+For the fixed Qwen3-0.6B pilot, `python experiments/download_pilot_model.py` provides a checksum-verified direct-download alternative if the normal loader stalls. It downloads about 1.5 GB of weights into ignored `private/qwen3-06b/` and gets the tokenizer/config from the pinned official repository. Then pass `--local-model-dir private/qwen3-06b --revision c1899de289a04d12100db370d81485cdf75e47ca` to the collector. It records the weights hash. The model/config and runtime must still be trusted; disabling remote code is not a complete supply-chain guarantee.
 
 ## Next steps
 
