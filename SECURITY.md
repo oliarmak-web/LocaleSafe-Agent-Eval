@@ -1,11 +1,11 @@
 # Security
 
-The evaluator runs offline and does not execute supplied tool calls, import plugins from artifacts, evaluate code strings, or contact model providers. Inputs and reports are plain JSON. Treat untrusted files as untrusted data and run with ordinary user permissions. File size/resource limits and hosted-service hardening are not implemented; this is a local research CLI.
+Scoring runs locally. The service simulator changes in-memory state only. It cannot dispatch help, contact agencies, or alter real appointments.
 
-No credentials are needed. Never commit `.env` files, provider keys, personal data, raw sensitive conversations, notebook secrets, or credential-bearing outputs. Future integrations must load secrets only in server-side processes and keep credentials out of responses, error messages, browser bundles, and version control. Ignoring a file does not remove an already committed secret: revoke exposed credentials and inspect history.
+No keys are needed. Keep credentials, private conversations, model weights, and environments out of Git. Future provider credentials belong only in backend processes. Rotate exposed keys; ignoring a file does not erase history.
 
-The optional local collector downloads pinned model weights and tokenizers from Hugging Face and runs them locally. It disables remote model code (`trust_remote_code=False`) and requires safetensors weights. Install dependencies from official package registries in a virtual environment; model/runtime supply-chain and resource risks still apply. It does not run proposed tool calls or expose a listening server. Inspect raw artifacts before sharing them. No hosted inference adapter or paid API path is included.
+The optional collector downloads pinned public weights, requires safetensors, and disables remote model code. Use a virtual environment and trusted registries. Review artifacts before sharing. Resource limits for untrusted hosted use are not implemented.
 
-The original Colab demo's Gradio launch automatically enabled public sharing. This release does not launch a web service. Any future UI should default to local access; public sharing must be an explicit deployment choice with authentication, rate limits, dependency review, and data handling documented.
+No public UI is launched. The old Colab Gradio demo enabled public sharing; do not copy that deployment behavior by default.
 
-Report suspected security issues privately using GitHub private vulnerability reporting if enabled; otherwise request a private contact channel without posting exploit details or credentials. Private vulnerability reporting still needs to be enabled by the repository owner before public release.
+Report vulnerabilities privately through GitHub reporting if enabled; otherwise request a private channel without posting secrets or exploit details.

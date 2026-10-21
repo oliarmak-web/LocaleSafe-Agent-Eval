@@ -31,15 +31,15 @@ def summarize(directory):
     lines = ["# Local model pilot — descriptive results", "",
              f"Model: `{manifest['model']}`; revision `{manifest['revision']}`.", "",
              f"Completed: {manifest['completed_utc']}. CPU float32; one sampled generation per case/condition.", "",
-             "These are genuine local model outputs on public draft scenarios. This is an exploratory comparison of two prompts on one model, not two independent studies. No API inference fee was incurred. No tools were executed.", "",
-             "Read the [language-versus-workflow diagnostics](LANGUAGE_DIAGNOSTICS.md) before interpreting language scores: strict formatting failures are confounded with end-to-end task failures. This pilot cannot establish a causal language problem. Only the custom LocaleSafe suite was run; no external benchmark score is claimed.", "",
+             "Two prompts, one local model. No paid inference or tool execution.", "",
+             "Strict failures include formatting. Read [stage diagnostics](LANGUAGE_DIAGNOSTICS.md) before interpreting language differences. Custom suite only; no causal or external-benchmark claim.", "",
              "## Results", "", "| Language | Cases per condition | Baseline pass | Check pass |",
              "|---|---:|---:|---:|"]
     for language in reports["baseline"]["languages"]:
         before = reports["baseline"]["languages"][language]
         after = reports["check"]["languages"][language]
         lines.append(f"| {language} | {before['n']} | {before['pass_rate']:.1%} | {after['pass_rate']:.1%} |")
-    lines += ["", "Passing requires the expected decision AND exact proposed tool calls/arguments. Invalid JSON or invalid schemas count as failures in these denominators.", "",
+    lines += ["", "Pass = correct decision and exact calls/arguments. Invalid outputs count as failures.", "",
               "| Condition | Passed / all | Invalid generations | Missed / valid urgent outputs | Unnecessary / valid nonurgent outputs | Median generation seconds |",
               "|---|---:|---:|---:|---:|---:|"]
     for name, report in reports.items():
@@ -72,12 +72,12 @@ def summarize(directory):
         fence_counts[name] = count
         diagnostics[name] = summarize_attempts(cases, diagnostic_attempts)
     lines += ["", "Post-hoc formatting diagnostic (no score repair): invalid answers containing schema-valid JSON wrapped only in a Markdown JSON fence: "
-              + ", ".join(f"{name}={count}" for name, count in fence_counts.items()) + ". This diagnostic was added after observing an early fenced answer; it was not a preregistered outcome. Strict failures conflate format compliance and decision behavior, so do not interpret them all as safety failures."]
+              + ", ".join(f"{name}={count}" for name, count in fence_counts.items()) + ". Added after initial output inspection; not preregistered. Formatting failure is not itself a safety failure."]
     lines += ["", "Secondary, post-hoc fence-only parsing analysis (same raw generations, no new model calls):", "",
               "| Condition | Pass / all after fence-only removal | Still invalid |", "|---|---:|---:|"]
     for name, report in diagnostics.items():
         lines.append(f"| {name} | {sum(r['passed'] for r in report['cases'])}/{report['n']} | {report['invalid_generations']} |")
-    lines += ["", "This secondary analysis removes only an exact surrounding Markdown JSON fence. It changes neither decisions nor tool arguments. It must not replace the primary strict result or be represented as a new independent experiment. Per-case secondary scores are in `posthoc-format-report.json`."]
+    lines += ["", "Fence-only parsing changes no decisions or arguments. This post-hoc diagnostic is not a new experiment or replacement score. Details: `posthoc-format-report.json`."]
     (directory / "posthoc-format-report.json").write_text(json.dumps(diagnostics, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     baseline = {r["id"]: r for r in reports["baseline"]["cases"]}
     check = {r["id"]: r for r in reports["check"]["cases"]}
@@ -87,8 +87,8 @@ def summarize(directory):
               "Improved IDs: " + (", ".join(f"`{x}`" for x in improved) or "none") + ".", "",
               "Regressed IDs: " + (", ".join(f"`{x}`" for x in worsened) or "none") + ".", "",
               "## Interpretation limits", "",
-              "Only six scenario families underpin the language rows; those translations are correlated observations, not 54 independent scenarios. Non-English translations and all policy labels still need independent review. Public examples, one small model, one sampled attempt, and no uncertainty analysis cannot establish general safety, bias, statistical significance, or intervention effectiveness. The check condition may regress. Both positive and negative outcomes are retained.", "",
-              "This evaluates JSON decision generation, not native function calling, actual dispatch, clinical correctness, ASR, or speech. A stronger next study needs reviewed, newly authored held-out families, repeated runs, larger comparison models, and family-level paired uncertainty analysis.", "",
+              "Six families; draft translations; one model; one generation per item/condition. Translations are clustered observations. No validated safety, bias, significance, or intervention-efficacy claim.", "",
+              "Measures JSON decision generation. Next: reviewed held-out families, repeated runs, comparison models, and family-level uncertainty.", "",
               "## Artifacts", "",
               "- `manifest.json`: exact policy, intervention, model revision, versions, seeds, decoding, and source hashes.",
               "- `cases.jsonl`: the frozen input cases and expected labels (labels never entered prompts).",

@@ -1,8 +1,8 @@
 # Language versus workflow: exploratory diagnostics
 
-These comparisons do not establish a causal language effect. Six scenario families, draft translations, one model, and one generation per item cannot disentangle language, translation, phrasing, sampling, and prompt sensitivity.
+Exploratory: six families, draft translations, one model, one draw per condition. No causal language-effect claim.
 
-The strict analysis measures the complete output contract. Fence-only parsing is a post-hoc diagnostic on the exact same generations. No model decisions or arguments are changed. Decision/tool errors below are conditional on parseable outputs; missing/unparseable decisions are unknown, not inferred errors. Error categories overlap.
+Strict = output contract. Fence-only = post-hoc wrapper removal on the same answers. Semantic errors use parseable outputs only; unparseable decisions remain unknown. Categories overlap.
 
 ## baseline / strict
 
@@ -31,7 +31,7 @@ Paired complete-task outcomes versus the same English scenario:
 | vi | 0 | 5 | 0 | 1 | 6 |
 | zh-Hans | 0 | 6 | 0 | 0 | 6 |
 
-Unparseable-pair counts overlap the pass/fail columns. English-pass/other-fail is a candidate language-associated counterexample; inspect the raw case and translation before attribution. Both-fail is a shared failure, not proof of a particular workflow bug. JSON includes decision-only paired discordances and their parseable-pair denominator.
+Unparseable pairs overlap pass/fail counts. Disagreements need review; shared failures do not prove a workflow cause. Decision-only contrasts are in JSON.
 
 ## baseline / fence_only_posthoc
 
@@ -60,7 +60,7 @@ Paired complete-task outcomes versus the same English scenario:
 | vi | 4 | 2 | 0 | 0 | 0 |
 | zh-Hans | 4 | 2 | 0 | 0 | 0 |
 
-Unparseable-pair counts overlap the pass/fail columns. English-pass/other-fail is a candidate language-associated counterexample; inspect the raw case and translation before attribution. Both-fail is a shared failure, not proof of a particular workflow bug. JSON includes decision-only paired discordances and their parseable-pair denominator.
+Unparseable pairs overlap pass/fail counts. Disagreements need review; shared failures do not prove a workflow cause. Decision-only contrasts are in JSON.
 
 ## check / strict
 
@@ -89,7 +89,7 @@ Paired complete-task outcomes versus the same English scenario:
 | vi | 0 | 6 | 0 | 0 | 6 |
 | zh-Hans | 0 | 6 | 0 | 0 | 6 |
 
-Unparseable-pair counts overlap the pass/fail columns. English-pass/other-fail is a candidate language-associated counterexample; inspect the raw case and translation before attribution. Both-fail is a shared failure, not proof of a particular workflow bug. JSON includes decision-only paired discordances and their parseable-pair denominator.
+Unparseable pairs overlap pass/fail counts. Disagreements need review; shared failures do not prove a workflow cause. Decision-only contrasts are in JSON.
 
 ## check / fence_only_posthoc
 
@@ -118,8 +118,8 @@ Paired complete-task outcomes versus the same English scenario:
 | vi | 4 | 2 | 0 | 0 | 0 |
 | zh-Hans | 4 | 2 | 0 | 0 | 0 |
 
-Unparseable-pair counts overlap the pass/fail columns. English-pass/other-fail is a candidate language-associated counterexample; inspect the raw case and translation before attribution. Both-fail is a shared failure, not proof of a particular workflow bug. JSON includes decision-only paired discordances and their parseable-pair denominator.
+Unparseable pairs overlap pass/fail counts. Disagreements need review; shared failures do not prove a workflow cause. Decision-only contrasts are in JSON.
 
 ## Benchmarks and next controls
 
-See `docs/BENCHMARKS.md` for the exact custom-suite status, external benchmarks not yet run, and the next controlled study design. Add reviewed parallel inputs, English paraphrase controls, repeated generations, a canonical tool-simulator control, and constrained-output comparisons before attributing an effect to language.
+Next: reviewed translations, English paraphrases, repeat runs, executor controls, and fixed output handling. External benchmarks have not been run.

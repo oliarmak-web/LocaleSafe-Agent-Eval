@@ -1,0 +1,8 @@
+{"axis": "language", "left": "en-US", "right": "es-US"}
+{"axis": "language", "left": "en-GB", "right": "es-GB"}
+{"axis": "language", "left": "en-unknown", "right": "es-unknown"}
+{"axis": "language", "left": "en-deny", "right": "es-deny"}
+{"axis": "language", "left": "en-handoff", "right": "es-handoff"}
+{"axis": "context", "left": "en-US", "right": "en-GB"}
+{"axis": "context", "left": "es-US", "right": "es-GB"}
+{"axis": "phrasing", "left": "en-US", "right": "en-US-paraphrase"}

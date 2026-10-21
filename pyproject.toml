@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "localesafe"
-version = "0.1.0"
-description = "Offline evaluation of multilingual agent escalation and tool behavior"
+version = "0.2.0"
+description = "Separate language, locale, and workflow failures in service agents"
 requires-python = ">=3.11"
 license = {text = "MIT"}
 dependencies = []

@@ -15,3 +15,4 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: python -m unittest discover -s tests -v
       - run: python -m localesafe.cli --cases examples/cases.jsonl --responses examples/synthetic-failures.jsonl --output reports/demo.json --run-label synthetic-fixture-not-a-model
+      - run: python -m localesafe.service_eval --cases examples/service/cases.jsonl --traces examples/service/faulty-traces.jsonl --comparisons examples/service/comparisons.jsonl --trace-origin synthetic --output reports/service.json

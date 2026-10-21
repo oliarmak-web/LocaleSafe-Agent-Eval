@@ -1,9 +1,12 @@
-# Contributing
+# Contribute
 
-Useful contributions include independent translation reviews, well-specified scenario families, evaluator bug fixes, collection adapters, and external reproductions. Start with an issue describing the failure or proposed extension. Never claim a fixture result is an empirical model result.
+Useful work: translation review, original scenario families, simulator/evaluator fixes, collection adapters, and independent reproduction.
 
-Run `python -m unittest discover -s tests -v` and the README example before submitting. For metric changes, supply counterexamples that would be scored incorrectly before the change. Preserve schema compatibility or document a version change. Do not bundle formatting-only edits with scoring changes.
+- Describe the failure and supply a counterexample.
+- Run `python -m unittest discover -s tests -v`.
+- Keep task semantics fixed in language comparisons; declare locale explicitly.
+- Mark unreviewed translations draft. Disclose AI assistance and credit reviewers with consent.
+- Preserve family-level splits, provenance, licenses, and all failed attempts.
+- Add no credentials, real patient data, identifying conversations, or unlicensed audio.
 
-New scenarios need provenance, permitted redistribution, expected decisions/actions, split assignment, and all paired translations in the same split. Add no real patient data, identifying conversations, credentials, or unlicensed audio. Mark unreviewed translations draft. Disclose AI assistance and credit human reviewers with permission.
-
-For results, provide reproducible manifests and distinguish hypotheses, synthetic checks, and measured findings. Research ownership and affiliation must be accurate; organizational attribution is not assumed.
+Synthetic controls verify code. Model traces support experiments. Neither establishes real-world safety or impact on its own.

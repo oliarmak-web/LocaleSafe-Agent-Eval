@@ -70,8 +70,8 @@ def write_diagnosis(cases, attempts, directory):
     result = diagnose(cases, attempts)
     (directory / "language-diagnostics.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     lines = ["# Language versus workflow: exploratory diagnostics", "",
-             "These comparisons do not establish a causal language effect. Six scenario families, draft translations, one model, and one generation per item cannot disentangle language, translation, phrasing, sampling, and prompt sensitivity.", "",
-             "The strict analysis measures the complete output contract. Fence-only parsing is a post-hoc diagnostic on the exact same generations. No model decisions or arguments are changed. Decision/tool errors below are conditional on parseable outputs; missing/unparseable decisions are unknown, not inferred errors. Error categories overlap.", ""]
+             "Exploratory: six families, draft translations, one model, one draw per condition. No causal language-effect claim.", "",
+             "Strict = output contract. Fence-only = post-hoc wrapper removal on the same answers. Semantic errors use parseable outputs only; unparseable decisions remain unknown. Categories overlap.", ""]
     for condition, parsers in result["conditions"].items():
         for parser, metrics in parsers.items():
             lines += [f"## {condition} / {parser}", "",
@@ -84,6 +84,6 @@ def write_diagnosis(cases, attempts, directory):
                       "|---|---:|---:|---:|---:|---:|"]
             for language, row in metrics["paired_with_english"].items():
                 lines.append(f"| {language} | {row['both_pass']} | {row['both_fail']} | {row['english_pass_other_fail']} | {row['english_fail_other_pass']} | {row['unparseable_pair']} |")
-            lines += ["", "Unparseable-pair counts overlap the pass/fail columns. English-pass/other-fail is a candidate language-associated counterexample; inspect the raw case and translation before attribution. Both-fail is a shared failure, not proof of a particular workflow bug. JSON includes decision-only paired discordances and their parseable-pair denominator.", ""]
-    lines += ["## Benchmarks and next controls", "", "See `docs/BENCHMARKS.md` for the exact custom-suite status, external benchmarks not yet run, and the next controlled study design. Add reviewed parallel inputs, English paraphrase controls, repeated generations, a canonical tool-simulator control, and constrained-output comparisons before attributing an effect to language.", ""]
+            lines += ["", "Unparseable pairs overlap pass/fail counts. Disagreements need review; shared failures do not prove a workflow cause. Decision-only contrasts are in JSON.", ""]
+    lines += ["## Benchmarks and next controls", "", "Next: reviewed translations, English paraphrases, repeat runs, executor controls, and fixed output handling. External benchmarks have not been run.", ""]
     (directory / "LANGUAGE_DIAGNOSTICS.md").write_text("\n".join(lines), encoding="utf-8")
