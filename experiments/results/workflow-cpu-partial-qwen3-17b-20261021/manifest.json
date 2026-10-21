@@ -1,0 +1,37 @@
+{
+  "status": "interrupted",
+  "started_utc": "2026-10-21T22:10:59.768156+00:00",
+  "settings": {
+    "model": {
+      "model": "Qwen/Qwen3-1.7B",
+      "revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+      "weights": {
+        "model-00001-of-00002.safetensors": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+        "model-00002-of-00002.safetensors": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9"
+      }
+    },
+    "cases_sha256": "ea4e5e45b3e1c20a0264ffb3e3c4edeeafd6a4c4564dee543a64459c72689d61",
+    "collector_sha256": "48fde4f69a5c541aacafe41986f6283cfefa034ddbc4826a1bb8d095c7edc76f",
+    "builder_sha256": "24c021291e0031494f9f177d19b0444717b785492a0b944f1027dc61809572a2",
+    "python": "3.11.9",
+    "torch": "2.14.1+cpu",
+    "transformers": "4.57.6",
+    "repeats": 2,
+    "seed": 20261024,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "max_new_tokens": 64,
+    "enable_thinking": false,
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 4,
+    "batch_size": 4,
+    "sampling": "per-row seeded generator; temperature/top-k/top-p warpers; forced sampled token",
+    "quantization": "torch dynamic qint8 Linear; float32 embeddings and activations"
+  },
+  "interrupted_utc": "2026-10-21T22:17:44.483228+00:00",
+  "recorded_attempts": 48,
+  "attempts_sha256": "def6fa947ca590b5aef369fcaf7aa2b9f0202490acb81065a176c2df23af55a4",
+  "reason": "Runtime transition to matched free T4 float16 full grids; preserve every completed CPU batch. In-flight unrecorded batch may have been interrupted."
+}

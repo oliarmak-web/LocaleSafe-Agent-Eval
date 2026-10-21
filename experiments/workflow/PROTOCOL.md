@@ -30,3 +30,9 @@ Report every language and condition, strict and fence-only scores, per-family er
 No significance, language ranking, causal language disadvantage, cultural competence or operational-harm claim. A language-associated difference requires reviewed equivalence and replication. English restatement success suggests presentation sensitivity; oracle success suggests an interpretation bottleneck; oracle failure suggests remaining planning/interface issues. These are diagnostic hypotheses, not uniquely identified mechanisms.
 
 Archive cases, full prompts, raw outputs, seeds, hashes, revisions, environment, collector and builder snapshots, scoring and all failures. Preserve interrupted prefixes on resume. Publish unsuccessful and null results alongside successes.
+
+## Runtime amendment, before GPU collection
+
+CPU collection proved slow. The primary complete runs move to a free Colab Tesla T4, float16 weights/activations, no quantization, batch size eight and two CPU threads. Both models use the same GPU collector, tasks, prompts, decoding distribution and per-row CUDA seeds. Python/package/CUDA versions are recorded in each manifest. CPU and GPU random streams and numerical precision differ: do not pool their outputs or interpret their difference as a language effect.
+
+The partial CPU runs are retained as interrupted engineering runs, with original source and protocol. No task, prompt, scoring rule or output cap changes for the GPU run. The runtime amendment is not a response to a favorable language result; full GPU grids will include every scheduled decision and failure. No human review or paid compute is introduced.
