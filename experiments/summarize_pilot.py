@@ -6,6 +6,7 @@ import statistics
 from pathlib import Path
 
 from localesafe.evaluate import read_jsonl, sha256
+from localesafe.collect_local import summarize_attempts
 
 
 def summarize(directory):
@@ -18,6 +19,13 @@ def summarize(directory):
     reports = {name: json.loads((directory / f"{name}-report.json").read_text(encoding="utf-8"))
                for name in ("baseline", "check")}
     attempts = read_jsonl(directory / "attempts.jsonl")
+    cases = read_jsonl(directory / "cases.jsonl")
+    if manifest["cases_sha256"] != sha256(directory / "cases.jsonl"):
+        raise ValueError("case artifact hash mismatch")
+    for condition, report in reports.items():
+        recomputed = summarize_attempts(cases, [a for a in attempts if a["condition"] == condition])
+        if recomputed != report:
+            raise ValueError("report does not match raw attempt artifacts")
     lines = ["# Local model pilot — descriptive results", "",
              f"Model: `{manifest['model']}`; revision `{manifest['revision']}`.", "",
              f"Completed: {manifest['completed_utc']}. CPU float32; one sampled generation per case/condition.", "",

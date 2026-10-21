@@ -8,6 +8,8 @@ This pilot compares two prompts on one real, small, open-weight model. No paid i
 
 Language choice should eventually use target-community data, limited-English-proficiency needs, failure exposure, and access to qualified reviewers. The [Census language tables](https://www.census.gov/newsroom/press-releases/2025/2017-2021-acs-language-use-tables.html) provide a demographic starting point, not a safety ranking. Spanish is prioritized; other included languages provide distinct scripts and translation review needs. Haitian Creole is an exploratory service-access extension. Ukrainian retains continuity with the original project. No independent translation or domain-policy review has occurred.
 
+The [NYC language-access hub](https://www.nyc.gov/site/immigrants/language-needs/language-access-hub.page) includes Haitian Creole, Korean, Arabic, Chinese, and Spanish among its designated translated languages, supporting a practical local service-access rationale for those selections. The pilot does not cover all NYC-designated languages and does not establish compliance with any language-access requirement.
+
 ## Two exploratory conditions
 
 1. `baseline`: a fixed illustrative airport-assistance policy and JSON decision contract.

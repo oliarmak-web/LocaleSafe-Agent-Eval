@@ -20,8 +20,10 @@ class SummaryTests(unittest.TestCase):
                     for condition in ("baseline", "check") for c in cases]
             log = directory / "attempts.jsonl"
             log.write_text("".join(json.dumps(r) + "\n" for r in rows), encoding="utf-8")
+            case_file = directory / "cases.jsonl"
+            case_file.write_text("".join(json.dumps(c) + "\n" for c in cases), encoding="utf-8")
             manifest = {"status": "completed", "model": "synthetic-test-only", "revision": "test",
-                        "completed_utc": "test", "attempts_sha256": sha256(log)}
+                        "completed_utc": "test", "attempts_sha256": sha256(log), "cases_sha256": sha256(case_file)}
             (directory / "manifest.json").write_text(json.dumps(manifest), encoding="utf-8")
             for condition in ("baseline", "check"):
                 report = summarize_attempts(cases, [r for r in rows if r["condition"] == condition])
