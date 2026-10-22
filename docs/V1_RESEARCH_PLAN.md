@@ -40,6 +40,8 @@ Keep language, region, date convention and organizational policy separate. Use a
 
 ## Position against existing work
 
+The [originality and authorship review](ORIGINALITY_AND_AUTHORSHIP.md) records close GitHub precedents and the limits of the search. Authorship of LocaleSafe does not establish novelty of its methods.
+
 - [LangDrift](https://github.com/RubenGlez/langdrift) already offers a harness for comparing tool behavior across languages. A multilingual harness alone is not a strong novelty claim.
 - [Actions Speak Louder than Words](https://arxiv.org/abs/2608.11110) studies cross-language action-policy retention and controls for within-language inconsistency. Our next study must account for that baseline too.
 - [GAIA-v2-LILT](https://arxiv.org/abs/2604.24929) examines how translation and task misalignment can distort evaluation. Translation review is part of measurement validity.

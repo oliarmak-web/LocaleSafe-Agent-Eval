@@ -58,3 +58,5 @@ The [local-model pilot](experiments/results/qwen3-06b-20261021/RESULTS.md) had 9
 [Scoring and schema](docs/SERVICE_SCORING.md) · [Benchmark registry](docs/BENCHMARKS.md) · [Experiments](experiments/README.md) · [Research protocol](docs/RESEARCH_PROTOCOL.md) · [Contribute](CONTRIBUTING.md) · [Security](SECURITY.md) · [History](docs/HISTORY.md)
 
 Created by Olivia Iarmak; implementation and writing used AI assistance. MIT-licensed code. Draft translations and small samples do not establish causal language effects, cultural competence, clinical safety, or real-world impact.
+
+[Authorship and originality review](docs/ORIGINALITY_AND_AUTHORSHIP.md): close precedents exist. The contribution is this implementation, experiment record and analysis; uniqueness is not established.
