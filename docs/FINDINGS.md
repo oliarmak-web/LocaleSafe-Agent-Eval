@@ -1,6 +1,18 @@
 # What the experiments show
 
-## Latest: five languages, no answer options
+## Latest: language, interface, and model interact
+
+The [two-model workflow study](WORKFLOW_STUDY.md) recorded 1,800 decisions across five languages, using matched requests, localized policies, canonical structured facts and seeded correction interactions.
+
+- **Schema validity hides errors.** Qwen3-1.7B produced 278/300 valid baseline calls; only 37/300 were correct. Wrong arguments accounted for 239 failures.
+- **Removing interpretation did not fix action generation.** Its English baseline scored 11/60. Canonical facts scored 6/60, with 44 matched failures shared by both conditions. This weakens an explanation based only on understanding non-English requests.
+- **Language sensitivity is configuration-specific.** Qwen3-0.6B corrected 58/60 English proposals and 2/60 Haitian Creole proposals. Qwen3-1.7B scored 10/60 and 16/60 respectively. Ukrainian correction scores were 39/60 and 38/60. These patterns warrant review, not a general language ranking.
+- **Translated policies were not a consistent fix.** On the larger model they gained six matched successes and lost eleven across 240 decisions.
+- **Conversation history matters.** The small model failed every strict baseline call but corrected 187/300 seeded proposals. That condition also supplies a JSON example; it does not isolate recovery skill from format priming.
+
+**Conclusion:** multilingual evaluation is useful for finding configuration-specific failures. These runs do not establish that language is the main cause. Better English competence, independently reviewed translations and held-out interactive tasks are needed before a causal claim.
+
+## Earlier: five languages, no answer options
 
 80 new generations tested English, Spanish, Simplified Chinese, Ukrainian, and Haitian Creole. Each language had eight date requests and two repeats. Strict interpretation: English 6/16, Spanish 4/16, Chinese 5/16, Ukrainian 5/16, Haitian Creole 4/16.
 

@@ -33,7 +33,12 @@ def main():
     for name, path in sources.items():
         shutil.copyfile(path, args.destination / "source" / name)
     shutil.copyfile("experiments/workflow/PROTOCOL.md", args.destination / "PROTOCOL.md")
-    shutil.copyfile("experiments/runtime-versions.txt", args.destination / "runtime-versions.txt")
+    if gpu:
+        settings = manifest["settings"]
+        runtime = {key: settings[key] for key in ("python", "torch", "transformers", "cuda", "gpu", "device", "dtype", "quantization")}
+        (args.destination / "runtime-versions.txt").write_text("\n".join(f"{key}={value}" for key, value in runtime.items()) + "\n", encoding="utf-8")
+    else:
+        shutil.copyfile("experiments/runtime-versions.txt", args.destination / "runtime-versions.txt")
     model_dir = Path("private") / ("qwen3-17b" if "1.7B" in manifest["settings"]["model"]["model"] else "qwen3-06b")
     provenance = {p.name: sha256(p) for p in model_dir.iterdir() if p.is_file() and p.suffix in {".json", ".txt", ".jinja"}}
     (args.destination / "model-config-sha256.json").write_text(json.dumps(provenance, indent=2) + "\n", encoding="utf-8")

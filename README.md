@@ -4,7 +4,13 @@
 
 LocaleSafe pairs equivalent requests, varies locale explicitly, and replays actions in a consent-aware sandbox. Its contribution is a runnable diagnostic harness for service workflows—not a claim to be the first multilingual benchmark.
 
-**Latest finding:** 80 new outputs across five languages expose excessive clarification and a sandbox-script defect. Correcting the script reduces wrong sandbox commits from 13 to 1 without changing model answers. Language bias remains unproven. [Research insights](docs/FINDINGS.md).
+**Latest study:** 1,800 tool decisions, two models, five languages, four conditions. [Methods and results](docs/WORKFLOW_STUDY.md).
+
+- **Valid JSON is not a correct action:** Qwen3-1.7B produced 278/300 valid baseline calls, but only 37/300 correct calls; 239 had wrong arguments.
+- **Language differences depend on configuration:** Qwen3-0.6B corrected 58/60 English proposals versus 2/60 Haitian Creole proposals. The larger model scored 10/60 and 16/60 respectively. That ordering did not replicate.
+- **Neither shortcut reliably fixed the task:** canonical facts yielded 6/60 correct calls on the larger model. Localized policies gained six matched successes and lost eleven.
+
+These are development findings from draft translations and six template families. They motivate evaluation; they do not establish causal language bias or deployment safety.
 
 ## What works
 
@@ -17,6 +23,7 @@ LocaleSafe pairs equivalent requests, varies locale explicitly, and replays acti
 | Real-model pilot | 108 Qwen3-0.6B outputs; nine language configurations; single-turn |
 | Controlled attribution probe | 30 tasks; 180 model forwards; 540 sampled choices; closed-choice |
 | Direct-answer cross-check | 80 generations; English, Spanish, Chinese, Ukrainian, Haitian Creole; numeric and explicit dates |
+| Matched workflow study | 1,800 generations; two models; policy, structured-fact and seeded correction controls |
 | Reviewed cultural-context benchmark | Not yet validated |
 
 ## Run

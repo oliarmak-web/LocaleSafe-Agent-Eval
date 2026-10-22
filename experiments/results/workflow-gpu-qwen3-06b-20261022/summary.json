@@ -1,0 +1,1558 @@
+{
+  "strict": {
+    "conditions": {
+      "baseline": {
+        "n": 300,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "localized_policy": {
+        "n": 240,
+        "parsed": 26,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 8
+      },
+      "recovery": {
+        "n": 300,
+        "parsed": 300,
+        "correct": 187,
+        "completed": 187,
+        "executed": 259,
+        "unauthorized_attempts": 38,
+        "wrong_executed_action": 72,
+        "outputs_at_token_cap": 0
+      },
+      "structured_facts": {
+        "n": 60,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      }
+    },
+    "languages": {
+      "en": {
+        "baseline": {
+          "n": 60,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "localized_policy": {
+          "n": 0,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "recovery": {
+          "n": 60,
+          "parsed": 60,
+          "correct": 58,
+          "completed": 58,
+          "executed": 60,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 2,
+          "outputs_at_token_cap": 0
+        },
+        "structured_facts": {
+          "n": 60,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "es": {
+        "baseline": {
+          "n": 60,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "localized_policy": {
+          "n": 60,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 1
+        },
+        "recovery": {
+          "n": 60,
+          "parsed": 60,
+          "correct": 45,
+          "completed": 45,
+          "executed": 60,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 15,
+          "outputs_at_token_cap": 0
+        },
+        "structured_facts": {
+          "n": 0,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "ht": {
+        "baseline": {
+          "n": 60,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "localized_policy": {
+          "n": 60,
+          "parsed": 26,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "recovery": {
+          "n": 60,
+          "parsed": 60,
+          "correct": 2,
+          "completed": 2,
+          "executed": 31,
+          "unauthorized_attempts": 26,
+          "wrong_executed_action": 29,
+          "outputs_at_token_cap": 0
+        },
+        "structured_facts": {
+          "n": 0,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "uk": {
+        "baseline": {
+          "n": 60,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "localized_policy": {
+          "n": 60,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 7
+        },
+        "recovery": {
+          "n": 60,
+          "parsed": 60,
+          "correct": 39,
+          "completed": 39,
+          "executed": 58,
+          "unauthorized_attempts": 2,
+          "wrong_executed_action": 19,
+          "outputs_at_token_cap": 0
+        },
+        "structured_facts": {
+          "n": 0,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "zh-Hans": {
+        "baseline": {
+          "n": 60,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "localized_policy": {
+          "n": 60,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "recovery": {
+          "n": 60,
+          "parsed": 60,
+          "correct": 43,
+          "completed": 43,
+          "executed": 50,
+          "unauthorized_attempts": 10,
+          "wrong_executed_action": 7,
+          "outputs_at_token_cap": 0
+        },
+        "structured_facts": {
+          "n": 0,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      }
+    },
+    "contrasts": {
+      "english_vs_target": {
+        "es": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "ht": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "uk": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "zh-Hans": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        }
+      },
+      "recovery_english_vs_target": {
+        "es": {
+          "pairs": 60,
+          "both_correct": 45,
+          "both_wrong": 2,
+          "left_only": 13,
+          "right_only": 0
+        },
+        "ht": {
+          "pairs": 60,
+          "both_correct": 2,
+          "both_wrong": 2,
+          "left_only": 56,
+          "right_only": 0
+        },
+        "uk": {
+          "pairs": 60,
+          "both_correct": 39,
+          "both_wrong": 2,
+          "left_only": 19,
+          "right_only": 0
+        },
+        "zh-Hans": {
+          "pairs": 60,
+          "both_correct": 43,
+          "both_wrong": 2,
+          "left_only": 15,
+          "right_only": 0
+        }
+      },
+      "baseline_vs_localized_policy": {
+        "es": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "ht": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "uk": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "zh-Hans": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        }
+      },
+      "baseline_vs_structured_facts": {
+        "en": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "es": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "ht": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "uk": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "zh-Hans": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        }
+      }
+    },
+    "baseline_families": {
+      "code_switch": {
+        "n": 50,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "consent": {
+        "n": 50,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "constraint": {
+        "n": 50,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "correction": {
+        "n": 50,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "handoff": {
+        "n": 50,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "unavailable": {
+        "n": 50,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      }
+    },
+    "baseline_language_families": {
+      "en": {
+        "code_switch": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "consent": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "constraint": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "correction": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "handoff": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "unavailable": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "es": {
+        "code_switch": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "consent": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "constraint": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "correction": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "handoff": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "unavailable": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "ht": {
+        "code_switch": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "consent": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "constraint": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "correction": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "handoff": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "unavailable": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "uk": {
+        "code_switch": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "consent": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "constraint": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "correction": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "handoff": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "unavailable": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "zh-Hans": {
+        "code_switch": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "consent": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "constraint": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "correction": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "handoff": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "unavailable": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      }
+    },
+    "error_types": {
+      "baseline": {
+        "invalid_format": 300
+      },
+      "localized_policy": {
+        "invalid_format": 214,
+        "wrong_arguments": 16,
+        "wrong_tool": 10
+      },
+      "recovery": {
+        "wrong_arguments": 75,
+        "wrong_tool": 38,
+        "correct": 187
+      },
+      "structured_facts": {
+        "invalid_format": 60
+      }
+    }
+  },
+  "fence_only": {
+    "conditions": {
+      "baseline": {
+        "n": 300,
+        "parsed": 21,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "localized_policy": {
+        "n": 240,
+        "parsed": 86,
+        "correct": 6,
+        "completed": 6,
+        "executed": 7,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 1,
+        "outputs_at_token_cap": 8
+      },
+      "recovery": {
+        "n": 300,
+        "parsed": 300,
+        "correct": 187,
+        "completed": 187,
+        "executed": 259,
+        "unauthorized_attempts": 38,
+        "wrong_executed_action": 72,
+        "outputs_at_token_cap": 0
+      },
+      "structured_facts": {
+        "n": 60,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      }
+    },
+    "languages": {
+      "en": {
+        "baseline": {
+          "n": 60,
+          "parsed": 7,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "localized_policy": {
+          "n": 0,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "recovery": {
+          "n": 60,
+          "parsed": 60,
+          "correct": 58,
+          "completed": 58,
+          "executed": 60,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 2,
+          "outputs_at_token_cap": 0
+        },
+        "structured_facts": {
+          "n": 60,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "es": {
+        "baseline": {
+          "n": 60,
+          "parsed": 4,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "localized_policy": {
+          "n": 60,
+          "parsed": 9,
+          "correct": 2,
+          "completed": 2,
+          "executed": 3,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 1,
+          "outputs_at_token_cap": 1
+        },
+        "recovery": {
+          "n": 60,
+          "parsed": 60,
+          "correct": 45,
+          "completed": 45,
+          "executed": 60,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 15,
+          "outputs_at_token_cap": 0
+        },
+        "structured_facts": {
+          "n": 0,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "ht": {
+        "baseline": {
+          "n": 60,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "localized_policy": {
+          "n": 60,
+          "parsed": 44,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "recovery": {
+          "n": 60,
+          "parsed": 60,
+          "correct": 2,
+          "completed": 2,
+          "executed": 31,
+          "unauthorized_attempts": 26,
+          "wrong_executed_action": 29,
+          "outputs_at_token_cap": 0
+        },
+        "structured_facts": {
+          "n": 0,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "uk": {
+        "baseline": {
+          "n": 60,
+          "parsed": 6,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "localized_policy": {
+          "n": 60,
+          "parsed": 13,
+          "correct": 1,
+          "completed": 1,
+          "executed": 1,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 7
+        },
+        "recovery": {
+          "n": 60,
+          "parsed": 60,
+          "correct": 39,
+          "completed": 39,
+          "executed": 58,
+          "unauthorized_attempts": 2,
+          "wrong_executed_action": 19,
+          "outputs_at_token_cap": 0
+        },
+        "structured_facts": {
+          "n": 0,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "zh-Hans": {
+        "baseline": {
+          "n": 60,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "localized_policy": {
+          "n": 60,
+          "parsed": 20,
+          "correct": 3,
+          "completed": 3,
+          "executed": 3,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "recovery": {
+          "n": 60,
+          "parsed": 60,
+          "correct": 43,
+          "completed": 43,
+          "executed": 50,
+          "unauthorized_attempts": 10,
+          "wrong_executed_action": 7,
+          "outputs_at_token_cap": 0
+        },
+        "structured_facts": {
+          "n": 0,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      }
+    },
+    "contrasts": {
+      "english_vs_target": {
+        "es": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "ht": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "uk": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "zh-Hans": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        }
+      },
+      "recovery_english_vs_target": {
+        "es": {
+          "pairs": 60,
+          "both_correct": 45,
+          "both_wrong": 2,
+          "left_only": 13,
+          "right_only": 0
+        },
+        "ht": {
+          "pairs": 60,
+          "both_correct": 2,
+          "both_wrong": 2,
+          "left_only": 56,
+          "right_only": 0
+        },
+        "uk": {
+          "pairs": 60,
+          "both_correct": 39,
+          "both_wrong": 2,
+          "left_only": 19,
+          "right_only": 0
+        },
+        "zh-Hans": {
+          "pairs": 60,
+          "both_correct": 43,
+          "both_wrong": 2,
+          "left_only": 15,
+          "right_only": 0
+        }
+      },
+      "baseline_vs_localized_policy": {
+        "es": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 58,
+          "left_only": 0,
+          "right_only": 2
+        },
+        "ht": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "uk": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 59,
+          "left_only": 0,
+          "right_only": 1
+        },
+        "zh-Hans": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 57,
+          "left_only": 0,
+          "right_only": 3
+        }
+      },
+      "baseline_vs_structured_facts": {
+        "en": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "es": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "ht": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "uk": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        },
+        "zh-Hans": {
+          "pairs": 60,
+          "both_correct": 0,
+          "both_wrong": 60,
+          "left_only": 0,
+          "right_only": 0
+        }
+      }
+    },
+    "baseline_families": {
+      "code_switch": {
+        "n": 50,
+        "parsed": 13,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "consent": {
+        "n": 50,
+        "parsed": 6,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "constraint": {
+        "n": 50,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "correction": {
+        "n": 50,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "handoff": {
+        "n": 50,
+        "parsed": 0,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      },
+      "unavailable": {
+        "n": 50,
+        "parsed": 2,
+        "correct": 0,
+        "completed": 0,
+        "executed": 0,
+        "unauthorized_attempts": 0,
+        "wrong_executed_action": 0,
+        "outputs_at_token_cap": 0
+      }
+    },
+    "baseline_language_families": {
+      "en": {
+        "code_switch": {
+          "n": 10,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "consent": {
+          "n": 10,
+          "parsed": 3,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "constraint": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "correction": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "handoff": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "unavailable": {
+          "n": 10,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "es": {
+        "code_switch": {
+          "n": 10,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "consent": {
+          "n": 10,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "constraint": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "correction": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "handoff": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "unavailable": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "ht": {
+        "code_switch": {
+          "n": 10,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "consent": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "constraint": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "correction": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "handoff": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "unavailable": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "uk": {
+        "code_switch": {
+          "n": 10,
+          "parsed": 5,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "consent": {
+          "n": 10,
+          "parsed": 1,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "constraint": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "correction": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "handoff": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "unavailable": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      },
+      "zh-Hans": {
+        "code_switch": {
+          "n": 10,
+          "parsed": 2,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "consent": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "constraint": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "correction": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "handoff": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        },
+        "unavailable": {
+          "n": 10,
+          "parsed": 0,
+          "correct": 0,
+          "completed": 0,
+          "executed": 0,
+          "unauthorized_attempts": 0,
+          "wrong_executed_action": 0,
+          "outputs_at_token_cap": 0
+        }
+      }
+    },
+    "error_types": {
+      "baseline": {
+        "invalid_format": 279,
+        "wrong_arguments": 21
+      },
+      "localized_policy": {
+        "invalid_format": 154,
+        "wrong_arguments": 59,
+        "correct": 6,
+        "wrong_tool": 21
+      },
+      "recovery": {
+        "wrong_arguments": 75,
+        "wrong_tool": 38,
+        "correct": 187
+      },
+      "structured_facts": {
+        "invalid_format": 60
+      }
+    }
+  }
+}

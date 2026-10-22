@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-22T01:56:57.581647+00:00",
+  "settings": {
+    "model": {
+      "model": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "weights": {
+        "model.safetensors": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b"
+      }
+    },
+    "cases_sha256": "ea4e5e45b3e1c20a0264ffb3e3c4edeeafd6a4c4564dee543a64459c72689d61",
+    "collector_sha256": "749a560e382093fb5f8f06e11bc8632c866f5b55aa1903c9561f53695822c929",
+    "builder_sha256": "24c021291e0031494f9f177d19b0444717b785492a0b944f1027dc61809572a2",
+    "shared_scorer_sha256": "48fde4f69a5c541aacafe41986f6283cfefa034ddbc4826a1bb8d095c7edc76f",
+    "python": "3.13.15",
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.6",
+    "repeats": 2,
+    "seed": 20261024,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "max_new_tokens": 64,
+    "enable_thinking": false,
+    "dtype": "float16",
+    "device": "cuda",
+    "threads": 2,
+    "batch_size": 8,
+    "sampling": "per-row CUDA seeded generator; temperature/top-k/top-p warpers; forced sampled token",
+    "quantization": "none",
+    "gpu": "Tesla T4",
+    "cuda": "13.0"
+  },
+  "completed_utc": "2026-10-22T02:01:05.532626+00:00",
+  "attempts_sha256": "9bc02961272d80e55ffdc6050aadb814ccb0f80f254ba6a6e4338ee872828785",
+  "attempts": 900
+}

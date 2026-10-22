@@ -1,6 +1,30 @@
 # Real-model pilot
 
-## Latest: direct answers in five languages
+## Latest: matched workflow study
+
+[Study and findings](../docs/WORKFLOW_STUDY.md) · [Protocol](workflow/PROTOCOL.md) · [Execution history](workflow/EXECUTION_HISTORY.md)
+
+**1,800 recorded tool decisions:** Qwen3-0.6B and Qwen3-1.7B on a free Colab T4. Five languages; six template families; two repeats. Baseline, localized policy, canonical structured facts, and seeded rejected-proposal correction.
+
+The larger model produced 278/300 valid baseline calls but only 37/300 correct actions. Canonical facts and localized policies did not reliably fix it. Correction scores changed sharply by model and language; no stable language ranking was established.
+
+| Archive | Decisions | Evidence |
+|---|---:|---|
+| [Qwen3-0.6B](results/workflow-gpu-qwen3-06b-20261022/RESULTS.md) | 900 | Full prompts, raw outputs, scores, source and hashes |
+| [Qwen3-1.7B](results/workflow-gpu-qwen3-17b-20261022/RESULTS.md) | 900 | Same grid and runtime |
+| Interrupted CPU runs | 124 + 48 | Preserved separately; excluded from the comparison |
+
+```sh
+python -m experiments.summarize_workflow experiments/results/workflow-gpu-qwen3-06b-20261022
+python -m experiments.summarize_workflow experiments/results/workflow-gpu-qwen3-17b-20261022
+python -m experiments.compare_workflow experiments/results/workflow-gpu-qwen3-06b-20261022 experiments/results/workflow-gpu-qwen3-17b-20261022
+```
+
+For new collection on a CUDA GPU: install Transformers 4.57.6 and a compatible PyTorch build, then run `python -m localesafe.workflow_gpu --model qwen3-06b --output-dir reports/new-workflow`. Repeat with `qwen3-17b`. The collector downloads pinned public weights and verifies their hashes; no credentials or paid API are required. Complete runtime versions are recorded for the relevant Python, PyTorch, Transformers and CUDA components in each manifest.
+
+The first GPU pass completed but its temporary archive was lost before retrieval. The published replacement preserves every scheduled output; restored raw-file hashes match the originals from Colab. [Transfer provenance](results/workflow-gpu-qwen3-06b-20261022/TRANSFER.md).
+
+## Earlier: direct answers in five languages
 
 [Results](results/direct-five-language-20261021/INSIGHTS.md) · [Protocol](direct/PROTOCOL.md)
 
@@ -60,4 +84,4 @@ python -m experiments.summarize_attribution experiments/results/attribution-2026
 
 Collection can resume with `--resume` using the original arguments. Completed forward groups are validated and preserved; changed settings, duplicates, and partial groups are rejected. The archived run resumed after 128/180 forwards. No earlier choice was discarded or retried.
 
-The interactive v0.2 workflow still has synthetic controls only. New dialogue collection, independent reviews, held-out families, and cross-model/method replication are next.
+The new study adds bounded tool decisions and seeded correction histories. Full autonomous dialogue, independent reviews, held-out families and replication across model families remain pending.

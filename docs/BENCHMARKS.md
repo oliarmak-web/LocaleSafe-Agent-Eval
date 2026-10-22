@@ -6,6 +6,7 @@
 | LocaleSafe airport pilot v0.1 | Real model run; 108 outputs | Single-turn decisions and proposed calls across nine language configurations |
 | Controlled attribution probe | Completed; one local model | Language/phrasing/locale contrasts and English plan recognition; balanced answer order |
 | Direct-answer cross-check | Completed; 80 local generations across five languages | Date interpretation, output format, unnecessary clarification, fixed-adapter outcomes; post-hoc script repair |
+| Matched workflow study | Completed; 1,800 GPU generations, two related models, five languages | Bounded tool decisions; localized policy, oracle facts, English restatements and seeded corrections |
 | Oracle/injected-failure controls | Passing tests | Harness correctness; not model quality |
 | [BFCL](https://gorilla.cs.berkeley.edu/leaderboard.html) | Not run | External function-calling benchmark |
 | [MASSIVE-Agents](https://aclanthology.org/2025.findings-emnlp.1099/) | Not run | External multilingual function calling |

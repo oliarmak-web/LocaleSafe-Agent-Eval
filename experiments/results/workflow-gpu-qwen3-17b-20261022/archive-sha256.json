@@ -1,0 +1,17 @@
+{
+  "attempts.jsonl": "dcc1babb187d6ddeb52eff03bc715af67e11c168be5b6354e7cc01567cea4bb7",
+  "cases.jsonl": "ea4e5e45b3e1c20a0264ffb3e3c4edeeafd6a4c4564dee543a64459c72689d61",
+  "manifest.json": "ecd41909a5fa8fcff6903ca584698acf014a6b48400375a2308764e1ef169db3",
+  "model-config-sha256.json": "0e2866def4e016cddac4045463c003cd8433f8fb3b95ebdf00efa2b6c4c574fe",
+  "PROTOCOL.md": "b6d7a44fdb8adf6148527fb462d01c3fa9693636870554f2f290af7ecbd5405b",
+  "RESULTS.md": "76fe16e6d9804332bf3a39f6d8d5463ef855a6baf78e6ff51040a6059dd66168",
+  "runtime-versions.txt": "bf7e90906a253f1cede5b758703f55223b46a6bbd18c06ee8795bf208d79b436",
+  "summary.json": "aa17f883b370790fc271893dba8d43e01420fb019c97dbfb9628b8a7d08e5118",
+  "TRANSFER.md": "444392fbf1b08e6f5a45123124838ffcbf99af7c04547edd9cf9533debdd8a71",
+  "source/archive.py": "5268d8ec070633d439fddc20d71efebd88df2f5220a4ceecc53167df064ad490",
+  "source/build_cases.py": "24c021291e0031494f9f177d19b0444717b785492a0b944f1027dc61809572a2",
+  "source/collector.py": "749a560e382093fb5f8f06e11bc8632c866f5b55aa1903c9561f53695822c929",
+  "source/restore_transfer.py": "441f49d929967351b28f90f1ef808265e43d0db30e670ac33255b94681bcd909",
+  "source/shared_scorer.py": "48fde4f69a5c541aacafe41986f6283cfefa034ddbc4826a1bb8d095c7edc76f",
+  "source/summarize.py": "f1a7a88530cf21d958f1263d4efcaf7ad2aee445e822f34409addd0394799eeb"
+}

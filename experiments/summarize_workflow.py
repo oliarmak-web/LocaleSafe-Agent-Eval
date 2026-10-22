@@ -73,7 +73,7 @@ def summarize(records, rows):
                         for condition in sorted({r["condition"] for r in rows})}
         language_conditions = {lang: {cond: metrics([r for r in rows if r["language"] == lang and r["condition"] == cond], mode)
                                      for cond in by_condition} for lang in languages}
-        contrasts = {"english_vs_target": {}, "baseline_vs_localized_policy": {}, "baseline_vs_structured_facts": {}}
+        contrasts = {"english_vs_target": {}, "recovery_english_vs_target": {}, "baseline_vs_localized_policy": {}, "baseline_vs_structured_facts": {}}
         baseline = [r for r in rows if r["condition"] == "baseline"]
         for language in languages:
             group = [r for r in baseline if r["language"] == language]
@@ -84,6 +84,8 @@ def summarize(records, rows):
                 localized = [(r, indexed[r["scenario"], language, "localized_policy", r["repeat"]]) for r in group]
                 contrasts["english_vs_target"][language] = contrast(english, mode)
                 contrasts["baseline_vs_localized_policy"][language] = contrast(localized, mode)
+                recovery = [r for r in rows if r["condition"] == "recovery" and r["language"] == language]
+                contrasts["recovery_english_vs_target"][language] = contrast([(indexed[r["scenario"], "en", "recovery", r["repeat"]], r) for r in recovery], mode)
         indexed_records = {r["id"]: r for r in records}
         errors = {}
         for condition in by_condition:
@@ -126,7 +128,7 @@ def report(manifest, summary):
         lines.append(f"| {lang} | {pair['both_correct']} | {pair['both_wrong']} | {pair['left_only']} | {pair['right_only']} |")
     lines += ["", "## Scope", "",
               "Each generated JSON call is executed in a deterministic sandbox. Correct calls and final states are checked separately from schema validity and execution. Canonical calls pass all controls; reachable wrong proposals fail task success.", "",
-              "Recovery starts with an injected wrong proposal and a scripted rejection. It does not measure recovery from the model's own mistakes or full autonomous conversations. Every task withholds approval: no positive-consent competence is measured.", "",
+              "Recovery starts with an injected wrong proposal and a scripted rejection. It also exposes a valid JSON example, so improvement over baseline cannot be attributed uniquely to correction ability. It does not measure recovery from the model's own mistakes or full autonomous conversations. Every task withholds approval: no positive-consent competence is measured.", "",
               "Structured facts deliberately remove interpretation work; they are canonical authored facts, not model-extracted facts. English controls are reused across languages and are not additional generations. Tool schemas and slot/day IDs stay in English/invariant form when policy language changes.", "",
               "Draft translations, six template families, related models, quantization and small samples limit attribution. No human-reviewed translation rescue, held-out validation, significance, language ranking or real-world harm claim. Differences are diagnostic leads; zero differences do not establish equivalence.", "",
               "Exact prompts, raw outputs, seeds, execution states and failures: attempts.jsonl. Full paired contrasts, error types and per-family scores: summary.json. Protocol was frozen before task collection."]
