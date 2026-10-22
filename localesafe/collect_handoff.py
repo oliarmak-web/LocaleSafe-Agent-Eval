@@ -113,7 +113,7 @@ def main():
             raise ValueError("model weight hash mismatch")
     tokenizer = AutoTokenizer.from_pretrained(model_dir, trust_remote_code=False, local_files_only=True)
     model = AutoModelForCausalLM.from_pretrained(model_dir, trust_remote_code=False, local_files_only=True,
-                                               use_safetensors=True, dtype=torch.float16).to("cuda").eval()
+                                               use_safetensors=True, dtype=torch.float16, device_map="cuda").eval()
     tokenizer.padding_side = "left"
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token = tokenizer.eos_token
