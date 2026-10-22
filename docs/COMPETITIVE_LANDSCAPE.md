@@ -23,23 +23,19 @@
 | [Agent Memory Is a Surface for Endogenous Authorization Laundering](https://arxiv.org/abs/2609.01836) | Memory-generated false authority and provenance/event-sourcing safeguards | Stale permission in summaries is not an untouched topic |
 | [Beyond the Mandate](https://arxiv.org/abs/2608.23858) | Manipulated pre-authorization context in agent payments | Signed transaction data does not settle whether the user intended the action; this issue already has research |
 
-The original [tau-bench repository](https://github.com/sierra-research/tau-bench) also establishes policy-following service workflows and backend-state checks. Its README directs users to its successor for current tasks. LocaleSafe has not run either benchmark and must not imply comparable leaderboard results.
+The original [tau-bench repository](https://github.com/sierra-research/tau-bench) also establishes policy-following service workflows and backend-state checks. Its README directs users to its successor for current tasks. LocaleSafe has not run either benchmark; its scores are not comparable leaderboard results.
 
 ## Candidate gap, not an established novelty claim
 
 **Which part of a multilingual handoff loses the user's current authority: interpreting the update, preserving it in a summary, acting on it, or judging the action?**
 
-A useful study would cross language switching with permission changes and handoff representation. It would independently score the agent, the permission record and the monitor against a deterministic sandbox. This combines several established ideas into a specific empirical question. A combination becomes a contribution through useful evidence, not through naming it.
+A useful study would cross language switching with permission changes and handoff representation. It would independently score the agent, the permission record and the monitor against a deterministic sandbox. The study combines established methods to investigate a specific failure pathway.
 
-Before claiming differentiation, inspect the full methods and artifacts of the closest authorization, memory and monitor studies. Check whether they already cross these factors, review their references, and update this table. This review has not established that none do.
+A full-method comparison of the closest authorization, memory and monitor studies remains outstanding, including whether they already cross these factors.
 
-## What not to claim
+## Scope
 
-- First multilingual agent benchmark, consent benchmark, permission monitor or language-sensitive judge.
-- That most industry teams test only English; we have not audited industry practices.
-- That our current draft tasks validate cultural competence or global deployment.
-- That more language variants are more independent evidence.
-- That a private draft establishes public priority, or that release guarantees citations.
+Multilingual agent evaluation, authorization checks and language-sensitive monitors have established precedents. LocaleSafe has not audited industry testing practices or validated cultural competence and global deployment. Translated variants remain dependent observations.
 
 ## Search record
 
@@ -56,4 +52,4 @@ multilingual agent memory permission benchmark
 agent language switch authorization benchmark
 ```
 
-Only primary technical sources support the comparisons above. Search rankings, snippets and abstracts can miss relevant work. No source code or datasets were imported from these projects. The next search should challenge the candidate claim directly, rather than search only for supporting evidence.
+Only primary technical sources support the comparisons above. Search rankings, snippets and abstracts can miss relevant work. No source code or datasets were imported from these projects. Further review will test the candidate contribution against the closest full methods and artifacts.

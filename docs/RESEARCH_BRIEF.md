@@ -1,6 +1,6 @@
 # LocaleSafe: research brief
 
-**Status: private development, October 21, 2026.** This brief explains existing evidence. It is not a publication announcement or independent coverage.
+**Research prototype · October 21, 2026.**
 
 ## In one sentence
 
@@ -23,7 +23,7 @@ Illustrative uses include appointment changes, customer-service updates and inte
 - A post-hoc repeatability analysis found that one of eleven successful English baseline outputs failed on the English rerun, versus four to nine failures on matched other-language outputs. These overlapping comparisons reuse English anchors.
 - A separate handoff prototype contains 48 draft English/Spanish rows and five injected-failure controls. It has not been tested with real models.
 
-Sources: [workflow study](WORKFLOW_STUDY.md), [rerun analysis](CONSISTENCY_CONTROL.md), [handoff protocol](../experiments/handoff/PROTOCOL.md). Recorded model decisions, synthetic controls and future experiments must remain separately identified.
+Sources: [workflow study](WORKFLOW_STUDY.md), [rerun analysis](CONSISTENCY_CONTROL.md), [handoff protocol](../experiments/handoff/PROTOCOL.md). The model study and synthetic handoff controls are separate evidence sets.
 
 ## What is the contribution?
 
@@ -31,14 +31,12 @@ The current deliverables are a runnable diagnostic toolkit, authored workflow fi
 
 The project builds on existing multilingual, authorization and monitoring research. Its specific handoff study is under development; uniqueness and wider significance have not been established. [Comparison with related work](COMPETITIVE_LANDSCAPE.md).
 
-## What should coverage or reuse preserve?
+## Scope and limitations
 
-Name Olivia Iarmak when attributing the project and identify the exact software commit and study. Describe the current work as an exploratory research prototype. Preserve the study's model sizes, sample scope and translation-review limitations alongside numerical findings.
-
-Do not describe it as proof that non-English agents are unsafe, a clinically validated system, the first multilingual benchmark, a peer-reviewed paper, or a deployed safety product. The work does not measure speech, clinical correctness, hallucination rates or industry-wide failure prevalence. No adoption, ROI, citations, awards or independent media coverage are verified here.
+The studies are exploratory and use draft translations. They do not establish causal language effects or production safety. Speech, clinical correctness, hallucination rates and industry-wide failure prevalence are outside scope. The handoff study has not yet run with real models.
 
 ## Citation
 
 Olivia Iarmak. *LocaleSafe: diagnose language and workflow failures in service agents*. Software repository, 2026. Include the exact commit and experiment used. [CITATION.cff](../CITATION.cff) · [BibTeX](../CITATION.bib).
 
-No DOI or journal publication is currently assigned. Once a public versioned release or paper exists, cite that specific artifact. This brief does not create independent recognition; coverage and scholarly use remain decisions for outside authors.
+No DOI or journal publication is currently assigned.

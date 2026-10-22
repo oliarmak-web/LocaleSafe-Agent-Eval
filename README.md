@@ -6,7 +6,7 @@ LocaleSafe is a research toolkit for testing service agents across languages. It
 
 Use it to investigate a practical question: **is the failure in language understanding, the workflow, the handoff, or the safety monitor?**
 
-Created and maintained by **Olivia Iarmak**. MIT-licensed research prototype; currently private. Implementation, translations and documentation use AI assistance.
+Created and maintained by **Olivia Iarmak**. MIT-licensed research prototype. Implementation, translations and documentation use AI assistance.
 
 ## The problem
 
@@ -68,4 +68,4 @@ If you use the code, fixtures or analyses, cite **Olivia Iarmak, LocaleSafe**, i
 
 For a concise explanation of the work and its evidence, see the [research brief](docs/RESEARCH_BRIEF.md). For provenance, see [credits](CREDITS.md) and [history](docs/HISTORY.md).
 
-**Status:** private research development. Independent translation review, broader model testing and the new handoff experiment remain outstanding. Public release awaits a supported contribution and Olivia's explicit release decision.
+**Status:** research prototype. Independent translation review, broader model testing and real-model handoff experiments remain planned.

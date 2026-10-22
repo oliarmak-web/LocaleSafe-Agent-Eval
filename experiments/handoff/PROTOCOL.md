@@ -69,6 +69,6 @@ Output files must be new. Reports include input hashes, row-level decisions, fin
 
 Add actual summary/extraction, actor and monitor collectors, with pinned models, source hashes, prompts, raw outputs, failures, seeds and timing. Run full-history, oracle-record and extracted-record conditions independently. Keep gold labels out of full-history and extracted-record prompts. Use capable models from different families, repeated same-language controls, deterministic decoding and matched command examples.
 
-Expand beyond the shared template, obtain independent bilingual review, separate development/test scenario families, and freeze the protocol and budget before confirmatory collection. The English competence gate, sample size and primary statistical contrast are not yet frozen. No paid calls are authorized by this prototype.
+Expand beyond the shared template, obtain independent bilingual review, separate development/test scenario families, and freeze the protocol and budget before confirmatory collection. The English competence gate, sample size and primary statistical contrast are not yet frozen.
 
-The [related-work review](../../docs/COMPETITIVE_LANDSCAPE.md) remains necessary: a functioning harness does not establish novelty. Keep the repository private pending the research and Olivia's release decision.
+The [related-work review](../../docs/COMPETITIVE_LANDSCAPE.md) documents precedents and remaining questions about methodological novelty.

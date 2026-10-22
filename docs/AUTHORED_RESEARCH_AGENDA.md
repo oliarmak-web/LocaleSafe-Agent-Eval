@@ -1,6 +1,6 @@
 # From translation to task completion
 
-Research agenda · Olivia Iarmak, project originator/proposed lead author · October 21, 2026
+Research agenda · Olivia Iarmak, creator and maintainer · October 21, 2026
 
 **Contribution:** an open service-agent harness that separates language/context interpretation from consent, execution, and completion failures.
 

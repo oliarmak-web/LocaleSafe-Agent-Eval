@@ -1,12 +1,12 @@
 # Research shortlist: October 2026–April 2027
 
-**Private working draft. Keep the repository private until Olivia chooses to release it.** The horizon below is a forecast, not an announced industry roadmap. [Related-work comparison](COMPETITIVE_LANDSCAPE.md).
+**Research roadmap.** The horizon below is a forecast, not an announced industry roadmap. [Related-work comparison](COMPETITIVE_LANDSCAPE.md).
 
 **Implementation started:** the [handoff prototype](../experiments/handoff/PROTOCOL.md) includes 48 draft English/Spanish rows, trusted permission enforcement, structured-record and actor scoring, monitor verdict scoring and five injected controls. Natural-language summary collection, real-model experiments and independent review remain outstanding.
 
 ## Trends with concrete signals
 
-| Observed signal | My forecast for the next six months | Research opportunity |
+| Observed signal | Expected research demand | Research opportunity |
 |---|---|---|
 | [NIST launched an AI Agent Standards Initiative](https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure), including identity and authorization work | More scrutiny of what an agent is allowed to do, beyond whether it finishes | Measure whether changed user permission survives a language switch and delegated handoff |
 | [Claude Code's auto mode](https://claude.com/resources/articles/auto-mode) uses safeguards to assess actions before execution | More reliance on a second system judging an acting agent | Distinguish agent mistakes from monitor mistakes on the same recorded action |
@@ -26,7 +26,7 @@ These signals support research relevance. They do not establish market size, ado
 | 4 | Test conversation-to-mandate agreement in commerce | Does a spending or purchase authorization match what the user actually allowed? | More integration work; AP2 security research already exists; avoid real payments |
 | 5 | Add more languages to the current harness | Which existing failures recur in additional languages? | Useful coverage, weak differentiation on its own |
 
-**Recommendation:** use idea 1 as the main study, idea 2 as its measurement check, and idea 3 as an intervention. Keep commerce as a later domain extension. No new benchmark name or first-of-its-kind claim is needed.
+**Study focus:** permission changes across multilingual handoffs, with independent monitor assessment and structured permission records as an intervention. Commerce is a possible later extension.
 
 ## One plain-English example
 
@@ -79,7 +79,7 @@ Freeze the primary contrast, scenario-family split, model selection, English com
 
 The useful artifact would be a reviewed set of permission-change failures, a reproducible way to locate the failing stage, and evidence showing when a particular handoff intervention helps or fails. A team could use it when changing a model, a memory system or a monitor in a multilingual service agent.
 
-That is a stronger reason to cite than the number of languages. It is a proposed value proposition, not measured adoption or a guarantee of citations. Standards activity establishes relevance; it does not establish endorsement by NIST, FIDO or vendors.
+External reuse and production benefits have not been measured. References to standards and vendors identify relevant technical developments, not endorsements.
 
 ## Before public release
 
@@ -90,12 +90,6 @@ Keep the existing pilot explicitly exploratory. For the new research release, re
 3. A frozen protocol and family-separated evaluation, including approved and revoked permission.
 4. Real actor and monitor experiments on capable models from different families, with repeated controls and all failures retained.
 5. An intervention comparison that reports usefulness, cost and null outcomes as well as safety.
-6. Reproducible artifacts, a security/provenance check, and an explicit release decision by Olivia. Publication, DOI registration and submission remain future actions.
+6. Reproducible artifacts, a security and provenance review, and versioned release metadata.
 
-These are working acceptance criteria for the proposed release, not evidence that they are already met. If the full-text review finds the exact study already exists, change the question or pursue a credited replication/extension. Do not hide overlap.
-
-## Authorship and decisions
-
-Olivia originated LocaleSafe and requested the multilingual diagnosis, service-agent safety and U.S./global relevance goals. The research shortlist and protocol were drafted with AI assistance. She authorized starting implementation of this direction. This does not imply that she independently wrote every detail or that the study is complete or novel.
-
-Her strongest authorship record will be concrete decisions: why these use cases, what counts as permission, which hypotheses and controls matter, how disagreements are resolved, and how findings change the design. Record those decisions and actual work in version history. Credit reviewers and contributors for work they perform; do not invent review, affiliations or independent validation.
+These release criteria remain outstanding. The full-method related-work review will determine whether the study is positioned as a new experiment, replication or extension.

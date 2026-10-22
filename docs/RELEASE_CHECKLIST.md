@@ -8,4 +8,4 @@
 
 **Before public release:** owner review of attribution/license; secret/history review; enable available security reporting/scanning. Repository visibility is a separate setting.
 
-Do not claim validated cultural competence, clinical safety, adoption, causal language bias, or statistical significance.
+**Scope:** cultural competence, clinical safety, adoption, causal language effects and statistical significance are not established by the current studies.

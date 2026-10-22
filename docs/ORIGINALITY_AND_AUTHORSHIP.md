@@ -44,16 +44,10 @@ Olivia Iarmak is LocaleSafe's creator and maintainer. She supplied the project d
 
 This review inspected related projects for comparison; it did not import their code or datasets. It does not certify the provenance of every earlier line. Any future reuse must record its source and comply with its license. Related-project authors are not collaborators or endorsers of LocaleSafe.
 
-Use this description:
-
-> Created LocaleSafe, an open-source research prototype that tests multilingual service-agent actions and separates language, formatting and workflow failures. Developed its implementation and analysis with AI assistance.
-
-Use “open-source” once the licensed repository is publicly accessible. Before then, use “research prototype.” Do not claim a first-of-its-kind benchmark, independently validated translations, a proven causal language effect or an entirely manually written implementation.
-
 ## The contribution we can support
 
 The current contribution is the specific runnable implementation, authored workflow fixtures, archived model outputs, reproducible analyses and documented findings. These are concrete artifacts; their existence does not establish methodological novelty or external impact.
 
 The proposed next contribution is a reviewed permission-and-correction suite and an equal-budget comparison of monitoring approaches, accounting for ordinary model inconsistency. That remains a research direction: novelty, effectiveness and usefulness must be demonstrated. See the [study plan](V1_RESEARCH_PLAN.md).
 
-Credit related work, cite actual results and describe limitations. Authorship of this work does not require claiming ownership of the broader idea.
+Project attribution is recorded in [CREDITS.md](../CREDITS.md).

@@ -1,6 +1,6 @@
-# From public prototype to a stronger research contribution
+# Research plan
 
-**Release decision:** keep the repository private while strengthening the contribution, as Olivia requested. The current work remains an exploratory development study. The expanded [related-work review](COMPETITIVE_LANDSCAPE.md) and [research shortlist](NEXT_RESEARCH_DIRECTION.md) refine the direction below. Citation potential depends on independent usefulness and evidence; publication alone does not establish it.
+**Status:** exploratory development study. The [related-work review](COMPETITIVE_LANDSCAPE.md) and [research roadmap](NEXT_RESEARCH_DIRECTION.md) define the next phase.
 
 ## Proposed question
 
@@ -20,7 +20,7 @@ Focus on permission and correction: the wrong appointment or account, a changed 
 | Different outputs may reflect normal randomness | Repeat English against English as well as English against other languages; compare with deterministic decoding |
 | Bounded decisions | Real sandbox tool loops with rejection, re-confirmation, stale approval and tool errors |
 
-Independent review is necessary work; an additional model-generated translation is not a substitute. Start with a small reviewed pilot and agree on a compute budget before scaling. Do not assume the full study will fit free GPU quotas.
+The next phase requires a reviewed pilot and a defined compute budget. Additional model-generated translations do not replace independent bilingual review.
 
 ## Monitoring experiment
 
@@ -49,8 +49,8 @@ The [originality and authorship review](ORIGINALITY_AND_AUTHORSHIP.md) records c
 
 The candidate contribution is a reviewed permission-and-correction suite plus a controlled study of monitoring effectiveness. Its novelty still needs a fuller related-work review and the experiment itself. No claim of being first is made.
 
-## What makes the release useful to cite
+## Reproducibility and release artifacts
 
-Provide a versioned dataset and schema, reviewer/provenance notes, runnable adapters, a frozen protocol, all outputs, a concise technical report and an archived release with a persistent identifier. The repository already has CITATION.cff; a DOI archive and research paper are not yet created. Seek an independent reproduction or an integration into an existing evaluation project, with permission and proper attribution.
+Planned artifacts include a versioned dataset and schema, review and provenance records, runnable adapters, a frozen protocol, all outputs, a technical report and an archived release with a persistent identifier. Software citation metadata is available in CITATION.cff. A DOI archive and research paper have not been created.
 
-Success means another team can use or reproduce a specific result. Citation counts, adoption and production safety improvements remain unproven.
+Independent reproduction and integration remain validation objectives.
