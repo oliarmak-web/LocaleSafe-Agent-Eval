@@ -4,6 +4,12 @@
 
 **Experiment status, October 22, 2026:** the [handoff study](HANDOFF_TECHNICAL_REPORT.md) completed 2,880 initial model calls and 384 exploratory monitor-intervention calls. Results distinguish permission-field fidelity from action representation and monitor errors. Independent bilingual review and broader validation remain outstanding.
 
+## Next language expansion
+
+Retain English as the control and Spanish as the existing comparison. Prioritize Simplified Chinese, Ukrainian and Tamil for expansion. Tamil takes priority over adding further Haitian Creole cases; existing Haitian Creole results remain part of the earlier study.
+
+For each added language, test same-language conversations and switches to and from English using matched task details. Require fluent independent review of permission changes and equivalent meaning before treating cases as reviewed benchmark evidence. Tamil-script cases and Tamil–English code-switching should be separate conditions. New languages and model runs are planned, not completed results.
+
 ## Trends with concrete signals
 
 | Observed signal | Expected research demand | Research opportunity |
