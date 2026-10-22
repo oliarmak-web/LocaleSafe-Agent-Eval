@@ -13,6 +13,13 @@ from .evaluate import read_jsonl, sha256
 from .handoff_study import PROFILES, jobs_for, messages_for, score, seed_for
 
 MODELS = {
+    "mistral-7b-v03": {"model": "mistralai/Mistral-7B-Instruct-v0.3", "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+        "weights": {"model-00001-of-00003.safetensors": "ce6fb6f6f4d0183f4813cbf4ece24109da629a08d4210da46f77e1d8b0bd5c19",
+                    "model-00002-of-00003.safetensors": "8c0e72f148366b6a3709e002a98706a33d31aec8515090c856c95b2044f92ae0",
+                    "model-00003-of-00003.safetensors": "905dd405363e43d95779c1c1155a2dbfd36155914ae95dbd934e12e490cfb4ca"}},
+    "phi4-mini": {"model": "microsoft/Phi-4-mini-instruct", "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+        "weights": {"model-00001-of-00002.safetensors": "bc703090b63eda16f639fa4de7ac54635c23105ab1da2f6ec4d3403151d38ee6",
+                    "model-00002-of-00002.safetensors": "7ff79b9d2d31076bac2663393451f6530f4fc8ca49b09002116c92c373dba983"}},
     "qwen3-4b": {"model": "Qwen/Qwen3-4B", "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
         "weights": {"model-00001-of-00003.safetensors": "328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223",
                     "model-00002-of-00003.safetensors": "6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5",
@@ -22,7 +29,7 @@ MODELS = {
                     "model-00002-of-00002.safetensors": "6c3ad90646457295723e4da5ee8afac47006e20407b122df5174693dd8d68a43"}},
 }
 SOURCES = ("localesafe/collect_handoff.py", "localesafe/handoff_study.py", "localesafe/handoff_eval.py",
-           "localesafe/evaluate.py", "experiments/build_handoff_study.py", "experiments/handoff-study/PROTOCOL.md")
+           "localesafe/evaluate.py", "experiments/build_handoff_study.py", "experiments/handoff-study/PROTOCOL.md", "experiments/handoff-study/MODEL_EXTENSION.md")
 
 
 def ordered_jobs(cases, profiles, seed):
@@ -45,6 +52,7 @@ def main():
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--seed", type=int, default=20261022)
     parser.add_argument("--resume", action="store_true")
+    parser.add_argument("--batch-size", type=int, choices=(1, 2, 4, 8), default=8)
     args = parser.parse_args()
     import torch
     import transformers
@@ -66,7 +74,7 @@ def main():
                 "sources": {name: sha256(name) for name in SOURCES}, "python": platform.python_version(),
                 "torch": torch.__version__, "transformers": transformers.__version__, "cuda": torch.version.cuda,
                 "gpu": torch.cuda.get_device_name(0), "dtype": "float16", "quantization": "none",
-                "batch_size": 8, "threads": 2, "enable_thinking": False, "temperature": 0.7, "top_p": 0.8, "top_k": 20,
+                "batch_size": args.batch_size, "threads": 2, "enable_thinking": False, "temperature": 0.7, "top_p": 0.8, "top_k": 20,
                 "token_limits": {"summary": 192, "actor": 96, "monitor": 24},
                 "sampling": "greedy or independent per-row CUDA seeded sampling with forced selected token"}
     output = args.output_dir
@@ -98,7 +106,8 @@ def main():
             shutil.copyfile(source, target)
     manifest_path.write_text(json.dumps(manifest, indent=2)+"\n", encoding="utf-8")
     model_dir = Path(snapshot_download(spec["model"], revision=spec["revision"], token=False,
-                                      allow_patterns=["*.json", "*.txt", "*.jinja", "*.safetensors"]))
+                                      allow_patterns=["*.json", "*.txt", "*.jinja", "*.model", "*.model.v3", "*.safetensors"],
+                                      ignore_patterns=["consolidated.safetensors"]))
     for name, digest in spec["weights"].items():
         if sha256(model_dir / name) != digest:
             raise ValueError("model weight hash mismatch")
@@ -130,8 +139,8 @@ def main():
     with log.open("a" if args.resume else "x", encoding="utf-8") as stream:
         for stage in ("summary", "actor", "monitor"):
             stage_jobs = [j for j in jobs if j["stage"] == stage]
-            for offset in range(0, len(stage_jobs), 8):
-                batch = stage_jobs[offset:offset+8]
+            for offset in range(0, len(stage_jobs), args.batch_size):
+                batch = stage_jobs[offset:offset+args.batch_size]
                 existing = [j["id"] in previous for j in batch]
                 if all(existing):
                     continue
