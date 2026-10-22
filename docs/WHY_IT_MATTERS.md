@@ -36,3 +36,5 @@ LocaleSafe adds authored service cases, executable checks and transparent diagno
 ## What would make the research stronger
 
 Independent translation review; new tasks kept separate from development; positive approval cases; full user–agent conversations; models from other families; external reproduction. Until then, it is a useful foundation for research and engineering tests, with limited evidence for wider conclusions.
+
+[Concrete next-study plan and related-work overlaps](V1_RESEARCH_PLAN.md).

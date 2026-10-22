@@ -18,6 +18,8 @@ These are development findings from draft translations and six template families
 
 [What multilingual evaluation and monitoring should add](docs/MULTILINGUAL_EVAL_MONITORING.md). Evaluation is implemented; live production monitoring is a proposed next step.
 
+[Plan for a stronger, reviewed study](docs/V1_RESEARCH_PLAN.md): permission and correction failures, normal model variation, and monitoring effectiveness. The current release is exploratory.
+
 ## What works
 
 | Component | Status |
