@@ -1,4 +1,5 @@
 import copy
+import json
 import unittest
 from pathlib import Path
 
@@ -11,6 +12,7 @@ class FormatFollowupTests(unittest.TestCase):
         paths = [root/'experiments/results'/f'handoff-{m}-development-20261022'
                  for m in ('mistral-7b-v03', 'phi4-mini')]
         plan = build(paths)
+        self.assertEqual(plan, json.loads((root/'experiments/format-followup/jobs.json').read_text(encoding='utf-8')))
         self.assertEqual(len(plan['jobs']), 256)
         pairs = {}
         for job in plan['jobs']:

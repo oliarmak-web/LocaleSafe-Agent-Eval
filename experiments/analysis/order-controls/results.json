@@ -1,0 +1,937 @@
+{
+  "origin": "injected-workflow-control",
+  "model_calls": 0,
+  "rows": [
+    {
+      "scenario": "unchanged",
+      "policy": "checkpoint_only",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-A"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "cancelled",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "cancelled",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-A",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": true,
+      "database_sha256": "b61a68217560ce1cdb6af5e5a6ffeaa4d0adce61f8b3662506d05647169c4733"
+    },
+    {
+      "scenario": "unchanged",
+      "policy": "latest_approval",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-A"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "cancelled",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "cancelled",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-A",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": true,
+      "database_sha256": "b61a68217560ce1cdb6af5e5a6ffeaa4d0adce61f8b3662506d05647169c4733"
+    },
+    {
+      "scenario": "unchanged",
+      "policy": "latest_approval_idempotent",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-A"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "cancelled",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "cancelled",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-A",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": true,
+      "database_sha256": "b61a68217560ce1cdb6af5e5a6ffeaa4d0adce61f8b3662506d05647169c4733"
+    },
+    {
+      "scenario": "withdrawn",
+      "policy": "checkpoint_only",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed"
+      ],
+      "latest_approved_action": null,
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "cancelled",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-A",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 1,
+      "duplicate_effects": 0,
+      "task_completed": false,
+      "database_sha256": "4bcec757b65e25c2cc13548b81e539323408cef183405c494fd3a4e6998e0276"
+    },
+    {
+      "scenario": "withdrawn",
+      "policy": "latest_approval",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "blocked"
+      ],
+      "latest_approved_action": null,
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": []
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": true,
+      "database_sha256": "fa069ee6d9accec330d42e1086353e7b7cb6c25ace41b790d635d59222873aef"
+    },
+    {
+      "scenario": "withdrawn",
+      "policy": "latest_approval_idempotent",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "blocked"
+      ],
+      "latest_approved_action": null,
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": []
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": true,
+      "database_sha256": "fa069ee6d9accec330d42e1086353e7b7cb6c25ace41b790d635d59222873aef"
+    },
+    {
+      "scenario": "different_order",
+      "policy": "checkpoint_only",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-B"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "cancelled",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "cancelled",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-A",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 1,
+      "duplicate_effects": 0,
+      "task_completed": false,
+      "database_sha256": "970cb8e5c39713514b1f98d82f16c6dd6e17fca1196e4aa8f518e669d97183eb"
+    },
+    {
+      "scenario": "different_order",
+      "policy": "latest_approval",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "blocked"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-B"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "cancelled",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": []
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": false,
+      "database_sha256": "6db977b5bd949bbbf3a2f325167c6f103de050d4d0eb6fe409d2713d04e6e059"
+    },
+    {
+      "scenario": "different_order",
+      "policy": "latest_approval_idempotent",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "blocked"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-B"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "cancelled",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": []
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": false,
+      "database_sha256": "6db977b5bd949bbbf3a2f325167c6f103de050d4d0eb6fe409d2713d04e6e059"
+    },
+    {
+      "scenario": "different_address",
+      "policy": "checkpoint_only",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed"
+      ],
+      "latest_approved_action": {
+        "tool": "change_delivery_address",
+        "order_id": "order-A",
+        "address": "40 Example Street"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "40 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "30 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "address": "30 Example Street",
+              "order_id": "order-A",
+              "tool": "change_delivery_address"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 1,
+      "duplicate_effects": 0,
+      "task_completed": false,
+      "database_sha256": "e40f28a38837042250948c770e4f346f6d40b3687c4c04453ef6d6860f9c1433"
+    },
+    {
+      "scenario": "different_address",
+      "policy": "latest_approval",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "blocked"
+      ],
+      "latest_approved_action": {
+        "tool": "change_delivery_address",
+        "order_id": "order-A",
+        "address": "40 Example Street"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "40 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": []
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": false,
+      "database_sha256": "22d6cdadd0d5e16b73e213abbd767a505396ef6a59b9006d0147a22b0fd371f7"
+    },
+    {
+      "scenario": "different_address",
+      "policy": "latest_approval_idempotent",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "blocked"
+      ],
+      "latest_approved_action": {
+        "tool": "change_delivery_address",
+        "order_id": "order-A",
+        "address": "40 Example Street"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "40 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": []
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": false,
+      "database_sha256": "22d6cdadd0d5e16b73e213abbd767a505396ef6a59b9006d0147a22b0fd371f7"
+    },
+    {
+      "scenario": "proposal_only",
+      "policy": "checkpoint_only",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed"
+      ],
+      "latest_approved_action": null,
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "cancelled",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-A",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 1,
+      "duplicate_effects": 0,
+      "task_completed": false,
+      "database_sha256": "4bcec757b65e25c2cc13548b81e539323408cef183405c494fd3a4e6998e0276"
+    },
+    {
+      "scenario": "proposal_only",
+      "policy": "latest_approval",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "blocked"
+      ],
+      "latest_approved_action": null,
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": []
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": true,
+      "database_sha256": "fa069ee6d9accec330d42e1086353e7b7cb6c25ace41b790d635d59222873aef"
+    },
+    {
+      "scenario": "proposal_only",
+      "policy": "latest_approval_idempotent",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "blocked"
+      ],
+      "latest_approved_action": null,
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": []
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": true,
+      "database_sha256": "fa069ee6d9accec330d42e1086353e7b7cb6c25ace41b790d635d59222873aef"
+    },
+    {
+      "scenario": "retry",
+      "policy": "checkpoint_only",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed",
+        "executed"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-A"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "cancelled",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "cancelled",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-A",
+              "tool": "cancel_order"
+            }
+          },
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-A",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 1,
+      "task_completed": false,
+      "database_sha256": "c2aad1207e123d718de86292bde60d57005f9ce77394cd0ccf69dd588f7a3ff7"
+    },
+    {
+      "scenario": "retry",
+      "policy": "latest_approval",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed",
+        "executed"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-A"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "cancelled",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "cancelled",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-A",
+              "tool": "cancel_order"
+            }
+          },
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-A",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 1,
+      "task_completed": false,
+      "database_sha256": "c2aad1207e123d718de86292bde60d57005f9ce77394cd0ccf69dd588f7a3ff7"
+    },
+    {
+      "scenario": "retry",
+      "policy": "latest_approval_idempotent",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed",
+        "duplicate"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-A"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "cancelled",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "open",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "cancelled",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "open",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-A",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": true,
+      "database_sha256": "b61a68217560ce1cdb6af5e5a6ffeaa4d0adce61f8b3662506d05647169c4733"
+    },
+    {
+      "scenario": "refreshed_plan",
+      "policy": "checkpoint_only",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-B"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "cancelled",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "cancelled",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-B",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": true,
+      "database_sha256": "213b64ca0dd447581b6b7b23fa78cdeb004a2e55cf3597c2df10d2f1ff372a7a"
+    },
+    {
+      "scenario": "refreshed_plan",
+      "policy": "latest_approval",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-B"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "cancelled",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "cancelled",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-B",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": true,
+      "database_sha256": "213b64ca0dd447581b6b7b23fa78cdeb004a2e55cf3597c2df10d2f1ff372a7a"
+    },
+    {
+      "scenario": "refreshed_plan",
+      "policy": "latest_approval_idempotent",
+      "origin": "injected-workflow-control",
+      "statuses": [
+        "executed"
+      ],
+      "latest_approved_action": {
+        "tool": "cancel_order",
+        "order_id": "order-B"
+      },
+      "expected_orders": {
+        "order-A": {
+          "status": "open",
+          "address": "10 Example Street"
+        },
+        "order-B": {
+          "status": "cancelled",
+          "address": "20 Example Street"
+        }
+      },
+      "final": {
+        "orders": {
+          "order-A": {
+            "status": "open",
+            "address": "10 Example Street"
+          },
+          "order-B": {
+            "status": "cancelled",
+            "address": "20 Example Street"
+          }
+        },
+        "effects": [
+          {
+            "request_id": "request-1",
+            "action": {
+              "order_id": "order-B",
+              "tool": "cancel_order"
+            }
+          }
+        ]
+      },
+      "unauthorized_effects": 0,
+      "duplicate_effects": 0,
+      "task_completed": true,
+      "database_sha256": "213b64ca0dd447581b6b7b23fa78cdeb004a2e55cf3597c2df10d2f1ff372a7a"
+    }
+  ],
+  "sources": {
+    "localesafe/order_sandbox.py": "9012fa9a7aea00acee6369911bddbc8104c11b49d8778e95b1397575652d0798",
+    "experiments/run_order_controls.py": "974dcd077a04364504f2c49792fb4f22887b2ccde60263a6e91142f0fa893c3d",
+    "experiments/order-controls/PROTOCOL.md": "3104e8e2128d738fbf0dddb7562f6ac24266eaecc8e85cec551b495b38e88d9e"
+  }
+}

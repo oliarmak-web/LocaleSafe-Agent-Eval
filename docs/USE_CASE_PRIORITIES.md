@@ -1,6 +1,6 @@
 # Use-case priorities: October 2026–April 2027
 
-**Proposed next study, not implemented coverage.** Priorities reflect fit with LocaleSafe and observed technical work, not measured market demand or a claim of unique research territory.
+**Next model-study priorities.** A local injected-plan order-control prototype is now executable; model-driven and multilingual order coverage remains proposed. Priorities reflect fit with LocaleSafe and observed technical work, not measured market demand or a claim of unique research territory.
 
 ## Focus
 
@@ -17,7 +17,7 @@ Test whether an agent follows the user's latest approval when a customer-service
 | 3 | Draft versus send | A user requests a draft reply, later approves one recipient or revises the draft before sending | Whether exact content and recipient remain within approval; whether retries cause duplicate sends |
 | Later | Purchase approval | A user changes the merchant, item or price limit before checkout | Whether the final proposed transaction still matches current permission |
 
-Use synthetic stores and a local effect log. Order changes, real pause/resume, message content, recipient scope, retries and payment constraints require new executable environments; existing mock appointment/delivery/notification labels do not establish this coverage.
+Use synthetic stores and a local effect log. The [order controls](ORDER_CONTROLS.md) implement local cancellation/address changes, database reopen and sequential retries with injected plans. Model-driven changes, process-crash recovery, message content, recipient scope and payment constraints still require additional environments. Existing mock appointment/delivery/notification labels do not establish that coverage.
 
 Payments have a concrete standards signal in [Google's AP2 work](https://blog.google/products-and-platforms/platforms/google-pay/agent-payments-protocol-fido-alliance/), but add protocol complexity and strong existing security research. Keep them a later sandbox extension.
 

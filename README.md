@@ -104,6 +104,26 @@ Phi's greedy action score improved from 15/32 with the full conversation to 32/3
 
 [Additional model results](docs/MODEL_EXTENSION_RESULTS.md) · [Replication protocol](experiments/handoff-study/MODEL_EXTENSION.md).
 
+## New workflow controls: saved approvals and retries
+
+A local SQLite order sandbox now tests cancellation and delivery-address changes after closing and reopening a saved workflow. These are **21 injected workflow controls: seven schedules under three execution policies, with zero model calls**.
+
+| Policy | Completed schedules | Unapproved effects | Duplicate effects |
+|---|---:|---:|---:|
+| Trust the saved plan | 2/7 | 4 | 1 |
+| Recheck current approval | 4/7 | 0 | 1 |
+| Recheck and deduplicate retries | 5/7 | 0 | 0 |
+
+**Stopping a stale action does not finish the corrected request.** The last policy prevented unapproved and duplicate effects, but it still needed a new plan for two replacement requests. These authored controls demonstrate executor behavior; they do not measure language understanding or production failure rates.
+
+```sh
+python -m experiments.run_order_controls --output-dir reports/my-order-controls
+```
+
+The command creates separate local databases and a `results.json` with final order states and effect logs. No orders leave the sandbox. [Workflow results and limits](docs/ORDER_CONTROLS.md).
+
+A separately frozen 256-call Mistral/Phi prompt-format follow-up is **pending free GPU availability**. Colab refused GPU allocation on October 22 due to usage limits; no results from that follow-up are claimed. [Protocol](experiments/format-followup/PROTOCOL.md).
+
 ## Earlier multilingual experiments
 
 An earlier study recorded **1,800 decisions from two related Qwen3 models in five languages**: English, Spanish, Simplified Chinese, Ukrainian and Haitian Creole. Qwen3-1.7B returned 278/300 valid baseline commands, but only 37/300 were correct. Translating instructions gained six successes and lost eleven.

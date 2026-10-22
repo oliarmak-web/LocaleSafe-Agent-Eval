@@ -4,7 +4,7 @@
 
 **Experiment status, October 22, 2026:** the [handoff study](HANDOFF_TECHNICAL_REPORT.md) completed 2,880 initial model calls, 384 exploratory monitor-intervention calls and 1,920 additional Mistral/Phi development calls. Neither additional model passed the existing English gate. Results distinguish permission-field fidelity from action representation and monitor errors. Independent bilingual review and broader validation remain outstanding.
 
-**Use-case priority:** customer-service order changes with corrected approvals, followed by pause/resume and draft-versus-send controls. These are proposed extensions, not current executable coverage. See [use-case priorities and experiment design](USE_CASE_PRIORITIES.md).
+**Use-case priority:** customer-service order changes with corrected approvals, followed by pause/resume and draft-versus-send controls. A provider-free SQLite order-control prototype now covers saved plans, changed approval and sequential retries; model-driven order conversations and framework integrations remain proposed extensions. See [use-case priorities and experiment design](USE_CASE_PRIORITIES.md).
 
 ## Next language expansion
 

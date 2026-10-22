@@ -1,0 +1,11 @@
+# Persistent order-workflow controls
+
+Freeze before execution, October 22, 2026. This is a provider-free engineering experiment using injected plans, not a model benchmark or an estimate of real-world failures. There are zero model calls and no natural-language understanding is tested.
+
+Seven authored schedules: unchanged approval, withdrawal, approval moved to another order, changed address, proposal-only withdrawal, retry after reopen, and a refreshed valid plan. Each runs under three policies: trust saved checkpoint, recheck exact latest action and permission version atomically, and recheck with operation-ID deduplication. Every plan is persisted in SQLite; close and reopen the connection before executing. Retry reopens again. Each schedule/policy uses its own new database. The unchanged and refreshed-plan schedules are positive controls.
+
+Score final order fields, unapproved effects, duplicate effects and correct completion. Deduplication must not treat a reused request ID as authorization for a different payload. Approval checks and writes share a transaction. This is a sequential, single-user simulator: no real authentication, tenants, queues, concurrent processes, merchant policies, refunds, calendar APIs or external sends. The effect log counts simulated dispatches; cancelling an already cancelled order can have the same final state but still count as a duplicate effect.
+
+Withdrawal and proposal-only are the same executor-level condition: neither allows a write. Their natural-language distinction is not evaluated here. Guards can stop stale writes without completing a replacement request; do not describe blocking alone as a successful task repair. The reference expected state comes from authored approval transitions, independent of the selected execution policy. No statistical or novelty claim is supported by seven schedules.
+
+Keep the databases, source snapshots, source hashes and machine-readable results. Raw SQLite files are local ignored artifacts; publish the state/effect results and source hashes. Future model adapters, multilingual instructions and true concurrent/crash testing require separate frozen protocols. These controls are a foundation for those studies, not completed coverage of them.
