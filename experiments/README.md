@@ -1,5 +1,7 @@
 # Real-model pilot
 
+New development: [permission handoff prototype](handoff/PROTOCOL.md). The sandbox, 48 draft cases and five injected-control sets are implemented. No real-model handoff results yet; these controls are separate from the studies below.
+
 ## Latest: matched workflow study
 
 [Study and findings](../docs/WORKFLOW_STUDY.md) · [Protocol](workflow/PROTOCOL.md) · [Execution history](workflow/EXECUTION_HISTORY.md)

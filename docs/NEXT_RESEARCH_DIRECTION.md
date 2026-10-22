@@ -2,6 +2,8 @@
 
 **Private working draft. Keep the repository private until Olivia chooses to release it.** The horizon below is a forecast, not an announced industry roadmap. [Related-work comparison](COMPETITIVE_LANDSCAPE.md).
 
+**Implementation started:** the [handoff prototype](../experiments/handoff/PROTOCOL.md) includes 48 draft English/Spanish rows, trusted permission enforcement, structured-record and actor scoring, monitor verdict scoring and five injected controls. Natural-language summary collection, real-model experiments and independent review remain outstanding.
+
 ## Trends with concrete signals
 
 | Observed signal | My forecast for the next six months | Research opportunity |
@@ -94,6 +96,6 @@ These are working acceptance criteria for the proposed release, not evidence tha
 
 ## Authorship and decisions
 
-Olivia originated LocaleSafe and requested the multilingual diagnosis, service-agent safety and U.S./global relevance goals. The research shortlist and protocol above were drafted with AI assistance in response to that direction. The recommended focus is a proposal, not a study design Olivia has already independently authored or approved.
+Olivia originated LocaleSafe and requested the multilingual diagnosis, service-agent safety and U.S./global relevance goals. The research shortlist and protocol were drafted with AI assistance. She authorized starting implementation of this direction. This does not imply that she independently wrote every detail or that the study is complete or novel.
 
 Her strongest authorship record will be concrete decisions: why these use cases, what counts as permission, which hypotheses and controls matter, how disagreements are resolved, and how findings change the design. Record those decisions and actual work in version history. Credit reviewers and contributors for work they perform; do not invent review, affiliations or independent validation.

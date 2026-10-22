@@ -36,9 +36,12 @@ These are development findings from draft translations and six template families
 | Controlled attribution probe | 30 tasks; 180 model forwards; 540 sampled choices; closed-choice |
 | Direct-answer cross-check | 80 generations; English, Spanish, Chinese, Ukrainian, Haitian Creole; numeric and explicit dates |
 | Matched workflow study | 1,800 generations; two models; policy, structured-fact and seeded correction controls |
+| Permission handoff prototype | 48 draft English/Spanish cases; actor, structured handoff and monitor scores; five injected controls; no new model runs |
 | Reviewed cultural-context benchmark | Not yet validated |
 
 ## Run
+
+The [new handoff prototype](experiments/handoff/PROTOCOL.md) starts the proposed research: permission changes across language switches, with separate actor and monitor errors. Its current results are synthetic harness checks.
 
 Python 3.11+. No packages, keys, GPU, or network needed to score traces.
 
