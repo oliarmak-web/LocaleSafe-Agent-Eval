@@ -23,6 +23,7 @@ def render(runs):
     summaries = [s for _, s in runs]
     lines = ["# Does language change the agent's action?", "",
              "**1,800 recorded decisions · two related models · five languages · six workflow families.** Free Colab T4; identical float16 runtime, prompts, tasks and decoding settings across models. AI-authored draft translations.", "",
+             "[Findings in plain English](FINDINGS.md) · [Why this is credible and useful](WHY_IT_MATTERS.md)", "",
              "## What we ran", "",
              "30 authored scenarios (six templates × five variants), each in English, Spanish, Simplified Chinese, Ukrainian and Haitian Creole. Two stochastic repeats. IDs and slot/day labels stay invariant; locale stays US.", "",
              "| Experiment | Decisions per model | Question |", "|---|---:|---|",

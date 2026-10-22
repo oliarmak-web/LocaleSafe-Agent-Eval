@@ -6,11 +6,13 @@ LocaleSafe pairs equivalent requests, varies locale explicitly, and replays acti
 
 **Latest study:** 1,800 tool decisions, two models, five languages, four conditions. [Methods and results](docs/WORKFLOW_STUDY.md).
 
-- **Valid JSON is not a correct action:** Qwen3-1.7B produced 278/300 valid baseline calls, but only 37/300 correct calls; 239 had wrong arguments.
-- **Language differences depend on configuration:** Qwen3-0.6B corrected 58/60 English proposals versus 2/60 Haitian Creole proposals. The larger model scored 10/60 and 16/60 respectively. That ordering did not replicate.
-- **Neither shortcut reliably fixed the task:** canonical facts yielded 6/60 correct calls on the larger model. Localized policies gained six matched successes and lost eleven.
+- **A command can look right and still do the wrong thing:** the larger model returned 278/300 correctly formatted commands, but only 37/300 chose the right action and details.
+- **Language differences changed with the model:** the small model corrected 58/60 English proposals and 2/60 Haitian Creole proposals. The larger model scored 10/60 and 16/60. There was no consistent ordering.
+- **Translation alone was not a dependable fix:** translating the larger model's instructions gained six successes and lost eleven. Giving it the correct facts directly also failed to reliably solve the task.
 
 These are development findings from draft translations and six template families. They motivate evaluation; they do not establish causal language bias or deployment safety.
+
+[Findings in plain English](docs/FINDINGS.md) · [Why this is credible and useful](docs/WHY_IT_MATTERS.md)
 
 ## What works
 
