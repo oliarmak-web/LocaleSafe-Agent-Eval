@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use LocaleSafe, cite this software repository. Its development studies are not a validated held-out benchmark."
+type: software
+title: "LocaleSafe: diagnose language and workflow failures in service agents"
+authors:
+  - family-names: Iarmak
+    given-names: Olivia
+repository-code: "https://github.com/oliarmak-web/LocaleSafe-AI-Agentic-Demo"
+license: MIT
+abstract: "An authored diagnostic harness with matched multilingual requests, explicit context, sandbox execution, and controls for interpretation, formatting, policy language and correction. Implementation, translations and writing use AI assistance."

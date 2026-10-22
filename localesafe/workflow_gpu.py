@@ -84,11 +84,10 @@ def main():
         def __call__(self, input_ids, scores):
             for warper in self.warpers:
                 scores = warper(input_ids, scores)
-            selected = [torch.multinomial(torch.softmax(scores[i], dim=-1), 1, generator=g).item() for i, g in enumerate(self.generators)]
+            selected = torch.stack([torch.multinomial(torch.softmax(scores[i], dim=-1), 1, generator=g)
+                                    for i, g in enumerate(self.generators)])
             forced = torch.full_like(scores, -float("inf"))
-            for i, token in enumerate(selected):
-                forced[i, token] = 0
-            return forced
+            return forced.scatter_(1, selected, 0)
 
     with log.open("a" if args.resume else "x", encoding="utf-8") as stream:
         for start_index in range(0, len(jobs), settings["batch_size"]):
