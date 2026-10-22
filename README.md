@@ -1,69 +1,71 @@
 # LocaleSafe
 
-**Find where multilingual service agents fail: language, context, or workflow.**
+**Find out why a multilingual AI agent took the wrong action.**
 
-**Research question:** when an agent works in English, does it still work on the same request in another language—and what extra tests or monitoring would reveal failures?
+LocaleSafe is a research toolkit for testing service agents across languages. It checks the action an agent chooses, the details it sends to a tool, and whether the user allowed the change.
 
-LocaleSafe pairs equivalent requests, varies locale explicitly, and replays actions in a consent-aware sandbox. Its contribution is a runnable diagnostic harness for service workflows—not a claim to be the first multilingual benchmark.
+Use it to investigate a practical question: **is the failure in language understanding, the workflow, the handoff, or the safety monitor?**
 
-**Latest study:** 1,800 tool decisions, two models, five languages, four conditions. [Methods and results](docs/WORKFLOW_STUDY.md).
+Created and maintained by **Olivia Iarmak**. MIT-licensed research prototype; currently private. Implementation, translations and documentation use AI assistance.
 
-- **A command can look right and still do the wrong thing:** the larger model returned 278/300 correctly formatted commands, but only 37/300 chose the right action and details.
-- **Language differences changed with the model:** the small model corrected 58/60 English proposals and 2/60 Haitian Creole proposals. The larger model scored 10/60 and 16/60. There was no consistent ordering.
-- **Translation alone was not a dependable fix:** translating the larger model's instructions gained six successes and lost eleven. Giving it the correct facts directly also failed to reliably solve the task.
+## The problem
 
-These are development findings from draft translations and six template families. They motivate evaluation; they do not establish causal language bias or deployment safety.
+An agent can answer fluently and still change the wrong appointment. A user can approve one action, then withdraw that approval in another language. A handoff can lose the correction, and a safety monitor can miss the mistake.
 
-[Findings in plain English](docs/FINDINGS.md) · [Why this is credible and useful](docs/WHY_IT_MATTERS.md)
+LocaleSafe helps you test these failures separately before choosing a fix. Example uses include appointment changes, customer-service requests and interpreter handoffs. Language, region and user preference are separate inputs.
 
-[What multilingual evaluation and monitoring should add](docs/MULTILINGUAL_EVAL_MONITORING.md). Evaluation is implemented; live production monitoring is a proposed next step.
+## What this project contributes
 
-[Plan for a stronger, reviewed study](docs/V1_RESEARCH_PLAN.md): permission and correction failures, normal model variation, and monitoring effectiveness. The current release is exploratory.
+- **Matched workflow experiments:** equivalent requests with fixed task details, plus controls for instruction language, structured facts and conversation history.
+- **Action and outcome scoring:** format checks, exact tool arguments, sandbox state and permission checks.
+- **An auditable experiment record:** prompts, raw outputs, failures, settings, source snapshots and artifact hashes.
+- **A permission-handoff prototype:** separate scores for the handoff record, acting agent and monitor when the user changes permission across languages.
 
-**Private research development:** [next six months: trends and research shortlist](docs/NEXT_RESEARCH_DIRECTION.md) · [related-work comparison](docs/COMPETITIVE_LANDSCAPE.md). Public release is deferred pending a supported contribution and Olivia's release decision.
+These are the project's concrete artifacts. Multilingual evaluation, authorization checks and monitor evaluation have established precedents. Our proposed research contribution is to test where current permission is lost across a multilingual handoff and which intervention helps. That study is still being developed. [Related work](docs/COMPETITIVE_LANDSCAPE.md) · [Authorship and provenance](CREDITS.md).
 
-[English rerun control](docs/CONSISTENCY_CONTROL.md): a post-hoc analysis of existing outputs, with no new model calls. The larger model lost 1/11 successful English baseline outputs on an English rerun, versus 4–9 in matched other-language outputs. These descriptive counts do not establish causality.
+## What we have learned
 
-## What works
+The completed development study recorded **1,800 decisions from two related Qwen3 models in five languages**: English, Spanish, Simplified Chinese, Ukrainian and Haitian Creole.
 
-| Component | Status |
-|---|---|
-| Language, locale, and phrasing comparisons | Implemented |
-| Appointment-change and interpreter-handoff sandbox | Implemented; no real service calls |
-| Format, intent, context, clarification, consent, tools, completion scorecards | Implemented |
-| Sandbox controls | 11 draft English/Spanish episodes; synthetic traces |
-| Real-model pilot | 108 Qwen3-0.6B outputs; nine language configurations; single-turn |
-| Controlled attribution probe | 30 tasks; 180 model forwards; 540 sampled choices; closed-choice |
-| Direct-answer cross-check | 80 generations; English, Spanish, Chinese, Ukrainian, Haitian Creole; numeric and explicit dates |
-| Matched workflow study | 1,800 generations; two models; policy, structured-fact and seeded correction controls |
-| Permission handoff prototype | 48 draft English/Spanish cases; actor, structured handoff and monitor scores; five injected controls; no new model runs |
-| Reviewed cultural-context benchmark | Not yet validated |
+| Finding | Recorded evidence | Practical implication |
+|---|---|---|
+| Valid formatting can hide a wrong action | Qwen3-1.7B returned 278/300 valid baseline commands; only 37/300 were correct | Check the requested record and action details, not just JSON |
+| Translating instructions can help some cases and hurt others | Six baseline failures became successes; eleven successes became failures | Evaluate a proposed fix on matched requests |
+| Language differences need a repeatability control | Of 11 English baseline successes, one failed on the English rerun; 4–9 failed in matched other-language outputs | Compare language differences with ordinary model inconsistency |
 
-## Run
+These are exploratory findings from draft translations, six template families and two small models from one family. The rerun comparison is post-hoc. They do not establish a causal language effect, a language ranking or production safety.
 
-The [new handoff prototype](experiments/handoff/PROTOCOL.md) starts the proposed research: permission changes across language switches, with separate actor and monitor errors. Its current results are synthetic harness checks.
+[Plain-English findings](docs/FINDINGS.md) · [Study and raw evidence](docs/WORKFLOW_STUDY.md) · [English rerun analysis](docs/CONSISTENCY_CONTROL.md).
 
-Python 3.11+. No packages, keys, GPU, or network needed to score traces.
+## New: permission across language switches
+
+A user approves changing appointment A in English, then says in Spanish: “Wait. Do not change A. Show me options for B instead.”
+
+The new prototype checks whether a supplied handoff preserves that update, whether the agent chooses the right action, and whether the monitor judges its permission correctly. A trusted sandbox check independently blocks unauthorized writes.
+
+**Available now:** 48 draft English/Spanish cases, switches in both directions, approved and withdrawn permission, and five injected-failure controls. The cases share one abstract workflow with three domain wrappers. These are synthetic checks of the test system; no real-model handoff study has run.
+
+[Handoff protocol and next experiments](experiments/handoff/PROTOCOL.md).
+
+## Try it locally
+
+Python 3.11+. Scoring needs no packages, API keys, GPU or network. From a local checkout:
 
 ```sh
-python -m localesafe.service_eval --cases examples/service/cases.jsonl --traces examples/service/faulty-traces.jsonl --comparisons examples/service/comparisons.jsonl --trace-origin synthetic --output reports/service.json
+python -m localesafe.handoff_eval --cases experiments/handoff/cases.jsonl --traces experiments/handoff/stale_handoff.jsonl --trace-origin synthetic --output reports/handoff-stale.json
 python -m unittest discover -s tests -v
 ```
 
-The faulty fixture passes 7/11 episodes. Four injected failures exercise consent, date context, clarification, and handoff. These are harness checks, not model results. Output paths must be new.
+The injected stale-handoff trace produces 48 unauthorized attempts. The sandbox blocks all 48. This verifies the bounded test executor, not a model's safety. The report includes component scores, final state and input hashes. Choose a new output filename for each run.
 
-## Why this matters
+[Earlier experiments](experiments/README.md) · [Benchmark registry](docs/BENCHMARKS.md) · [Scoring](docs/SERVICE_SCORING.md).
 
-A translated request can still trigger the wrong action. An English workflow defect can also look like a language problem. Score each stage before choosing a fix.
+## Use, contribute and cite
 
-U.S. service use cases: municipal appointments, airport assistance, and interpreter handoff. Language does not determine nationality, date convention, or user preference. [U.S. rationale and research direction](docs/AUTHORED_RESEARCH_AGENDA.md).
+Useful contributions include independent bilingual review, new situation families, model adapters and independent reproductions. See [CONTRIBUTING.md](CONTRIBUTING.md). Do not add credentials or real customer conversations; see [SECURITY.md](SECURITY.md).
 
-## Evidence
+If you use the code, fixtures or analyses, cite **Olivia Iarmak, LocaleSafe**, identify the experiment and include the exact commit you used. Machine-readable citation: [CITATION.cff](CITATION.cff); BibTeX: [CITATION.bib](CITATION.bib). Cite the underlying Qwen models and any external datasets you use separately. No paper, DOI or peer-reviewed validation is claimed.
 
-The [local-model pilot](experiments/results/qwen3-06b-20261021/RESULTS.md) had 92/108 Markdown-wrapped answers that failed strict JSON parsing. A post-hoc fence-only diagnostic yielded 34/54 baseline passes and 31/54 checking-prompt passes. This is evidence of integration weaknesses—not established language bias.
+For a concise explanation of the work and its evidence, see the [research brief](docs/RESEARCH_BRIEF.md). For provenance, see [credits](CREDITS.md) and [history](docs/HISTORY.md).
 
-[Scoring and schema](docs/SERVICE_SCORING.md) · [Benchmark registry](docs/BENCHMARKS.md) · [Experiments](experiments/README.md) · [Research protocol](docs/RESEARCH_PROTOCOL.md) · [Contribute](CONTRIBUTING.md) · [Security](SECURITY.md) · [History](docs/HISTORY.md)
-
-Created by Olivia Iarmak; implementation and writing used AI assistance. MIT-licensed code. Draft translations and small samples do not establish causal language effects, cultural competence, clinical safety, or real-world impact.
-
-[Authorship and originality review](docs/ORIGINALITY_AND_AUTHORSHIP.md): close precedents exist. The contribution is this implementation, experiment record and analysis; uniqueness is not established.
+**Status:** private research development. Independent translation review, broader model testing and the new handoff experiment remain outstanding. Public release awaits a supported contribution and Olivia's explicit release decision.

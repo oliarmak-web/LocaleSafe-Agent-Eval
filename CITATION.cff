@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use LocaleSafe, cite this software repository. Its development studies are not a validated held-out benchmark."
+message: "If you use the code, fixtures or analyses, cite Olivia Iarmak and this software repository; identify the exact commit and experiment used. The studies are exploratory, not a validated held-out benchmark."
 type: software
 title: "LocaleSafe: diagnose language and workflow failures in service agents"
 authors:
