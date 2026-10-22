@@ -2,13 +2,15 @@
 
 **Research roadmap.** The horizon below is a forecast, not an announced industry roadmap. [Related-work comparison](COMPETITIVE_LANDSCAPE.md).
 
-**Experiment status, October 22, 2026:** the [handoff study](HANDOFF_TECHNICAL_REPORT.md) completed 2,880 initial model calls and 384 exploratory monitor-intervention calls. Results distinguish permission-field fidelity from action representation and monitor errors. Independent bilingual review and broader validation remain outstanding.
+**Experiment status, October 22, 2026:** the [handoff study](HANDOFF_TECHNICAL_REPORT.md) completed 2,880 initial model calls, 384 exploratory monitor-intervention calls and 1,920 additional Mistral/Phi development calls. Neither additional model passed the existing English gate. Results distinguish permission-field fidelity from action representation and monitor errors. Independent bilingual review and broader validation remain outstanding.
+
+**Use-case priority:** customer-service order changes with corrected approvals, followed by pause/resume and draft-versus-send controls. These are proposed extensions, not current executable coverage. See [use-case priorities and experiment design](USE_CASE_PRIORITIES.md).
 
 ## Next language expansion
 
 Retain English as the control and Spanish as the existing comparison. Prioritize Simplified Chinese, Ukrainian and Tamil for expansion. Tamil takes priority over adding further Haitian Creole cases; existing Haitian Creole results remain part of the earlier study.
 
-For each added language, test same-language conversations and switches to and from English using matched task details. Require fluent independent review of permission changes and equivalent meaning before treating cases as reviewed benchmark evidence. Tamil-script cases and Tamil–English code-switching should be separate conditions. New languages and model runs are planned, not completed results.
+For each added language, test same-language conversations and switches to and from English using matched task details. Require fluent independent review of permission changes and equivalent meaning before treating cases as reviewed benchmark evidence. Tamil-script cases and Tamil–English code-switching should be separate conditions. New language runs are planned, not completed results; additional English/Spanish model runs are archived separately.
 
 ## Trends with concrete signals
 
