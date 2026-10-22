@@ -23,19 +23,29 @@ LocaleSafe helps you test these failures separately before choosing a fix. Examp
 
 These are the project's concrete artifacts. Multilingual evaluation, authorization checks and monitor evaluation have established precedents. The current study tests how language, handoff contracts and monitor evidence affect permission-sensitive actions. [Method comparison](docs/HANDOFF_METHOD_COMPARISON.md). [Related work](docs/COMPETITIVE_LANDSCAPE.md) · [Authorship and provenance](CREDITS.md).
 
-## Latest study: permission across language switches
+## What we learned
 
-**3,264 new model calls:** 576 summary generations, 1,152 actor decisions and 1,536 monitor judgments. The study uses 64 draft English/Spanish cases across eight templates, with separate development/evaluation families and greedy plus sampled decoding. Qwen3-4B passed the development English screen; SmolLM3-3B did not, so its evaluation run was skipped.
+**The clearest failures in this study involved handoffs and permission checks. We did not find a consistent penalty for switching between English and Spanish.** That does not establish that language is harmless: the cases are small, and only one model passed the initial English screen.
 
-| Finding | Evidence | Implication |
-|---|---|---|
-| Language switching was not uniformly worse | Qwen answered all 32 development cases correctly from full history, across all four language patterns | Check workflow explanations before blaming language |
-| A structured handoff can preserve permission and still fail | Qwen's greedy action score fell from 32/32 with full history to 23/32 with generated records | Check the action contract and downstream behavior, not only permission fields |
-| More explicit monitor rules can create a tradeoff | False allows fell from 39/64 to 18/64; false blocks rose from 0/64 to 40/64 | Measure valid actions blocked as well as unsafe actions allowed |
+1. **A wrong action is not automatically a language failure.** With the full conversation, Qwen3-4B chose the correct action in all 32 development cases. On the separate evaluation cases, it scored 6/8 in English only, 6/8 in Spanish only, 8/8 switching from English to Spanish and 6/8 switching in the other direction. Switching languages was not consistently harder here. Compare against English failures before attributing a gap to language.
 
-Qwen preserved the permission, version and source fields in all 192 generated records across its two splits and three decoding profiles. Requested-action representation and monitor interpretation still failed. Perfect reference records produced 128/128 correct monitor judgments in the follow-up; they are an oracle control, not a working extraction solution.
+2. **Keeping the permission field correct is not enough.** Qwen preserved permission in all 192 generated structured summaries, yet its development action score fell from 32/32 with the full conversation to 23/32 with a generated summary. Many summaries described the requested action in the wrong format. A handoff needs checks on the complete record and the action it produces; checking one field misses failures. We have not isolated which record changes caused each error.
 
-The rule-prompt follow-up and cached routing replay are exploratory analyses designed after the initial results. Draft translations, eight templates and only one qualifying model limit generalization. These results do not establish causal language bias, a stable language ranking or production safety.
+3. **A stricter safety prompt can block legitimate work.** In a follow-up, added rules reduced approvals of forbidden actions from 39/64 to 18/64. But rejections of permitted actions rose from 0/64 to 40/64. Overall correctness fell from 89/128 to 70/128. Count both unsafe approvals and unnecessary refusals before calling a monitor better.
+
+4. **Better evidence helped the monitor in these cases.** When supplied with the authored correct record, the monitor judged all 128 follow-up actions correctly. This is a diagnostic control: it shows what the model could do with perfect input. Automatically producing that input remains unsolved in this study.
+
+### Why this matters for agent builders
+
+A customer may approve an appointment change in English and withdraw permission in Spanish. To investigate a wrong booking, test the original conversation, the handoff summary, the proposed action and the permission monitor separately. LocaleSafe provides those comparisons so teams can identify where to investigate before choosing a fix.
+
+**Multilingual evaluation is useful, but a language leaderboard alone cannot explain these failures.** Test matched requests within and across languages, verify that the model can do the English task, and measure whether summaries and monitors preserve the user's latest permission. These experiments support that evaluation approach; they do not establish how common these failures are in deployed systems.
+
+### What the evidence covers
+
+**3,264 model calls:** 576 summary generations, 1,152 action decisions and 1,536 monitor judgments. These are repeated measurements on **64 draft English/Spanish cases across eight templates**, not 3,264 independent situations. The study separates development and evaluation situation families and includes deterministic and sampled responses. The action counts above use deterministic responses; the 192-record check includes all three decoding settings.
+
+Qwen3-4B passed the initial English task screen. SmolLM3-3B failed it, so its evaluation run was skipped. The monitor-rule follow-up and replay of a fallback strategy were designed after inspecting the initial results. Translations lack independent bilingual review. These results do not establish causal language bias, a stable language ranking or production safety. Zero unauthorized sandbox changes reflect a separate code-level permission guard, not perfect model behavior.
 
 [Technical report and plain-English interpretation](docs/HANDOFF_TECHNICAL_REPORT.md) · [Complete result tables](docs/HANDOFF_RESULTS.md) · [Monitor intervention](docs/MONITOR_FOLLOWUP.md) · [Protocol](experiments/handoff-study/PROTOCOL.md).
 
