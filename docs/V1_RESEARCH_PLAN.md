@@ -26,6 +26,8 @@ Independent review is necessary work; an additional model-generated translation 
 
 Compare English-only checks, an overall multilingual score, and checks separated by language and task. Use the same sampling and alert budgets. Introduce known regressions affecting one language, one tool step, or every language.
 
+Keep the same language-independent permission and action safeguards on all traffic in every condition. “English-only” means the evaluation/canary coverage, not permission to leave other users unprotected. Include these shared safeguards as a baseline. If they catch a failure equally well in every language, report that no extra language-specific monitor was needed for that failure type.
+
 Measure missed unsafe actions, false alarms and detection delay. Calibrate thresholds on development data, then freeze them before the held-out test. This can establish whether extra monitoring adds value, rather than assuming that it does.
 
 Report outcomes by language and task, including successful approved actions, unnecessary refusal, user correction and handoff. Estimate uncertainty over independent scenarios; repeated generations are nested observations. Predeclare primary comparisons and label additional analyses exploratory.
