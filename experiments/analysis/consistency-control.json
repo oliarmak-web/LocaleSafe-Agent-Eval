@@ -1,0 +1,338 @@
+{
+  "analysis": "post-hoc English rerun control",
+  "new_model_calls": 0,
+  "runs": [
+    {
+      "archive": "workflow-gpu-qwen3-06b-20261022",
+      "model": "Qwen/Qwen3-0.6B",
+      "manifest_sha256": "e1ac81341f252e200e1dc0a1b9b8130b1c20ce1db2243a164dd74e0298ba82cf",
+      "attempts_sha256": "9bc02961272d80e55ffdc6050aadb814ccb0f80f254ba6a6e4338ee872828785",
+      "conditions": {
+        "baseline": {
+          "independent_scenarios": 30,
+          "english_rerun": {
+            "pairs": 60,
+            "left_correct": 0,
+            "both_correct": 0,
+            "left_only": 0,
+            "right_only": 0,
+            "both_wrong": 60
+          },
+          "same_repeat_target": {
+            "es": {
+              "pairs": 60,
+              "left_correct": 0,
+              "both_correct": 0,
+              "left_only": 0,
+              "right_only": 0,
+              "both_wrong": 60
+            },
+            "ht": {
+              "pairs": 60,
+              "left_correct": 0,
+              "both_correct": 0,
+              "left_only": 0,
+              "right_only": 0,
+              "both_wrong": 60
+            },
+            "uk": {
+              "pairs": 60,
+              "left_correct": 0,
+              "both_correct": 0,
+              "left_only": 0,
+              "right_only": 0,
+              "both_wrong": 60
+            },
+            "zh-Hans": {
+              "pairs": 60,
+              "left_correct": 0,
+              "both_correct": 0,
+              "left_only": 0,
+              "right_only": 0,
+              "both_wrong": 60
+            }
+          },
+          "other_repeat_target": {
+            "es": {
+              "pairs": 60,
+              "left_correct": 0,
+              "both_correct": 0,
+              "left_only": 0,
+              "right_only": 0,
+              "both_wrong": 60
+            },
+            "ht": {
+              "pairs": 60,
+              "left_correct": 0,
+              "both_correct": 0,
+              "left_only": 0,
+              "right_only": 0,
+              "both_wrong": 60
+            },
+            "uk": {
+              "pairs": 60,
+              "left_correct": 0,
+              "both_correct": 0,
+              "left_only": 0,
+              "right_only": 0,
+              "both_wrong": 60
+            },
+            "zh-Hans": {
+              "pairs": 60,
+              "left_correct": 0,
+              "both_correct": 0,
+              "left_only": 0,
+              "right_only": 0,
+              "both_wrong": 60
+            }
+          }
+        },
+        "recovery": {
+          "independent_scenarios": 30,
+          "english_rerun": {
+            "pairs": 60,
+            "left_correct": 58,
+            "both_correct": 58,
+            "left_only": 0,
+            "right_only": 0,
+            "both_wrong": 2
+          },
+          "same_repeat_target": {
+            "es": {
+              "pairs": 60,
+              "left_correct": 58,
+              "both_correct": 45,
+              "left_only": 13,
+              "right_only": 0,
+              "both_wrong": 2
+            },
+            "ht": {
+              "pairs": 60,
+              "left_correct": 58,
+              "both_correct": 2,
+              "left_only": 56,
+              "right_only": 0,
+              "both_wrong": 2
+            },
+            "uk": {
+              "pairs": 60,
+              "left_correct": 58,
+              "both_correct": 39,
+              "left_only": 19,
+              "right_only": 0,
+              "both_wrong": 2
+            },
+            "zh-Hans": {
+              "pairs": 60,
+              "left_correct": 58,
+              "both_correct": 43,
+              "left_only": 15,
+              "right_only": 0,
+              "both_wrong": 2
+            }
+          },
+          "other_repeat_target": {
+            "es": {
+              "pairs": 60,
+              "left_correct": 58,
+              "both_correct": 45,
+              "left_only": 13,
+              "right_only": 0,
+              "both_wrong": 2
+            },
+            "ht": {
+              "pairs": 60,
+              "left_correct": 58,
+              "both_correct": 2,
+              "left_only": 56,
+              "right_only": 0,
+              "both_wrong": 2
+            },
+            "uk": {
+              "pairs": 60,
+              "left_correct": 58,
+              "both_correct": 39,
+              "left_only": 19,
+              "right_only": 0,
+              "both_wrong": 2
+            },
+            "zh-Hans": {
+              "pairs": 60,
+              "left_correct": 58,
+              "both_correct": 43,
+              "left_only": 15,
+              "right_only": 0,
+              "both_wrong": 2
+            }
+          }
+        }
+      }
+    },
+    {
+      "archive": "workflow-gpu-qwen3-17b-20261022",
+      "model": "Qwen/Qwen3-1.7B",
+      "manifest_sha256": "ecd41909a5fa8fcff6903ca584698acf014a6b48400375a2308764e1ef169db3",
+      "attempts_sha256": "dcc1babb187d6ddeb52eff03bc715af67e11c168be5b6354e7cc01567cea4bb7",
+      "conditions": {
+        "baseline": {
+          "independent_scenarios": 30,
+          "english_rerun": {
+            "pairs": 60,
+            "left_correct": 11,
+            "both_correct": 10,
+            "left_only": 1,
+            "right_only": 1,
+            "both_wrong": 48
+          },
+          "same_repeat_target": {
+            "es": {
+              "pairs": 60,
+              "left_correct": 11,
+              "both_correct": 7,
+              "left_only": 4,
+              "right_only": 4,
+              "both_wrong": 45
+            },
+            "ht": {
+              "pairs": 60,
+              "left_correct": 11,
+              "both_correct": 2,
+              "left_only": 9,
+              "right_only": 0,
+              "both_wrong": 49
+            },
+            "uk": {
+              "pairs": 60,
+              "left_correct": 11,
+              "both_correct": 5,
+              "left_only": 6,
+              "right_only": 4,
+              "both_wrong": 45
+            },
+            "zh-Hans": {
+              "pairs": 60,
+              "left_correct": 11,
+              "both_correct": 4,
+              "left_only": 7,
+              "right_only": 0,
+              "both_wrong": 49
+            }
+          },
+          "other_repeat_target": {
+            "es": {
+              "pairs": 60,
+              "left_correct": 11,
+              "both_correct": 6,
+              "left_only": 5,
+              "right_only": 5,
+              "both_wrong": 44
+            },
+            "ht": {
+              "pairs": 60,
+              "left_correct": 11,
+              "both_correct": 2,
+              "left_only": 9,
+              "right_only": 0,
+              "both_wrong": 49
+            },
+            "uk": {
+              "pairs": 60,
+              "left_correct": 11,
+              "both_correct": 5,
+              "left_only": 6,
+              "right_only": 4,
+              "both_wrong": 45
+            },
+            "zh-Hans": {
+              "pairs": 60,
+              "left_correct": 11,
+              "both_correct": 4,
+              "left_only": 7,
+              "right_only": 0,
+              "both_wrong": 49
+            }
+          }
+        },
+        "recovery": {
+          "independent_scenarios": 30,
+          "english_rerun": {
+            "pairs": 60,
+            "left_correct": 10,
+            "both_correct": 10,
+            "left_only": 0,
+            "right_only": 0,
+            "both_wrong": 50
+          },
+          "same_repeat_target": {
+            "es": {
+              "pairs": 60,
+              "left_correct": 10,
+              "both_correct": 2,
+              "left_only": 8,
+              "right_only": 0,
+              "both_wrong": 50
+            },
+            "ht": {
+              "pairs": 60,
+              "left_correct": 10,
+              "both_correct": 10,
+              "left_only": 0,
+              "right_only": 6,
+              "both_wrong": 44
+            },
+            "uk": {
+              "pairs": 60,
+              "left_correct": 10,
+              "both_correct": 10,
+              "left_only": 0,
+              "right_only": 28,
+              "both_wrong": 22
+            },
+            "zh-Hans": {
+              "pairs": 60,
+              "left_correct": 10,
+              "both_correct": 10,
+              "left_only": 0,
+              "right_only": 0,
+              "both_wrong": 50
+            }
+          },
+          "other_repeat_target": {
+            "es": {
+              "pairs": 60,
+              "left_correct": 10,
+              "both_correct": 2,
+              "left_only": 8,
+              "right_only": 0,
+              "both_wrong": 50
+            },
+            "ht": {
+              "pairs": 60,
+              "left_correct": 10,
+              "both_correct": 10,
+              "left_only": 0,
+              "right_only": 6,
+              "both_wrong": 44
+            },
+            "uk": {
+              "pairs": 60,
+              "left_correct": 10,
+              "both_correct": 10,
+              "left_only": 0,
+              "right_only": 28,
+              "both_wrong": 22
+            },
+            "zh-Hans": {
+              "pairs": 60,
+              "left_correct": 10,
+              "both_correct": 10,
+              "left_only": 0,
+              "right_only": 0,
+              "both_wrong": 50
+            }
+          }
+        }
+      }
+    }
+  ]
+}

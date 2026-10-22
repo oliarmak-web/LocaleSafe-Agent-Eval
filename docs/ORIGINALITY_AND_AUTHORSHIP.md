@@ -4,6 +4,8 @@
 
 ## What the search found
 
+The expanded [related-work comparison](COMPETITIVE_LANDSCAPE.md) includes authorization, memory and multilingual monitor/evaluator studies. The narrower [research shortlist](NEXT_RESEARCH_DIRECTION.md) is a proposal; novelty remains unestablished.
+
 | Project | Overlap | LocaleSafe's current focus |
 |---|---|---|
 | [LangDrift](https://github.com/RubenGlez/langdrift) | Same intent across languages; tool and argument checks; failure categories; synthetic and real-model runs | Service-workflow sandbox and paired policy, structured-fact and seeded-correction experiments |

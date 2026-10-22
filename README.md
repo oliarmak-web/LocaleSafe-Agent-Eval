@@ -20,6 +20,10 @@ These are development findings from draft translations and six template families
 
 [Plan for a stronger, reviewed study](docs/V1_RESEARCH_PLAN.md): permission and correction failures, normal model variation, and monitoring effectiveness. The current release is exploratory.
 
+**Private research development:** [next six months: trends and research shortlist](docs/NEXT_RESEARCH_DIRECTION.md) · [related-work comparison](docs/COMPETITIVE_LANDSCAPE.md). Public release is deferred pending a supported contribution and Olivia's release decision.
+
+[English rerun control](docs/CONSISTENCY_CONTROL.md): a post-hoc analysis of existing outputs, with no new model calls. The larger model lost 1/11 successful English baseline outputs on an English rerun, versus 4–9 in matched other-language outputs. These descriptive counts do not establish causality.
+
 ## What works
 
 | Component | Status |

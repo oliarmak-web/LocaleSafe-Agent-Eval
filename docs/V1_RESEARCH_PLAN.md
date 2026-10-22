@@ -1,6 +1,6 @@
 # From public prototype to a stronger research contribution
 
-**Recommendation:** publish the current work as an exploratory development release. Build the next study around a narrow, testable safety question. Citation potential depends on independent usefulness and evidence; publication alone does not establish it.
+**Release decision:** keep the repository private while strengthening the contribution, as Olivia requested. The current work remains an exploratory development study. The expanded [related-work review](COMPETITIVE_LANDSCAPE.md) and [research shortlist](NEXT_RESEARCH_DIRECTION.md) refine the direction below. Citation potential depends on independent usefulness and evidence; publication alone does not establish it.
 
 ## Proposed question
 

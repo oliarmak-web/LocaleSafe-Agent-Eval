@@ -12,6 +12,8 @@ That is a concrete signal that passing an English check did not guarantee succes
 
 English and Spanish each scored 11/60 overall, yet four English successes failed in Spanish and four Spanish successes failed in English. Matching individual requests reveals differences that equal overall scores conceal.
 
+The post-hoc [English rerun control](CONSISTENCY_CONTROL.md) lost one of those eleven English successes on the other English repeat, compared with four Spanish misses on matched repeats (five when the other Spanish repeat is used). Two repeats cannot establish a stable sampling baseline or a causal language effect.
+
 Other failures happened in English too. Supplying the correct facts and translating instructions did not reliably solve them. Correction results also changed across models. Language is one factor to investigate; it is not an adequate explanation for every failure.
 
 ## What extra evaluation should add

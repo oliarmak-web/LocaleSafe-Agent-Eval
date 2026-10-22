@@ -36,6 +36,8 @@ An earlier date experiment contained an inconsistent scripted user reply. Fixing
 
 ## What we can claim
 
+A new [English rerun control](CONSISTENCY_CONTROL.md) compares the recorded language differences with the model's own inconsistency. The larger model lost 1/11 successful English baseline outputs on its other English repeat, versus 4–9 on matched other-language outputs. This exploratory comparison strengthens the reason to investigate; it does not isolate language as the cause.
+
 LocaleSafe can expose different kinds of failure and check whether a proposed fix helps these recorded tasks. The evidence supports further testing; it does not prove broad language bias, cultural competence, or real-world safety.
 
 We need reviewed translations, more varied tasks, stronger models from other families, and full conversations before making wider claims.
