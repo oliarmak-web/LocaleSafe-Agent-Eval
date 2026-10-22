@@ -14,7 +14,7 @@ Code, scenario drafts, translations, experiment tooling, analyses and documentat
 | Service-workflow evaluator | [Scoring specification](docs/SERVICE_SCORING.md) and `localesafe/service_eval.py` | Implemented with synthetic controls |
 | Matched workflow study | [Study](docs/WORKFLOW_STUDY.md) and archived source/outputs | 1,800 recorded model decisions; exploratory |
 | English rerun control | [Analysis](docs/CONSISTENCY_CONTROL.md) | Reproducible post-hoc analysis; no additional model calls |
-| Permission-handoff prototype | [Protocol](experiments/handoff/PROTOCOL.md) | Implemented draft cases and synthetic controls; model study pending |
+| Permission-handoff study | [Technical report](docs/HANDOFF_TECHNICAL_REPORT.md) and [protocol](experiments/handoff-study/PROTOCOL.md) | 2,880 initial model calls; 384 exploratory monitor calls; cached routing replay |
 
 Archived source snapshots preserve the implementation used for each experiment.
 

@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-22T11:56:36.736342+00:00",
+  "settings": {
+    "model": {
+      "model": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "weights": {
+        "model-00001-of-00003.safetensors": "328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223",
+        "model-00002-of-00003.safetensors": "6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5",
+        "model-00003-of-00003.safetensors": "e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1"
+      }
+    },
+    "jobs_sha256": "265661d1032a8efac391d89bee27afc0b0a2550ce8d0feddb383e12d1b609c2c",
+    "sources": {
+      "localesafe/collect_monitor_followup.py": "89f57073be88f70038f12d1ca3027202d3b2790431258cd1b4bd61d6008ca264",
+      "localesafe/collect_handoff.py": "4300dbb0a32a098e03f631664a9618358a0e178c24436797b3321daa1c8830d6",
+      "localesafe/handoff_study.py": "44e3fcdab98c06550b9ce828bb7fa782b5b1c1b0551047c27878ba6a6682733e",
+      "localesafe/handoff_eval.py": "c795d7ec8e331db1e55f5cd93b033cac273a0623218a02c9811bda1da1ed6852",
+      "localesafe/evaluate.py": "0c81f93ed98918582824343c767823d6ffea3853584994d6998f68feb096f8df",
+      "experiments/build_monitor_followup.py": "6925eb6369b460fcb9dd09cd7dd9df641c74d439c6d6e409aedf38fd28db5363",
+      "experiments/monitor-followup/PROTOCOL.md": "89a124ffe65fd902c848b93339648abd13fea469f54d1981e3a47edeb9a4530a"
+    },
+    "python": "3.13.15",
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.6",
+    "gpu": "Tesla T4",
+    "cuda": "13.0",
+    "dtype": "float16",
+    "quantization": "none",
+    "batch_size": 8,
+    "threads": 2,
+    "enable_thinking": false,
+    "decoding": "greedy",
+    "max_new_tokens": 24,
+    "schedule_seed": 20261023
+  },
+  "scheduled_requests": 384,
+  "completed_utc": "2026-10-22T12:00:02.769209+00:00",
+  "attempts": 384,
+  "attempts_sha256": "759169865bdbe2eacbb6e01c6f21a8e28ff25d95fa924f112afde28a4dc7d525"
+}

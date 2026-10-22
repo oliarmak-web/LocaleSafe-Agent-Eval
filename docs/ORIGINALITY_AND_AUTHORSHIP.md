@@ -48,6 +48,6 @@ This review inspected related projects for comparison; it did not import their c
 
 The current contribution is the specific runnable implementation, authored workflow fixtures, archived model outputs, reproducible analyses and documented findings. These are concrete artifacts; their existence does not establish methodological novelty or external impact.
 
-The proposed next contribution is a reviewed permission-and-correction suite and an equal-budget comparison of monitoring approaches, accounting for ordinary model inconsistency. That remains a research direction: novelty, effectiveness and usefulness must be demonstrated. See the [study plan](V1_RESEARCH_PLAN.md).
+The [handoff study](HANDOFF_TECHNICAL_REPORT.md) now provides real-model evidence separating language patterns, record contracts, actor actions and monitor judgments. Independent bilingual review and wider validation remain outstanding. Streaming monitoring effectiveness and equal-budget traffic experiments remain proposed work in the [study plan](V1_RESEARCH_PLAN.md).
 
 Project attribution is recorded in [CREDITS.md](../CREDITS.md).

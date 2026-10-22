@@ -1,6 +1,6 @@
 # Real-model pilot
 
-New development: [permission handoff prototype](handoff/PROTOCOL.md). The sandbox, 48 draft cases and five injected-control sets are implemented. No real-model handoff results yet; these controls are separate from the studies below.
+Latest: [permission-handoff study](../docs/HANDOFF_TECHNICAL_REPORT.md), with 2,880 initial model calls, 384 exploratory monitor calls and a cached routing replay. [Protocol](handoff-study/PROTOCOL.md) · [Execution history](handoff-study/EXECUTION_HISTORY.md). The earlier [48-case prototype](handoff/PROTOCOL.md) remains a separate synthetic control set.
 
 ## Latest: matched workflow study
 
@@ -86,4 +86,4 @@ python -m experiments.summarize_attribution experiments/results/attribution-2026
 
 Collection can resume with `--resume` using the original arguments. Completed forward groups are validated and preserved; changed settings, duplicates, and partial groups are rejected. The archived run resumed after 128/180 forwards. No earlier choice was discarded or retried.
 
-The new study adds bounded tool decisions and seeded correction histories. Full autonomous dialogue, independent reviews, held-out families and replication across model families remain pending.
+The earlier workflow study adds bounded tool decisions and seeded correction histories. The later handoff study introduces family-separated cases and a second model family, but only Qwen passes its development competence screen. Full autonomous dialogue and independent review remain outstanding.

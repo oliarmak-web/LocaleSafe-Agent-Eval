@@ -1,6 +1,6 @@
 # Permission handoff prototype
 
-**Implemented: sandbox, draft cases, model-input builders and injected-failure checks. No real-model handoff experiment has run.** This starts the [proposed research](../../docs/NEXT_RESEARCH_DIRECTION.md); it does not establish novelty.
+**Implemented: sandbox, draft cases, model-input builders and injected-failure checks. This directory contains only synthetic controls. The separate [real-model study](../../docs/HANDOFF_TECHNICAL_REPORT.md) is now complete.** This starts the [proposed research](../../docs/NEXT_RESEARCH_DIRECTION.md); it does not establish novelty.
 
 ## What it tests
 

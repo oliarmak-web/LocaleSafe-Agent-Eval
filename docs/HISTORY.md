@@ -3,6 +3,7 @@
 - **December 11, 2025:** original Colab last-edit date and empty GitHub repository creation observed.
 - **December 14, 2025:** accompanying Google Doc last-edit date observed.
 - **October 21, 2026:** offline evaluator, real-model pilot, and service-workflow sandbox developed.
+- **October 22, 2026:** family-separated permission-handoff study completed: 2,880 initial calls across two model families and 384 exploratory monitor calls. A cached routing replay uses the recorded outputs without new model calls.
 
 Olivia Iarmak originated LocaleSafe for the Dell × NVIDIA hackathon described in her notes. The prototype used Gradio, simulated transcription, Python rules, and a mock airport API—not real ASR or LLM integration. Programmed accent degradation was illustrative, not measured bias. Its similarity-based “WER” was not word error rate and was not retained.
 

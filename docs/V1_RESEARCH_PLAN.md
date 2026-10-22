@@ -1,6 +1,6 @@
 # Research plan
 
-**Status:** exploratory development study. The [related-work review](COMPETITIVE_LANDSCAPE.md) and [research roadmap](NEXT_RESEARCH_DIRECTION.md) define the next phase.
+**Status:** exploratory development study. The [handoff experiment](HANDOFF_TECHNICAL_REPORT.md) now includes real model collection, a competence screen, family-separated cases and a post-hoc monitor intervention. Independent review and broader validation remain outstanding. The [related-work review](COMPETITIVE_LANDSCAPE.md) and [research roadmap](NEXT_RESEARCH_DIRECTION.md) define the next phase.
 
 ## Proposed question
 

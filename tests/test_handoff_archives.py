@@ -4,8 +4,10 @@ from pathlib import Path
 
 from experiments.build_handoff_study import build
 from experiments.build_monitor_followup import build as build_followup, RULES
-from experiments.summarize_handoff import audit, summarize
+from experiments.summarize_handoff import audit, summarize, render
+from experiments.replay_handoff_routing import replay
 from localesafe.collect_monitor_followup import score
+from experiments.summarize_monitor_followup import audit as followup_audit, summarize as followup_summary, render as followup_render
 
 ROOT=Path(__file__).resolve().parents[1]
 ARCHIVES=[ROOT/'experiments/results'/name for name in (
@@ -48,6 +50,34 @@ class HandoffArchiveTests(unittest.TestCase):
         self.assertTrue(score(job,'{"decision":"abstain"}')['abstained'])
         self.assertFalse(score(job,'{"decision":"abstain"}')['correct'])
         self.assertFalse(score(job,'{"decision":"allow","decision":"block"}')['parsed'])
+
+    def test_analysis_matches_archives(self):
+        summaries=[summarize(*audit(path)) for path in ARCHIVES]
+        saved=json.loads((ROOT/'experiments/analysis/handoff/summary.json').read_text(encoding='utf-8'))
+        self.assertEqual(summaries,saved)
+        self.assertEqual(render(summaries),(ROOT/'docs/HANDOFF_RESULTS.md').read_text(encoding='utf-8'))
+        routing=json.loads((ROOT/'experiments/analysis/handoff/routing.json').read_text(encoding='utf-8'))
+        self.assertEqual([replay(path) for path in ARCHIVES],routing)
+
+    def test_followup_archive_analysis_and_baseline_repeat(self):
+        path=ROOT/'experiments/results/monitor-followup-qwen3-4b-20261022'
+        manifest,plan,rows=followup_audit(path)
+        self.assertEqual(len(rows),384)
+        result=followup_summary(manifest,plan,rows)
+        self.assertEqual(result,json.loads((ROOT/'experiments/analysis/handoff/monitor-followup.json').read_text(encoding='utf-8')))
+        self.assertEqual(followup_render(result),(ROOT/'docs/MONITOR_FOLLOWUP.md').read_text(encoding='utf-8'))
+        original={}
+        for archive in ARCHIVES[:2]:
+            _,_,prior=audit(archive)
+            name=archive.name.removesuffix('-20261022')
+            original.update({(name,r['job']['id']):r for r in prior})
+        jobs={j['id']:j for j in plan['jobs']}
+        for row in rows:
+            job=jobs[row['job_id']]
+            if job['condition']=='baseline_repeat':
+                prior=original[job['parent'],job['parent_job_id']]
+                self.assertEqual(row['messages'],prior['messages'])
+                self.assertEqual(json.loads(row['raw_output']),json.loads(prior['raw_output']))
 
 
 if __name__=='__main__':

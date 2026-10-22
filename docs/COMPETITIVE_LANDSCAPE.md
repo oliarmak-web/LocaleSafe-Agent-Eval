@@ -31,7 +31,7 @@ The original [tau-bench repository](https://github.com/sierra-research/tau-bench
 
 A useful study would cross language switching with permission changes and handoff representation. It would independently score the agent, the permission record and the monitor against a deterministic sandbox. The study combines established methods to investigate a specific failure pathway.
 
-A full-method comparison of the closest authorization, memory and monitor studies remains outstanding, including whether they already cross these factors.
+A [methods-level comparison](HANDOFF_METHOD_COMPARISON.md) now examines the closest memory, architecture and revocation studies. It identifies substantial precedents and the bounded scope of the handoff experiment; an exhaustive novelty claim is not established.
 
 ## Scope
 

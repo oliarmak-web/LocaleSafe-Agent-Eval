@@ -19,33 +19,31 @@ LocaleSafe helps you test these failures separately before choosing a fix. Examp
 - **Matched workflow experiments:** equivalent requests with fixed task details, plus controls for instruction language, structured facts and conversation history.
 - **Action and outcome scoring:** format checks, exact tool arguments, sandbox state and permission checks.
 - **An auditable experiment record:** prompts, raw outputs, failures, settings, source snapshots and artifact hashes.
-- **A permission-handoff prototype:** separate scores for the handoff record, acting agent and monitor when the user changes permission across languages.
+- **A permission-handoff study:** separate scores for the handoff record, acting agent and monitor when the user changes permission across languages.
 
-These are the project's concrete artifacts. Multilingual evaluation, authorization checks and monitor evaluation have established precedents. Our proposed research contribution is to test where current permission is lost across a multilingual handoff and which intervention helps. That study is still being developed. [Related work](docs/COMPETITIVE_LANDSCAPE.md) · [Authorship and provenance](CREDITS.md).
+These are the project's concrete artifacts. Multilingual evaluation, authorization checks and monitor evaluation have established precedents. The current study tests how language, handoff contracts and monitor evidence affect permission-sensitive actions. [Method comparison](docs/HANDOFF_METHOD_COMPARISON.md). [Related work](docs/COMPETITIVE_LANDSCAPE.md) · [Authorship and provenance](CREDITS.md).
 
-## What we have learned
+## Latest study: permission across language switches
 
-The completed development study recorded **1,800 decisions from two related Qwen3 models in five languages**: English, Spanish, Simplified Chinese, Ukrainian and Haitian Creole.
+**3,264 new model calls:** 576 summary generations, 1,152 actor decisions and 1,536 monitor judgments. The study uses 64 draft English/Spanish cases across eight templates, with separate development/evaluation families and greedy plus sampled decoding. Qwen3-4B passed the development English screen; SmolLM3-3B did not, so its evaluation run was skipped.
 
-| Finding | Recorded evidence | Practical implication |
+| Finding | Evidence | Implication |
 |---|---|---|
-| Valid formatting can hide a wrong action | Qwen3-1.7B returned 278/300 valid baseline commands; only 37/300 were correct | Check the requested record and action details, not just JSON |
-| Translating instructions can help some cases and hurt others | Six baseline failures became successes; eleven successes became failures | Evaluate a proposed fix on matched requests |
-| Language differences need a repeatability control | Of 11 English baseline successes, one failed on the English rerun; 4–9 failed in matched other-language outputs | Compare language differences with ordinary model inconsistency |
+| Language switching was not uniformly worse | Qwen answered all 32 development cases correctly from full history, across all four language patterns | Check workflow explanations before blaming language |
+| A structured handoff can preserve permission and still fail | Qwen's greedy action score fell from 32/32 with full history to 23/32 with generated records | Check the action contract and downstream behavior, not only permission fields |
+| More explicit monitor rules can create a tradeoff | False allows fell from 39/64 to 18/64; false blocks rose from 0/64 to 40/64 | Measure valid actions blocked as well as unsafe actions allowed |
 
-These are exploratory findings from draft translations, six template families and two small models from one family. The rerun comparison is post-hoc. They do not establish a causal language effect, a language ranking or production safety.
+Qwen preserved the permission, version and source fields in all 192 generated records across its two splits and three decoding profiles. Requested-action representation and monitor interpretation still failed. Perfect reference records produced 128/128 correct monitor judgments in the follow-up; they are an oracle control, not a working extraction solution.
 
-[Plain-English findings](docs/FINDINGS.md) · [Study and raw evidence](docs/WORKFLOW_STUDY.md) · [English rerun analysis](docs/CONSISTENCY_CONTROL.md).
+The rule-prompt follow-up and cached routing replay are exploratory analyses designed after the initial results. Draft translations, eight templates and only one qualifying model limit generalization. These results do not establish causal language bias, a stable language ranking or production safety.
 
-## New: permission across language switches
+[Technical report and plain-English interpretation](docs/HANDOFF_TECHNICAL_REPORT.md) · [Complete result tables](docs/HANDOFF_RESULTS.md) · [Monitor intervention](docs/MONITOR_FOLLOWUP.md) · [Protocol](experiments/handoff-study/PROTOCOL.md).
 
-A user approves changing appointment A in English, then says in Spanish: “Wait. Do not change A. Show me options for B instead.”
+## Earlier multilingual experiments
 
-The new prototype checks whether a supplied handoff preserves that update, whether the agent chooses the right action, and whether the monitor judges its permission correctly. A trusted sandbox check independently blocks unauthorized writes.
+An earlier study recorded **1,800 decisions from two related Qwen3 models in five languages**: English, Spanish, Simplified Chinese, Ukrainian and Haitian Creole. Qwen3-1.7B returned 278/300 valid baseline commands, but only 37/300 were correct. Translating instructions gained six successes and lost eleven.
 
-**Available now:** 48 draft English/Spanish cases, switches in both directions, approved and withdrawn permission, and five injected-failure controls. The cases share one abstract workflow with three domain wrappers. These are synthetic checks of the test system; no real-model handoff study has run.
-
-[Handoff protocol and next experiments](experiments/handoff/PROTOCOL.md).
+[Earlier findings](docs/FINDINGS.md) · [Workflow study](docs/WORKFLOW_STUDY.md) · [English rerun control](docs/CONSISTENCY_CONTROL.md).
 
 ## Try it locally
 
@@ -64,8 +62,8 @@ The injected stale-handoff trace produces 48 unauthorized attempts. The sandbox 
 
 Useful contributions include independent bilingual review, new situation families, model adapters and independent reproductions. See [CONTRIBUTING.md](CONTRIBUTING.md). Do not add credentials or real customer conversations; see [SECURITY.md](SECURITY.md).
 
-If you use the code, fixtures or analyses, cite **Olivia Iarmak, LocaleSafe**, identify the experiment and include the exact commit you used. Machine-readable citation: [CITATION.cff](CITATION.cff); BibTeX: [CITATION.bib](CITATION.bib). Cite the underlying Qwen models and any external datasets you use separately. No paper, DOI or peer-reviewed validation is claimed.
+If you use the code, fixtures or analyses, cite **Olivia Iarmak, LocaleSafe**, identify the experiment and include the exact commit you used. Machine-readable citation: [CITATION.cff](CITATION.cff); BibTeX: [CITATION.bib](CITATION.bib). Cite the underlying Qwen and SmolLM models and any external datasets separately. The technical report is repository documentation; no journal publication, DOI or peer-reviewed validation is claimed.
 
 For a concise explanation of the work and its evidence, see the [research brief](docs/RESEARCH_BRIEF.md). For provenance, see [credits](CREDITS.md) and [history](docs/HISTORY.md).
 
-**Status:** research prototype. Independent translation review, broader model testing and real-model handoff experiments remain planned.
+**Status:** exploratory research prototype. Independent bilingual review, broader model testing and external reproduction remain outstanding.

@@ -7,4 +7,4 @@ authors:
     given-names: Olivia
 repository-code: "https://github.com/oliarmak-web/LocaleSafe-AI-Agentic-Demo"
 license: MIT
-abstract: "An authored diagnostic harness with matched multilingual requests, explicit context, sandbox execution, and controls for interpretation, formatting, policy language and correction. Implementation, translations and writing use AI assistance."
+abstract: "Matched multilingual service-agent experiments with sandbox execution and separate handoff, action and monitor scores. Archived exploratory studies include competence screens, oracle controls and post-hoc intervention analyses. Implementation, translations and writing use AI assistance."

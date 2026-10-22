@@ -2,6 +2,7 @@
 
 | Evaluation | Status | Measures |
 |---|---|---|
+| [Permission-handoff study](HANDOFF_TECHNICAL_REPORT.md) | 2,880 initial calls across two model families; 384 post-hoc monitor calls | Language patterns, generated text/record handoffs, oracle controls, actor and fixed-action monitor errors |
 | [Permission handoff prototype](../experiments/handoff/PROTOCOL.md) | 48 draft bilingual rows; five synthetic controls; no model study | Permission version/scope, structured handoff fidelity, actor correctness, monitor errors and guarded state changes |
 | LocaleSafe service controls v0.2 | Implemented; synthetic English/Spanish traces | Context, clarification, consent, execution, completion |
 | LocaleSafe airport pilot v0.1 | Real model run; 108 outputs | Single-turn decisions and proposed calls across nine language configurations |
