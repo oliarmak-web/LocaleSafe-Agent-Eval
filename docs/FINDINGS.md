@@ -2,6 +2,8 @@
 
 We recorded **1,800 decisions from two models in five languages**. The tasks asked a model to check availability, respect a correction, choose a suitable time, handle an unavailable time, request an interpreter, or follow a language switch.
 
+The central question is whether passing English tests is enough. In this setup, some requests passed in English and failed in another language. That supports checking each supported language; it does not prove that language alone caused the failure. [What extra evaluation and monitoring should test](MULTILINGUAL_EVAL_MONITORING.md).
+
 ## 1. Looking correct is different from being correct
 
 The larger model returned 278/300 commands in the required format. Only 37/300 selected the right action and details. In 239 cases, it used the right command type with wrong details, such as an appointment ID or time.

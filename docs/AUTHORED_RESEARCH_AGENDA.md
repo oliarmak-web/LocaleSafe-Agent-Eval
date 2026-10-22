@@ -4,6 +4,8 @@ Research agenda · Olivia Iarmak, project originator/proposed lead author · Oct
 
 **Contribution:** an open service-agent harness that separates language/context interpretation from consent, execution, and completion failures.
 
+**Central question:** does success in English carry over to the same task in another language, and what additional evaluation or monitoring catches failures? The current experiments address controlled evaluation. [Language-aware production monitoring](MULTILINGUAL_EVAL_MONITORING.md) remains a research proposal.
+
 ## Why the U.S. should care
 
 The Census Bureau reported that 22% of residents age 5+ spoke another language at home in 2017–2021. That is not the share needing interpretation. It establishes a domestic design context, not demand for any particular AI system. [Census source](https://www.census.gov/newsroom/press-releases/2025/2017-2021-acs-language-use-tables.html).

@@ -2,6 +2,8 @@
 
 **Find where multilingual service agents fail: language, context, or workflow.**
 
+**Research question:** when an agent works in English, does it still work on the same request in another language—and what extra tests or monitoring would reveal failures?
+
 LocaleSafe pairs equivalent requests, varies locale explicitly, and replays actions in a consent-aware sandbox. Its contribution is a runnable diagnostic harness for service workflows—not a claim to be the first multilingual benchmark.
 
 **Latest study:** 1,800 tool decisions, two models, five languages, four conditions. [Methods and results](docs/WORKFLOW_STUDY.md).
@@ -13,6 +15,8 @@ LocaleSafe pairs equivalent requests, varies locale explicitly, and replays acti
 These are development findings from draft translations and six template families. They motivate evaluation; they do not establish causal language bias or deployment safety.
 
 [Findings in plain English](docs/FINDINGS.md) · [Why this is credible and useful](docs/WHY_IT_MATTERS.md)
+
+[What multilingual evaluation and monitoring should add](docs/MULTILINGUAL_EVAL_MONITORING.md). Evaluation is implemented; live production monitoring is a proposed next step.
 
 ## What works
 

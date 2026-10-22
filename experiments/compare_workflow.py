@@ -47,6 +47,13 @@ def render(runs):
             cells.append(f"{a['correct']}/{a['n']} / {b['correct']}/{b['n']}")
         lines.append(f"| {language} | {cells[0]} | {cells[1]} |")
     lines += ["", "Strict requires one exact-schema JSON call. Fence-only removes just an enclosing Markdown JSON fence; it does not repair arguments or prose. Every recorded call is replayed against the sandbox state.", "",
+              "## What English-only checks missed in this run", "",
+              "These matched counts use the existing recorded outputs. An English pass paired with a target-language failure identifies a case an English-only check would not expose in this setup. Draft translations prevent attributing that difference solely to language.", "",
+              "| Model | Target language | English passed, target failed | Target passed, English failed |", "|---|---|---:|---:|"]
+    for name, summary in zip(names, summaries):
+        for language, pair in summary["strict"]["contrasts"]["english_vs_target"].items():
+            lines.append(f"| {name} | {language} | {pair['left_only']}/{pair['pairs']} | {pair['right_only']}/{pair['pairs']} |")
+    lines += ["", "English controls are reused across languages, so these counts must not be summed as independent scenarios. The small model failed all English baseline requests; that floor prevents a useful language-gap estimate. [Evaluation and monitoring implications](MULTILINGUAL_EVAL_MONITORING.md).", "",
               "## Correction by language", "", f"| User language | {names[0]} strict | {names[1]} strict |", "|---|---:|---:|"]
     for language in ("en", "es", "zh-Hans", "uk", "ht"):
         cells = [s["strict"]["languages"][language]["recovery"] for s in summaries]

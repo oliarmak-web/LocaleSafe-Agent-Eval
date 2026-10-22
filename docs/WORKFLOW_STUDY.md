@@ -38,6 +38,23 @@ This is not a human-verified translation-rescue experiment. No translation servi
 
 Strict requires one exact-schema JSON call. Fence-only removes just an enclosing Markdown JSON fence; it does not repair arguments or prose. Every recorded call is replayed against the sandbox state.
 
+## What English-only checks missed in this run
+
+These matched counts use the existing recorded outputs. An English pass paired with a target-language failure identifies a case an English-only check would not expose in this setup. Draft translations prevent attributing that difference solely to language.
+
+| Model | Target language | English passed, target failed | Target passed, English failed |
+|---|---|---:|---:|
+| Qwen3-0.6B | es | 0/60 | 0/60 |
+| Qwen3-0.6B | ht | 0/60 | 0/60 |
+| Qwen3-0.6B | uk | 0/60 | 0/60 |
+| Qwen3-0.6B | zh-Hans | 0/60 | 0/60 |
+| Qwen3-1.7B | es | 4/60 | 4/60 |
+| Qwen3-1.7B | ht | 9/60 | 0/60 |
+| Qwen3-1.7B | uk | 6/60 | 4/60 |
+| Qwen3-1.7B | zh-Hans | 7/60 | 0/60 |
+
+English controls are reused across languages, so these counts must not be summed as independent scenarios. The small model failed all English baseline requests; that floor prevents a useful language-gap estimate. [Evaluation and monitoring implications](MULTILINGUAL_EVAL_MONITORING.md).
+
 ## Correction by language
 
 | User language | Qwen3-0.6B strict | Qwen3-1.7B strict |
