@@ -62,3 +62,11 @@ Eight templates, draft translations and only one model passing the competence sc
 The new work contains 576 summary calls, 1,152 actor calls and 1,536 monitor calls: 3,264 total. Cached routing adds zero calls. Earlier LocaleSafe studies are separate. The archives preserve prompts, responses, settings, source snapshots and hashes; auditors reconstruct prompts, dependencies, seeds and scores. [Execution provenance](../experiments/handoff-study/EXECUTION_HISTORY.md) · [Independent review procedure](../experiments/handoff-study/REVIEW.md).
 
 For software citation use [CITATION.cff](../CITATION.cff) or [BibTeX](../CITATION.bib), identifying the exact commit and experiment. This repository report has no journal publication or assigned DOI.
+
+## Additional model replication
+
+A frozen extension added 960 development calls each for Mistral-7B-Instruct-v0.3 and Phi-4-mini-instruct. Mistral scored 0/8 English full-history actions and 1/8 with oracle records; Phi scored 4/8 and 8/8. Both failed the existing 7/8-in-both gate, so evaluation was not run. The study and monitor follow-up now archive 5,184 model calls.
+
+These scores include exact output-format compliance. Raw Mistral commands sometimes contain an extra leading tool name; raw Phi commands and summaries sometimes contain Markdown fences. All 96 Phi record summaries fail strict parsing; zero field-fidelity scores therefore do not establish semantic loss of every field. No repaired-output analysis is included. Phi's greedy full-history actor score is 15/32 versus 32/32 with oracle records. This is a development-only representation lead, not an independent confirmation of Qwen's evaluation findings.
+
+The extension retained cases, prompts, scoring and decoding settings; Mistral used batch size 1 and Phi batch size 8. Direct GPU loading avoided host-memory pressure. Model and source revisions, weight hashes, runtime settings, prompts and raw outputs are archived. The first Mistral startup was interrupted during download before any inference was reported, then restarted in a new directory with GPU-direct loading. [Full extension tables](MODEL_EXTENSION_RESULTS.md) · [Extension protocol](../experiments/handoff-study/MODEL_EXTENSION.md).

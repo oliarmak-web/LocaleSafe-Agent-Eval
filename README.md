@@ -49,6 +49,21 @@ Qwen3-4B passed the initial English task screen. SmolLM3-3B failed it, so its ev
 
 [Technical report and plain-English interpretation](docs/HANDOFF_TECHNICAL_REPORT.md) · [Complete result tables](docs/HANDOFF_RESULTS.md) · [Monitor intervention](docs/MONITOR_FOLLOWUP.md) · [Protocol](experiments/handoff-study/PROTOCOL.md).
 
+## Additional models: the output contract is another failure source
+
+We ran **1,920 additional development calls** on Mistral-7B-Instruct-v0.3 and Phi-4-mini-instruct. Neither passed the unchanged English screen, so neither proceeded to evaluation:
+
+| Model | English with full conversation | English with perfect reference record |
+|---|---:|---:|
+| Mistral-7B-Instruct-v0.3 | 0/8 | 1/8 |
+| Phi-4-mini-instruct | 4/8 | 8/8 |
+
+**These are exact command-contract scores, not measures of general intelligence or language comprehension.** Mistral sometimes added a word before its JSON command; Phi sometimes wrapped JSON in Markdown. The frozen scorer rejects both. All 96 Phi structured summaries failed strict parsing, which makes their field scores zero; that does not show every permission fact was misunderstood. We preserved the raw answers without repairing them.
+
+Phi's greedy action score improved from 15/32 with the full conversation to 32/32 with perfect reference records. This gives another reason to investigate the input representation and output contract before blaming language. It does not reproduce Qwen's evaluation result or establish a language effect. Across this study and follow-up, **5,184 calls** are now archived; only Qwen qualified for evaluation.
+
+[Additional model results](docs/MODEL_EXTENSION_RESULTS.md) · [Replication protocol](experiments/handoff-study/MODEL_EXTENSION.md).
+
 ## Earlier multilingual experiments
 
 An earlier study recorded **1,800 decisions from two related Qwen3 models in five languages**: English, Spanish, Simplified Chinese, Ukrainian and Haitian Creole. Qwen3-1.7B returned 278/300 valid baseline commands, but only 37/300 were correct. Translating instructions gained six successes and lost eleven.

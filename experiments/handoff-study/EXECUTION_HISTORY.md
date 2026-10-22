@@ -32,3 +32,9 @@ All 384 follow-up requests completed on a free T4 with the same runtime versions
 The schema-validation routing replay was also designed post-hoc. It selects between existing generated-record and full-history actor outputs. It makes no new model calls and is not a newly deployed routing experiment. A valid record schema does not authenticate the permission it claims.
 
 Independent bilingual review has not been performed. Instructions for a blinded review are in [REVIEW.md](REVIEW.md). Dataset corrections require explicit versioning and cannot silently replace the archived inputs.
+
+## Mistral and Phi extension
+
+Both additional development runs completed 960 calls. Both failed the pre-existing English gate and neither evaluation split was run. The combined ZIP preserved from Colab contains both runs: 319492 bytes, SHA256 `84b01a199d46f83405e3a8fc998329fcc49adc403aa0af4039c9c8ef7ac40424`. It was checked before extraction; each internal archive, schedule, prompt, score and input split passed the offline auditor.
+
+The initial Mistral startup was interrupted during download before inference was reported. The revised startup used a new directory and loaded weights directly to GPU. Frozen tasks and scoring were unchanged. Mistral used batch size 1, Phi batch size 8. Extension source snapshots and model pins are retained inside both archives.
