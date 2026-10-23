@@ -80,6 +80,7 @@ def render(results):
     for result in results:
         for g in result['groups']:
             lines.append(f"| {result['model']} | {g['evidence']} | {g['arm']} | {g['parsed']}/{g['requests']} | {g['correct']}/{g['requests']} | {g['unauthorized_attempt']} | {g['token_limit_hits']} |")
+    for result in results:
         p,b = result['paired'],result['baseline_replay']
         lines += ['', f"{result['model']}: {p['helped']} paired improvements, {p['hurt']} regressions. Baseline exact-text agreement: {b['exact_text_agreement']}/{b['n']}.", '']
     lines += ['Small, previously inspected draft cases cannot establish language bias, a production fix or a stable model ranking.',

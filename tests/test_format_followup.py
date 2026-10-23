@@ -4,11 +4,27 @@ import unittest
 from pathlib import Path
 
 from experiments.build_format_followup import build, OLD, NEW
-from experiments.summarize_format_followup import audit, summarize
+from experiments.summarize_format_followup import audit, summarize, render
 from localesafe.evaluate import read_jsonl
 
 
 class FormatFollowupTests(unittest.TestCase):
+    def test_phi_and_combined_report_preserve_regressions(self):
+        root = Path(__file__).resolve().parents[1]
+        results = []
+        for model in ('mistral-7b-v03','phi4-mini'):
+            path = root/'experiments/results'/f'format-{model}-20261022'
+            manifest,jobs,rows = audit(path)
+            self.assertEqual(json.loads((path/'jobs.json').read_text(encoding='utf-8')),
+                             json.loads((root/'experiments/format-followup/jobs.json').read_text(encoding='utf-8')))
+            original = read_jsonl(root/f'experiments/results/handoff-{model}-development-20261022/attempts.jsonl')
+            results.append(summarize(manifest,jobs,rows,original))
+        self.assertEqual(results,json.loads((root/'experiments/analysis/format-followup/summary.json').read_text(encoding='utf-8')))
+        self.assertEqual(render(results),(root/'docs/FORMAT_FOLLOWUP.md').read_text(encoding='utf-8'))
+        self.assertEqual(results[1]['baseline_replay']['exact_text_agreement'],64)
+        self.assertEqual(results[1]['paired'],{'helped':13,'hurt':9})
+        self.assertEqual([(g['parsed'],g['correct']) for g in results[1]['groups']],[(16,15),(32,28),(32,32),(23,23)])
+
     def test_mistral_archive_replays_scores_and_exact_baseline(self):
         root = Path(__file__).resolve().parents[1]
         path = root/'experiments/results/format-mistral-7b-v03-20261022'

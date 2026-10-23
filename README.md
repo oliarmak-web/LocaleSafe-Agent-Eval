@@ -100,7 +100,7 @@ We ran **1,920 additional development calls** on Mistral-7B-Instruct-v0.3 and Ph
 
 **These are exact command-contract scores, not measures of general intelligence or language comprehension.** Mistral sometimes added a word before its JSON command; Phi sometimes wrapped JSON in Markdown. The frozen scorer rejects both. All 96 Phi structured summaries failed strict parsing, which makes their field scores zero; that does not show every permission fact was misunderstood. We preserved the raw answers without repairing them.
 
-Phi's greedy action score improved from 15/32 with the full conversation to 32/32 with perfect reference records. This gives another reason to investigate the input representation and output contract before blaming language. It does not reproduce Qwen's evaluation result or establish a language effect. Across this study and follow-up, **5,184 calls** are now archived; only Qwen qualified for evaluation.
+Phi's greedy action score improved from 15/32 with the full conversation to 32/32 with perfect reference records. This gives another reason to investigate the input representation and output contract before blaming language. It does not reproduce Qwen's evaluation result or establish a language effect. These runs brought the archived total to 5,184 calls. Only Qwen qualified for the original evaluation; the exploratory prompt follow-up below does not change those original scores or qualification decisions.
 
 [Additional model results](docs/MODEL_EXTENSION_RESULTS.md) · [Replication protocol](experiments/handoff-study/MODEL_EXTENSION.md).
 
@@ -122,7 +122,22 @@ python -m experiments.run_order_controls --output-dir reports/my-order-controls
 
 The command creates separate local databases and a `results.json` with final order states and effect logs. No orders leave the sandbox. [Workflow results and limits](docs/ORDER_CONTROLS.md).
 
-A separately frozen 256-call Mistral/Phi prompt-format follow-up is **pending free GPU availability**. Colab refused GPU allocation on October 22 due to usage limits; no results from that follow-up are claimed. [Protocol](experiments/format-followup/PROTOCOL.md).
+## Prompt follow-up: formatting was a confound, not the whole problem
+
+**256 new calls; 5,440 archived calls across this study and its follow-ups.** We repeated the original action prompts and changed only the presentation of their tool examples to JSON-only objects. Original baseline replies repeated exactly on all 128 matched prompts across both models.
+
+| Model and evidence | Original prompt: correct actions | JSON-only examples: correct actions |
+|---|---:|---:|
+| Mistral, full conversation | 0/32 | 32/32 |
+| Mistral, perfect reference record | 4/32 | 16/32 |
+| Phi, full conversation | 15/32 | 28/32 |
+| Phi, perfect reference record | 32/32 | 23/32 |
+
+**Our prompt examples contributed to the failures.** Mistral's full-conversation result changed from no valid commands to 32 correct commands. Its original zero score should not be read as inability to understand these requests.
+
+**A format improvement is not a safety fix.** Mistral returned valid JSON for all 32 changed-prompt reference-record cases, yet 16 actions were unauthorized. The same wording change also hurt Phi on nine reference-record cases, where Markdown fences reappeared. An intervention can help one input condition and harm another.
+
+These are exploratory results on previously inspected development cases. No held-out validation or changed-prompt evaluation run was performed. [Full follow-up results](docs/FORMAT_FOLLOWUP.md) · [Frozen protocol](experiments/format-followup/PROTOCOL.md) · [Execution history](experiments/format-followup/EXECUTION_HISTORY.md).
 
 ## Earlier multilingual experiments
 
