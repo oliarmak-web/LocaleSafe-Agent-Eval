@@ -1,0 +1,43 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-22T23:08:29.194886+00:00",
+  "settings": {
+    "model": {
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "weights": {
+        "model-00001-of-00003.safetensors": "ce6fb6f6f4d0183f4813cbf4ece24109da629a08d4210da46f77e1d8b0bd5c19",
+        "model-00002-of-00003.safetensors": "8c0e72f148366b6a3709e002a98706a33d31aec8515090c856c95b2044f92ae0",
+        "model-00003-of-00003.safetensors": "905dd405363e43d95779c1c1155a2dbfd36155914ae95dbd934e12e490cfb4ca"
+      }
+    },
+    "jobs_sha256": "713cdbd74fdc561b53e49dc513f92a0ecfe235cef11cb88f8007f7abf0992230",
+    "sources": {
+      "localesafe/collect_format_followup.py": "31c852cfac719da4c49dcf1df27e5cd7af9daa6bfb8d187ffc9de6b14831d81c",
+      "localesafe/collect_handoff.py": "3df2287b7ddca880d9ada34d7dd9d47b3eb66455d57ff6d2aa9113ed613eca34",
+      "localesafe/handoff_study.py": "44e3fcdab98c06550b9ce828bb7fa782b5b1c1b0551047c27878ba6a6682733e",
+      "localesafe/handoff_eval.py": "c795d7ec8e331db1e55f5cd93b033cac273a0623218a02c9811bda1da1ed6852",
+      "localesafe/evaluate.py": "0c81f93ed98918582824343c767823d6ffea3853584994d6998f68feb096f8df",
+      "experiments/build_format_followup.py": "2f7eadcba31cc5349ce49da1b3dbb42ddffae7af94c9f472a7b088733b2a0992",
+      "experiments/format-followup/PROTOCOL.md": "e07d0508cc27dd3d64113069668d632fd0570c9b08fac6bd9524923f0ebf31c0"
+    },
+    "python": "3.13.15",
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.6",
+    "accelerate": "1.15.0",
+    "cuda": "13.0",
+    "gpu": "Tesla T4",
+    "dtype": "float16",
+    "quantization": "none",
+    "batch_size": 1,
+    "threads": 2,
+    "decoding": "greedy",
+    "max_new_tokens": 96,
+    "enable_thinking": false,
+    "schedule_seed": 20261024
+  },
+  "scheduled_requests": 128,
+  "completed_utc": "2026-10-22T23:25:19.985186+00:00",
+  "attempts": 128,
+  "attempts_sha256": "867335a6da22fcd046a030899b17be22a418863015b8386c394de194768846e7"
+}

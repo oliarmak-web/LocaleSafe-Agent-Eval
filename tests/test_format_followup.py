@@ -4,9 +4,24 @@ import unittest
 from pathlib import Path
 
 from experiments.build_format_followup import build, OLD, NEW
+from experiments.summarize_format_followup import audit, summarize
+from localesafe.evaluate import read_jsonl
 
 
 class FormatFollowupTests(unittest.TestCase):
+    def test_mistral_archive_replays_scores_and_exact_baseline(self):
+        root = Path(__file__).resolve().parents[1]
+        path = root/'experiments/results/format-mistral-7b-v03-20261022'
+        manifest, jobs, rows = audit(path)
+        frozen = json.loads((root/'experiments/format-followup/jobs.json').read_text(encoding='utf-8'))
+        self.assertEqual(json.loads((path/'jobs.json').read_text(encoding='utf-8')), frozen)
+        original = read_jsonl(root/'experiments/results/handoff-mistral-7b-v03-development-20261022/attempts.jsonl')
+        result = summarize(manifest,jobs,rows,original)
+        self.assertEqual(result,json.loads((root/'experiments/analysis/format-followup/mistral.json').read_text(encoding='utf-8'))[0])
+        self.assertEqual(result['baseline_replay']['exact_text_agreement'],64)
+        self.assertEqual([(g['parsed'],g['correct']) for g in result['groups']],[(0,0),(32,32),(12,4),(32,16)])
+        self.assertEqual(result['paired'],{'helped':44,'hurt':0})
+
     def test_only_example_presentation_changes_and_all_pairs_are_present(self):
         root = Path(__file__).resolve().parents[1]
         paths = [root/'experiments/results'/f'handoff-{m}-development-20261022'
