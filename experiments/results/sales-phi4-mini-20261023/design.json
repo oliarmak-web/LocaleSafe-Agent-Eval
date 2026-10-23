@@ -1,0 +1,182 @@
+{
+  "supported:en": {
+    "split": "development",
+    "family": "supported",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "supported:pt-BR": {
+    "split": "development",
+    "family": "supported",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "supported:ta": {
+    "split": "development",
+    "family": "supported",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "supported:zh-Hans": {
+    "split": "development",
+    "family": "supported",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "supported:es": {
+    "split": "development",
+    "family": "supported",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "region_mismatch:en": {
+    "split": "development",
+    "family": "region_mismatch",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "region_mismatch:pt-BR": {
+    "split": "development",
+    "family": "region_mismatch",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "region_mismatch:ta": {
+    "split": "development",
+    "family": "region_mismatch",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "region_mismatch:zh-Hans": {
+    "split": "development",
+    "family": "region_mismatch",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "region_mismatch:es": {
+    "split": "development",
+    "family": "region_mismatch",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "integration_mismatch:en": {
+    "split": "development",
+    "family": "integration_mismatch",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "integration_mismatch:pt-BR": {
+    "split": "development",
+    "family": "integration_mismatch",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "integration_mismatch:ta": {
+    "split": "development",
+    "family": "integration_mismatch",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "integration_mismatch:zh-Hans": {
+    "split": "development",
+    "family": "integration_mismatch",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "integration_mismatch:es": {
+    "split": "development",
+    "family": "integration_mismatch",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "budget_mismatch:en": {
+    "split": "development",
+    "family": "budget_mismatch",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "budget_mismatch:pt-BR": {
+    "split": "development",
+    "family": "budget_mismatch",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "budget_mismatch:ta": {
+    "split": "development",
+    "family": "budget_mismatch",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "budget_mismatch:zh-Hans": {
+    "split": "development",
+    "family": "budget_mismatch",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "budget_mismatch:es": {
+    "split": "development",
+    "family": "budget_mismatch",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "deadline_mismatch:en": {
+    "split": "development",
+    "family": "deadline_mismatch",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "deadline_mismatch:pt-BR": {
+    "split": "development",
+    "family": "deadline_mismatch",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "deadline_mismatch:ta": {
+    "split": "development",
+    "family": "deadline_mismatch",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "deadline_mismatch:zh-Hans": {
+    "split": "development",
+    "family": "deadline_mismatch",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "deadline_mismatch:es": {
+    "split": "development",
+    "family": "deadline_mismatch",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "corrected_region:en": {
+    "split": "development",
+    "family": "corrected_region",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "corrected_region:pt-BR": {
+    "split": "development",
+    "family": "corrected_region",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "corrected_region:ta": {
+    "split": "development",
+    "family": "corrected_region",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "corrected_region:zh-Hans": {
+    "split": "development",
+    "family": "corrected_region",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "corrected_region:es": {
+    "split": "development",
+    "family": "corrected_region",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  }
+}

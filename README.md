@@ -8,7 +8,7 @@ Use it to investigate a practical question: **is the failure in language underst
 
 Created and maintained by **Olivia Iarmak**. MIT-licensed research prototype. Implementation, translations and documentation use AI assistance.
 
-**New draft pilot:** enterprise cybersecurity discovery in English, Brazilian Portuguese, Tamil, Simplified Chinese and Spanish. Collection started October 23; no reviewed findings are claimed. [Scope and protocol](experiments/sales-pilot/PROTOCOL.md).
+**New draft pilot:** enterprise cybersecurity discovery in English, Brazilian Portuguese, Tamil, Simplified Chinese and Spanish. 720 calls completed October 23. Findings remain exploratory and unreviewed. [Results](docs/SALES_PILOT_FINDINGS.md) · [Protocol](experiments/sales-pilot/PROTOCOL.md).
 
 ## What can you test?
 
@@ -64,6 +64,26 @@ Open the two JSON reports to inspect each case's action score, monitor judgment 
 - **A permission-handoff study:** separate scores for the handoff record, acting agent and monitor when the user changes permission across languages.
 
 These are the project's concrete artifacts. Multilingual evaluation, authorization checks and monitor evaluation have established precedents. The current study tests how language, handoff contracts and monitor evidence affect permission-sensitive actions. [Method comparison](docs/HANDOFF_METHOD_COMPARISON.md). [Related work](docs/COMPETITIVE_LANDSCAPE.md) · [Authorship and provenance](CREDITS.md).
+
+## Enterprise-sales pilot: where did the failure appear?
+
+**720 fresh calls across Qwen3-4B and Phi-4-mini**, using six fictional cybersecurity-sales situations in five languages. These are a separate draft pilot, not an extension of the earlier benchmark's case count.
+
+Qwen extracted the five buyer requirements correctly in all 90 extraction calls, including sampled repeats. It still often declared a product suitable despite unsupported requirements. The measured failure appeared at product-fit assessment, even in English.
+
+| Buyer language | Qwen: complete fit assessment | Phi: complete fit assessment |
+|---|---:|---:|
+| English | 2/6 | 4/6 |
+| Brazilian Portuguese | 3/6 | 1/6 |
+| Tamil | 1/6 | 1/6 |
+| Simplified Chinese | 2/6 | 0/6 |
+| Spanish | 2/6 | 1/6 |
+
+Greedy results. A complete assessment needs the correct fit/escalate decision **and** every unsupported field, not just a yes/no answer. For example, Phi's Tamil decisions were correct in 5/6 cases, matching English, but its complete Tamil assessments scored 1/6 versus 4/6 in English. Incorrect reasons matter separately from the decision.
+
+Supplying correct structured requirements improved Phi's complete Portuguese and Tamil assessments from 1/6 to 4/6. It still made errors with perfect input. Phi also had formatting failures, including Markdown-wrapped English extractions, and its sampled English assessments changed correctness on 2/6 situations between repeats.
+
+**Language-conditioned behavior varied; a causal language gap is not established.** Six draft situations, unreviewed translations, weak English fit performance and prompt/format sensitivity limit interpretation. These are internal model judgments, not customer-facing promises, lost revenue or validated enterprise-sales agents. [Plain-English findings](docs/SALES_PILOT_FINDINGS.md) · [All tables](docs/SALES_PILOT_RESULTS.md).
 
 ## What we learned
 

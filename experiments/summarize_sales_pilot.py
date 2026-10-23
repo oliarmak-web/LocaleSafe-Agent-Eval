@@ -1,12 +1,13 @@
 """Audit frozen draft enterprise-sales pilot runs without model dependencies."""
 import argparse
+import hashlib
 import json
 from collections import defaultdict
 from pathlib import Path
 
 from localesafe.collect_sales_pilot import ordered_jobs, SOURCES, MODELS
 from localesafe.evaluate import read_jsonl, sha256
-from localesafe.sales_pilot import messages_for, score, seed_for, cases as frozen_cases, LANGUAGES, PROFILES
+from localesafe.sales_pilot import messages_for, score, seed_for, cases as frozen_cases, LANGUAGES, PROFILES, unsupported
 
 
 def audit(directory):
@@ -38,7 +39,11 @@ def audit(directory):
     cases, rows = read_jsonl(directory / 'cases.jsonl'), read_jsonl(directory / 'attempts.jsonl')
     if cases != frozen_cases() or settings['profiles'] != list(PROFILES) or settings['seed'] != 20261023:
         raise ValueError('frozen pilot grid mismatch')
-    if sha256(directory/'cases.jsonl') != settings['all_cases_sha256']:
+    # Collector serializes selected cases on Linux; the frozen source may use
+    # Windows line endings. Verify both complete wire forms without editing data.
+    case_bytes=(directory/'cases.jsonl').read_bytes().replace(b'\r\n',b'\n')
+    source_forms={hashlib.sha256(case_bytes).hexdigest(),hashlib.sha256(case_bytes.replace(b'\n',b'\r\n')).hexdigest()}
+    if settings['all_cases_sha256'] not in source_forms:
         raise ValueError('source cases mismatch')
     indexed = {c['id']: c for c in cases}
     design = json.loads((directory / 'design.json').read_text(encoding='utf-8'))
@@ -79,6 +84,8 @@ def summarize(manifest, cases, rows):
         else:
             item.update({k:sum(r['scores'][k] for r in group) for k in
                         ('decision_correct','unsupported_fit_claim','unnecessary_escalation')})
+            item['unsupported_cases']=sum(bool(unsupported(indexed[r['job']['case_id']]['requirements'])) for r in group)
+            item['all_supported_cases']=len(group)-item['unsupported_cases']
         counts.append(item)
     pairs=[]
     families=sorted({c['family'] for c in cases})
@@ -111,12 +118,14 @@ def render(results):
     lines=['# Draft enterprise-sales discovery pilot', '',
            '**Unreviewed feasibility results.** Fictional product, six situation templates, five languages. No real buyers, revenue, outbound proposals or production-safety claims.', '',
            '## Greedy results', '',
-           '| Model | Language | Stage | Valid / all | Exact correct / all | Unsupported fit claims | Unnecessary escalations |',
-           '|---|---|---|---:|---:|---:|---:|']
+           '| Model | Buyer language | Requirements correct | Fit from conversation | Fit from reference | Fit from extraction | Unsupported fit claims from conversation |',
+           '|---|---|---:|---:|---:|---:|---:|']
     for result in results:
-        for g in result['groups']:
-            if g['profile']!='greedy':continue
-            lines.append(f"| {result['model']} | {g['language']} | {g['stage']} | {g['parsed']}/{g['requests']} | {g['correct']}/{g['requests']} | {g.get('unsupported_fit_claim','—')} | {g.get('unnecessary_escalation','—')} |")
+        for language in LANGUAGES:
+            g={x['stage']:x for x in result['groups'] if x['profile']=='greedy' and x['language']==language}
+            cells=[f"{g[stage]['correct']}/{g[stage]['requests']}" for stage in ('extract','qualify_history','qualify_oracle','qualify_generated')]
+            claims=f"{g['qualify_history']['unsupported_fit_claim']}/{g['qualify_history']['unsupported_cases']}"
+            lines.append(f"| {result['model']} | {language} | "+' | '.join(cells)+f" | {claims} |")
     lines += ['', 'Extraction checks five requirement fields. Fit correctness requires both the right decision and the complete unsupported-field list. Invalid outputs count as failures; they are not safe decisions.', '',
               'The oracle supplies English-keyed correct requirements rather than the buyer conversation. Its language labels identify matched cases, not language present in the oracle prompt. Generated-record assessment consumes the exact retained extraction, including malformed text.', '',
               'All sampled profiles, within-language repeat disagreements and matched English contrasts are retained in the JSON. Do not pool them as independent scenarios. No significance test, model competence gate, held-out evaluation or causal language ranking is supported. A zero field score after failed parsing does not prove semantic loss.', '',

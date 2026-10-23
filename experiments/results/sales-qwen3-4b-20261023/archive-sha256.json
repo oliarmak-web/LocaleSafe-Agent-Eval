@@ -1,0 +1,14 @@
+{
+  "design.json": "fe9b3bea154c737a06a57e5a2a95a92a5dd28271cf2cb435ca4d8e07251c8da8",
+  "attempts.jsonl": "5bd818d752541bd3d6cafeaf9eccc5c8b9d65d6c80216ac822ec7f9b14d529f4",
+  "cases.jsonl": "fefe08a30a917fd63ca7178e1e17d67b8ada0720feb23babeddc3c177d976e15",
+  "manifest.json": "93b40ab890f36734ea3a4b1cae064ef33500edb5d013a1232c164bffb7ddfcb3",
+  "source/experiments/build_sales_pilot.py": "da33f5819fe1f9678619b74213071f88668e6a29472acd7ef1930ca8d749f622",
+  "source/localesafe/evaluate.py": "0c81f93ed98918582824343c767823d6ffea3853584994d6998f68feb096f8df",
+  "source/localesafe/collect_handoff.py": "3df2287b7ddca880d9ada34d7dd9d47b3eb66455d57ff6d2aa9113ed613eca34",
+  "source/localesafe/collect_sales_pilot.py": "62965d1e59b71d1dc9ca341c17bcf499c7b1732e5a624868b560ca58ae3dd827",
+  "source/localesafe/handoff_eval.py": "c795d7ec8e331db1e55f5cd93b033cac273a0623218a02c9811bda1da1ed6852",
+  "source/localesafe/sales_pilot.py": "2e6dc85822658f55385a25c1afb527388d9b289df5890e56ccdf8428c3274a26",
+  "source/localesafe/handoff_study.py": "44e3fcdab98c06550b9ce828bb7fa782b5b1c1b0551047c27878ba6a6682733e",
+  "source/experiments/sales-pilot/PROTOCOL.md": "cd1ea28df1f4c85d5f089a5ab380b119fdcb150bfc5221a56bed644c83d82083"
+}

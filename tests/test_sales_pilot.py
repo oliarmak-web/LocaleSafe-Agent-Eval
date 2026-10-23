@@ -1,5 +1,6 @@
 import copy
 import json
+import hashlib
 import tempfile
 import shutil
 import unittest
@@ -10,10 +11,25 @@ from localesafe.sales_pilot import cases, jobs_for, messages_for, score, seed_fo
 from localesafe.collect_sales_pilot import ordered_jobs
 from localesafe.collect_sales_pilot import SOURCES, MODELS
 from localesafe.evaluate import sha256
-from experiments.summarize_sales_pilot import audit, summarize
+from experiments.summarize_sales_pilot import audit, summarize, render
 
 
 class SalesPilotTests(unittest.TestCase):
+    def test_actual_archives_reproduce_analysis_and_language_cells(self):
+        root=Path(__file__).resolve().parents[1]
+        results=[]
+        for model in ('qwen3-4b','phi4-mini'):
+            manifest,data,rows=audit(root/f'experiments/results/sales-{model}-20261023')
+            self.assertEqual(len(rows),360)
+            results.append(summarize(manifest,data,rows))
+        self.assertEqual(results,json.loads((root/'experiments/analysis/sales-pilot/summary.json').read_text(encoding='utf-8')))
+        self.assertEqual(render(results),(root/'docs/SALES_PILOT_RESULTS.md').read_text(encoding='utf-8'))
+        for result, expected in zip(results,[(2,3,1,2,2),(4,1,1,0,1)]):
+            counts={g['language']:g['correct'] for g in result['groups'] if g['stage']=='qualify_history' and g['profile']=='greedy'}
+            self.assertEqual(tuple(counts[l] for l in LANGUAGES),expected)
+        self.assertEqual(sum(g['correct'] for g in results[0]['groups'] if g['stage']=='extract'),90)
+        self.assertEqual(sum(g['parsed'] for g in results[1]['groups'] if g['stage']=='extract'),71)
+
     def test_archive_audit_reconstructs_dependencies_and_rejects_rehashed_bad_score(self):
         root=Path(__file__).resolve().parents[1]
         with tempfile.TemporaryDirectory() as folder:
@@ -24,6 +40,9 @@ class SalesPilotTests(unittest.TestCase):
                 shutil.copyfile(root/source,target)
             shutil.copyfile(root/'experiments/sales-pilot/cases.jsonl',path/'cases.jsonl')
             shutil.copyfile(root/'experiments/sales-pilot/design.json',path/'design.json')
+            normalized=(path/'cases.jsonl').read_bytes().replace(b'\r\n',b'\n')
+            (path/'cases.jsonl').write_bytes(normalized)
+            windows_source_sha=hashlib.sha256(normalized.replace(b'\n',b'\r\n')).hexdigest()
             data=cases();indexed={c['id']:c for c in data};previous={};rows=[]
             for job in ordered_jobs(data,PROFILES,20261023):
                 c=indexed[job['case_id']]
@@ -36,7 +55,7 @@ class SalesPilotTests(unittest.TestCase):
                 previous[job['id']]=row;rows.append(row)
             settings={'sources':{s:sha256(path/'source'/s) for s in SOURCES},'model':MODELS['qwen3-4b'],
                       'split':'development','batch_size':8,'dtype':'float16','quantization':'none','enable_thinking':False,
-                      'profiles':list(PROFILES),'seed':20261023,'all_cases_sha256':sha256(path/'cases.jsonl'),
+                      'profiles':list(PROFILES),'seed':20261023,'all_cases_sha256':windows_source_sha,
                       'design_sha256':sha256(path/'design.json'),
                       'token_limits':{'extract':128,'qualify_history':96,'qualify_oracle':96,'qualify_generated':96}}
             def write_archive():
