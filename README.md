@@ -8,6 +8,8 @@ Use it to investigate a practical question: **is the failure in language underst
 
 Created and maintained by **Olivia Iarmak**. MIT-licensed research prototype. Implementation, translations and documentation use AI assistance.
 
+**New draft pilot:** enterprise cybersecurity discovery in English, Brazilian Portuguese, Tamil, Simplified Chinese and Spanish. Collection started October 23; no reviewed findings are claimed. [Scope and protocol](experiments/sales-pilot/PROTOCOL.md).
+
 ## What can you test?
 
 Use LocaleSafe when an agent can change a record and must follow the user's latest permission. It tests **English-only, Spanish-only and language-switching conversations**. Switching languages is one condition; the broader question is why an agent takes the wrong action.

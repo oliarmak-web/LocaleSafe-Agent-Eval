@@ -1,6 +1,6 @@
 # Language reliability in enterprise sales agents
 
-**Proposed study; no enterprise-sales model results collected.** October 23, 2026. Scope: consultative B2B sales, technical discovery, proposals and specialist handoffs in consequential industries. Existing booking, order and format experiments remain separate evidence.
+**Research direction with a draft feasibility pilot in collection.** October 23, 2026. No reviewed enterprise-sales results are available. Scope: consultative B2B sales, technical discovery, proposals and specialist handoffs in consequential industries. Existing booking, order and format experiments remain separate evidence.
 
 ## Research question
 
@@ -73,3 +73,8 @@ For every matched case report extracted constraints, unsupported claims, evidenc
 Potential reusable artifacts: a reviewed product-claims dataset, a synthetic enterprise-sales environment, adapters for existing agent frameworks, a local regression command, and an intervention evaluated on untouched cases. These are planned deliverables, not an assertion of novelty or adoption.
 
 Before experiments: implement the capability/document store and stateful sales workflow; freeze case families and scoring; obtain language/domain review; then run development and a separate evaluation. Existing static handoff and injected order controls cannot substitute for these sales experiments.
+
+
+## First executable pilot
+
+The [frozen discovery pilot](../experiments/sales-pilot/PROTOCOL.md) implements 30 AI-authored draft cases in English, Brazilian Portuguese, Tamil, Simplified Chinese and Spanish. It schedules 720 calls across Qwen3-4B and Phi-4-mini, separating requirement extraction, direct product-fit judgment, correct-record judgment and generated-record judgment. This bounded pilot has no outbound proposal, live CRM, specialist interaction or contract execution. See [collection status](../experiments/sales-pilot/EXECUTION_HISTORY.md).
