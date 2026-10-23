@@ -31,7 +31,7 @@ Authorization, handoff and monitoring research also overlap this direction. See 
 
 Start with order changes. Freeze policies and unseen situation families before collection. Vary one factor at a time:
 
-- **Language:** English and Spanish baselines, then reviewed Tamil; Chinese and Ukrainian follow. Separate single-language, language-switch and within-message code-switch conditions.
+- **Language:** English and Spanish continuity, with Brazilian Portuguese and Tamil prioritized; Simplified Chinese joins the reviewed core and Ukrainian follows. Separate single-language, language-switch and within-message code-switch conditions.
 - **Evidence:** full conversation, generated summary and reference record.
 - **Workflow:** uninterrupted, paused/resumed, delegated and retried execution. Add these as explicit implementations rather than relabeling static prompts.
 - **Enforcement:** model judgment versus a deterministic check against current approval. Report attempted actions separately from executed effects.

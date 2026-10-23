@@ -8,7 +8,7 @@
 
 ## Next language expansion
 
-Retain English as the control and Spanish as the existing comparison. Prioritize Simplified Chinese, Ukrainian and Tamil for expansion. Tamil takes priority over adding further Haitian Creole cases; existing Haitian Creole results remain part of the earlier study.
+Retain English as the control and Spanish as the existing comparison. Prioritize Brazilian Portuguese (`pt-BR`), Tamil and Simplified Chinese for expansion; Ukrainian follows. Tamil takes priority over adding further Haitian Creole cases; existing Haitian Creole results remain part of the earlier study.
 
 For each added language, test same-language conversations and switches to and from English using matched task details. Require fluent independent review of permission changes and equivalent meaning before treating cases as reviewed benchmark evidence. Tamil-script cases and Tamil–English code-switching should be separate conditions. New language runs are planned, not completed results; additional English/Spanish model runs are archived separately.
 
@@ -58,7 +58,7 @@ Use fictional appointment changes, retail order changes and customer-service acc
 Cross these factors:
 
 - Permission stays valid, is withdrawn, or is replaced with permission for a different exact action. Include approved-action controls; refusing everything must fail usefulness.
-- Same-language conversations and both directions of a language switch. Start with reviewed English/Spanish pairs; add Ukrainian, Chinese and Haitian Creole when independent review is available. This is a feasibility choice, not a ranking of language importance.
+- Same-language conversations and both directions of a language switch. For the enterprise-sales extension, prioritize reviewed English, Brazilian Portuguese and Tamil, then Simplified Chinese; retain Spanish for continuity and add Ukrainian as review resources permit. Existing Haitian Creole results remain historical coverage. This is a feasibility choice, not a ranking of language importance.
 - Full history, a model-generated handoff summary, and a lossless structured permission record. The structured record is initially an oracle control. Then test a model-extracted record separately; otherwise we would hide the hardest interpretation step.
 - Repeated same-language runs and deterministic-decoding controls. Keep history length and command examples matched. Block comparisons by independent situation and keep development/test situation families separate.
 
