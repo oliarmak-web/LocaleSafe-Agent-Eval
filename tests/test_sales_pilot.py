@@ -1,14 +1,60 @@
 import copy
 import json
+import tempfile
+import shutil
 import unittest
 from pathlib import Path
 
 from localesafe.evaluate import read_jsonl
 from localesafe.sales_pilot import cases, jobs_for, messages_for, score, seed_for, unsupported, LANGUAGES, PROFILES
 from localesafe.collect_sales_pilot import ordered_jobs
+from localesafe.collect_sales_pilot import SOURCES, MODELS
+from localesafe.evaluate import sha256
+from experiments.summarize_sales_pilot import audit, summarize
 
 
 class SalesPilotTests(unittest.TestCase):
+    def test_archive_audit_reconstructs_dependencies_and_rejects_rehashed_bad_score(self):
+        root=Path(__file__).resolve().parents[1]
+        with tempfile.TemporaryDirectory() as folder:
+            path=Path(folder)
+            for source in SOURCES:
+                target=path/'source'/source
+                target.parent.mkdir(parents=True,exist_ok=True)
+                shutil.copyfile(root/source,target)
+            shutil.copyfile(root/'experiments/sales-pilot/cases.jsonl',path/'cases.jsonl')
+            shutil.copyfile(root/'experiments/sales-pilot/design.json',path/'design.json')
+            data=cases();indexed={c['id']:c for c in data};previous={};rows=[]
+            for job in ordered_jobs(data,PROFILES,20261023):
+                c=indexed[job['case_id']]
+                fields=unsupported(c['requirements'])
+                answer=(c['requirements'] if job['stage']=='extract' else
+                        {'decision':'escalate' if fields else 'fit','unsupported':fields})
+                raw=json.dumps(answer)
+                row={'job':job,'seed':seed_for(c,job),'messages':messages_for(c,job,previous),
+                     'raw_output':raw,'scores':score(c,job,raw),'output_tokens':1}
+                previous[job['id']]=row;rows.append(row)
+            settings={'sources':{s:sha256(path/'source'/s) for s in SOURCES},'model':MODELS['qwen3-4b'],
+                      'split':'development','batch_size':8,'dtype':'float16','quantization':'none','enable_thinking':False,
+                      'profiles':list(PROFILES),'seed':20261023,'all_cases_sha256':sha256(path/'cases.jsonl'),
+                      'design_sha256':sha256(path/'design.json'),
+                      'token_limits':{'extract':128,'qualify_history':96,'qualify_oracle':96,'qualify_generated':96}}
+            def write_archive():
+                (path/'attempts.jsonl').write_text(''.join(json.dumps(r)+'\n' for r in rows),encoding='utf-8')
+                m={'settings':settings,'status':'completed','attempts':360,'scheduled_requests':360,
+                   'attempts_sha256':sha256(path/'attempts.jsonl'),'cases_sha256':sha256(path/'cases.jsonl')}
+                (path/'manifest.json').write_text(json.dumps(m),encoding='utf-8')
+                hashes={p.relative_to(path).as_posix():sha256(p) for p in path.rglob('*') if p.is_file() and p.name!='archive-sha256.json'}
+                (path/'archive-sha256.json').write_text(json.dumps(hashes),encoding='utf-8')
+            write_archive()
+            result=summarize(*audit(path))
+            self.assertTrue(all(g['correct']==g['requests'] for g in result['groups']))
+            self.assertTrue(all(r['raw_disagreements']==0 for r in result['sampled_repeats']))
+            rows[0]['scores']['correct']=False
+            write_archive()
+            with self.assertRaisesRegex(ValueError,'score/seed mismatch'):
+                audit(path)
+
     def test_frozen_grid_and_language_matched_truth(self):
         root=Path(__file__).resolve().parents[1]
         data=cases()
