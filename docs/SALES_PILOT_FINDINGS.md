@@ -8,6 +8,26 @@ Two small models assessed a fictional cybersecurity product against a buyer's em
 
 Each case was tested under greedy decoding and two seeded sampled repetitions. The model extracted requirements and assessed fit from the conversation, an authored correct requirements record and its own extraction. Product facts and instructions remained English. No sales proposal, CRM write or purchase was executed.
 
+## What we learned about each language
+
+These observations describe the six draft sales situations under greedy decoding. They describe the tested model and prompt setup, not the language or its speakers in general. A complete assessment requires the right fit/escalate decision and the complete list of unmet requirements.
+
+| Language | Observation | What it tells us to investigate |
+|---|---|---|
+| English | Phi made the right fit/escalate decision in 5/6 cases, but only 4/6 complete assessments. Five English extractions failed strict format because they included Markdown fences. Qwen captured all requirements but completed only 2/6 assessments. | English is a comparison condition, not a guaranteed success. Separate formatting, captured facts and applying product rules. |
+| Brazilian Portuguese | Both models captured all six sets of requirements. Phi completed only 1/6 assessments directly, improving to 4/6 with its extracted requirements. | Correctly reading the buyer did not ensure the full conversation produced a sound product-fit assessment. Test the representation passed to the next stage. |
+| Tamil | Both models captured all six sets of requirements. Phi made the right fit/escalate decision in 5/6 cases, matching English, but only 1/6 complete assessments. Its extracted requirements improved that to 4/6. | The largest strict-score difference concerned the reasons, not simply choosing fit versus escalation. Check every claimed mismatch. |
+| Simplified Chinese | Phi captured 5/6 requirement sets and made the right fit/escalate decision in 4/6 cases, yet none of its complete assessments were correct. Correct structured requirements improved complete assessments to 4/6. | A zero complete score does not mean every request or decision was misunderstood. Correct decisions can come with incorrect reasons. |
+| Spanish | Qwen's complete assessment score matched English at 2/6. Phi captured 5/6 requirement sets and made the right decision in 4/6, but completed only 1/6 assessments. Its extracted requirements improved that to 4/6. | Similar-looking language coverage does not establish reliable performance. Evaluate the full decision and its supporting reasons. |
+
+The practical lesson is to **evaluate each deployment language at each stage**, including English. This pilot does not establish that one language needs a different architecture, that Tamil or Chinese is inherently harder, or that language explains every observed difference.
+
+## A concrete sales example
+
+The fictional product costs USD 80,000 annually. A Portuguese buyer allows only USD 60,000; the other requirements are supported. Phi correctly escalated, but incorrectly listed region, integration and deadline as additional mismatches. Qwen also escalated, but added an incorrect deadline mismatch. Both decisions recognized that the sale should not proceed unchanged, but neither assessment explained the actual problem precisely.
+
+In the Chinese integration-mismatch case, Phi escalated for the wrong reason: it named region rather than integration. Qwen instead declared a fit. These are different failure modes, even when a single overall score marks both incorrect. These are archived internal responses, not actual sales advice or sent proposals.
+
 ## Findings in plain English
 
 **1. Reading the requirements correctly did not ensure an accurate sales assessment.** Qwen extracted every requirement correctly in all 90 extraction calls. Yet its greedy English fit assessments were fully correct in only 2/6 situations. On all four unsupported English requests it returned an internal fit claim. Errors remained with authored correct requirements, so extraction failure alone cannot explain them. This locates a measured problem in the fit-assessment condition; it does not distinguish model capability from prompt sensitivity.

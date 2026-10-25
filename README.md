@@ -65,25 +65,23 @@ Open the two JSON reports to inspect each case's action score, monitor judgment 
 
 These are the project's concrete artifacts. Multilingual evaluation, authorization checks and monitor evaluation have established precedents. The current study tests how language, handoff contracts and monitor evidence affect permission-sensitive actions. [Method comparison](docs/HANDOFF_METHOD_COMPARISON.md). [Related work](docs/COMPETITIVE_LANDSCAPE.md) · [Authorship and provenance](CREDITS.md).
 
-## Enterprise-sales pilot: where did the failure appear?
+## What we learned across the five sales-pilot languages
 
-**720 fresh calls across Qwen3-4B and Phi-4-mini**, using six fictional cybersecurity-sales situations in five languages. These are a separate draft pilot, not an extension of the earlier benchmark's case count.
+**720 calls; two models; six fictional cybersecurity-sales situations.** Reading the buyer's requirements and deciding whether the product meets them are different tests. Qwen extracted every requirement correctly in all 90 extraction calls, yet its complete English assessments scored only 2/6.
 
-Qwen extracted the five buyer requirements correctly in all 90 extraction calls, including sampled repeats. It still often declared a product suitable despite unsupported requirements. The measured failure appeared at product-fit assessment, even in English.
+| Language | Clearest observation from Phi's greedy run |
+|---|---|
+| English | 5/6 fit/escalate decisions were right; 4/6 complete assessments were right. Markdown wrappers also caused extraction failures. |
+| Brazilian Portuguese | All six requirement sets were captured correctly, but only 1/6 complete assessments were right. Using the extracted record improved this to 4/6. |
+| Tamil | Fit/escalate decisions matched English at 5/6, but only 1/6 complete assessments had the right reasons. Using the extracted record improved this to 4/6. |
+| Simplified Chinese | 4/6 fit/escalate decisions were right, but none had a fully correct assessment. A zero complete score does not mean zero understanding. |
+| Spanish | 4/6 fit/escalate decisions were right; only 1/6 complete assessments were right. Using the extracted record improved this to 4/6. |
 
-| Buyer language | Qwen: complete fit assessment | Phi: complete fit assessment |
-|---|---:|---:|
-| English | 2/6 | 4/6 |
-| Brazilian Portuguese | 3/6 | 1/6 |
-| Tamil | 1/6 | 1/6 |
-| Simplified Chinese | 2/6 | 0/6 |
-| Spanish | 2/6 | 1/6 |
+A complete assessment needs the correct decision **and every unmet requirement**. For example, a Portuguese buyer's budget was too low, but both models also invented other mismatches. Saying “escalate” was not enough to explain the problem correctly.
 
-Greedy results. A complete assessment needs the correct fit/escalate decision **and** every unsupported field, not just a yes/no answer. For example, Phi's Tamil decisions were correct in 5/6 cases, matching English, but its complete Tamil assessments scored 1/6 versus 4/6 in English. Incorrect reasons matter separately from the decision.
+**Evaluate captured facts, decisions, reasons and formatting separately in every language—including English.** Phi's sampled English assessments changed correctness on 2/6 situations between repeats. Six draft situations, unreviewed translations, weak English performance and prompt sensitivity prevent a causal language conclusion or ranking. No real sales or revenue outcomes were measured.
 
-Supplying correct structured requirements improved Phi's complete Portuguese and Tamil assessments from 1/6 to 4/6. It still made errors with perfect input. Phi also had formatting failures, including Markdown-wrapped English extractions, and its sampled English assessments changed correctness on 2/6 situations between repeats.
-
-**Language-conditioned behavior varied; a causal language gap is not established.** Six draft situations, unreviewed translations, weak English fit performance and prompt/format sensitivity limit interpretation. These are internal model judgments, not customer-facing promises, lost revenue or validated enterprise-sales agents. [Plain-English findings](docs/SALES_PILOT_FINDINGS.md) · [All tables](docs/SALES_PILOT_RESULTS.md).
+[Language-by-language findings and examples](docs/SALES_PILOT_FINDINGS.md) · [Complete tables](docs/SALES_PILOT_RESULTS.md) · [Frozen protocol](experiments/sales-pilot/PROTOCOL.md).
 
 ## What we learned
 
