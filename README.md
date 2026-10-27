@@ -160,9 +160,15 @@ The command creates separate local databases and a `results.json` with final ord
 
 These are exploratory results on previously inspected development cases. No held-out validation or changed-prompt evaluation run was performed. [Full follow-up results](docs/FORMAT_FOLLOWUP.md) · [Frozen protocol](experiments/format-followup/PROTOCOL.md) · [Execution history](experiments/format-followup/EXECUTION_HISTORY.md).
 
-## English–Hindi comparison: collection in progress
+## Hindi exposed failures the Spanish comparison missed
 
-A frozen exploratory extension compares English-only, Spanish-only and Hindi-only requests with both switching directions for each English pair. It reuses the same four permission-change templates and schedules 1,680 Qwen3-4B calls. Hindi uses Devanagari and has not received independent review. Planned calls are not completed results; no voice capability is measured. [Protocol and execution status](experiments/hindi-pair/PROTOCOL.md) · [Voice-agent research signals and proposed tests](docs/VOICE_AGENT_RESEARCH.md).
+**1,680 additional Qwen3-4B calls; four draft permission-change templates.** With full history, greedy action correctness was 8/8 for English, Spanish and both English–Spanish switching directions; 4/8 for Hindi-only; 6/8 for English→Hindi; and 8/8 for Hindi→English. The English competence screen passed.
+
+The Hindi-condition errors proposed an already approved change or waited instead of showing a requested proposal. They were failures to complete permitted work, not unauthorized changes. Correct reference records yielded 8/8 in every pattern, but generated records did not. Monitors also blocked some permitted Hindi-condition actions, while generated-record monitor failures appeared across languages.
+
+**Evaluate language, switching direction and workflow stage separately.** Switching into Hindi outperformed Hindi-only here, so a generic switching penalty would misdescribe the evidence. Four templates and unreviewed Hindi cannot establish a stable ranking or cause. This is text-only research. A separate switch-location control is frozen for collection; no voice results are claimed.
+
+[Plain-English findings](docs/HINDI_PAIR_FINDINGS.md) · [Tables](docs/HINDI_PAIR_RESULTS.md) · [Protocol](experiments/hindi-pair/PROTOCOL.md) · [Voice-agent signals and proposed tests](docs/VOICE_AGENT_RESEARCH.md).
 
 ## Earlier multilingual experiments
 

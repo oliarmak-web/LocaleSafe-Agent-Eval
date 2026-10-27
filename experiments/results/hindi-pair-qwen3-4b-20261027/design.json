@@ -1,0 +1,394 @@
+{
+  "withdraw-0-en-en": {
+    "family": "withdraw",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-en",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-0-es-es": {
+    "family": "withdraw",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "es-es",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-0-en-es": {
+    "family": "withdraw",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-es",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-0-es-en": {
+    "family": "withdraw",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "es-en",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-1-en-en": {
+    "family": "withdraw",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-en",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-1-es-es": {
+    "family": "withdraw",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "es-es",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-1-en-es": {
+    "family": "withdraw",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-es",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-1-es-en": {
+    "family": "withdraw",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "es-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-0-en-en": {
+    "family": "change_record",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-0-es-es": {
+    "family": "change_record",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "es-es",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-0-en-es": {
+    "family": "change_record",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-es",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-0-es-en": {
+    "family": "change_record",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "es-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-1-en-en": {
+    "family": "change_record",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-1-es-es": {
+    "family": "change_record",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "es-es",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-1-en-es": {
+    "family": "change_record",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-es",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-1-es-en": {
+    "family": "change_record",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "es-en",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-0-en-en": {
+    "family": "proposal_only",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-en",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-0-es-es": {
+    "family": "proposal_only",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "es-es",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-0-en-es": {
+    "family": "proposal_only",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-es",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-0-es-en": {
+    "family": "proposal_only",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "es-en",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-1-en-en": {
+    "family": "proposal_only",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-en",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-1-es-es": {
+    "family": "proposal_only",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "es-es",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-1-en-es": {
+    "family": "proposal_only",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-es",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-1-es-en": {
+    "family": "proposal_only",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "es-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-0-en-en": {
+    "family": "change_value",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-0-es-es": {
+    "family": "change_value",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "es-es",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-0-en-es": {
+    "family": "change_value",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-es",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-0-es-en": {
+    "family": "change_value",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "es-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-1-en-en": {
+    "family": "change_value",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-1-es-es": {
+    "family": "change_value",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "es-es",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-1-en-es": {
+    "family": "change_value",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-es",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-1-es-en": {
+    "family": "change_value",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "es-en",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-0-hi-hi": {
+    "family": "withdraw",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "hi-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-0-en-hi": {
+    "family": "withdraw",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-0-hi-en": {
+    "family": "withdraw",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "hi-en",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-1-hi-hi": {
+    "family": "withdraw",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "hi-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-1-en-hi": {
+    "family": "withdraw",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "withdraw-1-hi-en": {
+    "family": "withdraw",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "hi-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-0-hi-hi": {
+    "family": "change_record",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "hi-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-0-en-hi": {
+    "family": "change_record",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-0-hi-en": {
+    "family": "change_record",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "hi-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-1-hi-hi": {
+    "family": "change_record",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "hi-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-1-en-hi": {
+    "family": "change_record",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "change_record-1-hi-en": {
+    "family": "change_record",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "hi-en",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-0-hi-hi": {
+    "family": "proposal_only",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "hi-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-0-en-hi": {
+    "family": "proposal_only",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-0-hi-en": {
+    "family": "proposal_only",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "hi-en",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-1-hi-hi": {
+    "family": "proposal_only",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "hi-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-1-en-hi": {
+    "family": "proposal_only",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "proposal_only-1-hi-en": {
+    "family": "proposal_only",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "hi-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-0-hi-hi": {
+    "family": "change_value",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "hi-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-0-en-hi": {
+    "family": "change_value",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "en-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-0-hi-en": {
+    "family": "change_value",
+    "variant": 0,
+    "split": "development",
+    "language_pattern": "hi-en",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-1-hi-hi": {
+    "family": "change_value",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "hi-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-1-en-hi": {
+    "family": "change_value",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "en-hi",
+    "review_status": "AI-authored-draft"
+  },
+  "change_value-1-hi-en": {
+    "family": "change_value",
+    "variant": 1,
+    "split": "development",
+    "language_pattern": "hi-en",
+    "review_status": "AI-authored-draft"
+  }
+}

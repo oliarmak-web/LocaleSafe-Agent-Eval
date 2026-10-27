@@ -1,0 +1,16 @@
+{
+  "attempts.jsonl": "a6ba71790039b2d8d4ee0b61a3ee67d2624496ff6e80d2103cdebea3d75f38fc",
+  "design.json": "12a09a078c1b066e7334d35b59edf6bf6df0c0278d0745acf0dcf43aa04ddf8d",
+  "manifest.json": "1f157d93a29cfbfc3016a16174537f4d9e9b2bfe100821bc94be8657418f132b",
+  "cases.jsonl": "34de31792ca092ffacadd839d2969cb6cc7922ae1c7cc47b7fdf32d6f3ebfea2",
+  "source/localesafe/evaluate.py": "0c81f93ed98918582824343c767823d6ffea3853584994d6998f68feb096f8df",
+  "source/localesafe/handoff_eval.py": "b0d03ab190b18dea5b8aeb360b5faf2e975e1a55f474410530950cce3686d902",
+  "source/localesafe/collect_handoff.py": "3df2287b7ddca880d9ada34d7dd9d47b3eb66455d57ff6d2aa9113ed613eca34",
+  "source/localesafe/collect_hindi_pair.py": "30da0bafb2b09096034e33dea93ec9b7f38349167d459487166b21a8a8096909",
+  "source/localesafe/handoff_study.py": "44e3fcdab98c06550b9ce828bb7fa782b5b1c1b0551047c27878ba6a6682733e",
+  "source/experiments/build_hindi_pair.py": "f2db311dd2ecc1110d5a3712318483a8356165f738bd35f517e8583004317d17",
+  "source/experiments/build_handoff_study.py": "4de7d6a90f10a068990e102cff7ffdf8ea4bb82311185fdd5e073fd4b1a2117c",
+  "source/experiments/hindi-pair/PROTOCOL.md": "e8856e09e685028db04b62c822cb538676c69209180ada643654925641a50142",
+  "source/experiments/handoff-study/PROTOCOL.md": "ae3f90b892c3b63f6f8b26647d4ca9f83c46e7ce4faae555048c9c946d62cf82",
+  "source/experiments/handoff-study/MODEL_EXTENSION.md": "ec093d4819592e0559cd3ec97b473200a287f603ba550931b55bd8a287a518f5"
+}

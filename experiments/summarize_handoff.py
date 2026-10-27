@@ -9,7 +9,7 @@ from localesafe.evaluate import read_jsonl, sha256
 from localesafe.handoff_study import messages_for, score, seed_for
 
 
-def audit(directory):
+def audit(directory, *, job_builder=ordered_jobs):
     manifest = json.loads((directory / 'manifest.json').read_text(encoding='utf-8'))
     if manifest['status'] != 'completed':
         raise ValueError('incomplete collection')
@@ -31,7 +31,7 @@ def audit(directory):
     design = json.loads((directory / 'design.json').read_text(encoding='utf-8'))
     if any(design[c['id']]['split'] != settings['split'] for c in cases):
         raise ValueError('split mismatch')
-    jobs = ordered_jobs(cases, settings['profiles'], settings['seed'])
+    jobs = job_builder(cases, settings['profiles'], settings['seed'])
     if len(rows) != len(jobs) or len(rows) != manifest['attempts'] or len(rows) != manifest['scheduled_requests']:
         raise ValueError('incomplete request grid')
     previous = {}

@@ -15,6 +15,16 @@ from experiments.summarize_hindi_pair import analyze, render
 
 
 class HindiPairTests(unittest.TestCase):
+    def test_archived_results_and_report(self):
+        result=analyze(Path('experiments/results/hindi-pair-qwen3-4b-20261027'))
+        saved=json.loads(Path('experiments/analysis/hindi-pair/summary.json').read_text(encoding='utf-8'))
+        self.assertEqual(result,saved)
+        self.assertEqual(render(result),Path('docs/HINDI_PAIR_RESULTS.md').read_text(encoding='utf-8'))
+        self.assertTrue(result['summary']['qualified_for_evaluation'])
+        cells={r['language_pattern']:r['correct'] for r in result['summary']['actor']
+               if r['profile']=='greedy' and r['condition']=='full_history'}
+        self.assertEqual({'en-en':8,'es-es':8,'en-es':8,'es-en':8,'hi-hi':4,'en-hi':6,'hi-en':8},cells)
+
     def test_frozen_grid_and_original_preservation(self):
         cases, design = build()
         self.assertEqual(56, len(cases))
