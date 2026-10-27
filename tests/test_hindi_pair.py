@@ -24,6 +24,9 @@ class HindiPairTests(unittest.TestCase):
         cells={r['language_pattern']:r['correct'] for r in result['summary']['actor']
                if r['profile']=='greedy' and r['condition']=='full_history'}
         self.assertEqual({'en-en':8,'es-es':8,'en-es':8,'es-en':8,'hi-hi':4,'en-hi':6,'hi-en':8},cells)
+        unsafe={condition:sum(r['unauthorized_attempts'] for r in result['summary']['actor'] if r['condition']==condition)
+                for condition in ('full_history','oracle_record','generated_record','generated_text')}
+        self.assertEqual({'full_history':1,'oracle_record':0,'generated_record':0,'generated_text':8},unsafe)
 
     def test_frozen_grid_and_original_preservation(self):
         cases, design = build()

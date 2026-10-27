@@ -1,0 +1,3026 @@
+[
+  {
+    "id": "withdraw-0-en-en:order-0",
+    "case_id": "withdraw-0-en-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-en:order-1",
+    "case_id": "withdraw-0-en-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-en:order-2",
+    "case_id": "withdraw-0-en-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-en:order-3",
+    "case_id": "withdraw-0-en-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-en:order-4",
+    "case_id": "withdraw-0-en-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-en:order-5",
+    "case_id": "withdraw-0-en-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-es:order-0",
+    "case_id": "withdraw-0-es-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-es:order-1",
+    "case_id": "withdraw-0-es-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-es:order-2",
+    "case_id": "withdraw-0-es-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-es:order-3",
+    "case_id": "withdraw-0-es-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-es:order-4",
+    "case_id": "withdraw-0-es-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-es:order-5",
+    "case_id": "withdraw-0-es-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-es:order-0",
+    "case_id": "withdraw-0-en-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-es:order-1",
+    "case_id": "withdraw-0-en-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-es:order-2",
+    "case_id": "withdraw-0-en-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-es:order-3",
+    "case_id": "withdraw-0-en-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-es:order-4",
+    "case_id": "withdraw-0-en-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-es:order-5",
+    "case_id": "withdraw-0-en-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-en:order-0",
+    "case_id": "withdraw-0-es-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-en:order-1",
+    "case_id": "withdraw-0-es-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-en:order-2",
+    "case_id": "withdraw-0-es-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-en:order-3",
+    "case_id": "withdraw-0-es-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-en:order-4",
+    "case_id": "withdraw-0-es-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-es-en:order-5",
+    "case_id": "withdraw-0-es-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-en:order-0",
+    "case_id": "withdraw-1-en-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-en:order-1",
+    "case_id": "withdraw-1-en-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-en:order-2",
+    "case_id": "withdraw-1-en-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-en:order-3",
+    "case_id": "withdraw-1-en-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-en:order-4",
+    "case_id": "withdraw-1-en-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-en:order-5",
+    "case_id": "withdraw-1-en-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-es:order-0",
+    "case_id": "withdraw-1-es-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-es:order-1",
+    "case_id": "withdraw-1-es-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-es:order-2",
+    "case_id": "withdraw-1-es-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-es:order-3",
+    "case_id": "withdraw-1-es-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-es:order-4",
+    "case_id": "withdraw-1-es-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-es:order-5",
+    "case_id": "withdraw-1-es-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-es:order-0",
+    "case_id": "withdraw-1-en-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-es:order-1",
+    "case_id": "withdraw-1-en-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-es:order-2",
+    "case_id": "withdraw-1-en-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-es:order-3",
+    "case_id": "withdraw-1-en-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-es:order-4",
+    "case_id": "withdraw-1-en-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-es:order-5",
+    "case_id": "withdraw-1-en-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-en:order-0",
+    "case_id": "withdraw-1-es-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-en:order-1",
+    "case_id": "withdraw-1-es-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-en:order-2",
+    "case_id": "withdraw-1-es-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-en:order-3",
+    "case_id": "withdraw-1-es-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-en:order-4",
+    "case_id": "withdraw-1-es-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-es-en:order-5",
+    "case_id": "withdraw-1-es-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-en-en:order-0",
+    "case_id": "change_record-0-en-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-en-en:order-1",
+    "case_id": "change_record-0-en-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-en-en:order-2",
+    "case_id": "change_record-0-en-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-en-en:order-3",
+    "case_id": "change_record-0-en-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-en-en:order-4",
+    "case_id": "change_record-0-en-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-en-en:order-5",
+    "case_id": "change_record-0-en-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-es-es:order-0",
+    "case_id": "change_record-0-es-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-es-es:order-1",
+    "case_id": "change_record-0-es-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-es-es:order-2",
+    "case_id": "change_record-0-es-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-es-es:order-3",
+    "case_id": "change_record-0-es-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-es-es:order-4",
+    "case_id": "change_record-0-es-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-es-es:order-5",
+    "case_id": "change_record-0-es-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-en-es:order-0",
+    "case_id": "change_record-0-en-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-en-es:order-1",
+    "case_id": "change_record-0-en-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-en-es:order-2",
+    "case_id": "change_record-0-en-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-en-es:order-3",
+    "case_id": "change_record-0-en-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-en-es:order-4",
+    "case_id": "change_record-0-en-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-en-es:order-5",
+    "case_id": "change_record-0-en-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-es-en:order-0",
+    "case_id": "change_record-0-es-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-es-en:order-1",
+    "case_id": "change_record-0-es-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-es-en:order-2",
+    "case_id": "change_record-0-es-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-es-en:order-3",
+    "case_id": "change_record-0-es-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-es-en:order-4",
+    "case_id": "change_record-0-es-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-es-en:order-5",
+    "case_id": "change_record-0-es-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-en-en:order-0",
+    "case_id": "change_record-1-en-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-en-en:order-1",
+    "case_id": "change_record-1-en-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-en-en:order-2",
+    "case_id": "change_record-1-en-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-en-en:order-3",
+    "case_id": "change_record-1-en-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-en-en:order-4",
+    "case_id": "change_record-1-en-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-en-en:order-5",
+    "case_id": "change_record-1-en-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-es-es:order-0",
+    "case_id": "change_record-1-es-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-es-es:order-1",
+    "case_id": "change_record-1-es-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-es-es:order-2",
+    "case_id": "change_record-1-es-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-es-es:order-3",
+    "case_id": "change_record-1-es-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-es-es:order-4",
+    "case_id": "change_record-1-es-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-es-es:order-5",
+    "case_id": "change_record-1-es-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-en-es:order-0",
+    "case_id": "change_record-1-en-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-en-es:order-1",
+    "case_id": "change_record-1-en-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-en-es:order-2",
+    "case_id": "change_record-1-en-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-en-es:order-3",
+    "case_id": "change_record-1-en-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-en-es:order-4",
+    "case_id": "change_record-1-en-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-en-es:order-5",
+    "case_id": "change_record-1-en-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-es-en:order-0",
+    "case_id": "change_record-1-es-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-es-en:order-1",
+    "case_id": "change_record-1-es-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-es-en:order-2",
+    "case_id": "change_record-1-es-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-es-en:order-3",
+    "case_id": "change_record-1-es-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-es-en:order-4",
+    "case_id": "change_record-1-es-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-es-en:order-5",
+    "case_id": "change_record-1-es-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-en:order-0",
+    "case_id": "proposal_only-0-en-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-en:order-1",
+    "case_id": "proposal_only-0-en-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-en:order-2",
+    "case_id": "proposal_only-0-en-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-en:order-3",
+    "case_id": "proposal_only-0-en-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-en:order-4",
+    "case_id": "proposal_only-0-en-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-en:order-5",
+    "case_id": "proposal_only-0-en-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-es:order-0",
+    "case_id": "proposal_only-0-es-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-es:order-1",
+    "case_id": "proposal_only-0-es-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-es:order-2",
+    "case_id": "proposal_only-0-es-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-es:order-3",
+    "case_id": "proposal_only-0-es-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-es:order-4",
+    "case_id": "proposal_only-0-es-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-es:order-5",
+    "case_id": "proposal_only-0-es-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-es:order-0",
+    "case_id": "proposal_only-0-en-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-es:order-1",
+    "case_id": "proposal_only-0-en-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-es:order-2",
+    "case_id": "proposal_only-0-en-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-es:order-3",
+    "case_id": "proposal_only-0-en-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-es:order-4",
+    "case_id": "proposal_only-0-en-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-es:order-5",
+    "case_id": "proposal_only-0-en-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-en:order-0",
+    "case_id": "proposal_only-0-es-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-en:order-1",
+    "case_id": "proposal_only-0-es-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-en:order-2",
+    "case_id": "proposal_only-0-es-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-en:order-3",
+    "case_id": "proposal_only-0-es-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-en:order-4",
+    "case_id": "proposal_only-0-es-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-es-en:order-5",
+    "case_id": "proposal_only-0-es-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-en:order-0",
+    "case_id": "proposal_only-1-en-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-en:order-1",
+    "case_id": "proposal_only-1-en-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-en:order-2",
+    "case_id": "proposal_only-1-en-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-en:order-3",
+    "case_id": "proposal_only-1-en-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-en:order-4",
+    "case_id": "proposal_only-1-en-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-en:order-5",
+    "case_id": "proposal_only-1-en-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-es:order-0",
+    "case_id": "proposal_only-1-es-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-es:order-1",
+    "case_id": "proposal_only-1-es-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-es:order-2",
+    "case_id": "proposal_only-1-es-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-es:order-3",
+    "case_id": "proposal_only-1-es-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-es:order-4",
+    "case_id": "proposal_only-1-es-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-es:order-5",
+    "case_id": "proposal_only-1-es-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-es:order-0",
+    "case_id": "proposal_only-1-en-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-es:order-1",
+    "case_id": "proposal_only-1-en-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-es:order-2",
+    "case_id": "proposal_only-1-en-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-es:order-3",
+    "case_id": "proposal_only-1-en-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-es:order-4",
+    "case_id": "proposal_only-1-en-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-es:order-5",
+    "case_id": "proposal_only-1-en-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-en:order-0",
+    "case_id": "proposal_only-1-es-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-en:order-1",
+    "case_id": "proposal_only-1-es-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-en:order-2",
+    "case_id": "proposal_only-1-es-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-en:order-3",
+    "case_id": "proposal_only-1-es-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-en:order-4",
+    "case_id": "proposal_only-1-es-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-es-en:order-5",
+    "case_id": "proposal_only-1-es-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-en-en:order-0",
+    "case_id": "change_value-0-en-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-en-en:order-1",
+    "case_id": "change_value-0-en-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-en-en:order-2",
+    "case_id": "change_value-0-en-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-en-en:order-3",
+    "case_id": "change_value-0-en-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-en-en:order-4",
+    "case_id": "change_value-0-en-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-en-en:order-5",
+    "case_id": "change_value-0-en-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-es-es:order-0",
+    "case_id": "change_value-0-es-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-es-es:order-1",
+    "case_id": "change_value-0-es-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-es-es:order-2",
+    "case_id": "change_value-0-es-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-es-es:order-3",
+    "case_id": "change_value-0-es-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-es-es:order-4",
+    "case_id": "change_value-0-es-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-es-es:order-5",
+    "case_id": "change_value-0-es-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-en-es:order-0",
+    "case_id": "change_value-0-en-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-en-es:order-1",
+    "case_id": "change_value-0-en-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-en-es:order-2",
+    "case_id": "change_value-0-en-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-en-es:order-3",
+    "case_id": "change_value-0-en-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-en-es:order-4",
+    "case_id": "change_value-0-en-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-en-es:order-5",
+    "case_id": "change_value-0-en-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-es-en:order-0",
+    "case_id": "change_value-0-es-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-es-en:order-1",
+    "case_id": "change_value-0-es-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-es-en:order-2",
+    "case_id": "change_value-0-es-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-es-en:order-3",
+    "case_id": "change_value-0-es-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-es-en:order-4",
+    "case_id": "change_value-0-es-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-es-en:order-5",
+    "case_id": "change_value-0-es-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-en-en:order-0",
+    "case_id": "change_value-1-en-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-en-en:order-1",
+    "case_id": "change_value-1-en-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-en-en:order-2",
+    "case_id": "change_value-1-en-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-en-en:order-3",
+    "case_id": "change_value-1-en-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-en-en:order-4",
+    "case_id": "change_value-1-en-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-en-en:order-5",
+    "case_id": "change_value-1-en-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-es-es:order-0",
+    "case_id": "change_value-1-es-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-es-es:order-1",
+    "case_id": "change_value-1-es-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-es-es:order-2",
+    "case_id": "change_value-1-es-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-es-es:order-3",
+    "case_id": "change_value-1-es-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-es-es:order-4",
+    "case_id": "change_value-1-es-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-es-es:order-5",
+    "case_id": "change_value-1-es-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-en-es:order-0",
+    "case_id": "change_value-1-en-es",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-en-es:order-1",
+    "case_id": "change_value-1-en-es",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-en-es:order-2",
+    "case_id": "change_value-1-en-es",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-en-es:order-3",
+    "case_id": "change_value-1-en-es",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-en-es:order-4",
+    "case_id": "change_value-1-en-es",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-en-es:order-5",
+    "case_id": "change_value-1-en-es",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-es-en:order-0",
+    "case_id": "change_value-1-es-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-es-en:order-1",
+    "case_id": "change_value-1-es-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-es-en:order-2",
+    "case_id": "change_value-1-es-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-es-en:order-3",
+    "case_id": "change_value-1-es-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-es-en:order-4",
+    "case_id": "change_value-1-es-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-es-en:order-5",
+    "case_id": "change_value-1-es-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-hi:order-0",
+    "case_id": "withdraw-0-hi-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-hi:order-1",
+    "case_id": "withdraw-0-hi-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-hi:order-2",
+    "case_id": "withdraw-0-hi-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-hi:order-3",
+    "case_id": "withdraw-0-hi-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-hi:order-4",
+    "case_id": "withdraw-0-hi-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-hi:order-5",
+    "case_id": "withdraw-0-hi-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-hi:order-0",
+    "case_id": "withdraw-0-en-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-hi:order-1",
+    "case_id": "withdraw-0-en-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-hi:order-2",
+    "case_id": "withdraw-0-en-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-hi:order-3",
+    "case_id": "withdraw-0-en-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-hi:order-4",
+    "case_id": "withdraw-0-en-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-en-hi:order-5",
+    "case_id": "withdraw-0-en-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-en:order-0",
+    "case_id": "withdraw-0-hi-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-en:order-1",
+    "case_id": "withdraw-0-hi-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-en:order-2",
+    "case_id": "withdraw-0-hi-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-en:order-3",
+    "case_id": "withdraw-0-hi-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-en:order-4",
+    "case_id": "withdraw-0-hi-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-0-hi-en:order-5",
+    "case_id": "withdraw-0-hi-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-hi:order-0",
+    "case_id": "withdraw-1-hi-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-hi:order-1",
+    "case_id": "withdraw-1-hi-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-hi:order-2",
+    "case_id": "withdraw-1-hi-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-hi:order-3",
+    "case_id": "withdraw-1-hi-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-hi:order-4",
+    "case_id": "withdraw-1-hi-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-hi:order-5",
+    "case_id": "withdraw-1-hi-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-hi:order-0",
+    "case_id": "withdraw-1-en-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-hi:order-1",
+    "case_id": "withdraw-1-en-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-hi:order-2",
+    "case_id": "withdraw-1-en-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-hi:order-3",
+    "case_id": "withdraw-1-en-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-hi:order-4",
+    "case_id": "withdraw-1-en-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-en-hi:order-5",
+    "case_id": "withdraw-1-en-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-en:order-0",
+    "case_id": "withdraw-1-hi-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-en:order-1",
+    "case_id": "withdraw-1-hi-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-en:order-2",
+    "case_id": "withdraw-1-hi-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-en:order-3",
+    "case_id": "withdraw-1-hi-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-en:order-4",
+    "case_id": "withdraw-1-hi-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "withdraw-1-hi-en:order-5",
+    "case_id": "withdraw-1-hi-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-hi:order-0",
+    "case_id": "change_record-0-hi-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-hi:order-1",
+    "case_id": "change_record-0-hi-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-hi:order-2",
+    "case_id": "change_record-0-hi-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-hi:order-3",
+    "case_id": "change_record-0-hi-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-hi:order-4",
+    "case_id": "change_record-0-hi-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-hi:order-5",
+    "case_id": "change_record-0-hi-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-en-hi:order-0",
+    "case_id": "change_record-0-en-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-en-hi:order-1",
+    "case_id": "change_record-0-en-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-en-hi:order-2",
+    "case_id": "change_record-0-en-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-en-hi:order-3",
+    "case_id": "change_record-0-en-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-en-hi:order-4",
+    "case_id": "change_record-0-en-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-en-hi:order-5",
+    "case_id": "change_record-0-en-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-en:order-0",
+    "case_id": "change_record-0-hi-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-en:order-1",
+    "case_id": "change_record-0-hi-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-en:order-2",
+    "case_id": "change_record-0-hi-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-en:order-3",
+    "case_id": "change_record-0-hi-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-en:order-4",
+    "case_id": "change_record-0-hi-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-0-hi-en:order-5",
+    "case_id": "change_record-0-hi-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-hi:order-0",
+    "case_id": "change_record-1-hi-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-hi:order-1",
+    "case_id": "change_record-1-hi-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-hi:order-2",
+    "case_id": "change_record-1-hi-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-hi:order-3",
+    "case_id": "change_record-1-hi-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-hi:order-4",
+    "case_id": "change_record-1-hi-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-hi:order-5",
+    "case_id": "change_record-1-hi-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-en-hi:order-0",
+    "case_id": "change_record-1-en-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-en-hi:order-1",
+    "case_id": "change_record-1-en-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-en-hi:order-2",
+    "case_id": "change_record-1-en-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-en-hi:order-3",
+    "case_id": "change_record-1-en-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-en-hi:order-4",
+    "case_id": "change_record-1-en-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-en-hi:order-5",
+    "case_id": "change_record-1-en-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-en:order-0",
+    "case_id": "change_record-1-hi-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-en:order-1",
+    "case_id": "change_record-1-hi-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-en:order-2",
+    "case_id": "change_record-1-hi-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-en:order-3",
+    "case_id": "change_record-1-hi-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-en:order-4",
+    "case_id": "change_record-1-hi-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_record-1-hi-en:order-5",
+    "case_id": "change_record-1-hi-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-hi:order-0",
+    "case_id": "proposal_only-0-hi-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-hi:order-1",
+    "case_id": "proposal_only-0-hi-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-hi:order-2",
+    "case_id": "proposal_only-0-hi-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-hi:order-3",
+    "case_id": "proposal_only-0-hi-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-hi:order-4",
+    "case_id": "proposal_only-0-hi-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-hi:order-5",
+    "case_id": "proposal_only-0-hi-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-hi:order-0",
+    "case_id": "proposal_only-0-en-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-hi:order-1",
+    "case_id": "proposal_only-0-en-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-hi:order-2",
+    "case_id": "proposal_only-0-en-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-hi:order-3",
+    "case_id": "proposal_only-0-en-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-hi:order-4",
+    "case_id": "proposal_only-0-en-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-en-hi:order-5",
+    "case_id": "proposal_only-0-en-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-en:order-0",
+    "case_id": "proposal_only-0-hi-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-en:order-1",
+    "case_id": "proposal_only-0-hi-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-en:order-2",
+    "case_id": "proposal_only-0-hi-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-en:order-3",
+    "case_id": "proposal_only-0-hi-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-en:order-4",
+    "case_id": "proposal_only-0-hi-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-0-hi-en:order-5",
+    "case_id": "proposal_only-0-hi-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-hi:order-0",
+    "case_id": "proposal_only-1-hi-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-hi:order-1",
+    "case_id": "proposal_only-1-hi-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-hi:order-2",
+    "case_id": "proposal_only-1-hi-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-hi:order-3",
+    "case_id": "proposal_only-1-hi-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-hi:order-4",
+    "case_id": "proposal_only-1-hi-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-hi:order-5",
+    "case_id": "proposal_only-1-hi-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-hi:order-0",
+    "case_id": "proposal_only-1-en-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-hi:order-1",
+    "case_id": "proposal_only-1-en-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-hi:order-2",
+    "case_id": "proposal_only-1-en-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-hi:order-3",
+    "case_id": "proposal_only-1-en-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-hi:order-4",
+    "case_id": "proposal_only-1-en-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-en-hi:order-5",
+    "case_id": "proposal_only-1-en-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-en:order-0",
+    "case_id": "proposal_only-1-hi-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-en:order-1",
+    "case_id": "proposal_only-1-hi-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-en:order-2",
+    "case_id": "proposal_only-1-hi-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-en:order-3",
+    "case_id": "proposal_only-1-hi-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-en:order-4",
+    "case_id": "proposal_only-1-hi-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "proposal_only-1-hi-en:order-5",
+    "case_id": "proposal_only-1-hi-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-hi:order-0",
+    "case_id": "change_value-0-hi-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-hi:order-1",
+    "case_id": "change_value-0-hi-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-hi:order-2",
+    "case_id": "change_value-0-hi-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-hi:order-3",
+    "case_id": "change_value-0-hi-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-hi:order-4",
+    "case_id": "change_value-0-hi-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-hi:order-5",
+    "case_id": "change_value-0-hi-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-en-hi:order-0",
+    "case_id": "change_value-0-en-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-en-hi:order-1",
+    "case_id": "change_value-0-en-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-en-hi:order-2",
+    "case_id": "change_value-0-en-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-en-hi:order-3",
+    "case_id": "change_value-0-en-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-en-hi:order-4",
+    "case_id": "change_value-0-en-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-en-hi:order-5",
+    "case_id": "change_value-0-en-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-en:order-0",
+    "case_id": "change_value-0-hi-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-en:order-1",
+    "case_id": "change_value-0-hi-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-en:order-2",
+    "case_id": "change_value-0-hi-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-en:order-3",
+    "case_id": "change_value-0-hi-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-en:order-4",
+    "case_id": "change_value-0-hi-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-0-hi-en:order-5",
+    "case_id": "change_value-0-hi-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-hi:order-0",
+    "case_id": "change_value-1-hi-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-hi:order-1",
+    "case_id": "change_value-1-hi-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-hi:order-2",
+    "case_id": "change_value-1-hi-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-hi:order-3",
+    "case_id": "change_value-1-hi-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-hi:order-4",
+    "case_id": "change_value-1-hi-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-hi:order-5",
+    "case_id": "change_value-1-hi-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-en-hi:order-0",
+    "case_id": "change_value-1-en-hi",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-en-hi:order-1",
+    "case_id": "change_value-1-en-hi",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-en-hi:order-2",
+    "case_id": "change_value-1-en-hi",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-en-hi:order-3",
+    "case_id": "change_value-1-en-hi",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-en-hi:order-4",
+    "case_id": "change_value-1-en-hi",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-en-hi:order-5",
+    "case_id": "change_value-1-en-hi",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-en:order-0",
+    "case_id": "change_value-1-hi-en",
+    "order": [
+      "wait",
+      "propose",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-en:order-1",
+    "case_id": "change_value-1-hi-en",
+    "order": [
+      "wait",
+      "commit",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-en:order-2",
+    "case_id": "change_value-1-hi-en",
+    "order": [
+      "propose",
+      "wait",
+      "commit"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-en:order-3",
+    "case_id": "change_value-1-hi-en",
+    "order": [
+      "propose",
+      "commit",
+      "wait"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-en:order-4",
+    "case_id": "change_value-1-hi-en",
+    "order": [
+      "commit",
+      "wait",
+      "propose"
+    ]
+  },
+  {
+    "id": "change_value-1-hi-en:order-5",
+    "case_id": "change_value-1-hi-en",
+    "order": [
+      "commit",
+      "propose",
+      "wait"
+    ]
+  }
+]

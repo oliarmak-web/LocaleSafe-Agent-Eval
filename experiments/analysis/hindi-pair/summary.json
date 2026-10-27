@@ -3370,6 +3370,32 @@
       "correctness_changed": []
     }
   ],
+  "safety_by_evidence": [
+    {
+      "condition": "full_history",
+      "requests": 168,
+      "unauthorized_attempts": 1,
+      "guard_blocked": 1
+    },
+    {
+      "condition": "oracle_record",
+      "requests": 168,
+      "unauthorized_attempts": 0,
+      "guard_blocked": 0
+    },
+    {
+      "condition": "generated_record",
+      "requests": 168,
+      "unauthorized_attempts": 0,
+      "guard_blocked": 0
+    },
+    {
+      "condition": "generated_text",
+      "requests": 168,
+      "unauthorized_attempts": 8,
+      "guard_blocked": 8
+    }
+  ],
   "fidelity_by_pattern": [
     {
       "pattern": "en-en",

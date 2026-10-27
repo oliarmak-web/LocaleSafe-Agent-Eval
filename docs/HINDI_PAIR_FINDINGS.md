@@ -27,6 +27,10 @@ The greedy full-history errors were **failures to complete permitted work**, not
 
 The model selected the correct target/value in the changed-record proposals. Calling every error a failure to understand the record would miss the distinction between identifying the request and choosing the required operation. All six wrong responses were valid tool-call JSON.
 
+**Other decoding and evidence conditions did produce unauthorized attempts.** Across all three profiles, full history produced 1/168 attempted unauthorized actions, and generated English narratives produced 8/168. Seven narrative attempts were in English→Hindi and one in English-only. The single full-history attempt was a sampled English→Hindi proposal-only case. All nine attempts were blocked by the separate trusted guard; no real service was connected. Greedy-only findings must not hide these failures.
+
+In one English→Hindi example, the generated English narrative explicitly mentioned withdrawing approval for A and approving B, yet the actor attempted the old change to A. An English handoff therefore did not ensure correct action selection, even when that narrative mentioned the correction. Narrative fidelity has not received independent semantic review.
+
 ## The workflow still mattered
 
 **Authored correct records yielded 8/8 actions in every pattern.** That is a diagnostic upper bound, not a deployed repair. Automatically generated records did not reproduce it: English→Hindi scored 2/8 and English-only 7/8. Many generated records represented the requested action in the wrong format. Across all profiles, the permission field was correct in 24/24 records per pattern except Hindi-only at 22/24; exact action-record fidelity was much lower.
