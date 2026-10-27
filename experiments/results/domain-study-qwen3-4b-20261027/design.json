@@ -1,0 +1,1262 @@
+{
+  "security:reversal:en": {
+    "split": "development",
+    "domain": "security",
+    "family": "reversal",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "security:reversal:es": {
+    "split": "development",
+    "domain": "security",
+    "family": "reversal",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "security:reversal:hi": {
+    "split": "development",
+    "domain": "security",
+    "family": "reversal",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "security:reversal:pt-BR": {
+    "split": "development",
+    "domain": "security",
+    "family": "reversal",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "security:reversal:zh-Hans": {
+    "split": "development",
+    "domain": "security",
+    "family": "reversal",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "security:reversal:ta": {
+    "split": "development",
+    "domain": "security",
+    "family": "reversal",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "security:correction:en": {
+    "split": "development",
+    "domain": "security",
+    "family": "correction",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "security:correction:es": {
+    "split": "development",
+    "domain": "security",
+    "family": "correction",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "security:correction:hi": {
+    "split": "development",
+    "domain": "security",
+    "family": "correction",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "security:correction:pt-BR": {
+    "split": "development",
+    "domain": "security",
+    "family": "correction",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "security:correction:zh-Hans": {
+    "split": "development",
+    "domain": "security",
+    "family": "correction",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "security:correction:ta": {
+    "split": "development",
+    "domain": "security",
+    "family": "correction",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "security:conditional:en": {
+    "split": "development",
+    "domain": "security",
+    "family": "conditional",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "security:conditional:es": {
+    "split": "development",
+    "domain": "security",
+    "family": "conditional",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "security:conditional:hi": {
+    "split": "development",
+    "domain": "security",
+    "family": "conditional",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "security:conditional:pt-BR": {
+    "split": "development",
+    "domain": "security",
+    "family": "conditional",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "security:conditional:zh-Hans": {
+    "split": "development",
+    "domain": "security",
+    "family": "conditional",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "security:conditional:ta": {
+    "split": "development",
+    "domain": "security",
+    "family": "conditional",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "security:acknowledgment:en": {
+    "split": "development",
+    "domain": "security",
+    "family": "acknowledgment",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "security:acknowledgment:es": {
+    "split": "development",
+    "domain": "security",
+    "family": "acknowledgment",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "security:acknowledgment:hi": {
+    "split": "development",
+    "domain": "security",
+    "family": "acknowledgment",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "security:acknowledgment:pt-BR": {
+    "split": "development",
+    "domain": "security",
+    "family": "acknowledgment",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "security:acknowledgment:zh-Hans": {
+    "split": "development",
+    "domain": "security",
+    "family": "acknowledgment",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "security:acknowledgment:ta": {
+    "split": "development",
+    "domain": "security",
+    "family": "acknowledgment",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "security:domain_fact:en": {
+    "split": "development",
+    "domain": "security",
+    "family": "domain_fact",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "security:domain_fact:es": {
+    "split": "development",
+    "domain": "security",
+    "family": "domain_fact",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "security:domain_fact:hi": {
+    "split": "development",
+    "domain": "security",
+    "family": "domain_fact",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "security:domain_fact:pt-BR": {
+    "split": "development",
+    "domain": "security",
+    "family": "domain_fact",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "security:domain_fact:zh-Hans": {
+    "split": "development",
+    "domain": "security",
+    "family": "domain_fact",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "security:domain_fact:ta": {
+    "split": "development",
+    "domain": "security",
+    "family": "domain_fact",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "security:unverified_proxy:en": {
+    "split": "development",
+    "domain": "security",
+    "family": "unverified_proxy",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "security:unverified_proxy:es": {
+    "split": "development",
+    "domain": "security",
+    "family": "unverified_proxy",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "security:unverified_proxy:hi": {
+    "split": "development",
+    "domain": "security",
+    "family": "unverified_proxy",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "security:unverified_proxy:pt-BR": {
+    "split": "development",
+    "domain": "security",
+    "family": "unverified_proxy",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "security:unverified_proxy:zh-Hans": {
+    "split": "development",
+    "domain": "security",
+    "family": "unverified_proxy",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "security:unverified_proxy:ta": {
+    "split": "development",
+    "domain": "security",
+    "family": "unverified_proxy",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:reversal:en": {
+    "split": "development",
+    "domain": "finance",
+    "family": "reversal",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:reversal:es": {
+    "split": "development",
+    "domain": "finance",
+    "family": "reversal",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:reversal:hi": {
+    "split": "development",
+    "domain": "finance",
+    "family": "reversal",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:reversal:pt-BR": {
+    "split": "development",
+    "domain": "finance",
+    "family": "reversal",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:reversal:zh-Hans": {
+    "split": "development",
+    "domain": "finance",
+    "family": "reversal",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:reversal:ta": {
+    "split": "development",
+    "domain": "finance",
+    "family": "reversal",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:correction:en": {
+    "split": "development",
+    "domain": "finance",
+    "family": "correction",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:correction:es": {
+    "split": "development",
+    "domain": "finance",
+    "family": "correction",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:correction:hi": {
+    "split": "development",
+    "domain": "finance",
+    "family": "correction",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:correction:pt-BR": {
+    "split": "development",
+    "domain": "finance",
+    "family": "correction",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:correction:zh-Hans": {
+    "split": "development",
+    "domain": "finance",
+    "family": "correction",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:correction:ta": {
+    "split": "development",
+    "domain": "finance",
+    "family": "correction",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:conditional:en": {
+    "split": "development",
+    "domain": "finance",
+    "family": "conditional",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:conditional:es": {
+    "split": "development",
+    "domain": "finance",
+    "family": "conditional",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:conditional:hi": {
+    "split": "development",
+    "domain": "finance",
+    "family": "conditional",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:conditional:pt-BR": {
+    "split": "development",
+    "domain": "finance",
+    "family": "conditional",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:conditional:zh-Hans": {
+    "split": "development",
+    "domain": "finance",
+    "family": "conditional",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:conditional:ta": {
+    "split": "development",
+    "domain": "finance",
+    "family": "conditional",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:acknowledgment:en": {
+    "split": "development",
+    "domain": "finance",
+    "family": "acknowledgment",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:acknowledgment:es": {
+    "split": "development",
+    "domain": "finance",
+    "family": "acknowledgment",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:acknowledgment:hi": {
+    "split": "development",
+    "domain": "finance",
+    "family": "acknowledgment",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:acknowledgment:pt-BR": {
+    "split": "development",
+    "domain": "finance",
+    "family": "acknowledgment",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:acknowledgment:zh-Hans": {
+    "split": "development",
+    "domain": "finance",
+    "family": "acknowledgment",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:acknowledgment:ta": {
+    "split": "development",
+    "domain": "finance",
+    "family": "acknowledgment",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:domain_fact:en": {
+    "split": "development",
+    "domain": "finance",
+    "family": "domain_fact",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:domain_fact:es": {
+    "split": "development",
+    "domain": "finance",
+    "family": "domain_fact",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:domain_fact:hi": {
+    "split": "development",
+    "domain": "finance",
+    "family": "domain_fact",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:domain_fact:pt-BR": {
+    "split": "development",
+    "domain": "finance",
+    "family": "domain_fact",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:domain_fact:zh-Hans": {
+    "split": "development",
+    "domain": "finance",
+    "family": "domain_fact",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:domain_fact:ta": {
+    "split": "development",
+    "domain": "finance",
+    "family": "domain_fact",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:unverified_proxy:en": {
+    "split": "development",
+    "domain": "finance",
+    "family": "unverified_proxy",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:unverified_proxy:es": {
+    "split": "development",
+    "domain": "finance",
+    "family": "unverified_proxy",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:unverified_proxy:hi": {
+    "split": "development",
+    "domain": "finance",
+    "family": "unverified_proxy",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:unverified_proxy:pt-BR": {
+    "split": "development",
+    "domain": "finance",
+    "family": "unverified_proxy",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:unverified_proxy:zh-Hans": {
+    "split": "development",
+    "domain": "finance",
+    "family": "unverified_proxy",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "finance:unverified_proxy:ta": {
+    "split": "development",
+    "domain": "finance",
+    "family": "unverified_proxy",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:reversal:en": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "reversal",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:reversal:es": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "reversal",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:reversal:hi": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "reversal",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:reversal:pt-BR": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "reversal",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:reversal:zh-Hans": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "reversal",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:reversal:ta": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "reversal",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:correction:en": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "correction",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:correction:es": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "correction",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:correction:hi": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "correction",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:correction:pt-BR": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "correction",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:correction:zh-Hans": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "correction",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:correction:ta": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "correction",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:conditional:en": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "conditional",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:conditional:es": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "conditional",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:conditional:hi": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "conditional",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:conditional:pt-BR": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "conditional",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:conditional:zh-Hans": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "conditional",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:conditional:ta": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "conditional",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:acknowledgment:en": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "acknowledgment",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:acknowledgment:es": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "acknowledgment",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:acknowledgment:hi": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "acknowledgment",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:acknowledgment:pt-BR": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "acknowledgment",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:acknowledgment:zh-Hans": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "acknowledgment",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:acknowledgment:ta": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "acknowledgment",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:domain_fact:en": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "domain_fact",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:domain_fact:es": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "domain_fact",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:domain_fact:hi": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "domain_fact",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:domain_fact:pt-BR": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "domain_fact",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:domain_fact:zh-Hans": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "domain_fact",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:domain_fact:ta": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "domain_fact",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:unverified_proxy:en": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "unverified_proxy",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:unverified_proxy:es": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "unverified_proxy",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:unverified_proxy:hi": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "unverified_proxy",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:unverified_proxy:pt-BR": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "unverified_proxy",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:unverified_proxy:zh-Hans": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "unverified_proxy",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "health_admin:unverified_proxy:ta": {
+    "split": "development",
+    "domain": "health_admin",
+    "family": "unverified_proxy",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:reversal:en": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "reversal",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:reversal:es": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "reversal",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:reversal:hi": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "reversal",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:reversal:pt-BR": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "reversal",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:reversal:zh-Hans": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "reversal",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:reversal:ta": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "reversal",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:correction:en": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "correction",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:correction:es": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "correction",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:correction:hi": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "correction",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:correction:pt-BR": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "correction",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:correction:zh-Hans": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "correction",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:correction:ta": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "correction",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:conditional:en": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "conditional",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:conditional:es": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "conditional",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:conditional:hi": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "conditional",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:conditional:pt-BR": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "conditional",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:conditional:zh-Hans": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "conditional",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:conditional:ta": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "conditional",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:acknowledgment:en": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "acknowledgment",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:acknowledgment:es": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "acknowledgment",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:acknowledgment:hi": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "acknowledgment",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:acknowledgment:pt-BR": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "acknowledgment",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:acknowledgment:zh-Hans": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "acknowledgment",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:acknowledgment:ta": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "acknowledgment",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:domain_fact:en": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "domain_fact",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:domain_fact:es": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "domain_fact",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:domain_fact:hi": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "domain_fact",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:domain_fact:pt-BR": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "domain_fact",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:domain_fact:zh-Hans": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "domain_fact",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:domain_fact:ta": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "domain_fact",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:unverified_proxy:en": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "unverified_proxy",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:unverified_proxy:es": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "unverified_proxy",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:unverified_proxy:hi": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "unverified_proxy",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:unverified_proxy:pt-BR": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "unverified_proxy",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:unverified_proxy:zh-Hans": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "unverified_proxy",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "insurance:unverified_proxy:ta": {
+    "split": "development",
+    "domain": "insurance",
+    "family": "unverified_proxy",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:reversal:en": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "reversal",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:reversal:es": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "reversal",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:reversal:hi": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "reversal",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:reversal:pt-BR": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "reversal",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:reversal:zh-Hans": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "reversal",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:reversal:ta": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "reversal",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:correction:en": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "correction",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:correction:es": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "correction",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:correction:hi": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "correction",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:correction:pt-BR": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "correction",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:correction:zh-Hans": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "correction",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:correction:ta": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "correction",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:conditional:en": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "conditional",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:conditional:es": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "conditional",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:conditional:hi": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "conditional",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:conditional:pt-BR": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "conditional",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:conditional:zh-Hans": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "conditional",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:conditional:ta": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "conditional",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:acknowledgment:en": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "acknowledgment",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:acknowledgment:es": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "acknowledgment",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:acknowledgment:hi": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "acknowledgment",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:acknowledgment:pt-BR": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "acknowledgment",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:acknowledgment:zh-Hans": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "acknowledgment",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:acknowledgment:ta": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "acknowledgment",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:domain_fact:en": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "domain_fact",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:domain_fact:es": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "domain_fact",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:domain_fact:hi": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "domain_fact",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:domain_fact:pt-BR": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "domain_fact",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:domain_fact:zh-Hans": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "domain_fact",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:domain_fact:ta": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "domain_fact",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:unverified_proxy:en": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "unverified_proxy",
+    "language": "en",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:unverified_proxy:es": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "unverified_proxy",
+    "language": "es",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:unverified_proxy:hi": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "unverified_proxy",
+    "language": "hi",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:unverified_proxy:pt-BR": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "unverified_proxy",
+    "language": "pt-BR",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:unverified_proxy:zh-Hans": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "unverified_proxy",
+    "language": "zh-Hans",
+    "review_status": "AI-authored-draft"
+  },
+  "telecom:unverified_proxy:ta": {
+    "split": "development",
+    "domain": "telecom",
+    "family": "unverified_proxy",
+    "language": "ta",
+    "review_status": "AI-authored-draft"
+  }
+}

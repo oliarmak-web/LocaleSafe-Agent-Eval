@@ -1,0 +1,14 @@
+{
+  "attempts.jsonl": "b3f8e9664a25cf02ed4ef22ce4a3622a57cb13b4f98813e62bb724131fe6f285",
+  "design.json": "0e14b8e7dce3f1ced2cf4641cd19085ed108eb19af6598b9e80f788c03650164",
+  "manifest.json": "cf059da198f86d0ac8169552660f0f846136cfadd98212b03c87661541233c30",
+  "cases.jsonl": "f00f0b31c1002df58bafe337a253dc7268728f105eb2803989b5c8b9167cd83c",
+  "source/localesafe/evaluate.py": "0c81f93ed98918582824343c767823d6ffea3853584994d6998f68feb096f8df",
+  "source/localesafe/handoff_eval.py": "b0d03ab190b18dea5b8aeb360b5faf2e975e1a55f474410530950cce3686d902",
+  "source/localesafe/collect_handoff.py": "3df2287b7ddca880d9ada34d7dd9d47b3eb66455d57ff6d2aa9113ed613eca34",
+  "source/localesafe/domain_study.py": "37a108c9707cc56c72bb8f7d53ca8e85f8eeb9c5f0d0734df388593fb4e3822a",
+  "source/localesafe/collect_domain_study.py": "123bc1b9bfe2847877e6c862232e3e65b72f4161a3a14de51da246828f84f59e",
+  "source/localesafe/handoff_study.py": "44e3fcdab98c06550b9ce828bb7fa782b5b1c1b0551047c27878ba6a6682733e",
+  "source/experiments/build_domain_study.py": "c7a65b964bac993e7952cf3c1522433de3ba134f42d539660ac0f0f4f9b9d098",
+  "source/experiments/domain-study/PROTOCOL.md": "0225bd50c4b04f3f50901fb09e015fae11ecd9e92c64d9d57e67f0deb47a3a7d"
+}
