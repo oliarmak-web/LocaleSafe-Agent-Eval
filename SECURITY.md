@@ -1,6 +1,6 @@
 # Security
 
-Scoring runs locally. The service simulator changes in-memory state only. It cannot dispatch help, contact agencies, or alter real appointments.
+Scoring runs locally. The service simulator changes in-memory state; the optional order controls write local SQLite databases. Neither contacts external services, dispatches help, sends messages or changes real bookings or orders.
 
 No keys are needed. Keep credentials, private conversations, model weights, and environments out of Git. Future provider credentials belong only in backend processes. Rotate exposed keys; ignoring a file does not erase history.
 

@@ -16,11 +16,13 @@ Code, scenario drafts, translations, experiment tooling, analyses and documentat
 | English rerun control | [Analysis](docs/CONSISTENCY_CONTROL.md) | Reproducible post-hoc analysis; no additional model calls |
 | Permission-handoff study | [Technical report](docs/HANDOFF_TECHNICAL_REPORT.md) and [protocol](experiments/handoff-study/PROTOCOL.md) | 2,880 initial model calls; 384 exploratory monitor calls; cached routing replay |
 
+Additional archived experiments include 1,920 Mistral/Phi development calls, a 256-call prompt-format follow-up and a separate 720-call enterprise-sales pilot. The SQLite order controls are injected engineering tests, not model experiments. See the [README](README.md) for results and links to each protocol.
+
 Archived source snapshots preserve the implementation used for each experiment.
 
 ## External work
 
-Qwen supplied the evaluated model weights; their licenses and revisions are recorded in the experiment artifacts. Python, PyTorch, Transformers, GitHub and Colab are supporting tools, not project collaborators or endorsers.
+The experiments use Qwen, SmolLM3, Mistral and Microsoft Phi model weights. Model identifiers, pinned revisions and weight hashes are recorded in the experiment artifacts; upstream model licenses apply separately from this repository MIT license. Python, PyTorch, Transformers, GitHub and Colab are supporting tools, not project collaborators or endorsers.
 
 Multilingual tool evaluation, consent checks, memory provenance and monitor assessment have prior work. See the [related-work comparison](docs/COMPETITIVE_LANDSCAPE.md) and [originality review](docs/ORIGINALITY_AND_AUTHORSHIP.md). We do not claim to have invented these areas.
 

@@ -12,10 +12,11 @@ Created and maintained by **Olivia Iarmak**. MIT-licensed research prototype. Im
 
 ## What can you test?
 
-Use LocaleSafe when an agent can change a record and must follow the user's latest permission. It tests **English-only, Spanish-only and language-switching conversations**. Switching languages is one condition; the broader question is why an agent takes the wrong action.
+Use LocaleSafe when an agent can change a record and must follow the user's latest permission. The permission-handoff study tests **English-only, Spanish-only and language-switching conversations**. The separate sales pilot tests five customer languages with fixed English product facts. Switching languages is one condition; the broader question is why an agent takes the wrong action.
 
 | Use case | Concrete failure to test | Current coverage |
 |---|---|---|
+| Assessing enterprise product fit | The agent captures buyer requirements but endorses an unsupported capability or escalates for the wrong reason | Six fictional cybersecurity-sales situations in five languages; internal assessments only |
 | Rescheduling a booking | The user changes the approved date, cancels approval or selects a different booking; the agent acts on the old instruction | Mock appointment records with date values |
 | Updating a delivery request | The user authorizes a change to record B instead of record A; the agent updates A | Mock delivery records with abstract option values |
 | Preparing a notification change | The user requests a proposal for review; the agent submits it immediately | Mock notification records; no messages are sent |
