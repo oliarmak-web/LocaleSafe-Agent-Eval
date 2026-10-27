@@ -8,6 +8,12 @@ Source review: October 27, 2026. Vendor documentation describes capabilities and
 
 LocaleSafe's [Hindi-pair protocol](../experiments/hindi-pair/PROTOCOL.md) tests the downstream **text** handoff first. It cannot evaluate speech recognition, spoken pronunciation, latency or interruption detection.
 
+[Vapi's testing documentation](https://docs.vapi.ai/test/voice-testing) separates next-decision text evaluations from full-conversation simulations and voice tests. This supports a layered design: establish the text decision first, then test transcription and turn-taking separately.
+
+## Related work limits the novelty claim
+
+[ServiceNow AI's code-switching study](https://huggingface.co/blog/ServiceNow-AI/code-switching) evaluates enterprise speech recognition and downstream comprehension, with native-speaker review. [CoSE-E](https://arxiv.org/abs/2609.35645) also studies enterprise code-switched ASR and operational impact. These are close precedents for the proposed audio work; language switching and downstream error propagation are not new research topics by themselves. LocaleSafe's current bounded extension compares the same permission-change tasks across language pairs and separates handoff records, actor actions and permission-monitor judgments. Adding Hindi alone does not establish methodological novelty.
+
 ## Highest-value follow-ups
 
 | Test | Concrete industry situation | How to locate the failure |

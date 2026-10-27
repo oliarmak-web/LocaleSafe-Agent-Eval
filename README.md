@@ -160,6 +160,10 @@ The command creates separate local databases and a `results.json` with final ord
 
 These are exploratory results on previously inspected development cases. No held-out validation or changed-prompt evaluation run was performed. [Full follow-up results](docs/FORMAT_FOLLOWUP.md) · [Frozen protocol](experiments/format-followup/PROTOCOL.md) · [Execution history](experiments/format-followup/EXECUTION_HISTORY.md).
 
+## English–Hindi comparison: collection in progress
+
+A frozen exploratory extension compares English-only, Spanish-only and Hindi-only requests with both switching directions for each English pair. It reuses the same four permission-change templates and schedules 1,680 Qwen3-4B calls. Hindi uses Devanagari and has not received independent review. Planned calls are not completed results; no voice capability is measured. [Protocol and execution status](experiments/hindi-pair/PROTOCOL.md) · [Voice-agent research signals and proposed tests](docs/VOICE_AGENT_RESEARCH.md).
+
 ## Earlier multilingual experiments
 
 An earlier study recorded **1,800 decisions from two related Qwen3 models in five languages**: English, Spanish, Simplified Chinese, Ukrainian and Haitian Creole. Qwen3-1.7B returned 278/300 valid baseline commands, but only 37/300 were correct. Translating instructions gained six successes and lost eleven.
