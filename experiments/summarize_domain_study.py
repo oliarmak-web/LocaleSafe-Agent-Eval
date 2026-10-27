@@ -11,7 +11,7 @@ from localesafe.domain_study import messages_for, score, seed_for, cases as froz
 from localesafe.domain_study import DOMAINS, FAMILIES, STAGES
 
 
-def audit(directory):
+def audit(directory, *, model_specs=None, source_names=None):
     manifest = json.loads((directory / 'manifest.json').read_text(encoding='utf-8'))
     if manifest['status'] != 'completed':
         raise ValueError('incomplete collection')
@@ -26,7 +26,8 @@ def audit(directory):
     if sha256(directory / 'attempts.jsonl') != manifest['attempts_sha256'] or sha256(directory / 'cases.jsonl') != manifest['cases_sha256']:
         raise ValueError('artifact hash mismatch')
     settings = manifest['settings']
-    if (set(settings['sources']) != set(SOURCES) or settings['model'] not in MODELS.values()
+    if (set(settings['sources']) != set(SOURCES if source_names is None else source_names)
+        or settings['model'] not in (MODELS.values() if model_specs is None else model_specs)
         or settings['split'] != 'development' or settings['batch_size'] != 8
         or settings['dtype'] != 'float16' or settings['quantization'] != 'none'
         or settings['enable_thinking'] is not False or settings['transformers']!='4.57.6' or 'T4' not in settings['gpu']
@@ -123,7 +124,7 @@ def summarize(manifest,cases,rows):
 
 def render(result):
     lines=['# Cross-domain intent feasibility: results','',
-           f"{result['calls']} greedy Qwen3-4B calls; 180 draft rows, five fictional policies and six languages. Six shared template families, no independent domain/language review, repeats or held-out evaluation.",'',
+           f"{result['calls']} greedy {result['model']['model']} calls; 180 draft rows, five fictional policies and six languages. Six shared template families, no independent domain/language review, repeats or held-out evaluation.",'',
            '## English task screens','', '| Domain | Full history | Reference record | Passed 5/6 in both? |','|---|---:|---:|---|']
     for s in result['english_screens']:
         lines.append(f"| {s['domain']} | {s['full_history']}/6 | {s['reference_record']}/6 | {s['passed']} |")
@@ -144,7 +145,14 @@ def render(result):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('directory',type=Path);p.add_argument('--output-dir',type=Path,required=True)
-    a=p.parse_args();manifest,cases,rows=audit(a.directory);result=summarize(manifest,cases,rows)
+    p.add_argument('--phi-replication',action='store_true')
+    a=p.parse_args()
+    if a.phi_replication:
+        from localesafe.collect_domain_replication import EXTRA_SOURCES
+        from localesafe.collect_handoff import MODELS as registry
+        manifest,cases,rows=audit(a.directory,model_specs=[registry['phi4-mini']],source_names=(*SOURCES,*EXTRA_SOURCES))
+    else:manifest,cases,rows=audit(a.directory)
+    result=summarize(manifest,cases,rows)
     a.output_dir.mkdir(parents=True,exist_ok=False)
     (a.output_dir/'summary.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
     (a.output_dir/'RESULTS.md').write_text(render(result),encoding='utf-8')
