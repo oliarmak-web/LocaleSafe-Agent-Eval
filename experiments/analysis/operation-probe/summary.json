@@ -1,0 +1,794 @@
+{
+  "requests": 336,
+  "cases": 56,
+  "templates": 4,
+  "groups": [
+    {
+      "pattern": "en-en",
+      "requests": 48,
+      "valid": 48,
+      "correct": 24,
+      "cases": 8,
+      "all_orders_correct": [],
+      "order_sensitive_correctness": [
+        "withdraw-0-en-en",
+        "withdraw-1-en-en",
+        "change_record-0-en-en",
+        "change_record-1-en-en",
+        "proposal_only-0-en-en",
+        "proposal_only-1-en-en",
+        "change_value-0-en-en",
+        "change_value-1-en-en"
+      ],
+      "selected_letters": {
+        "B": 36,
+        "C": 12
+      },
+      "accuracy_by_reference_letter": {
+        "A": {
+          "correct": 0,
+          "n": 16
+        },
+        "B": {
+          "correct": 16,
+          "n": 16
+        },
+        "C": {
+          "correct": 8,
+          "n": 16
+        }
+      },
+      "parent_actor_correct": 8
+    },
+    {
+      "pattern": "es-es",
+      "requests": 48,
+      "valid": 48,
+      "correct": 22,
+      "cases": 8,
+      "all_orders_correct": [],
+      "order_sensitive_correctness": [
+        "withdraw-0-es-es",
+        "withdraw-1-es-es",
+        "change_record-0-es-es",
+        "change_record-1-es-es",
+        "proposal_only-0-es-es",
+        "proposal_only-1-es-es",
+        "change_value-0-es-es",
+        "change_value-1-es-es"
+      ],
+      "selected_letters": {
+        "B": 38,
+        "C": 10
+      },
+      "accuracy_by_reference_letter": {
+        "A": {
+          "correct": 0,
+          "n": 16
+        },
+        "B": {
+          "correct": 16,
+          "n": 16
+        },
+        "C": {
+          "correct": 6,
+          "n": 16
+        }
+      },
+      "parent_actor_correct": 8
+    },
+    {
+      "pattern": "en-es",
+      "requests": 48,
+      "valid": 48,
+      "correct": 20,
+      "cases": 8,
+      "all_orders_correct": [],
+      "order_sensitive_correctness": [
+        "withdraw-0-en-es",
+        "withdraw-1-en-es",
+        "change_record-0-en-es",
+        "change_record-1-en-es",
+        "proposal_only-0-en-es",
+        "proposal_only-1-en-es",
+        "change_value-0-en-es",
+        "change_value-1-en-es"
+      ],
+      "selected_letters": {
+        "B": 40,
+        "C": 8
+      },
+      "accuracy_by_reference_letter": {
+        "A": {
+          "correct": 0,
+          "n": 16
+        },
+        "B": {
+          "correct": 16,
+          "n": 16
+        },
+        "C": {
+          "correct": 4,
+          "n": 16
+        }
+      },
+      "parent_actor_correct": 8
+    },
+    {
+      "pattern": "es-en",
+      "requests": 48,
+      "valid": 48,
+      "correct": 23,
+      "cases": 8,
+      "all_orders_correct": [],
+      "order_sensitive_correctness": [
+        "withdraw-0-es-en",
+        "withdraw-1-es-en",
+        "change_record-0-es-en",
+        "change_record-1-es-en",
+        "proposal_only-0-es-en",
+        "proposal_only-1-es-en",
+        "change_value-0-es-en",
+        "change_value-1-es-en"
+      ],
+      "selected_letters": {
+        "B": 37,
+        "C": 11
+      },
+      "accuracy_by_reference_letter": {
+        "A": {
+          "correct": 0,
+          "n": 16
+        },
+        "B": {
+          "correct": 16,
+          "n": 16
+        },
+        "C": {
+          "correct": 7,
+          "n": 16
+        }
+      },
+      "parent_actor_correct": 8
+    },
+    {
+      "pattern": "hi-hi",
+      "requests": 48,
+      "valid": 48,
+      "correct": 21,
+      "cases": 8,
+      "all_orders_correct": [],
+      "order_sensitive_correctness": [
+        "withdraw-0-hi-hi",
+        "withdraw-1-hi-hi",
+        "change_record-0-hi-hi",
+        "change_record-1-hi-hi",
+        "proposal_only-0-hi-hi",
+        "proposal_only-1-hi-hi",
+        "change_value-0-hi-hi",
+        "change_value-1-hi-hi"
+      ],
+      "selected_letters": {
+        "C": 15,
+        "B": 33
+      },
+      "accuracy_by_reference_letter": {
+        "A": {
+          "correct": 0,
+          "n": 16
+        },
+        "B": {
+          "correct": 14,
+          "n": 16
+        },
+        "C": {
+          "correct": 7,
+          "n": 16
+        }
+      },
+      "parent_actor_correct": 4
+    },
+    {
+      "pattern": "en-hi",
+      "requests": 48,
+      "valid": 48,
+      "correct": 21,
+      "cases": 8,
+      "all_orders_correct": [],
+      "order_sensitive_correctness": [
+        "withdraw-0-en-hi",
+        "withdraw-1-en-hi",
+        "change_record-0-en-hi",
+        "change_record-1-en-hi",
+        "proposal_only-0-en-hi",
+        "proposal_only-1-en-hi",
+        "change_value-0-en-hi",
+        "change_value-1-en-hi"
+      ],
+      "selected_letters": {
+        "C": 17,
+        "B": 31
+      },
+      "accuracy_by_reference_letter": {
+        "A": {
+          "correct": 0,
+          "n": 16
+        },
+        "B": {
+          "correct": 12,
+          "n": 16
+        },
+        "C": {
+          "correct": 9,
+          "n": 16
+        }
+      },
+      "parent_actor_correct": 6
+    },
+    {
+      "pattern": "hi-en",
+      "requests": 48,
+      "valid": 48,
+      "correct": 23,
+      "cases": 8,
+      "all_orders_correct": [],
+      "order_sensitive_correctness": [
+        "withdraw-0-hi-en",
+        "withdraw-1-hi-en",
+        "change_record-0-hi-en",
+        "change_record-1-hi-en",
+        "proposal_only-0-hi-en",
+        "proposal_only-1-hi-en",
+        "change_value-0-hi-en",
+        "change_value-1-hi-en"
+      ],
+      "selected_letters": {
+        "B": 37,
+        "C": 11
+      },
+      "accuracy_by_reference_letter": {
+        "A": {
+          "correct": 0,
+          "n": 16
+        },
+        "B": {
+          "correct": 16,
+          "n": 16
+        },
+        "C": {
+          "correct": 7,
+          "n": 16
+        }
+      },
+      "parent_actor_correct": 8
+    }
+  ],
+  "order_groups": [
+    {
+      "pattern": "en-en",
+      "order": [
+        "wait",
+        "propose",
+        "commit"
+      ],
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "pattern": "en-en",
+      "order": [
+        "wait",
+        "commit",
+        "propose"
+      ],
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "pattern": "en-en",
+      "order": [
+        "propose",
+        "wait",
+        "commit"
+      ],
+      "correct": 6,
+      "n": 8
+    },
+    {
+      "pattern": "en-en",
+      "order": [
+        "propose",
+        "commit",
+        "wait"
+      ],
+      "correct": 6,
+      "n": 8
+    },
+    {
+      "pattern": "en-en",
+      "order": [
+        "commit",
+        "wait",
+        "propose"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "en-en",
+      "order": [
+        "commit",
+        "propose",
+        "wait"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "es-es",
+      "order": [
+        "wait",
+        "propose",
+        "commit"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "es-es",
+      "order": [
+        "wait",
+        "commit",
+        "propose"
+      ],
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "pattern": "es-es",
+      "order": [
+        "propose",
+        "wait",
+        "commit"
+      ],
+      "correct": 6,
+      "n": 8
+    },
+    {
+      "pattern": "es-es",
+      "order": [
+        "propose",
+        "commit",
+        "wait"
+      ],
+      "correct": 6,
+      "n": 8
+    },
+    {
+      "pattern": "es-es",
+      "order": [
+        "commit",
+        "wait",
+        "propose"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "es-es",
+      "order": [
+        "commit",
+        "propose",
+        "wait"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "en-es",
+      "order": [
+        "wait",
+        "propose",
+        "commit"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "en-es",
+      "order": [
+        "wait",
+        "commit",
+        "propose"
+      ],
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "pattern": "en-es",
+      "order": [
+        "propose",
+        "wait",
+        "commit"
+      ],
+      "correct": 6,
+      "n": 8
+    },
+    {
+      "pattern": "en-es",
+      "order": [
+        "propose",
+        "commit",
+        "wait"
+      ],
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "pattern": "en-es",
+      "order": [
+        "commit",
+        "wait",
+        "propose"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "en-es",
+      "order": [
+        "commit",
+        "propose",
+        "wait"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "es-en",
+      "order": [
+        "wait",
+        "propose",
+        "commit"
+      ],
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "pattern": "es-en",
+      "order": [
+        "wait",
+        "commit",
+        "propose"
+      ],
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "pattern": "es-en",
+      "order": [
+        "propose",
+        "wait",
+        "commit"
+      ],
+      "correct": 6,
+      "n": 8
+    },
+    {
+      "pattern": "es-en",
+      "order": [
+        "propose",
+        "commit",
+        "wait"
+      ],
+      "correct": 5,
+      "n": 8
+    },
+    {
+      "pattern": "es-en",
+      "order": [
+        "commit",
+        "wait",
+        "propose"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "es-en",
+      "order": [
+        "commit",
+        "propose",
+        "wait"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "hi-hi",
+      "order": [
+        "wait",
+        "propose",
+        "commit"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "hi-hi",
+      "order": [
+        "wait",
+        "commit",
+        "propose"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "hi-hi",
+      "order": [
+        "propose",
+        "wait",
+        "commit"
+      ],
+      "correct": 6,
+      "n": 8
+    },
+    {
+      "pattern": "hi-hi",
+      "order": [
+        "propose",
+        "commit",
+        "wait"
+      ],
+      "correct": 6,
+      "n": 8
+    },
+    {
+      "pattern": "hi-hi",
+      "order": [
+        "commit",
+        "wait",
+        "propose"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "hi-hi",
+      "order": [
+        "commit",
+        "propose",
+        "wait"
+      ],
+      "correct": 3,
+      "n": 8
+    },
+    {
+      "pattern": "en-hi",
+      "order": [
+        "wait",
+        "propose",
+        "commit"
+      ],
+      "correct": 3,
+      "n": 8
+    },
+    {
+      "pattern": "en-hi",
+      "order": [
+        "wait",
+        "commit",
+        "propose"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "en-hi",
+      "order": [
+        "propose",
+        "wait",
+        "commit"
+      ],
+      "correct": 6,
+      "n": 8
+    },
+    {
+      "pattern": "en-hi",
+      "order": [
+        "propose",
+        "commit",
+        "wait"
+      ],
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "pattern": "en-hi",
+      "order": [
+        "commit",
+        "wait",
+        "propose"
+      ],
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "pattern": "en-hi",
+      "order": [
+        "commit",
+        "propose",
+        "wait"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "hi-en",
+      "order": [
+        "wait",
+        "propose",
+        "commit"
+      ],
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "pattern": "hi-en",
+      "order": [
+        "wait",
+        "commit",
+        "propose"
+      ],
+      "correct": 4,
+      "n": 8
+    },
+    {
+      "pattern": "hi-en",
+      "order": [
+        "propose",
+        "wait",
+        "commit"
+      ],
+      "correct": 6,
+      "n": 8
+    },
+    {
+      "pattern": "hi-en",
+      "order": [
+        "propose",
+        "commit",
+        "wait"
+      ],
+      "correct": 5,
+      "n": 8
+    },
+    {
+      "pattern": "hi-en",
+      "order": [
+        "commit",
+        "wait",
+        "propose"
+      ],
+      "correct": 2,
+      "n": 8
+    },
+    {
+      "pattern": "hi-en",
+      "order": [
+        "commit",
+        "propose",
+        "wait"
+      ],
+      "correct": 2,
+      "n": 8
+    }
+  ],
+  "changed_task_comparisons": [
+    {
+      "pattern": "en-en",
+      "parent_wrong_probe_all_orders_right": [],
+      "parent_right_probe_not_all_orders_right": [
+        "withdraw-0-en-en",
+        "withdraw-1-en-en",
+        "change_record-0-en-en",
+        "change_record-1-en-en",
+        "proposal_only-0-en-en",
+        "proposal_only-1-en-en",
+        "change_value-0-en-en",
+        "change_value-1-en-en"
+      ]
+    },
+    {
+      "pattern": "es-es",
+      "parent_wrong_probe_all_orders_right": [],
+      "parent_right_probe_not_all_orders_right": [
+        "withdraw-0-es-es",
+        "withdraw-1-es-es",
+        "change_record-0-es-es",
+        "change_record-1-es-es",
+        "proposal_only-0-es-es",
+        "proposal_only-1-es-es",
+        "change_value-0-es-es",
+        "change_value-1-es-es"
+      ]
+    },
+    {
+      "pattern": "en-es",
+      "parent_wrong_probe_all_orders_right": [],
+      "parent_right_probe_not_all_orders_right": [
+        "withdraw-0-en-es",
+        "withdraw-1-en-es",
+        "change_record-0-en-es",
+        "change_record-1-en-es",
+        "proposal_only-0-en-es",
+        "proposal_only-1-en-es",
+        "change_value-0-en-es",
+        "change_value-1-en-es"
+      ]
+    },
+    {
+      "pattern": "es-en",
+      "parent_wrong_probe_all_orders_right": [],
+      "parent_right_probe_not_all_orders_right": [
+        "withdraw-0-es-en",
+        "withdraw-1-es-en",
+        "change_record-0-es-en",
+        "change_record-1-es-en",
+        "proposal_only-0-es-en",
+        "proposal_only-1-es-en",
+        "change_value-0-es-en",
+        "change_value-1-es-en"
+      ]
+    },
+    {
+      "pattern": "hi-hi",
+      "parent_wrong_probe_all_orders_right": [],
+      "parent_right_probe_not_all_orders_right": [
+        "withdraw-0-hi-hi",
+        "withdraw-1-hi-hi",
+        "change_value-0-hi-hi",
+        "change_value-1-hi-hi"
+      ]
+    },
+    {
+      "pattern": "en-hi",
+      "parent_wrong_probe_all_orders_right": [],
+      "parent_right_probe_not_all_orders_right": [
+        "withdraw-0-en-hi",
+        "withdraw-1-en-hi",
+        "proposal_only-0-en-hi",
+        "proposal_only-1-en-hi",
+        "change_value-0-en-hi",
+        "change_value-1-en-hi"
+      ]
+    },
+    {
+      "pattern": "hi-en",
+      "parent_wrong_probe_all_orders_right": [],
+      "parent_right_probe_not_all_orders_right": [
+        "withdraw-0-hi-en",
+        "withdraw-1-hi-en",
+        "change_record-0-hi-en",
+        "change_record-1-hi-en",
+        "proposal_only-0-hi-en",
+        "proposal_only-1-hi-en",
+        "change_value-0-hi-en",
+        "change_value-1-hi-en"
+      ]
+    }
+  ],
+  "manifest_sha256": "555fa48f07f3a25061d5465f8706416fd03e4e7122fecfbd2ab577ea9318820c",
+  "parent_attempts_sha256": "a6ba71790039b2d8d4ee0b61a3ee67d2624496ff6e80d2103cdebea3d75f38fc",
+  "parent_english_gate": {
+    "full_history": {
+      "correct": 8,
+      "n": 8
+    },
+    "oracle_record": {
+      "correct": 8,
+      "n": 8
+    }
+  }
+}

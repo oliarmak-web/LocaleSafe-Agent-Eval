@@ -35,9 +35,19 @@ Sources: [handoff report](HANDOFF_TECHNICAL_REPORT.md), [monitor follow-up](MONI
 - **Reading a buyer's requirements is different from applying product facts.** A separate 720-call cybersecurity-sales pilot tested English, Brazilian Portuguese, Tamil, Simplified Chinese and Spanish. Qwen extracted requirements correctly in all 90 extraction calls, yet completed only 2/6 greedy English assessments correctly. Phi's Tamil fit/escalate decisions matched English at 5/6, while complete assessments scored 1/6 versus 4/6 because the stated mismatches were wrong. These six draft situations do not support a language ranking. [Language-by-language findings](SALES_PILOT_FINDINGS.md).
 - **An executor needs both permission checks and retry protection.** In 21 injected SQLite controls, current-approval checks plus deduplication prevented unapproved and duplicate effects, but two corrected requests still required replanning. These are engineering controls with no model calls. [Order controls](ORDER_CONTROLS.md).
 
+## What did the language-pair follow-ups show?
+
+Three additional exploratory studies recorded 1,680 permission-handoff calls, 864 switch-location calls and 336 operation-choice calls. They reuse four draft templates and do not add independent situation families.
+
+- Hindi-only full-history actions scored 4/8, English→Hindi 6/8 and Hindi→English 8/8; English and both Spanish switching directions scored 8/8. Correct reference records yielded 8/8 across patterns. This is a language-conditioned observation, not a causal explanation. All-profile unauthorized attempts remain reported and guarded. [Hindi findings](HINDI_PAIR_FINDINGS.md).
+- The longer workflow failed its English screen because of stale versions, even when the requested operation, record and value were right. Its synthetic rule advances versions on neutral reminders. [Version findings](SWITCH_BOUNDARY_FINDINGS.md).
+- Removing tool-call construction introduced strong answer-position sensitivity: no operation-choice case was correct under all six orderings, including English. [Choice findings](OPERATION_PROBE_FINDINGS.md).
+
+These negative controls limit language claims and help identify what to test next. Independent language review, new task families and broader competent-model replication remain more valuable than simply increasing repeated calls on these drafts.
+
 ## What is the contribution?
 
-The deliverables are a runnable diagnostic toolkit, authored workflow fixtures, archived model outputs and reproducible analyses. The latest study distinguishes permission-field accuracy, action-contract compliance and monitor judgment rather than assuming that language or permission loss explains every error.
+The deliverables are a runnable diagnostic toolkit, authored workflow fixtures, archived model outputs and reproducible analyses. The handoff studies distinguish permission-field accuracy, action-contract compliance and monitor judgment rather than assuming that language or permission loss explains every error.
 
 The project builds on existing multilingual, authorization and monitoring research. Its empirical findings remain exploratory; wider significance has not been established. [Methods comparison](HANDOFF_METHOD_COMPARISON.md).
 

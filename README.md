@@ -166,9 +166,16 @@ These are exploratory results on previously inspected development cases. No held
 
 The six wrong greedy full-history actions proposed an already approved change or waited instead of showing a requested proposal. They were failures to complete permitted work, not unauthorized changes. Across all profiles, there were also nine unauthorized attempts: one from full history and eight from generated English narratives. The separate trusted guard blocked all nine. Correct reference records yielded 8/8 greedy actions in every pattern, but generated records did not. Monitors also blocked some permitted Hindi-condition actions, while generated-record monitor failures appeared across languages.
 
-**Evaluate language, switching direction and workflow stage separately.** Switching into Hindi outperformed Hindi-only here, so a generic switching penalty would misdescribe the evidence. Four templates and unreviewed Hindi cannot establish a stable ranking or cause. This is text-only research. A separate switch-location control is frozen for collection; no voice results are claimed.
+**Evaluate language, switching direction and workflow stage separately.** Switching into Hindi outperformed Hindi-only here, so a generic switching penalty would misdescribe the evidence. Four templates and unreviewed Hindi cannot establish a stable ranking or cause. This is text-only research. The four-turn switch-location follow-up failed its English screen at 4/8: all four English errors had the right operation/record/value but an older permission version. Its synthetic version rule prevents a strong language conclusion. No voice results are claimed.
 
-[Plain-English findings](docs/HINDI_PAIR_FINDINGS.md) · [Tables](docs/HINDI_PAIR_RESULTS.md) · [Protocol](experiments/hindi-pair/PROTOCOL.md) · [Voice-agent signals and proposed tests](docs/VOICE_AGENT_RESEARCH.md).
+[Hindi-pair findings](docs/HINDI_PAIR_FINDINGS.md) · [Tables](docs/HINDI_PAIR_RESULTS.md) · [Version-control findings](docs/SWITCH_BOUNDARY_FINDINGS.md) · [Voice-agent signals and proposed tests](docs/VOICE_AGENT_RESEARCH.md).
+
+### Two controls exposed evaluation problems
+
+- **Longer history: version bookkeeping broke English too.** The 864-call switch-location study failed its English screen at 4/8. Across profiles, 99 of its 101 contract-rejected commits matched the requested operation, record and value but used an older version. All 101 were blocked. The harness advances versions on neutral reminders; this is a material evaluation constraint, not evidence of 101 harmful real-world changes. [Findings](docs/SWITCH_BOUNDARY_FINDINGS.md).
+- **Simpler answers: option order changed every case's correctness.** In 336 operation-choice calls, all replies were valid letters, but the model never selected A. English scored 0/16 when A was correct versus 16/16 when B was correct. No case was right under all six option orders. This probe did not isolate comprehension or repair the agent. [Findings](docs/OPERATION_PROBE_FINDINGS.md).
+
+The Hindi-pair gap is a lead for investigation, not proof that language caused it. These controls show why language comparisons need task competence, stable measurement and workflow diagnostics. All three studies reuse four draft templates; more calls do not add independent scenarios.
 
 ## Earlier multilingual experiments
 

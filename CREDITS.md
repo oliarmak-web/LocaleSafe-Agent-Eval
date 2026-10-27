@@ -16,7 +16,7 @@ Code, scenario drafts, translations, experiment tooling, analyses and documentat
 | English rerun control | [Analysis](docs/CONSISTENCY_CONTROL.md) | Reproducible post-hoc analysis; no additional model calls |
 | Permission-handoff study | [Technical report](docs/HANDOFF_TECHNICAL_REPORT.md) and [protocol](experiments/handoff-study/PROTOCOL.md) | 2,880 initial model calls; 384 exploratory monitor calls; cached routing replay |
 
-Additional archived experiments include 1,920 Mistral/Phi development calls, a 256-call prompt-format follow-up and a separate 720-call enterprise-sales pilot. The SQLite order controls are injected engineering tests, not model experiments. See the [README](README.md) for results and links to each protocol.
+Additional archived experiments include 1,920 Mistral/Phi development calls, a 256-call prompt-format follow-up and a separate 720-call enterprise-sales pilot. Further language-pair diagnostics archive 1,680 Hindi-pair calls, 864 switch-location calls and 336 counterbalanced operation-choice calls. These reuse four draft templates. The SQLite order controls are injected engineering tests, not model experiments. See the [README](README.md) for results and links to each protocol.
 
 Archived source snapshots preserve the implementation used for each experiment.
 

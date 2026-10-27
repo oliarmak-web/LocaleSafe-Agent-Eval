@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-27T20:14:25.267515+00:00",
+  "settings": {
+    "model": {
+      "model": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "weights": {
+        "model-00001-of-00003.safetensors": "328a91d3122359d5547f9d79521205bc0a46e1f79a792dfe650e99fc2d651223",
+        "model-00002-of-00003.safetensors": "6cd087b316306a68c562436b5492edbcf6e16c6dba3a1308279caa5a58e21ca5",
+        "model-00003-of-00003.safetensors": "e4bf436957184f4eeb86a80e9db394503f1f56446b2e6b7edeac5b81470f4ca1"
+      }
+    },
+    "split": "development",
+    "profiles": [
+      "greedy",
+      "sample-1",
+      "sample-2"
+    ],
+    "seed": 20261022,
+    "all_cases_sha256": "b4a1cc35722da9b835a6d1a2838f17889b120d29f90d9335b16c993d4ebb33e5",
+    "design_sha256": "deefd866306781a27b4913a480006e96bdaa4753a6b6170e2b2943bccfe4cb77",
+    "sources": {
+      "localesafe/collect_handoff.py": "3df2287b7ddca880d9ada34d7dd9d47b3eb66455d57ff6d2aa9113ed613eca34",
+      "localesafe/handoff_study.py": "44e3fcdab98c06550b9ce828bb7fa782b5b1c1b0551047c27878ba6a6682733e",
+      "localesafe/handoff_eval.py": "b0d03ab190b18dea5b8aeb360b5faf2e975e1a55f474410530950cce3686d902",
+      "localesafe/evaluate.py": "0c81f93ed98918582824343c767823d6ffea3853584994d6998f68feb096f8df",
+      "experiments/build_handoff_study.py": "4de7d6a90f10a068990e102cff7ffdf8ea4bb82311185fdd5e073fd4b1a2117c",
+      "experiments/handoff-study/PROTOCOL.md": "ae3f90b892c3b63f6f8b26647d4ca9f83c46e7ce4faae555048c9c946d62cf82",
+      "experiments/handoff-study/MODEL_EXTENSION.md": "ec093d4819592e0559cd3ec97b473200a287f603ba550931b55bd8a287a518f5",
+      "localesafe/collect_switch_boundary.py": "40a78fece7bbcf32fb441431c8671ec4cc5cadd9f1fe952c67f4b592b686c549",
+      "experiments/build_switch_boundary.py": "664b0e1067507f419c044387e6b768280b05f432731f1889e100d78720e41673",
+      "experiments/build_hindi_pair.py": "f2db311dd2ecc1110d5a3712318483a8356165f738bd35f517e8583004317d17",
+      "experiments/switch-boundary/PROTOCOL.md": "94bd2467d0646c892a95cd678d1208c5ea511a2f0321240235bc09b168f8f6fc"
+    },
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.6",
+    "cuda": "13.0",
+    "gpu": "Tesla T4",
+    "dtype": "float16",
+    "quantization": "none",
+    "batch_size": 8,
+    "threads": 2,
+    "enable_thinking": false,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "token_limits": {
+      "summary": 192,
+      "actor": 96,
+      "monitor": 24
+    },
+    "sampling": "greedy or independent per-row CUDA seeded sampling with forced selected token"
+  },
+  "scheduled_requests": 864,
+  "completed_utc": "2026-10-27T20:24:55.687297+00:00",
+  "attempts": 864,
+  "attempts_sha256": "4b4cb69d7f1cb2ec26b1e206e5feb58a4bb5e46f3084c8b19576359fe41e708b",
+  "cases_sha256": "b4a1cc35722da9b835a6d1a2838f17889b120d29f90d9335b16c993d4ebb33e5"
+}

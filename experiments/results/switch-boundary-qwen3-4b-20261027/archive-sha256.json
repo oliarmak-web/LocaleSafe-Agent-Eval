@@ -1,0 +1,17 @@
+{
+  "attempts.jsonl": "4b4cb69d7f1cb2ec26b1e206e5feb58a4bb5e46f3084c8b19576359fe41e708b",
+  "design.json": "deefd866306781a27b4913a480006e96bdaa4753a6b6170e2b2943bccfe4cb77",
+  "manifest.json": "7244acdafd6f91db1c34eb0ed3c3161e93d83b5dae74ccef01248d3cbd012c28",
+  "cases.jsonl": "b4a1cc35722da9b835a6d1a2838f17889b120d29f90d9335b16c993d4ebb33e5",
+  "source/localesafe/evaluate.py": "0c81f93ed98918582824343c767823d6ffea3853584994d6998f68feb096f8df",
+  "source/localesafe/handoff_eval.py": "b0d03ab190b18dea5b8aeb360b5faf2e975e1a55f474410530950cce3686d902",
+  "source/localesafe/collect_handoff.py": "3df2287b7ddca880d9ada34d7dd9d47b3eb66455d57ff6d2aa9113ed613eca34",
+  "source/localesafe/collect_switch_boundary.py": "40a78fece7bbcf32fb441431c8671ec4cc5cadd9f1fe952c67f4b592b686c549",
+  "source/localesafe/handoff_study.py": "44e3fcdab98c06550b9ce828bb7fa782b5b1c1b0551047c27878ba6a6682733e",
+  "source/experiments/build_switch_boundary.py": "664b0e1067507f419c044387e6b768280b05f432731f1889e100d78720e41673",
+  "source/experiments/build_hindi_pair.py": "f2db311dd2ecc1110d5a3712318483a8356165f738bd35f517e8583004317d17",
+  "source/experiments/build_handoff_study.py": "4de7d6a90f10a068990e102cff7ffdf8ea4bb82311185fdd5e073fd4b1a2117c",
+  "source/experiments/handoff-study/PROTOCOL.md": "ae3f90b892c3b63f6f8b26647d4ca9f83c46e7ce4faae555048c9c946d62cf82",
+  "source/experiments/handoff-study/MODEL_EXTENSION.md": "ec093d4819592e0559cd3ec97b473200a287f603ba550931b55bd8a287a518f5",
+  "source/experiments/switch-boundary/PROTOCOL.md": "94bd2467d0646c892a95cd678d1208c5ea511a2f0321240235bc09b168f8f6fc"
+}
