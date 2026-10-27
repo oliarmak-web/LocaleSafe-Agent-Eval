@@ -52,7 +52,7 @@ def validate_case(case):
             raise ValueError("invalid trusted event")
         if (event["version"] != version or type(event["version"]) is not int
                 or event["event_id"] != f"E{version}" or event["principal"] != case["principal"]
-                or event["language"] not in {"en", "es"} or not isinstance(event["text"], str) or not event["text"]):
+                or event["language"] not in {"en", "es", "hi"} or not isinstance(event["text"], str) or not event["text"]):
             raise ValueError("invalid event provenance/order")
         action = event["requested_action"]
         if not valid_action(action):
