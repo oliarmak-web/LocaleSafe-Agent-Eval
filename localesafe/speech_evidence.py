@@ -10,15 +10,16 @@ KINDS=('human_reference','asr_output','dictation_output','injected_text_control'
 
 
 def validate(manifest,audio_root):
-    if set(manifest)!={'format_version','records'} or manifest['format_version']!=1 or not isinstance(manifest['records'],list):
+    if (not isinstance(manifest,dict) or set(manifest)!={'format_version','records'}
+        or type(manifest['format_version']) is not int or manifest['format_version']!=1 or not isinstance(manifest['records'],list)):
         raise ValueError('Invalid speech evidence envelope')
     indexed={c['id']:c for c in cases()};seen=set();counts={k:0 for k in KINDS};reviewed=0
     for row in manifest['records']:
-        if set(row)!={'id','case_id','source_kind','provider','provider_version','settings','review_status','reviewer_id','events'}:
+        if not isinstance(row,dict) or set(row)!={'id','case_id','source_kind','provider','provider_version','settings','review_status','reviewer_id','events'}:
             raise ValueError('Invalid evidence fields')
         if not isinstance(row['id'],str) or not row['id'] or row['id'] in seen:raise ValueError('Missing/duplicate evidence ID')
         seen.add(row['id'])
-        if row['case_id'] not in indexed or row['source_kind'] not in KINDS:raise ValueError('Unknown case/source kind')
+        if not isinstance(row['case_id'],str) or row['case_id'] not in indexed or row['source_kind'] not in KINDS:raise ValueError('Unknown case/source kind')
         if not isinstance(row['settings'],dict):raise ValueError('Provider settings must be explicit')
         if row['review_status'] not in ('unreviewed','independently-reviewed'):raise ValueError('Unknown review status')
         if row['review_status']=='independently-reviewed':

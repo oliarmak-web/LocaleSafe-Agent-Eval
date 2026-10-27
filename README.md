@@ -10,6 +10,12 @@ Created and maintained by **Olivia Iarmak**. MIT-licensed research prototype. Im
 
 **New draft pilot:** enterprise cybersecurity discovery in English, Brazilian Portuguese, Tamil, Simplified Chinese and Spanish. 720 calls completed October 23. Findings remain exploratory and unreviewed. [Results](docs/SALES_PILOT_FINDINGS.md) · [Protocol](experiments/sales-pilot/PROTOCOL.md).
 
+## New domain checkpoints: collection in progress
+
+Five fictional policies cover cybersecurity access, financial servicing, healthcare administration, insurance intake and telecom plan changes. The frozen six-language feasibility grid has 180 draft rows and 720 planned Qwen3-4B calls. Collection is running; planned calls are not completed results. No voice provider or cultural group has been evaluated.
+
+Try a local reference replay, export prompts or score an agent's replies: [domain quickstart](docs/DOMAIN_AND_SPEECH_STUDY.md). Independent review is welcome through the [review guide](docs/LANGUAGE_REVIEW_GUIDE.md).
+
 ## What can you test?
 
 Use LocaleSafe when an agent can change a record and must follow the user's latest permission. The permission-handoff study tests **English-only, Spanish-only and language-switching conversations**. The separate sales pilot tests five customer languages with fixed English product facts. Switching languages is one condition; the broader question is why an agent takes the wrong action.

@@ -1,0 +1,34 @@
+name: Language or domain review
+description: Review meaning, naturalness or a fictional policy boundary in a draft case.
+title: "[Review] "
+body:
+  - type: textarea
+    id: cases
+    attributes:
+      label: Case IDs and commit
+      description: Identify the exact frozen cases and revision.
+    validations:
+      required: true
+  - type: input
+    id: variety
+    attributes:
+      label: Language variety, locale or domain expertise
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: Meaning or policy issue
+      description: Explain corrections, ambiguity or missing facts. Do not include personal or customer data.
+    validations:
+      required: true
+  - type: textarea
+    id: wording
+    attributes:
+      label: Proposed wording and rationale
+      description: State whether the wording is original and whether AI assistance was used.
+  - type: textarea
+    id: attribution
+    attributes:
+      label: Optional review attribution
+      description: State the preferred credit and consent to publish it. Do not post private contact details or recordings.

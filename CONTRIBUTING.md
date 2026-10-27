@@ -19,3 +19,5 @@ Synthetic controls verify code. Model traces support experiments. Neither establ
 4. Submit changes with the relevant checks and a clear distinction between code fixes, new cases and new model results. Preserve frozen experiment artifacts; put new runs in separate directories.
 
 The highest-priority research gaps are independent language/domain review, stronger English task competence and untouched situation families for testing whether observed differences generalize.
+
+For the five-domain suite, follow the [language and domain review guide](docs/LANGUAGE_REVIEW_GUIDE.md). The [checkpoint quickstart](docs/DOMAIN_AND_SPEECH_STUDY.md#try-the-checkpoints-locally) exports prompts and scores agent replies without calling an API.

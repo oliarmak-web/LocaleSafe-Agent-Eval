@@ -14,6 +14,23 @@ The common conditions include corrections, polite approved requests, conditional
 
 The new contract separates conversation sequence from trusted approval versions and uses named actions rather than choice letters. These are design changes motivated by earlier confounds, not demonstrated improvements until new results are collected. [Frozen protocol](../experiments/domain-study/PROTOCOL.md) · [Execution status](../experiments/domain-study/EXECUTION_HISTORY.md).
 
+## Try the checkpoints locally
+
+Python 3.11+, no API key or model download for export and scoring:
+
+```sh
+python -m localesafe.domain_eval --reference-demo --output reports/domain-reference.json
+python -m localesafe.domain_eval --export-prompts --language en --output reports/domain-prompts-en.jsonl
+```
+
+The first command scores 180 authored reference actions: expected 180 correct and zero unauthorized attempts. These are injected examples, not model results. The second exports 30 English checkpoints across five policies. Send only each row's messages to an agent; retain case_id outside the prompt to join results. Produce JSONL replies with exactly case_id and raw_output (the untouched model reply as a string), then score:
+
+```sh
+python -m localesafe.domain_eval --traces private/agent-replies.jsonl --trace-origin model --language en --output reports/domain-agent-en.json
+```
+
+All outputs require new filenames. Missing replies count as failures; duplicate/unknown IDs are rejected. The report separates format, exact action, operation choice, rejected execution attempts and mock final state. It does not call an API or prove where supplied traces came from. These rules and draft fixtures need independent validation before use as deployment criteria.
+
 ## Voice and dictation: separate evidence tracks
 
 For a future ElevenLabs-style agent test, compare reviewed intended meaning, actual ASR transcript, generated intent record and final action. For a Wispr Flow-style dictation test, compare reviewed meaning with the delivered text before evaluating any downstream action. A polished paraphrase is not inherently an error; losing negation, scope, conditions, entities or corrections can change intent. Natural interruptions also need timestamps and executor timing, beyond text checkpoints.
