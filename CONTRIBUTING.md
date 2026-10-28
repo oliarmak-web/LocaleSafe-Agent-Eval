@@ -1,23 +1,40 @@
-# Contribute
+# Contribute to LocaleSafe
 
-Useful work: translation review, original scenario families, simulator/evaluator fixes, collection adapters, and independent reproduction.
+Help make multilingual agent evaluation more reliable. **Review a translation, reproduce a finding or contribute a new failure case.** You do not need a GPU or paid API to get started.
 
-- Describe the failure and supply a counterexample.
-- Run `python -m unittest discover -s tests -v`.
-- Keep task semantics fixed in language comparisons; declare locale explicitly.
-- Mark unreviewed translations draft. Disclose AI assistance and credit reviewers with consent.
-- Preserve family-level splits, provenance, licenses, and all failed attempts.
-- Add no credentials, real patient data, identifying conversations, or unlicensed audio.
+## Choose a starting point
 
-Synthetic controls verify code. Model traces support experiments. Neither establishes real-world safety or impact on its own.
+### 1. Review a language or domain case
 
-## Start with a reproducible result
+Check whether a request preserves corrections, permission, conditions, dates and record IDs. Flag ambiguous wording or unrealistic policy assumptions. Independent review is the highest-priority research need.
 
-1. Run the [local quickstart](docs/QUICKSTART.md) to inspect a permission failure, or [reproduce the sales-pilot analysis](docs/SALES_PILOT_FINDINGS.md#inspect-and-reproduce-the-analysis) without downloading a model.
-2. Open an issue with the experiment, exact commit, case ID, expected result and observed output. Use fictional data.
-3. For language review, identify the language variety and explain whether a translation changes the task meaning. Record reviewer consent before adding attribution.
-4. Submit changes with the relevant checks and a clear distinction between code fixes, new cases and new model results. Preserve frozen experiment artifacts; put new runs in separate directories.
+**Submit:** case ID, language variety and locale, original wording, proposed change and a short explanation. State your relevant language/domain experience and any AI assistance. Use the [language-review issue form](https://github.com/oliarmak-web/LocaleSafe-AI-Agentic-Demo/issues/new?template=language-review.yml); the [review guide](docs/LANGUAGE_REVIEW_GUIDE.md) explains what to check.
 
-The highest-priority research gaps are independent language/domain review, stronger English task competence and untouched situation families for testing whether observed differences generalize.
+**Acceptance:** explain how the wording or policy affects the expected action, including competing interpretations where relevant. Accepted corrections go into a new versioned case set with review provenance; frozen cases and published scores stay intact. Reviewer attribution requires consent.
 
-For the five-domain suite, follow the [language and domain review guide](docs/LANGUAGE_REVIEW_GUIDE.md). The [checkpoint quickstart](docs/DOMAIN_AND_SPEECH_STUDY.md#try-the-checkpoints-locally) exports prompts and scores agent replies without calling an API.
+### 2. Reproduce a finding
+
+Run an archived study's scoring with Python 3.11+. Start with the [reproduction guide](docs/QUICKSTART.md); no model download or inference is needed.
+
+**Submit:** experiment name, exact commit, command, Python version and observed result. For a discrepancy, include the expected result, case ID if applicable and a minimal error log. Open an [issue](https://github.com/oliarmak-web/LocaleSafe-AI-Agentic-Demo/issues).
+
+**Acceptance:** another contributor can follow the steps and verify the result or reproduce the discrepancy. Report mismatches as well as successful reproductions; do not repair raw model replies to match a score.
+
+### 3. Add a failure case
+
+Write a fictional request where an agent could lose a correction, confuse a record, misapply a policy or act without current permission. New situation families are especially useful. Start with the [checkpoint export and scoring guide](docs/DOMAIN_AND_SPEECH_STUDY.md#try-the-checkpoints-locally).
+
+**Submit:** visible request and policy, expected action, explanation and a minimal example. Label any supplied response as model-generated or synthetic. For model outputs, retain the untouched reply, model revision, prompt and generation settings. Discuss a new case in an [issue](https://github.com/oliarmak-web/LocaleSafe-AI-Agentic-Demo/issues) before expanding it into a large dataset.
+
+**Acceptance:** the expected action follows from the supplied evidence, ambiguity is documented and provenance is clear. Language comparisons must preserve task meaning and declare locale explicitly. Unreviewed translations remain marked draft. New cases must not overwrite frozen studies or leak into their evaluation splits.
+
+## Before opening a pull request
+
+- Explain what changed, why and how you checked it. Link the relevant issue when available.
+- For code or evaluator changes, run `python -m unittest discover -s tests -v` and include a focused counterexample for a behavior fix. For documentation-only changes, verify affected instructions and links.
+- Preserve archived inputs, outputs, failed attempts, family-level splits and hashes. Put new runs in separate directories; distinguish code fixes, new fixtures and new model results.
+- Disclose AI assistance and source licenses. Add no credentials, private conversations, identifying patient/customer data or unlicensed recordings. See [security guidance](SECURITY.md).
+
+Synthetic cases test the evaluator; recorded model outputs support bounded experiments. Neither alone establishes production safety or a general language ranking.
+
+For study context and evidence, see the [research index](docs/RESEARCH_INDEX.md). Evaluator fixes, model adapters and independent replications are also welcome.
