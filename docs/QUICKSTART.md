@@ -17,7 +17,36 @@ Open the JSON reports. Under `rows`, compare `actor_correct`, `unauthorized_atte
 
 Each command also prints aggregate counts. Choose unused output filenames; reports are deliberately never overwritten.
 
-## 2. Verify the actual model experiments
+## 2. Verify the recorded model experiments
+
+Start with the five-domain study: cybersecurity access, financial servicing, healthcare scheduling, insurance intake and telecom changes in six languages.
+
+```sh
+python -m experiments.summarize_domain_comparison experiments/results/domain-study-qwen3-4b-20261027 experiments/results/domain-study-phi4-mini-20261027 --output-dir reports/domain-reproduction
+```
+
+This audits both 720-call archives and writes `comparison.json` and `RESULTS.md`. Expect 1,440 calls in total, four passing English domain screens for Qwen and none for Phi. Compare with the [published tables](DOMAIN_COMPARISON.md) and [plain-English findings](DOMAIN_FINDINGS.md). To test your own agent on these checkpoints, use the [prompt export and scoring guide](DOMAIN_AND_SPEECH_STUDY.md).
+
+Reproduce the other main studies with separate output directories:
+
+```sh
+python -m experiments.summarize_sales_pilot experiments/results/sales-qwen3-4b-20261023 experiments/results/sales-phi4-mini-20261023 --output-dir reports/sales-reproduction
+python -m experiments.summarize_handoff experiments/results/handoff-qwen3-4b-development-20261022 experiments/results/handoff-qwen3-4b-evaluation-20261022 experiments/results/handoff-smollm3-3b-development-20261022 --output-dir reports/handoff-reproduction
+python -m experiments.summarize_monitor_followup experiments/results/monitor-followup-qwen3-4b-20261022 --output-dir reports/monitor-reproduction
+python -m experiments.summarize_hindi_pair experiments/results/hindi-pair-qwen3-4b-20261027 --output-dir reports/hindi-reproduction
+python -m experiments.summarize_format_followup experiments/results/format-mistral-7b-v03-20261022 experiments/results/format-phi4-mini-20261022 --output-dir reports/format-reproduction
+python -m experiments.summarize_audio_smoke experiments/results/audio-whisper-small-20261027 --output-dir reports/audio-reproduction
+```
+
+| Study | Expected recorded calls | Read the interpretation |
+|---|---:|---|
+| Sales pilot | 720 | [Buyer facts, decisions and reasons](SALES_PILOT_FINDINGS.md) |
+| Initial handoffs and monitor follow-up | 3,264 | [Handoffs and permission checks](HANDOFF_TECHNICAL_REPORT.md) |
+| English/Hindi comparison | 1,680 | [Language and switching direction](HINDI_PAIR_FINDINGS.md) |
+| Prompt-format follow-up | 256 | [Formatting gains and safety regressions](FORMAT_FOLLOWUP.md) |
+| Public-audio baseline | 40 | [Transcription results and reference limitations](AUDIO_SMOKE_RESULTS.md) |
+
+Each command verifies its archived evidence and rebuilds summaries from existing outputs. None runs inference. The studies use different cases and contracts; compare conditions within a study rather than combining their scores. The audio clips are separate corpus material, not recordings of the domain tasks. [Retrieve the public audio](PUBLIC_AUDIO_QUICKSTART.md).
 
 Audit the two additional model archives and rebuild their result tables:
 
