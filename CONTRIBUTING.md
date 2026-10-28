@@ -8,7 +8,7 @@ Help make multilingual agent evaluation more reliable. **Review a translation, r
 
 Check whether a request preserves corrections, permission, conditions, dates and record IDs. Flag ambiguous wording or unrealistic policy assumptions. Independent review is the highest-priority research need.
 
-**Submit:** case ID, language variety and locale, original wording, proposed change and a short explanation. State your relevant language/domain experience and any AI assistance. Use the [language-review issue form](https://github.com/oliarmak-web/LocaleSafe-AI-Agentic-Demo/issues/new?template=language-review.yml); the [review guide](docs/LANGUAGE_REVIEW_GUIDE.md) explains what to check.
+**Submit:** case ID, language variety and locale, original wording, proposed change and a short explanation. State your relevant language/domain experience and any AI assistance. Use the [language-review issue form](https://github.com/oliarmak-web/LocaleSafe-Agent-Eval/issues/new?template=language-review.yml); the [review guide](docs/LANGUAGE_REVIEW_GUIDE.md) explains what to check.
 
 **Acceptance:** explain how the wording or policy affects the expected action, including competing interpretations where relevant. Accepted corrections go into a new versioned case set with review provenance; frozen cases and published scores stay intact. Reviewer attribution requires consent.
 
@@ -16,7 +16,7 @@ Check whether a request preserves corrections, permission, conditions, dates and
 
 Run an archived study's scoring with Python 3.11+. Start with the [reproduction guide](docs/QUICKSTART.md); no model download or inference is needed.
 
-**Submit:** experiment name, exact commit, command, Python version and observed result. For a discrepancy, include the expected result, case ID if applicable and a minimal error log. Open an [issue](https://github.com/oliarmak-web/LocaleSafe-AI-Agentic-Demo/issues).
+**Submit:** experiment name, exact commit, command, Python version and observed result. For a discrepancy, include the expected result, case ID if applicable and a minimal error log. Open an [issue](https://github.com/oliarmak-web/LocaleSafe-Agent-Eval/issues).
 
 **Acceptance:** another contributor can follow the steps and verify the result or reproduce the discrepancy. Report mismatches as well as successful reproductions; do not repair raw model replies to match a score.
 
@@ -24,7 +24,7 @@ Run an archived study's scoring with Python 3.11+. Start with the [reproduction 
 
 Write a fictional request where an agent could lose a correction, confuse a record, misapply a policy or act without current permission. New situation families are especially useful. Start with the [checkpoint export and scoring guide](docs/DOMAIN_AND_SPEECH_STUDY.md#try-the-checkpoints-locally).
 
-**Submit:** visible request and policy, expected action, explanation and a minimal example. Label any supplied response as model-generated or synthetic. For model outputs, retain the untouched reply, model revision, prompt and generation settings. Discuss a new case in an [issue](https://github.com/oliarmak-web/LocaleSafe-AI-Agentic-Demo/issues) before expanding it into a large dataset.
+**Submit:** visible request and policy, expected action, explanation and a minimal example. Label any supplied response as model-generated or synthetic. For model outputs, retain the untouched reply, model revision, prompt and generation settings. Discuss a new case in an [issue](https://github.com/oliarmak-web/LocaleSafe-Agent-Eval/issues) before expanding it into a large dataset.
 
 **Acceptance:** the expected action follows from the supplied evidence, ambiguity is documented and provenance is clear. Language comparisons must preserve task meaning and declare locale explicitly. Unreviewed translations remain marked draft. New cases must not overwrite frozen studies or leak into their evaluation splits.
 

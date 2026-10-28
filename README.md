@@ -36,11 +36,11 @@ These are exploratory results on small, AI-assisted draft fixtures. Call counts 
 
 ## Start here: reproduce the main experiment locally
 
-Use Git and Python 3.11+. This audit uses only Python's standard library: no API key, model download or GPU. Cloning needs network access and, while the repository is private, authorized GitHub access.
+Use Git and Python 3.11+. This audit uses only Python's standard library: no API key, model download or GPU. Cloning needs network access.
 
 ```sh
-git clone https://github.com/oliarmak-web/LocaleSafe-AI-Agentic-Demo.git
-cd LocaleSafe-AI-Agentic-Demo
+git clone https://github.com/oliarmak-web/LocaleSafe-Agent-Eval.git
+cd LocaleSafe-Agent-Eval
 python -m experiments.summarize_domain_comparison experiments/results/domain-study-qwen3-4b-20261027 experiments/results/domain-study-phi4-mini-20261027 --output-dir reports/domain-replay
 ```
 
