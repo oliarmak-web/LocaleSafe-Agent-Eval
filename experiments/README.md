@@ -1,8 +1,12 @@
-# Real-model pilot
+# Historical experiment guide
 
-Latest: [permission-handoff study](../docs/HANDOFF_TECHNICAL_REPORT.md), with 2,880 initial model calls, 384 exploratory monitor calls and a cached routing replay. [Protocol](handoff-study/PROTOCOL.md) · [Execution history](handoff-study/EXECUTION_HISTORY.md). The earlier [48-case prototype](handoff/PROTOCOL.md) remains a separate synthetic control set.
+For the current study directory, use the [research index](../docs/RESEARCH_INDEX.md). This page retains earlier pilot instructions and provenance.
+
+Later work: [permission-handoff study](../docs/HANDOFF_TECHNICAL_REPORT.md), with 2,880 initial model calls, 384 exploratory monitor calls and a cached routing replay. [Protocol](handoff-study/PROTOCOL.md) · [Execution history](handoff-study/EXECUTION_HISTORY.md). The earlier [48-case prototype](handoff/PROTOCOL.md) remains a separate synthetic control set.
 
 ## Latest: matched workflow study
+
+This was the latest workflow comparison in the early pilot sequence; newer studies are listed in the research index.
 
 [Study and findings](../docs/WORKFLOW_STUDY.md) · [Protocol](workflow/PROTOCOL.md) · [Execution history](workflow/EXECUTION_HISTORY.md)
 

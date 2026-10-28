@@ -1,5 +1,7 @@
 # Run a local evaluation
 
+[Research index and findings](RESEARCH_INDEX.md) · [Project overview](../README.md)
+
 Choose a task below. All replay and audit commands run offline after cloning, with Python 3.11+ and no extra packages. New model generation is a separate GPU workflow.
 
 ## 1. Understand a permission failure

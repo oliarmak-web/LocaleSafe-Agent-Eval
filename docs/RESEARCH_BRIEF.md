@@ -2,6 +2,8 @@
 
 **Research prototype · Updated October 27, 2026.**
 
+For study-specific findings, protocols and evidence, use the [research index](RESEARCH_INDEX.md).
+
 ## In one sentence
 
 LocaleSafe tests whether multilingual service agents choose the right action, preserve the user's current permission and receive the right judgment from a safety monitor.
@@ -59,7 +61,7 @@ The project builds on existing multilingual, authorization and monitoring resear
 
 ## Scope and limitations
 
-The studies are exploratory and use draft translations. They do not establish causal language effects or production safety. Speech, clinical correctness, hallucination rates and industry-wide failure prevalence are outside scope. Only one model passed the handoff study's competence screen; independent bilingual review remains outstanding.
+The studies are exploratory and use draft translations. They do not establish causal language effects or production safety. The separate speech baseline does not establish downstream agent reliability. Clinical correctness, hallucination rates and industry-wide failure prevalence are outside scope. Only one model passed the handoff study's competence screen; independent bilingual review remains outstanding.
 
 ## Citation
 
