@@ -1,0 +1,434 @@
+{
+  "calls": 40,
+  "clips": 20,
+  "model": {
+    "model": "openai/whisper-small",
+    "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+    "weights_sha256": "1d7734884874f1a1513ed9aa760a4f8e97aaa02fd6d93a3a85d27b2ae9ca596b"
+  },
+  "groups": [
+    {
+      "dataset": "PolyAI/minds14",
+      "config": "en-US",
+      "arm": "auto_language",
+      "clips": 2,
+      "edits": 26,
+      "posthoc_reference_basis": "released_asr_hypothesis",
+      "reference_characters": 65,
+      "cer": 0.4,
+      "normalized_exact": 1,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "PolyAI/minds14",
+      "config": "en-US",
+      "arm": "provided_language",
+      "clips": 2,
+      "edits": 26,
+      "posthoc_reference_basis": "released_asr_hypothesis",
+      "reference_characters": 65,
+      "cer": 0.4,
+      "normalized_exact": 1,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "PolyAI/minds14",
+      "config": "es-ES",
+      "arm": "auto_language",
+      "clips": 2,
+      "edits": 173,
+      "posthoc_reference_basis": "released_asr_hypothesis",
+      "reference_characters": 185,
+      "cer": 0.9351351351351351,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "PolyAI/minds14",
+      "config": "es-ES",
+      "arm": "provided_language",
+      "clips": 2,
+      "edits": 173,
+      "posthoc_reference_basis": "released_asr_hypothesis",
+      "reference_characters": 185,
+      "cer": 0.9351351351351351,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "PolyAI/minds14",
+      "config": "pt-PT",
+      "arm": "auto_language",
+      "clips": 2,
+      "edits": 40,
+      "posthoc_reference_basis": "released_asr_hypothesis",
+      "reference_characters": 196,
+      "cer": 0.20408163265306123,
+      "normalized_exact": 1,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "PolyAI/minds14",
+      "config": "pt-PT",
+      "arm": "provided_language",
+      "clips": 2,
+      "edits": 40,
+      "posthoc_reference_basis": "released_asr_hypothesis",
+      "reference_characters": 196,
+      "cer": 0.20408163265306123,
+      "normalized_exact": 1,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "PolyAI/minds14",
+      "config": "zh-CN",
+      "arm": "auto_language",
+      "clips": 2,
+      "edits": 11,
+      "posthoc_reference_basis": "released_asr_hypothesis",
+      "reference_characters": 30,
+      "cer": 0.36666666666666664,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "PolyAI/minds14",
+      "config": "zh-CN",
+      "arm": "provided_language",
+      "clips": 2,
+      "edits": 11,
+      "posthoc_reference_basis": "released_asr_hypothesis",
+      "reference_characters": 30,
+      "cer": 0.36666666666666664,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "cmn_hans_cn",
+      "arm": "auto_language",
+      "clips": 2,
+      "edits": 15,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 44,
+      "cer": 0.3409090909090909,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "cmn_hans_cn",
+      "arm": "provided_language",
+      "clips": 2,
+      "edits": 15,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 44,
+      "cer": 0.3409090909090909,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "en_us",
+      "arm": "auto_language",
+      "clips": 2,
+      "edits": 5,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 169,
+      "cer": 0.029585798816568046,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "en_us",
+      "arm": "provided_language",
+      "clips": 2,
+      "edits": 5,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 169,
+      "cer": 0.029585798816568046,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "es_419",
+      "arm": "auto_language",
+      "clips": 2,
+      "edits": 1,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 233,
+      "cer": 0.004291845493562232,
+      "normalized_exact": 1,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "es_419",
+      "arm": "provided_language",
+      "clips": 2,
+      "edits": 1,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 233,
+      "cer": 0.004291845493562232,
+      "normalized_exact": 1,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "hi_in",
+      "arm": "auto_language",
+      "clips": 2,
+      "edits": 112,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 252,
+      "cer": 0.4444444444444444,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 1
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "hi_in",
+      "arm": "provided_language",
+      "clips": 2,
+      "edits": 112,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 252,
+      "cer": 0.4444444444444444,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 1
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "pt_br",
+      "arm": "auto_language",
+      "clips": 2,
+      "edits": 9,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 312,
+      "cer": 0.028846153846153848,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "pt_br",
+      "arm": "provided_language",
+      "clips": 2,
+      "edits": 9,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 312,
+      "cer": 0.028846153846153848,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "ta_in",
+      "arm": "auto_language",
+      "clips": 2,
+      "edits": 40,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 171,
+      "cer": 0.23391812865497075,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    },
+    {
+      "dataset": "google/fleurs",
+      "config": "ta_in",
+      "arm": "provided_language",
+      "clips": 2,
+      "edits": 40,
+      "posthoc_reference_basis": "released_read_speech_reference",
+      "reference_characters": 171,
+      "cer": 0.23391812865497075,
+      "normalized_exact": 0,
+      "no_eos_at_budget": 0
+    }
+  ],
+  "paired_language_hint": [
+    {
+      "sample_id": "fleurs-en_us-0000",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "fleurs-en_us-0001",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "fleurs-es_419-0000",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "fleurs-es_419-0002",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "fleurs-hi_in-0000",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "fleurs-hi_in-0001",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "fleurs-pt_br-0000",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "fleurs-pt_br-0001",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "fleurs-cmn_hans_cn-0000",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "fleurs-cmn_hans_cn-0001",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "fleurs-ta_in-0000",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "fleurs-ta_in-0001",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "minds14-en-US-0000",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "minds14-en-US-0042",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "minds14-es-ES-0000",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "minds14-es-ES-0021",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "minds14-pt-PT-0000",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "minds14-pt-PT-0042",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "minds14-zh-CN-0000",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    },
+    {
+      "sample_id": "minds14-zh-CN-0039",
+      "provided_minus_auto_edits": 0,
+      "lower_with_provided": false,
+      "higher_with_provided": false,
+      "equal_edits": true,
+      "identical_decoded_output": true,
+      "identical_token_ids": true
+    }
+  ],
+  "notice": "Tiny public-corpus transcription smoke test. CER is not intent, word accuracy, cultural understanding or agent task success. Contents differ across configurations."
+}

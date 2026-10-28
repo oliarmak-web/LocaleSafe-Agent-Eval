@@ -1,0 +1,1376 @@
+{
+  "status": "public-audio-smoke-packet",
+  "samples": [
+    {
+      "id": "fleurs-en_us-0000",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "en_us/test/0000.parquet",
+      "row_index": 0,
+      "source_item_id": 1904,
+      "config": "en_us",
+      "language": "en",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-en_us-0000.wav",
+      "audio_sha256": "33aca50159ec2e3cbcc894eb26faa916d6badb1b49fb75994973561540a7f012",
+      "duration_seconds": 10.56,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "however due to the slow communication channels styles in the west could lag behind by 25 to 30 year",
+      "raw_reference": "However, due to the slow communication channels, styles in the west could lag behind by 25 to 30 year.",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "fleurs-en_us-0001",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "en_us/test/0000.parquet",
+      "row_index": 1,
+      "source_item_id": 1675,
+      "config": "en_us",
+      "language": "en",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-en_us-0001.wav",
+      "audio_sha256": "7603cae3294309ef70d234180cefccc3b13865ee525262228a636069b9b62841",
+      "duration_seconds": 8.76,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "all nouns alongside the word sie for you always begin with a capital letter even in the middle of a sentence",
+      "raw_reference": "All nouns, alongside the word Sie for you, always begin with a capital letter, even in the middle of a sentence.",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "fleurs-es_419-0000",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "es_419/test/0000.parquet",
+      "row_index": 0,
+      "source_item_id": 2001,
+      "config": "es_419",
+      "language": "es",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-es_419-0000.wav",
+      "audio_sha256": "861ceedc4d50fbe52fc89b6d0c0fa740b9cd6fa668388e754064847386af0faf",
+      "duration_seconds": 12.84,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "se recomienda enfáticamente a los viajeros que se informen sobre cualquier riesgo de clima extremo en el área que visitan dado que ello puede afectar sus planes de viaje",
+      "raw_reference": "Se recomienda enfáticamente a los viajeros que se informen sobre cualquier riesgo de clima extremo en el área que visitan, dado que ello puede afectar sus planes de viaje.",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "fleurs-es_419-0002",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "es_419/test/0000.parquet",
+      "row_index": 2,
+      "source_item_id": 1764,
+      "config": "es_419",
+      "language": "es",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-es_419-0002.wav",
+      "audio_sha256": "0576e73da35ef17b6ce6396d31b32830b7ab19cea98f9f5db68de3756dc3d4fc",
+      "duration_seconds": 9.72,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "fue tanta la cantidad de gente que se concentró que no todos pudieron acceder al funeral en la plaza de san pedro",
+      "raw_reference": "Fue tanta la cantidad de gente que se concentró, que no todos pudieron acceder al funeral en la Plaza de San Pedro.",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "fleurs-hi_in-0000",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "hi_in/test/0000.parquet",
+      "row_index": 0,
+      "source_item_id": 1766,
+      "config": "hi_in",
+      "language": "hi",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-hi_in-0000.wav",
+      "audio_sha256": "217f3abbd8e9cd3767d6e8b87d49fbf82421fc920a103de026b4586d7e644dc5",
+      "duration_seconds": 9.12,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "कुछ अणुओं में अस्थिर केंद्रक होता है जिसका मतलब यह है कि उनमें थोड़े या बिना किसी झटके से टूटने की प्रवृत्ति होती है",
+      "raw_reference": "कुछ अणुओं में अस्थिर केंद्रक होता है, जिसका मतलब यह है कि उनमें थोड़े या बिना किसी झटके से टूटने की प्रवृत्ति होती है,",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "fleurs-hi_in-0001",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "hi_in/test/0000.parquet",
+      "row_index": 1,
+      "source_item_id": 1784,
+      "config": "hi_in",
+      "language": "hi",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-hi_in-0001.wav",
+      "audio_sha256": "b63e6ae5a8a5b53fcd5b60c467790baca13ca0c8490d35418d692ef7751a5459",
+      "duration_seconds": 13.8,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "ग्रीनलैंड को बहुत कम जगह बसाया गया था नॉर्स सगास में वे कहते हैं कि एरिक रेड हत्या के लिए आइसलैंड से निर्वासित किया गया था और आगे पश्चिम की यात्रा करते समय ग्रीनलैंड मिला जिसे ग्रीनलैंड नाम दिया गया",
+      "raw_reference": "ग्रीनलैंड को बहुत कम जगह बसाया गया था. नॉर्स सगास में वे कहते हैं कि एरिक रेड हत्या के लिए आइसलैंड से निर्वासित किया गया था, और आगे पश्चिम की यात्रा करते समय, ग्रीनलैंड मिला जिसे ग्रीनलैंड नाम दिया गया.",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "fleurs-pt_br-0000",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "pt_br/test/0000.parquet",
+      "row_index": 0,
+      "source_item_id": 1960,
+      "config": "pt_br",
+      "language": "pt",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-pt_br-0000.wav",
+      "audio_sha256": "9748e0f96f4b79ccabde80e12e20069c32cf70fdc214d4495ee73a177c0075c2",
+      "duration_seconds": 17.76,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "segundo informações ele estava na casa dos 20 anos em uma declaração bieber disse que embora eu não estivesse presente nem diretamente envolvido neste trágico incidente meus pensamentos e orações estão com a família da vítima",
+      "raw_reference": "Segundo informações, ele estava na casa dos 20 anos. Em uma declaração, Bieber disse que, \"embora eu não estivesse presente nem diretamente envolvido neste trágico incidente, meus pensamentos e orações estão com a família da vítima\".",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "fleurs-pt_br-0001",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "pt_br/test/0000.parquet",
+      "row_index": 1,
+      "source_item_id": 1769,
+      "config": "pt_br",
+      "language": "pt",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-pt_br-0001.wav",
+      "audio_sha256": "810845723a7d5c35d12bada43c6fafe612042ed3e37ed4e6c8de3f6e6cc2ee35",
+      "duration_seconds": 13.62,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "construída pelos egípcios no século 3 a.c. a grande pirâmide é uma das muitas grandes estruturas de pirâmide construídas para honrar faraós mortos",
+      "raw_reference": "Construída pelos egípcios no século 3 A.C., a Grande Pirâmide é uma das muitas grandes estruturas de pirâmide construídas para honrar faraós mortos.",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "fleurs-cmn_hans_cn-0000",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "cmn_hans_cn/test/0000.parquet",
+      "row_index": 0,
+      "source_item_id": 1906,
+      "config": "cmn_hans_cn",
+      "language": "zh",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-cmn_hans_cn-0000.wav",
+      "audio_sha256": "a72c0b59fdba80850552af7991de07f9f4940846d2d70f0890eeb153c40f164b",
+      "duration_seconds": 10.38,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "这 并 不 是 告 别 这 是 一 个 篇 章 的 结 束 也 是 新 篇 章 的 开 始",
+      "raw_reference": "“这并不是告别。这是一个篇章的结束，也是新篇章的开始。”",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "fleurs-cmn_hans_cn-0001",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "cmn_hans_cn/test/0000.parquet",
+      "row_index": 1,
+      "source_item_id": 2006,
+      "config": "cmn_hans_cn",
+      "language": "zh",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-cmn_hans_cn-0001.wav",
+      "audio_sha256": "b39d2c84aefada280b73a9ab439726d370d45e5a75bd05f0a90153288ea4561b",
+      "duration_seconds": 8.28,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "钙 钾 等 元 素 属 于 金 属 银 和 金 等 元 素 当 然 也 是 金 属",
+      "raw_reference": "钙、钾等元素属于金属，银和金等元素当然也是金属。",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "fleurs-ta_in-0000",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "ta_in/test/0000.parquet",
+      "row_index": 0,
+      "source_item_id": 1792,
+      "config": "ta_in",
+      "language": "ta",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-ta_in-0000.wav",
+      "audio_sha256": "449d0c9516dc1cf0d5082f0ffdb744b858dd0bb67033e2c02a13ea989987b439",
+      "duration_seconds": 7.8,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "இது வேதியியல் ph என அழைக்கப்படுகிறது நீங்கள் சிவப்பு முட்டைக்கோஸ் சாற்றைப் பயன்படுத்தி ஒரு குறிகாட்டியை உருவாக்கலாம்",
+      "raw_reference": "இது வேதியியல் pH என அழைக்கப்படுகிறது. நீங்கள் சிவப்பு முட்டைக்கோஸ் சாற்றைப் பயன்படுத்தி ஒரு குறிகாட்டியை உருவாக்கலாம்.",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "fleurs-ta_in-0001",
+      "dataset": "google/fleurs",
+      "dataset_revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "dataset_file": "ta_in/test/0000.parquet",
+      "row_index": 1,
+      "source_item_id": 1891,
+      "config": "ta_in",
+      "language": "ta",
+      "split": "test",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/google/fleurs",
+      "audio_file": "audio/fleurs-ta_in-0001.wav",
+      "audio_sha256": "b2ec2dd1f835acc101cb09ad16458fea1bbd8132ad208c38b7757e2fd1d40a88",
+      "duration_seconds": 6.96,
+      "sample_rate": 16000,
+      "channels": 1,
+      "reference": "லக்கா சிங் பஜனையை வழங்கினார் பாடகர் ராஜு கண்டெல்வலும் அவருடன் வந்திருந்தார்",
+      "raw_reference": "லக்கா சிங் பஜனையை வழங்கினார். பாடகர், ராஜு கண்டெல்வலும் அவருடன் வந்திருந்தார்.",
+      "intent_class_id": null,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "minds14-en-US-0000",
+      "dataset": "PolyAI/minds14",
+      "dataset_revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "dataset_file": "en-US/train/0000.parquet",
+      "row_index": 0,
+      "source_item_id": "en-US~JOINT_ACCOUNT/602ba55abb1e6d0fbce92065.wav",
+      "config": "en-US",
+      "language": "en",
+      "split": "train",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/PolyAI/minds14",
+      "audio_file": "audio/minds14-en-US-0000.wav",
+      "audio_sha256": "0f56f001f964d2288851a5e4063781cb5793d25f1b4fd9b55607e79873b4b20c",
+      "duration_seconds": 10.837375,
+      "sample_rate": 8000,
+      "channels": 1,
+      "reference": "I would like to set up a joint account with my partner",
+      "raw_reference": "I would like to set up a joint account with my partner",
+      "intent_class_id": 11,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "minds14-en-US-0042",
+      "dataset": "PolyAI/minds14",
+      "dataset_revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "dataset_file": "en-US/train/0000.parquet",
+      "row_index": 42,
+      "source_item_id": "en-US~BALANCE/602b9c72bb1e6d0fbce91f87.wav",
+      "config": "en-US",
+      "language": "en",
+      "split": "train",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/PolyAI/minds14",
+      "audio_file": "audio/minds14-en-US-0042.wav",
+      "audio_sha256": "1911c1d2ec5248c9eee852e5f6db57a06541094ab0e597cbbdb8113e70c0850b",
+      "duration_seconds": 4.365375,
+      "sample_rate": 8000,
+      "channels": 1,
+      "reference": "what is my account balance",
+      "raw_reference": "what is my account balance",
+      "intent_class_id": 4,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "minds14-es-ES-0000",
+      "dataset": "PolyAI/minds14",
+      "dataset_revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "dataset_file": "es-ES/train/0000.parquet",
+      "row_index": 0,
+      "source_item_id": "es-ES~APP_ERROR/60266571dc3604f481bcb50a.wav",
+      "config": "es-ES",
+      "language": "es",
+      "split": "train",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/PolyAI/minds14",
+      "audio_file": "audio/minds14-es-ES-0000.wav",
+      "audio_sha256": "8a350c47afd69d9fc7f01f6a7bdfa4ccec3515e2d0bdef218e7e2c17468f99b4",
+      "duration_seconds": 17.066625,
+      "sample_rate": 8000,
+      "channels": 1,
+      "reference": "hola buenas a ver tengo un problema con vuestra aplicación resulta que quiero hacer una transferencia bancaria a una cuenta conocida",
+      "raw_reference": "hola buenas a ver tengo un problema con vuestra aplicación resulta que quiero hacer una transferencia bancaria a una cuenta conocida",
+      "intent_class_id": 2,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "minds14-es-ES-0021",
+      "dataset": "PolyAI/minds14",
+      "dataset_revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "dataset_file": "es-ES/train/0000.parquet",
+      "row_index": 21,
+      "source_item_id": "es-ES~FREEZE/6026664fcfa37e1cf217afbb.wav",
+      "config": "es-ES",
+      "language": "es",
+      "split": "train",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/PolyAI/minds14",
+      "audio_file": "audio/minds14-es-ES-0021.wav",
+      "audio_sha256": "ba8b7f849c7e8cb72959ef5346233e3dfff6597d4c45977415902effcb396b12",
+      "duration_seconds": 19.882625,
+      "sample_rate": 8000,
+      "channels": 1,
+      "reference": "hola buenos días soy cliente del banco y les llamo por favor para que bloqueen mi tarjeta",
+      "raw_reference": "hola buenos días soy cliente del banco y les llamo por favor para que bloqueen mi tarjeta",
+      "intent_class_id": 9,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "minds14-pt-PT-0000",
+      "dataset": "PolyAI/minds14",
+      "dataset_revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "dataset_file": "pt-PT/train/0000.parquet",
+      "row_index": 0,
+      "source_item_id": "pt-PT~CASH_DEPOSIT/response_4.wav",
+      "config": "pt-PT",
+      "language": "pt",
+      "split": "train",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/PolyAI/minds14",
+      "audio_file": "audio/minds14-pt-PT-0000.wav",
+      "audio_sha256": "fc084982ad50c6ea6cf066f08374b9b3aaa628d9a9accb167be5ae9376dbd275",
+      "duration_seconds": 9.045375,
+      "sample_rate": 8000,
+      "channels": 1,
+      "reference": "Bom dia estou a ligar porque precisava de informações sobre como é que eu posso depositar dinheiro na minha conta",
+      "raw_reference": "Bom dia estou a ligar porque precisava de informações sobre como é que eu posso depositar dinheiro na minha conta",
+      "intent_class_id": 7,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "minds14-pt-PT-0042",
+      "dataset": "PolyAI/minds14",
+      "dataset_revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "dataset_file": "pt-PT/train/0000.parquet",
+      "row_index": 42,
+      "source_item_id": "pt-PT~HIGH_VALUE_PAYMENT/response_4.wav",
+      "config": "pt-PT",
+      "language": "pt",
+      "split": "train",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/PolyAI/minds14",
+      "audio_file": "audio/minds14-pt-PT-0042.wav",
+      "audio_sha256": "9c91f895a266278d60ba16aeff6fa436ff8a433f43f5782f2149585108cdbd92",
+      "duration_seconds": 12.074375,
+      "sample_rate": 8000,
+      "channels": 1,
+      "reference": "Eu queria fazer um pagamento online de levar uma grande quantia e fui informada que me enviaram código confirmação por SMS",
+      "raw_reference": "Eu queria fazer um pagamento online de levar uma grande quantia e fui informada que me enviaram código confirmação por SMS",
+      "intent_class_id": 10,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "minds14-zh-CN-0000",
+      "dataset": "PolyAI/minds14",
+      "dataset_revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "dataset_file": "zh-CN/train/0000.parquet",
+      "row_index": 0,
+      "source_item_id": "zh-CN~BALANCE/60351ea44c449c80694dc254.wav",
+      "config": "zh-CN",
+      "language": "zh",
+      "split": "train",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/PolyAI/minds14",
+      "audio_file": "audio/minds14-zh-CN-0000.wav",
+      "audio_sha256": "caa5e4bf631c4a1d474d82c701eabde15dd5b5e2a3fc43e8c8b3dcb1506e2151",
+      "duration_seconds": 7.765375,
+      "sample_rate": 8000,
+      "channels": 1,
+      "reference": "你好我想要了解一下我的银行账户余额有多少谢谢",
+      "raw_reference": "你好我想要了解一下我的银行账户余额有多少谢谢",
+      "intent_class_id": 4,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    },
+    {
+      "id": "minds14-zh-CN-0039",
+      "dataset": "PolyAI/minds14",
+      "dataset_revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "dataset_file": "zh-CN/train/0000.parquet",
+      "row_index": 39,
+      "source_item_id": "zh-CN~JOINT_ACCOUNT/6035429a6b30c74e5584cf3f.wav",
+      "config": "zh-CN",
+      "language": "zh",
+      "split": "train",
+      "license": "CC-BY-4.0",
+      "source_url": "https://huggingface.co/datasets/PolyAI/minds14",
+      "audio_file": "audio/minds14-zh-CN-0039.wav",
+      "audio_sha256": "5ecc4d1799d120931432366ba0b49160732a56f90b304ca7dbf4d06ab7ba9d8f",
+      "duration_seconds": 3.242625,
+      "sample_rate": 8000,
+      "channels": 1,
+      "reference": "如何设置联名帐户",
+      "raw_reference": "如何设置联名帐户",
+      "intent_class_id": 11,
+      "review_status": "dataset-reference-not-independently-reviewed",
+      "consent_basis": "public_dataset_release_not_individually_reverified"
+    }
+  ],
+  "source_files": [
+    {
+      "dataset": "google/fleurs",
+      "revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "file": "en_us/test/0000.parquet",
+      "sha256": "6428a4d04d3aac29e16b45e039bb1470a8bd7aa334cf92f7984c9c520d1f234d"
+    },
+    {
+      "dataset": "google/fleurs",
+      "revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "file": "es_419/test/0000.parquet",
+      "sha256": "f1e8b7f6eecb91d16b79d91bc1838d8b0e5ebc0b37b317e2b58eb8694c64d3c0"
+    },
+    {
+      "dataset": "google/fleurs",
+      "revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "file": "hi_in/test/0000.parquet",
+      "sha256": "8a0be26c5584c1478233a6f47fb90275c713f72565327ea1da76c9f1cd5dd38b"
+    },
+    {
+      "dataset": "google/fleurs",
+      "revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "file": "pt_br/test/0000.parquet",
+      "sha256": "dde5da617c30a9c88703f1095077bc1e263c31190f76d613ba31bdc57602ff49"
+    },
+    {
+      "dataset": "google/fleurs",
+      "revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "file": "cmn_hans_cn/test/0000.parquet",
+      "sha256": "87c0aebbe183f3a36ac87b5c3421b6ab57036824744ff695029a3f858e7622fd"
+    },
+    {
+      "dataset": "google/fleurs",
+      "revision": "168de341b3db6859a9bac1c50a2ef5e3b47647e0",
+      "file": "ta_in/test/0000.parquet",
+      "sha256": "6a0ca70812792cb075e20ecef7b69aac173af5f1f4ae37d3a42c58e219ea4bb6"
+    },
+    {
+      "dataset": "PolyAI/minds14",
+      "revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "file": "en-US/train/0000.parquet",
+      "sha256": "37004471dc896ce20771b3fdda0ee8fb33ec7a030fb4e2fd047c561ec0a1ee30"
+    },
+    {
+      "dataset": "PolyAI/minds14",
+      "revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "file": "es-ES/train/0000.parquet",
+      "sha256": "989bf2f90676a5eb5852fe785a03b1d9b97763e0febbd0fd0a3f489afd83badf"
+    },
+    {
+      "dataset": "PolyAI/minds14",
+      "revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "file": "pt-PT/train/0000.parquet",
+      "sha256": "b2a62e1cf0fefc1ce7f0045fb3991b1ccb0f0b5b394c490ce05e8878a15a0cb1"
+    },
+    {
+      "dataset": "PolyAI/minds14",
+      "revision": "0c617db2d3e8c3576abdd7548af4a9f5ff41d2cb",
+      "file": "zh-CN/train/0000.parquet",
+      "sha256": "cea0246e1a54afe5a3ab9d9542baa53c7cb45fc8f4e28e7872ebafefb25ba99d"
+    }
+  ],
+  "skipped_before_selection": [
+    {
+      "dataset": "fleurs",
+      "config": "es_419",
+      "row": 1,
+      "reason": "duration_outside_1_to_20_seconds"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 1,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 2,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 3,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 4,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 5,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 6,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 7,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 8,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 9,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 10,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 11,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 12,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 13,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 14,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 15,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 16,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 17,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 18,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 19,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 20,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 21,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 22,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 23,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 24,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 25,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 26,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 27,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 28,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 29,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 30,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 31,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 32,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 33,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 34,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 35,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 36,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 37,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 38,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 39,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 40,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "en-US",
+      "row": 41,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 1,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 2,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 3,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 4,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 5,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 6,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 7,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 8,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 9,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 10,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 11,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 12,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 13,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 14,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 15,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 16,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 17,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 18,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 19,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "es-ES",
+      "row": 20,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 1,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 2,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 3,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 4,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 5,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 6,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 7,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 8,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 9,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 10,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 11,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 12,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 13,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 14,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 15,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 16,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 17,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 18,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 19,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 20,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 21,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 22,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 23,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 24,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 25,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 26,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 27,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 28,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 29,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 30,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 31,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 32,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 33,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 34,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 35,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 36,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 37,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 38,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 39,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 40,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "pt-PT",
+      "row": 41,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 1,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 2,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 3,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 4,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 5,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 6,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 7,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 8,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 9,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 10,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 11,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 12,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 13,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 14,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 15,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 16,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 17,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 18,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 19,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 20,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 21,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 22,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 23,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 24,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 25,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 26,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 27,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 28,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 29,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 30,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 31,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 32,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 33,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 34,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 35,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 36,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 37,
+      "reason": "intent_already_selected"
+    },
+    {
+      "dataset": "minds14",
+      "config": "zh-CN",
+      "row": 38,
+      "reason": "intent_already_selected"
+    }
+  ],
+  "notice": "Public upstream datasets under CC-BY-4.0; retain attribution. Not original LocaleSafe recordings, domain-agent tasks, consent certification or independently reviewed cultural evidence."
+}

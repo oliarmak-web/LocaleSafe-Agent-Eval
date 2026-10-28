@@ -1,0 +1,11 @@
+{
+  "attempts.jsonl": "5faa35d3533aac6aeb9a09f38f6bd125f5c72916b89860081969aa7a98861e70",
+  "generation-defaults.json": "9f41e063528ba5dca8b3218af1e5d7a7a09cf10f7f7f2767a4665c10711823e7",
+  "manifest.json": "1a54a36544be46ba5dceafcbea94c98810d4e530414919aeaaabf03d13f29857",
+  "samples.json": "4b35dfcaefc569cb1285500d8c9a60a0548b74e140d6d0d44438d6acf3b458c5",
+  "source/experiments/fetch_public_audio.py": "647412cb7236ae0c8758bba00fc109e4384d6ac3d4c6c1e74c229232323cf46f",
+  "source/experiments/audio-pilot/PROTOCOL.md": "49feaec20f6d1f19bfb9b9f7754635bf954dc1b44b66c01ddb66c5f7edd76ebc",
+  "source/localesafe/asr_metrics.py": "f70b82759c4dc754a8d1de6dffa208a723d54d503352492ffeb40487c0a47e2b",
+  "source/localesafe/collect_audio_smoke.py": "e5076ae8b71e8ff508021e42b7828f9d5b4e8feea297d1ff49a0506739d3cb3b",
+  "source/localesafe/evaluate.py": "0c81f93ed98918582824343c767823d6ffea3853584994d6998f68feb096f8df"
+}

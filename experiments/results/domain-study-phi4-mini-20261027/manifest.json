@@ -1,0 +1,59 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-27T22:49:01.615740+00:00",
+  "settings": {
+    "study": "cross-domain-intent-feasibility",
+    "model": {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+      "weights": {
+        "model-00001-of-00002.safetensors": "bc703090b63eda16f639fa4de7ac54635c23105ab1da2f6ec4d3403151d38ee6",
+        "model-00002-of-00002.safetensors": "7ff79b9d2d31076bac2663393451f6530f4fc8ca49b09002116c92c373dba983"
+      }
+    },
+    "split": "development",
+    "profiles": [
+      "greedy"
+    ],
+    "seed": 20261027,
+    "all_cases_sha256": "f00f0b31c1002df58bafe337a253dc7268728f105eb2803989b5c8b9167cd83c",
+    "design_sha256": "0e14b8e7dce3f1ced2cf4641cd19085ed108eb19af6598b9e80f788c03650164",
+    "sources": {
+      "localesafe/collect_domain_study.py": "123bc1b9bfe2847877e6c862232e3e65b72f4161a3a14de51da246828f84f59e",
+      "localesafe/domain_study.py": "37a108c9707cc56c72bb8f7d53ca8e85f8eeb9c5f0d0734df388593fb4e3822a",
+      "localesafe/collect_handoff.py": "3df2287b7ddca880d9ada34d7dd9d47b3eb66455d57ff6d2aa9113ed613eca34",
+      "localesafe/handoff_study.py": "44e3fcdab98c06550b9ce828bb7fa782b5b1c1b0551047c27878ba6a6682733e",
+      "localesafe/handoff_eval.py": "b0d03ab190b18dea5b8aeb360b5faf2e975e1a55f474410530950cce3686d902",
+      "localesafe/evaluate.py": "0c81f93ed98918582824343c767823d6ffea3853584994d6998f68feb096f8df",
+      "experiments/build_domain_study.py": "c7a65b964bac993e7952cf3c1522433de3ba134f42d539660ac0f0f4f9b9d098",
+      "experiments/domain-study/PROTOCOL.md": "0225bd50c4b04f3f50901fb09e015fae11ecd9e92c64d9d57e67f0deb47a3a7d",
+      "localesafe/collect_domain_replication.py": "fb7df87533561ab37a2e44f4590a4a23f06b7f1666a84dff7e935b0339f79aca",
+      "experiments/domain-study/MODEL_REPLICATION.md": "833c4790bc5a2d56aefaf9fc32447d55d978a4309e2b453ebf577ed845b92100"
+    },
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "transformers": "4.57.6",
+    "cuda": "13.0",
+    "gpu": "Tesla T4",
+    "dtype": "float16",
+    "quantization": "none",
+    "batch_size": 8,
+    "threads": 2,
+    "enable_thinking": false,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "token_limits": {
+      "extract": 160,
+      "qualify_history": 128,
+      "qualify_oracle": 128,
+      "qualify_generated": 128
+    },
+    "sampling": "greedy or independent per-row CUDA seeded sampling with forced selected token"
+  },
+  "scheduled_requests": 720,
+  "completed_utc": "2026-10-27T22:57:21.660795+00:00",
+  "attempts": 720,
+  "attempts_sha256": "153758db32f4743932aee313dc2bec0cd874f23d39aadbea4e7b417eabb5555f",
+  "cases_sha256": "f00f0b31c1002df58bafe337a253dc7268728f105eb2803989b5c8b9167cd83c"
+}

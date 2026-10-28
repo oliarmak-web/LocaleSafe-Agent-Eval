@@ -10,3 +10,5 @@ The local packet retains original audio bytes, source parquet hashes, row indice
 The transcription baseline uses [openai/whisper-small](https://huggingface.co/openai/whisper-small), whose published Hugging Face model card lists Apache-2.0. Its exact revision and safetensors hash are frozen in PROTOCOL.md. The authors/model provider do not endorse LocaleSafe. The model is run locally; no OpenAI inference API is used.
 
 Neither corpus represents the five authored domain workflows, a population of callers or cultural communication styles. Source and model licenses remain upstream; this file is provenance, not a certification of every source recording's rights or consent.
+
+Post-collection audit: the MINDS source paper describes ASR-generated transcriptions. Use them as released hypotheses, not human-verified gold for recognition accuracy. See [REFERENCE_AUDIT.md](REFERENCE_AUDIT.md); original data and scores remain intact.

@@ -8,13 +8,23 @@ Use it to investigate a practical question: **is the failure in language underst
 
 Created and maintained by **Olivia Iarmak**. MIT-licensed research prototype. Implementation, translations and documentation use AI assistance.
 
-**New draft pilot:** enterprise cybersecurity discovery in English, Brazilian Portuguese, Tamil, Simplified Chinese and Spanish. 720 calls completed October 23. Findings remain exploratory and unreviewed. [Results](docs/SALES_PILOT_FINDINGS.md) · [Protocol](experiments/sales-pilot/PROTOCOL.md).
+**Sales pilot:** enterprise cybersecurity discovery in English, Brazilian Portuguese, Tamil, Simplified Chinese and Spanish. 720 calls completed October 23. Findings remain exploratory and unreviewed. [Results](docs/SALES_PILOT_FINDINGS.md) · [Protocol](experiments/sales-pilot/PROTOCOL.md).
 
-## New domain checkpoints: collection in progress
+## Five domains: two-model results
 
-Five fictional policies cover cybersecurity access, financial servicing, healthcare administration, insurance intake and telecom plan changes. The frozen six-language feasibility grid has 180 draft rows and 720 planned Qwen3-4B calls. Collection is running; planned calls are not completed results. No voice provider or cultural group has been evaluated.
+**1,440 calls across cybersecurity access, financial servicing, healthcare administration, insurance intake and telecom changes.** Six languages, six shared intent families and fictional policies; no independent language/domain review.
 
-Try a local reference replay, export prompts or score an agent's replies: [domain quickstart](docs/DOMAIN_AND_SPEECH_STUDY.md). Independent review is welcome through the [review guide](docs/LANGUAGE_REVIEW_GUIDE.md).
+- Qwen passed four small English screens; insurance failed. Phi failed every domain's English screen, limiting its language interpretation.
+- Qwen sometimes normalized a financial amount correctly but chose execution instead of required specialist review. Correct facts and correct policy application are different checks.
+- Authored reference records improved aggregate correctness but still produced rejected execute attempts. Conditional-intent conventions and nested-value contracts also need review; these are not pure language scores.
+
+[Plain-English findings](docs/DOMAIN_FINDINGS.md) · [Two-model tables](docs/DOMAIN_COMPARISON.md) · [Export checkpoints and score an agent](docs/DOMAIN_AND_SPEECH_STUDY.md) · [Review draft cases](docs/LANGUAGE_REVIEW_GUIDE.md).
+
+## Free recordings and a separate speech baseline
+
+Retrieved 20 public FLEURS/MINDS-14 clips and ran 40 local CPU Whisper-small transcriptions. Automatic and supplied-language arms produced identical decoded text on all 20 clips. MINDS references are ASR hypotheses, so their edit ratios measure disagreement rather than verified recognition error. This tiny test does not evaluate ElevenLabs, Wispr Flow, cultural understanding or downstream actions.
+
+[Retrieve the same free clips](docs/PUBLIC_AUDIO_QUICKSTART.md) · [Recorded results](docs/AUDIO_SMOKE_RESULTS.md) · [Sources and attribution](experiments/audio-pilot/DATA_SOURCES.md).
 
 ## What can you test?
 

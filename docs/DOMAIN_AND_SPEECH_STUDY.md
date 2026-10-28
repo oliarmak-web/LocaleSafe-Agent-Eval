@@ -12,7 +12,7 @@ Five fictional policy environments now share a text-checkpoint protocol in six l
 
 The common conditions include corrections, polite approved requests, conditional permission, acknowledgment without execution approval, domain facts and caller verification. Policies, currency and locale rules stay fixed when customer language changes. These fixtures instantiate six shared templates under five policies; repeated translations do not create independent situations. No native-speaker or industry review has occurred.
 
-The new contract separates conversation sequence from trusted approval versions and uses named actions rather than choice letters. These are design changes motivated by earlier confounds, not demonstrated improvements until new results are collected. [Frozen protocol](../experiments/domain-study/PROTOCOL.md) · [Execution status](../experiments/domain-study/EXECUTION_HISTORY.md).
+The new contract separates conversation sequence from trusted approval versions and uses named actions rather than choice letters. These are design changes motivated by earlier confounds, not isolated or validated fixes. Two 720-call runs are complete; see the [findings](DOMAIN_FINDINGS.md) and [model comparison](DOMAIN_COMPARISON.md). [Frozen protocol](../experiments/domain-study/PROTOCOL.md) · [Execution status](../experiments/domain-study/EXECUTION_HISTORY.md).
 
 ## Try the checkpoints locally
 
@@ -37,7 +37,7 @@ For a future ElevenLabs-style agent test, compare reviewed intended meaning, act
 
 [Wispr's limitations documentation](https://docs.wisprflow.ai/articles/4048537120-what-to-expect-from-flow-accuracy-and-known-limitations) distinguishes formatting from mishearing and discusses mixed-language behavior. [ElevenLabs' language documentation](https://elevenlabs.io/docs/eleven-agents/customization/voice/customization/language) describes language configuration and detection. Platform, model, language settings and mode must be recorded; vendor capabilities are not LocaleSafe results or endorsements.
 
-No ElevenLabs/Wispr calls, customer recordings, ASR results or spoken-culture findings are included in this release. Free provider access and appropriate licensed recordings are not assumed. The local intake tool validates provenance before an audio study:
+No ElevenLabs/Wispr calls, private customer recordings or spoken-culture findings are included. A separate [free public-recording smoke test](PUBLIC_AUDIO_QUICKSTART.md) has 40 local ASR outputs on unrelated released corpus clips; it does not explain the authored domain-task failures. Free provider access and appropriate licensed recordings are not assumed. The local intake tool validates provenance before an audio study:
 
 ```sh
 python -m localesafe.speech_evidence private/speech-evidence.json --audio-root private/audio --output reports/speech-intake.json

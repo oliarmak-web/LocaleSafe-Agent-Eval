@@ -1,0 +1,40 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-27T23:00:32.674641+00:00",
+  "settings": {
+    "model": {
+      "model": "openai/whisper-small",
+      "revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+      "weights_sha256": "1d7734884874f1a1513ed9aa760a4f8e97aaa02fd6d93a3a85d27b2ae9ca596b"
+    },
+    "device": "cpu",
+    "dtype": "float32",
+    "threads": 4,
+    "interop_threads": 1,
+    "deterministic_algorithms": true,
+    "python": "3.11.9",
+    "torch": "2.14.1+cpu",
+    "transformers": "4.57.6",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "soundfile": "0.14.0",
+    "sources": {
+      "localesafe/collect_audio_smoke.py": "e5076ae8b71e8ff508021e42b7828f9d5b4e8feea297d1ff49a0506739d3cb3b",
+      "localesafe/asr_metrics.py": "f70b82759c4dc754a8d1de6dffa208a723d54d503352492ffeb40487c0a47e2b",
+      "localesafe/evaluate.py": "0c81f93ed98918582824343c767823d6ffea3853584994d6998f68feb096f8df",
+      "experiments/fetch_public_audio.py": "647412cb7236ae0c8758bba00fc109e4384d6ac3d4c6c1e74c229232323cf46f",
+      "experiments/audio-pilot/PROTOCOL.md": "49feaec20f6d1f19bfb9b9f7754635bf954dc1b44b66c01ddb66c5f7edd76ebc"
+    },
+    "samples_sha256": "4b35dfcaefc569cb1285500d8c9a60a0548b74e140d6d0d44438d6acf3b458c5",
+    "decoding": "greedy",
+    "beams": 1,
+    "task": "transcribe",
+    "timestamps": false,
+    "max_new_tokens": 128,
+    "schedule_seed": 20261027
+  },
+  "scheduled_requests": 40,
+  "attempts": 40,
+  "attempts_sha256": "5faa35d3533aac6aeb9a09f38f6bd125f5c72916b89860081969aa7a98861e70",
+  "completed_utc": "2026-10-27T23:06:48.468208+00:00"
+}

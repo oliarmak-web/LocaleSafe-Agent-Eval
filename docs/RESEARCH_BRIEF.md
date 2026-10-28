@@ -45,6 +45,12 @@ Three additional exploratory studies recorded 1,680 permission-handoff calls, 86
 
 These negative controls limit language claims and help identify what to test next. Independent language review, new task families and broader competent-model replication remain more valuable than simply increasing repeated calls on these drafts.
 
+## Domain and speech extensions
+
+A five-policy suite added 1,440 calls across two models and six languages. Qwen passed four small English screens; insurance failed. Phi failed every domain's English screen. Exact field/contract errors, conditional-policy handling and language-conditioned differences remain separate observations. Draft reference conventions also require adjudication; the study does not establish cultural effects or deployed industry failure rates. [Domain findings](DOMAIN_FINDINGS.md).
+
+A separate free recording packet contains 20 public FLEURS/MINDS clips. Forty local Whisper-small transcriptions produced identical outputs with automatic and supplied language labels. The MINDS paper describes ASR-generated references, so disagreement against them is not human-grounded recognition accuracy. No ElevenLabs/Wispr product or downstream action was evaluated. [Recording guide and limits](PUBLIC_AUDIO_QUICKSTART.md).
+
 ## What is the contribution?
 
 The deliverables are a runnable diagnostic toolkit, authored workflow fixtures, archived model outputs and reproducible analyses. The handoff studies distinguish permission-field accuracy, action-contract compliance and monitor judgment rather than assuming that language or permission loss explains every error.

@@ -31,3 +31,9 @@ Multilingual tool evaluation, consent checks, memory provenance and monitor asse
 Translations and reference labels remain development drafts. Independent bilingual review and peer-reviewed validation have not been completed.
 
 Software citation metadata is available in [CITATION.cff](CITATION.cff).
+
+## Domain and public-audio follow-ups
+
+The cross-domain feasibility suite archives 1,440 Qwen/Phi calls on 180 translated draft rows under five fictional policies. Six shared intent families are not 180 independently authored situations. [Findings](docs/DOMAIN_FINDINGS.md).
+
+The separate 40-call local transcription smoke test uses openai/whisper-small and 20 recordings from **Google FLEURS** and **PolyAI MINDS-14**. These recordings and released reference transcriptions are external CC-BY-4.0 data, not original LocaleSafe recordings or MIT-licensed project data. Raw audio remains in ignored local artifacts; archived sample metadata/reference text retains per-source attribution. See [dataset/model sources](experiments/audio-pilot/DATA_SOURCES.md) and the [post-collection reference audit](experiments/audio-pilot/REFERENCE_AUDIT.md). No voice provider endorses the project.
