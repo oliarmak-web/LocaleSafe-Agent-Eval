@@ -50,14 +50,14 @@ This verifies both five-domain archives and rebuilds `comparison.json` and `RESU
 
 ## What this project contributes
 
-**LocaleSafe gives agent builders a reproducible way to investigate a costly ambiguity: did the agent misunderstand the customer's language, lose an instruction during handoff, misapply a policy or receive the wrong safety judgment?** Those failures call for different fixes. A single task-success score cannot distinguish them.
+**LocaleSafe helps developers investigate why multilingual agents take incorrect or unauthorized actions and where to intervene.** Its authored experiments distinguish failures in language understanding, information transfer, policy application and safety monitoring.
 
-- **Diagnostics across five service domains.** Authored checkpoints cover access permissions, payment review, scheduling, insurance records and telecom changes in six languages. Fixed task details let teams compare language conditions while checking English task competence first.
-- **Evidence that fluent understanding can still lead to forbidden actions.** Recorded experiments separate captured facts from decisions and tool arguments: an agent can read an amount correctly yet ignore a review requirement. Builders can test both stages before choosing a mitigation.
-- **Tests of safety trade-offs.** Handoff and monitor experiments measure unsafe approvals alongside unnecessary refusals. They expose interventions that improve one score while preventing legitimate work or worsening another condition.
-- **Reusable evaluation infrastructure.** Teams can export checkpoints, score their own agent's untouched replies and audit the published findings from prompts, raw outputs, source snapshots and hashes. Failed attempts and negative results remain available for independent scrutiny.
+- **Coverage across five service domains and six languages:** reusable checkpoints test requests involving access permissions, financial servicing, healthcare scheduling, insurance records and telecom changes.
+- **Evidence beyond task-success scores:** experiments reveal that correctly extracting customer information does not guarantee a correct or authorized action.
+- **Measurable safety trade-offs:** separate checks expose changes that reduce unsafe approvals while also blocking legitimate requests.
+- **Reproducible tools for developers and researchers:** exportable cases, scoring scripts and archived evidence support independent verification, model comparisons and regression testing.
 
-For teams building multilingual agents that can change customer records, this supports targeted debugging, evaluation design and regression checks across languages. The contribution is the authored diagnostic suite, empirical failure analyses and reproducible tooling. Industry adoption, independent validation and production impact remain to be demonstrated; the research index documents the evidence, related work and limits.
+**The practical value is better diagnosis before deployment.** Teams can investigate which component needs attention instead of assuming every multilingual failure requires a translation fix. The research provides documented failure cases and reusable evaluation infrastructure; broader industry impact remains to be established through independent use, validation and adoption.
 
 ## Contribute and cite
 
