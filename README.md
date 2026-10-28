@@ -50,12 +50,14 @@ This verifies both five-domain archives and rebuilds `comparison.json` and `RESU
 
 ## What this project contributes
 
-- Matched workflow fixtures with fixed task details and explicit language conditions.
-- Separate checks for extracted facts, exact actions, permission, monitor judgments and sandbox state.
-- Diagnostic comparisons using full conversations, generated summaries and authored reference records.
-- Archived prompts, raw outputs, unsuccessful attempts, settings, source snapshots and artifact hashes.
+**LocaleSafe gives agent builders a reproducible way to investigate a costly ambiguity: did the agent misunderstand the customer's language, lose an instruction during handoff, misapply a policy or receive the wrong safety judgment?** Those failures call for different fixes. A single task-success score cannot distinguish them.
 
-Multilingual evaluation and authorization checks have established precedents. LocaleSafe's contribution is the authored diagnostic experiments and reproducible evidence, rather than a claim to introduce those fields. The research index includes method comparisons, related work and provenance.
+- **Diagnostics across five service domains.** Authored checkpoints cover access permissions, payment review, scheduling, insurance records and telecom changes in six languages. Fixed task details let teams compare language conditions while checking English task competence first.
+- **Evidence that fluent understanding can still lead to forbidden actions.** Recorded experiments separate captured facts from decisions and tool arguments: an agent can read an amount correctly yet ignore a review requirement. Builders can test both stages before choosing a mitigation.
+- **Tests of safety trade-offs.** Handoff and monitor experiments measure unsafe approvals alongside unnecessary refusals. They expose interventions that improve one score while preventing legitimate work or worsening another condition.
+- **Reusable evaluation infrastructure.** Teams can export checkpoints, score their own agent's untouched replies and audit the published findings from prompts, raw outputs, source snapshots and hashes. Failed attempts and negative results remain available for independent scrutiny.
+
+For teams building multilingual agents that can change customer records, this supports targeted debugging, evaluation design and regression checks across languages. The contribution is the authored diagnostic suite, empirical failure analyses and reproducible tooling. Industry adoption, independent validation and production impact remain to be demonstrated; the research index documents the evidence, related work and limits.
 
 ## Contribute and cite
 
